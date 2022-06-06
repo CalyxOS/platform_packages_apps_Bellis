@@ -29,65 +29,12 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:text="@string/main_message" />
-
-        <!-- Calculator -->
-
-        <Switch
-            android:id="@+id/toggle_calculator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="@string/toggle_calculator" />
-
-        <!-- Chrome (App restrictions) -->
-
-        <Switch
-            android:id="@+id/toggle_chrome"
+        <Button
+            android:id="@+id/app_and_content_access"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:padding="8dp"
-            android:text="@string/toggle_chrome" />
-
-        <Button
-            android:id="@+id/set_chrome_restrictions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/set_chrome_restrictions" />
-
-        <Button
-            android:id="@+id/clear_chrome_restrictions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/clear_chrome_restrictions" />
-
-        <!-- Intent Forwarding -->
-
-        <Button
-            android:id="@+id/enable_forwarding"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="@string/enable_forwarding" />
-
-        <Button
-            android:id="@+id/disable_forwarding"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/disable_forwarding" />
-
-        <Button
-            android:id="@+id/send_intent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/send_intent_text" />
-
-        <!-- Remove profile -->
+            android:text="@string/app_and_content_access" />
 
         <Button
             android:id="@+id/remove_profile"
