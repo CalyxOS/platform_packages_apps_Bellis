@@ -51,6 +51,8 @@ class PostProvisioningHelper {
         );
         // We enable the profile here.
         mDevicePolicyManager.setProfileEnabled(componentName);
+
+        mDevicePolicyManager.setBackupServiceEnabled(componentName, true);
     }
 
     public boolean isDone() {
