@@ -47,10 +47,12 @@ class PostProvisioningHelper {
         // This is the name for the newly created managed profile.
         mDevicePolicyManager.setProfileName(
                 componentName,
-                mContext.getString(R.string.profile_name)
+                mContext.getString(R.string.app_name)
         );
         // We enable the profile here.
         mDevicePolicyManager.setProfileEnabled(componentName);
+
+        mDevicePolicyManager.setBackupServiceEnabled(componentName, true);
     }
 
     public boolean isDone() {

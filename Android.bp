@@ -1,0 +1,14 @@
+android_app {
+    name: "Bellis",
+
+    manifest: "app/src/main/AndroidManifest.xml",
+    resource_dirs: ["app/src/main/res"],
+    srcs: ["app/src/main/java/**/*.java"],
+
+    static_libs: [
+        "androidx.appcompat_appcompat",
+    ],
+
+    sdk_version: "current",
+    product_specific: true,
+}
