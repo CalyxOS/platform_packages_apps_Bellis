@@ -16,6 +16,23 @@
       "message": "Cancelling once makes the button greyed out till clearing away app from recents and re-launching.\n\nDialog does work fine otherwise",
       "revId": "de91689a5235aa2e80a27d7abf3074d98bc631e6",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9c0c45dc_e91f9cd6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-07-17T18:23:18Z",
+      "side": 1,
+      "message": "We can continue working on this and any other changes we want to do in the app and just ship it as an update via the fdroid repo.\n\n",
+      "revId": "de91689a5235aa2e80a27d7abf3074d98bc631e6",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
