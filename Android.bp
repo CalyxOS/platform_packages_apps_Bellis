@@ -1,9 +1,9 @@
 android_app {
     name: "BasicManagedProfile",
 
-    manifest: "Application/src/main/AndroidManifest.xml",
-    resource_dirs: ["Application/src/main/res"],
-    srcs: ["Application/src/main/java/**/*.java"],
+    manifest: "app/src/main/AndroidManifest.xml",
+    resource_dirs: ["app/src/main/res"],
+    srcs: ["app/src/main/java/**/*.java"],
 
     static_libs: [
         "androidx.appcompat_appcompat",
