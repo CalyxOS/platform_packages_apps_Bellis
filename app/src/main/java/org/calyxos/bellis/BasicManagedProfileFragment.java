@@ -17,6 +17,8 @@
 package org.calyxos.bellis;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.admin.DevicePolicyManager;
 import android.content.Context;
 import android.content.Intent;
@@ -29,6 +31,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
 /**
@@ -57,6 +62,30 @@ public class BasicManagedProfileFragment extends Fragment implements View.OnClic
         return new BasicManagedProfileFragment();
     }
 
+    public static class RemoveProfileDialogFragment extends DialogFragment {
+        @NonNull
+        @Override
+        public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
+            return new AlertDialog.Builder(requireContext())
+                    .setMessage(getString(R.string.remove_profile_confirmation))
+                    .setPositiveButton(getString(android.R.string.ok), (dialog, which) -> {
+                        // Wipes out all the data related to this managed profile.
+                        Activity activity = getActivity();
+                        if (null == activity || activity.isFinishing()) {
+                            return;
+                        }
+                        DevicePolicyManager manager =
+                                (DevicePolicyManager) activity.getSystemService(Context.DEVICE_POLICY_SERVICE);
+                        manager.wipeData(0);
+                        // The screen turns off here
+                    } )
+                    .setNegativeButton(android.R.string.cancel, null)
+                    .create();
+        }
+
+        public static final String TAG = "RemoveProfileDialogFragment";
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -77,7 +106,8 @@ public class BasicManagedProfileFragment extends Fragment implements View.OnClic
             setupAppAndContentAccess();
         } else if (view.getId() == R.id.remove_profile) {
             mButtonRemoveProfile.setEnabled(false);
-            removeProfile();
+            new RemoveProfileDialogFragment().show(
+                    getChildFragmentManager(), RemoveProfileDialogFragment.TAG);
         }
     }
 
@@ -93,19 +123,5 @@ public class BasicManagedProfileFragment extends Fragment implements View.OnClic
         Intent intent = new Intent(USER_SETTINGS);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
-    }
-
-    /**
-     * Wipes out all the data related to this managed profile.
-     */
-    private void removeProfile() {
-        Activity activity = getActivity();
-        if (null == activity || activity.isFinishing()) {
-            return;
-        }
-        DevicePolicyManager manager =
-                (DevicePolicyManager) activity.getSystemService(Context.DEVICE_POLICY_SERVICE);
-        manager.wipeData(0);
-        // The screen turns off here
     }
 }
