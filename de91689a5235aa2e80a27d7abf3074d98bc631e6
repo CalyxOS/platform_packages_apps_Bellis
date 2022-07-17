@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f76ea129_cf14a115",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-07-17T18:21:45Z",
+      "side": 1,
+      "message": "Cancelling once makes the button greyed out till clearing away app from recents and re-launching.\n\nDialog does work fine otherwise",
+      "revId": "de91689a5235aa2e80a27d7abf3074d98bc631e6",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
