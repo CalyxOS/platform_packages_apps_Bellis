@@ -33,6 +33,24 @@
       "message": "Should match https://gitlab.com/CalyxOS/tmp/BasicManagedProfile/-/commit/40176be966b45acf84999f7e9d61f032b60ddf3c minus some non code related changes.",
       "revId": "f7ad47fb143f30db4ace26a871b28810294c2866",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da4e8a67_a1963837",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-07-17T16:56:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a853ac1_811e7e2c",
+      "revId": "f7ad47fb143f30db4ace26a871b28810294c2866",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
