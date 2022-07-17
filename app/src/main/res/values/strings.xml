@@ -19,5 +19,7 @@
     <string name="app_and_content_access">App &amp; Content Access</string>
     <string name="set_up_profile">Set up profile</string>
     <string name="remove_profile">Remove managed profile</string>
+    <string name="remove_profile_confirmation">Are you sure?</string>
+    <string name="ok">Ok</string>
     <string name="profile_name">Sample Managed Profile</string>
 </resources>
