@@ -17,6 +17,8 @@
 package org.calyxos.bellis;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.admin.DevicePolicyManager;
 import android.content.Context;
 import android.content.Intent;
@@ -29,6 +31,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
 /**
@@ -57,6 +62,21 @@ public class BasicManagedProfileFragment extends Fragment implements View.OnClic
         return new BasicManagedProfileFragment();
     }
 
+    public class RemoveProfileDialogFragment extends DialogFragment {
+        @NonNull
+        @Override
+        public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
+            return new AlertDialog.Builder(requireContext())
+                    .setMessage(getString(R.string.remove_profile_confirmation))
+                    .setPositiveButton(getString(R.string.ok), (dialog, which) -> {
+                        removeProfile();
+                    } )
+                    .create();
+        }
+
+        public static final String TAG = "RemoveProfileDialogFragment";
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -77,7 +97,8 @@ public class BasicManagedProfileFragment extends Fragment implements View.OnClic
             setupAppAndContentAccess();
         } else if (view.getId() == R.id.remove_profile) {
             mButtonRemoveProfile.setEnabled(false);
-            removeProfile();
+            new RemoveProfileDialogFragment().show(
+                    getChildFragmentManager(), RemoveProfileDialogFragment.TAG);
         }
     }
 
