@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.basicmanagedprofile;
+package org.calyxos.bellis;
 
 import android.app.Activity;
 import android.app.AlertDialog;

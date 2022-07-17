@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.basicmanagedprofile;
+package org.calyxos.bellis;
 
 import android.content.Intent;
 import android.os.Bundle;
