@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea9ea6f1_e6bf93f6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-07-17T18:23:33Z",
+      "side": 1,
+      "message": "Also I don\u0027t know if we should use this as the icon given that it\u0027s going to be user facing.",
+      "revId": "a63468c2ba7e140c0f5be0a47d765fb7b96d8a11",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
