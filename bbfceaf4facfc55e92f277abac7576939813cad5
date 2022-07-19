@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0734c023_6ed83ebc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-07-19T15:25:13Z",
+      "side": 1,
+      "message": "Do we want to set the topic of this chain to managed-profile too?",
+      "revId": "bbfceaf4facfc55e92f277abac7576939813cad5",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
