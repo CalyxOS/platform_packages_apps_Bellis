@@ -28,6 +28,18 @@ class PostProvisioningHelper {
     private static final String PREFS = "post-provisioning";
     private static final String PREF_DONE = "done";
 
+    private static final String[] REQUIRED_PACKAGES = new String[]{
+            "com.google.android.gms",
+            "com.google.android.gsf",
+            "com.android.vending",
+            "org.fitchfamily.android.dejavu",
+            "org.microg.nlp.backend.ichnaea",
+            "org.microg.nlp.backend.nominatim",
+            "com.stevesoltys.seedvault",
+            "org.fdroid.fdroid",
+            "org.chromium.chrome",
+    };
+
     private final Context mContext;
     private final DevicePolicyManager mDevicePolicyManager;
     private final SharedPreferences mSharedPrefs;
@@ -51,6 +63,10 @@ class PostProvisioningHelper {
         );
         // We enable the profile here.
         mDevicePolicyManager.setProfileEnabled(componentName);
+
+        for (String pkg : REQUIRED_PACKAGES) {
+            mDevicePolicyManager.enableSystemApp(componentName, pkg);
+        }
 
         mDevicePolicyManager.setBackupServiceEnabled(componentName, true);
     }

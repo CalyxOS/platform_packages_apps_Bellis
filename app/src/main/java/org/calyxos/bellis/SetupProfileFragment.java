@@ -18,7 +18,6 @@ package org.calyxos.bellis;
 
 import android.app.Activity;
 import android.app.admin.DevicePolicyManager;
-import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -66,11 +65,9 @@ public class SetupProfileFragment extends Fragment {
         }
         Intent intent = new Intent(DevicePolicyManager.ACTION_PROVISION_MANAGED_PROFILE);
 
-        final ComponentName component = new ComponentName(activity,
-                BasicDeviceAdminReceiver.class.getName());
         intent.putExtra(
                 DevicePolicyManager.EXTRA_PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME,
-                component
+                BasicDeviceAdminReceiver.getComponentName(activity)
         );
 
         if (intent.resolveActivity(activity.getPackageManager()) != null) {

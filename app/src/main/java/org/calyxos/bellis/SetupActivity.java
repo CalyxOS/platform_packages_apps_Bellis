@@ -17,7 +17,6 @@
 package org.calyxos.bellis;
 
 import android.app.Activity;
-import android.app.admin.DevicePolicyManager;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -28,26 +27,11 @@ public class SetupActivity extends Activity {
     private static final String SETUPWIZARD_PACKAGE = "org.lineageos.setupwizard";
     private static final String SETUPWIZARD_ACTIVITY_CLASS = ".SetupWizardActivity";
 
-    private static final String[] REQUIRED_PACKAGES = new String[]{
-            "com.google.android.gms",
-            "com.google.android.gsf",
-            "com.android.vending",
-            "org.fitchfamily.android.dejavu",
-            "org.microg.nlp.backend.ichnaea",
-            "org.microg.nlp.backend.nominatim",
-            "com.stevesoltys.seedvault",
-            "org.fdroid.fdroid",
-            "org.chromium.chrome",
-    };
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        for (String pkg : REQUIRED_PACKAGES) {
-            getSystemService(DevicePolicyManager.class)
-                    .enableSystemApp(BasicDeviceAdminReceiver.getComponentName(this), pkg);
-        }
         new PostProvisioningHelper(this).completeProvisioning();
+
         Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.setClassName(SETUPWIZARD_PACKAGE,
                 SETUPWIZARD_PACKAGE + SETUPWIZARD_ACTIVITY_CLASS);
