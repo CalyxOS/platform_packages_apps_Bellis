@@ -16,7 +16,6 @@
 package org.calyxos.bellis
 
 import android.app.Activity
-import android.app.admin.DevicePolicyManager
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -26,32 +25,12 @@ class SetupActivity : Activity() {
 
     private val setupWizard = "org.lineageos.setupwizard"
     private val setupWizardActivity = ".SetupWizardActivity"
-    private val requiredPackages = listOf(
-        "com.google.android.gms",
-        "com.google.android.gsf",
-        "com.android.vending",
-        "org.fitchfamily.android.dejavu",
-        "org.microg.nlp.backend.ichnaea",
-        "org.microg.nlp.backend.nominatim",
-        "com.stevesoltys.seedvault",
-        "org.fdroid.fdroid",
-        "org.chromium.chrome"
-    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        enableRequiredPackages(this)
+        PostProvisioningHelper.completeProvisioning(this)
         navigateBackToFTSW(this)
-    }
-
-    private fun enableRequiredPackages(context: Context) {
-        val devicePolicyManager = context.getSystemService(DevicePolicyManager::class.java)
-        val component = BasicDeviceAdminReceiver.getComponentName(context)
-        requiredPackages.forEach {
-            devicePolicyManager.enableSystemApp(component, it)
-        }
-        PostProvisioningHelper.completeProvisioning(context)
     }
 
     private fun navigateBackToFTSW(context: Context) {
