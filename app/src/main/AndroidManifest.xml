@@ -18,8 +18,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="org.calyxos.bellis"
-    android:versionCode="1"
-    android:versionName="1.0">
+    android:versionCode="101"
+    android:versionName="1.0.1">
 
     <application
         android:icon="@mipmap/ic_launcher"
@@ -58,5 +58,14 @@
             </intent-filter>
         </receiver>
 
+        <service
+            android:name=".BasicDeviceAdminService"
+            android:permission="android.permission.BIND_DEVICE_ADMIN"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_SERVICE" />
+            </intent-filter>
+        </service>
     </application>
+
 </manifest>
