@@ -17,11 +17,16 @@ package org.calyxos.bellis
 
 import android.app.admin.DevicePolicyManager
 import android.content.Context
+import android.os.UserManager
 
 object PostProvisioningHelper {
 
     private const val PREFS = "post-provisioning"
     private const val PREF_DONE = "done"
+    private val userRestrictions = listOf(
+        UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES,
+        UserManager.DISALLOW_BLUETOOTH_SHARING
+    )
     private val requiredPackages = listOf(
         "com.google.android.gms",
         "com.google.android.gsf",
@@ -41,6 +46,11 @@ object PostProvisioningHelper {
             devicePolicyManager.apply {
                 setProfileName(componentName, context.getString(R.string.app_name))
                 setProfileEnabled(componentName)
+
+                // Clear user restrictions
+                userRestrictions.forEach {
+                    devicePolicyManager.clearUserRestriction(componentName, it)
+                }
 
                 // Enable required packages and backup service
                 requiredPackages.forEach {
