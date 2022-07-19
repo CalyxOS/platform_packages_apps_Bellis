@@ -23,6 +23,17 @@ object PostProvisioningHelper {
 
     private const val PREFS = "post-provisioning"
     private const val PREF_DONE = "done"
+    private val requiredPackages = listOf(
+        "com.google.android.gms",
+        "com.google.android.gsf",
+        "com.android.vending",
+        "org.fitchfamily.android.dejavu",
+        "org.microg.nlp.backend.ichnaea",
+        "org.microg.nlp.backend.nominatim",
+        "com.stevesoltys.seedvault",
+        "org.fdroid.fdroid",
+        "org.chromium.chrome"
+    )
 
     fun completeProvisioning(context: Context) {
         if (!provisioningComplete(context)) {
@@ -31,6 +42,11 @@ object PostProvisioningHelper {
             devicePolicyManager.apply {
                 setProfileName(componentName, context.getString(R.string.app_name))
                 setProfileEnabled(componentName)
+
+                // Enable required packages and backup service
+                requiredPackages.forEach {
+                    devicePolicyManager.enableSystemApp(componentName, it)
+                }
                 setBackupServiceEnabled(componentName, true)
             }
         }
