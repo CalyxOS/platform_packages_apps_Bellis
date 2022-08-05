@@ -7,6 +7,7 @@ android_app {
 
     static_libs: [
         "androidx.appcompat_appcompat",
+        "bellis-lib-com.google.android.material_material",
     ],
 
     sdk_version: "current",
