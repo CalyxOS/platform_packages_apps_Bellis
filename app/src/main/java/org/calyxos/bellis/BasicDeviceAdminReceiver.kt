@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 Google LLC
+ * Copyright (C) 2022 The Calyx Institute
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,12 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.calyxos.bellis
 
-plugins {
-    id 'com.android.application' version '7.2.2' apply false
-    id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
-}
+import android.app.admin.DeviceAdminReceiver
+import android.content.ComponentName
+import android.content.Context
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+class BasicDeviceAdminReceiver : DeviceAdminReceiver() {
+
+    companion object {
+        fun getComponentName(context: Context): ComponentName {
+            return ComponentName(context.applicationContext, BasicDeviceAdminReceiver::class.java)
+        }
+    }
+
 }

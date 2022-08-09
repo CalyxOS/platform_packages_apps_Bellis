@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_resource"
+    app:startDestination="@id/basicManagedProfileFragment">
+
+    <fragment
+        android:id="@+id/setupProfileFragment"
+        android:name="org.calyxos.bellis.SetupProfileFragment"
+        android:label="SetupProfileFragment"
+        tools:layout="@layout/setup_profile_fragment" />
+    <fragment
+        android:id="@+id/basicManagedProfileFragment"
+        android:name="org.calyxos.bellis.BasicManagedProfileFragment"
+        android:label="BasicManagedProfileFragment"
+        tools:layout="@layout/basic_managed_profile_fragment" />
+
+</navigation>

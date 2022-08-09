@@ -20,4 +20,5 @@
     <string name="set_up_profile">Set up profile</string>
     <string name="remove_profile">Remove managed profile</string>
     <string name="remove_profile_confirmation">Are you sure? This will permanently delete your work profile, including all apps inside that profile, their data, and any files.</string>
+    <string name="managed_provisioning_not_enabled">Managed provisioning is not enabled</string>
 </resources>

@@ -3,7 +3,7 @@ android_app {
 
     manifest: "app/src/main/AndroidManifest.xml",
     resource_dirs: ["app/src/main/res"],
-    srcs: ["app/src/main/java/**/*.java"],
+    srcs: ["app/src/main/java/**/*.kt"],
 
     static_libs: [
         "androidx.appcompat_appcompat",
