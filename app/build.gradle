@@ -14,14 +14,16 @@
  * limitations under the License.
  */
 
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+}
 
 android {
-    compileSdkVersion 32
+    compileSdk 32
 
     defaultConfig {
-        minSdkVersion 32
-        targetSdkVersion 32
+        minSdk 32
+        targetSdk 32
     }
 
     signingConfigs {
@@ -36,9 +38,6 @@ android {
     }
 
     buildTypes {
-        release {
-            signingConfig signingConfigs.aosp
-        }
         debug {
             signingConfig signingConfigs.aosp
         }
@@ -46,12 +45,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'com.google.android.material:material:1.6.1'
 }
