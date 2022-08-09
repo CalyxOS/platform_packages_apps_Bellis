@@ -38,6 +38,7 @@
 
         <activity
             android:name=".SetupActivity"
+            android:noHistory="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.app.action.PROVISIONING_SUCCESSFUL" />
