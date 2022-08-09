@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "517f1d77_13605bf5",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicManagedProfileFragment.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2022-08-09T23:39:50Z",
+      "side": 1,
+      "message": "100 chars",
+      "revId": "7a1f36651a0fe5979db9cdb9b27811bdb7c1e209",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
