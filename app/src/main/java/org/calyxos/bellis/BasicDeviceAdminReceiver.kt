@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 The Android Open Source Project
+ * Copyright (C) 2022 The Calyx Institute
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,23 +14,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package org.calyxos.bellis
 
-package org.calyxos.bellis;
+import android.app.admin.DeviceAdminReceiver
+import android.content.ComponentName
+import android.content.Context
 
-import android.app.admin.DeviceAdminReceiver;
-import android.content.ComponentName;
-import android.content.Context;
+class BasicDeviceAdminReceiver : DeviceAdminReceiver() {
 
-/**
- * Handles events related to managed profile.
- */
-public class BasicDeviceAdminReceiver extends DeviceAdminReceiver {
-    /**
-     * Generates a {@link ComponentName} that is used throughout the app.
-     *
-     * @return a {@link ComponentName}
-     */
-    public static ComponentName getComponentName(Context context) {
-        return new ComponentName(context.getApplicationContext(), BasicDeviceAdminReceiver.class);
+    companion object {
+        fun getComponentName(context: Context): ComponentName {
+            return ComponentName(context, BasicDeviceAdminReceiver::class.java.name)
+        }
     }
 }

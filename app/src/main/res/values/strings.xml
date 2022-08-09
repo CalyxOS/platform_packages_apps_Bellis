@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
  Copyright 2014 The Android Open Source Project
+ Copyright 2022 The Calyx Institute
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -20,4 +21,5 @@
     <string name="set_up_profile">Set up profile</string>
     <string name="remove_profile">Remove managed profile</string>
     <string name="remove_profile_confirmation">Are you sure? This will permanently delete your work profile, including all apps inside that profile, their data, and any files.</string>
+    <string name="managed_provisioning_not_enabled">Managed provisioning is not enabled</string>
 </resources>

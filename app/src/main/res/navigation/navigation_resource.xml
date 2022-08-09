@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
- Copyright 2014 The Android Open Source Project
  Copyright 2022 The Calyx Institute
 
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,20 +14,21 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:id="@+id/navigation_resource"
+    app:startDestination="@id/basicManagedProfileFragment">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/navigation_resource" />
+    <fragment
+        android:id="@+id/setupProfileFragment"
+        android:name="org.calyxos.bellis.SetupProfileFragment"
+        android:label="SetupProfileFragment"
+        tools:layout="@layout/setup_profile_fragment" />
+    <fragment
+        android:id="@+id/basicManagedProfileFragment"
+        android:name="org.calyxos.bellis.BasicManagedProfileFragment"
+        android:label="BasicManagedProfileFragment"
+        tools:layout="@layout/basic_managed_profile_fragment" />
 
-</LinearLayout>
+</navigation>
