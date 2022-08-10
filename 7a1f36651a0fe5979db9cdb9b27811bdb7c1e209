@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2e9fcad6_a71edf3b",
+        "filename": "app/build.gradle",
+        "patchSetId": 2
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-08-10T20:16:33Z",
+      "side": 0,
+      "message": "Why remove this?",
+      "revId": "7a1f36651a0fe5979db9cdb9b27811bdb7c1e209",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}

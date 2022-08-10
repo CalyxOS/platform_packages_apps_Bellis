@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c762133_79529bf9",
+        "filename": "app/build.gradle",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-08-10T20:16:33Z",
+      "side": 1,
+      "message": "I\u0027d make sure this matches AOSP at hte",
+      "revId": "8d04b9e57c2433331458260ea4a6c18adc580dd4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "899eca5f_a1fa9fcb",
+        "filename": "settings.gradle",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-08-10T20:16:33Z",
+      "side": 1,
+      "message": "What\u0027s this for?",
+      "revId": "8d04b9e57c2433331458260ea4a6c18adc580dd4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
