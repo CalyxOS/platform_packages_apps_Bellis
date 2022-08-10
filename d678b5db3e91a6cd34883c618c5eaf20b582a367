@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8edecc7c_84241d72",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-08-10T15:39:44Z",
+      "side": 1,
+      "message": "To compile in AOSP, we will need to add navigation components dependency. I will add it later.",
+      "revId": "d678b5db3e91a6cd34883c618c5eaf20b582a367",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
