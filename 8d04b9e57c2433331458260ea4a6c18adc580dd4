@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "b71ea585_ee7a4224",
+        "filename": "app/build.gradle",
+        "patchSetId": 2
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-08-12T06:34:17Z",
+      "side": 1,
+      "message": "Not needed for this, Etar was a particular case.",
+      "parentUuid": "6c762133_79529bf9",
+      "revId": "8d04b9e57c2433331458260ea4a6c18adc580dd4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "899eca5f_a1fa9fcb",
         "filename": "settings.gradle",
         "patchSetId": 2
@@ -31,6 +49,24 @@
       "writtenOn": "2022-08-10T20:16:33Z",
       "side": 1,
       "message": "What\u0027s this for?",
+      "revId": "8d04b9e57c2433331458260ea4a6c18adc580dd4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3113ab80_d5f4a319",
+        "filename": "settings.gradle",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-08-12T06:34:17Z",
+      "side": 1,
+      "message": "An old answer but still sort of makes sense:\n\nUsing gradlePluginPortal() allows you to resolve any plugin in the buildscript { } block that is published to the Plugin Portal or JCenter(or Maven Central) without caring where it was published or defining multiple repositories.\n\nRef: https://github.com/gradle/gradle/issues/4020",
+      "parentUuid": "899eca5f_a1fa9fcb",
       "revId": "8d04b9e57c2433331458260ea4a6c18adc580dd4",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
