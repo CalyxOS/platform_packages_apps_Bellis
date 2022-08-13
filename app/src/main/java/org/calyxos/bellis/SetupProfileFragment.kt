@@ -32,8 +32,18 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<View>(R.id.set_up_profile)
-            .setOnClickListener { provisionManagedProfile(view.context) }
+        val setupProfileBt = view.findViewById<View>(R.id.set_up_profile)
+
+        if (provisioningAllowed(view.context)) {
+            setupProfileBt.setOnClickListener { provisionManagedProfile(view.context) }
+        } else {
+            setupProfileBt.isEnabled = false
+        }
+    }
+
+    private fun provisioningAllowed(context: Context): Boolean {
+        val dpm = context.getSystemService(DevicePolicyManager::class.java)
+        return dpm.isProvisioningAllowed(DevicePolicyManager.ACTION_PROVISION_MANAGED_PROFILE)
     }
 
     private fun provisionManagedProfile(context: Context) {
