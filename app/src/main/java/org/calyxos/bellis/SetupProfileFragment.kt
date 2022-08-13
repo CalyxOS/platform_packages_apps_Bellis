@@ -21,6 +21,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
@@ -32,8 +33,18 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<View>(R.id.set_up_profile)
-            .setOnClickListener { provisionManagedProfile(view.context) }
+        val setupProfileButton = view.findViewById<Button>(R.id.set_up_profile)
+
+        if (provisioningAllowed(view.context)) {
+            setupProfileButton.setOnClickListener { provisionManagedProfile(view.context) }
+        } else {
+            setupProfileButton.isEnabled = false
+        }
+    }
+
+    private fun provisioningAllowed(context: Context): Boolean {
+        val dpm = context.getSystemService(DevicePolicyManager::class.java)
+        return dpm.isProvisioningAllowed(DevicePolicyManager.ACTION_PROVISION_MANAGED_PROFILE)
     }
 
     private fun provisionManagedProfile(context: Context) {
