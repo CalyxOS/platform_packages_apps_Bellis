@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5b434cd0_49d2b6e6",
+        "filename": "app/src/main/java/org/calyxos/bellis/SetupActivity.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-08-17T20:11:11Z",
+      "side": 1,
+      "message": "Mind explaining? Afaik the broadcast receiver was the old method?",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 47
+      },
+      "revId": "b533f3430030e35eecdf684323603ce7f29547d8",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
