@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "89c23d62_4e376bc0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-08-17T20:01:38Z",
+      "side": 1,
+      "message": "For posterity I would recommend adding the circumstance under which provisioning is not allowed to the commit message",
+      "revId": "101c3f36fdfb5a3b645c40ab74dc2d1ee57c7283",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b41acaa7_3efe8223",
+        "filename": "app/src/main/java/org/calyxos/bellis/SetupProfileFragment.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-08-17T20:01:38Z",
+      "side": 1,
+      "message": "I prefer full words (nitpick). Bt -\u003e Button (thought it was bluetooth at first and got confused for a second)",
+      "range": {
+        "startLine": 35,
+        "startChar": 12,
+        "endLine": 35,
+        "endChar": 26
+      },
+      "revId": "101c3f36fdfb5a3b645c40ab74dc2d1ee57c7283",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
