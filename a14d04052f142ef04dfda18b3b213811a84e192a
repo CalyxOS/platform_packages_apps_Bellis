@@ -18,6 +18,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b251c49e_de3a453a",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminReceiver.kt",
+        "patchSetId": 5
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-08-24T14:18:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "074f26f8_aa3db447",
+      "revId": "a14d04052f142ef04dfda18b3b213811a84e192a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "350aab3e_af4d04ab",
