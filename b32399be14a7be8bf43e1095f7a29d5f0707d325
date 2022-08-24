@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "72e7687c_ab065f4e",
+        "filename": "app/src/main/res/navigation/navigation_resource.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2022-08-24T14:13:01Z",
+      "side": 1,
+      "message": "Copyright?",
+      "revId": "b32399be14a7be8bf43e1095f7a29d5f0707d325",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1d7a3271_cecc09eb",
+        "filename": "app/src/main/res/navigation/navigation_resource.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2022-08-24T14:13:01Z",
+      "side": 1,
+      "message": "Missing newline",
+      "revId": "b32399be14a7be8bf43e1095f7a29d5f0707d325",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
