@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9c01c839_4406cedc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-08-24T10:05:55Z",
+      "side": 1,
+      "message": "https://cs.android.com/android/platform/superproject/+/master:frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java;l\u003d14170;drc\u003de67d5cbf4f9a6afe2cf9ebfe58b3e911b56b4ec0",
+      "revId": "1d2959d6d8edbf0969a3596969e12de5f90952e6",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
