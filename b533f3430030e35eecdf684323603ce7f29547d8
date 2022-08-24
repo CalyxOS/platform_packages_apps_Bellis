@@ -22,6 +22,30 @@
       },
       "revId": "b533f3430030e35eecdf684323603ce7f29547d8",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "692c0e4f_8e0fe910",
+        "filename": "app/src/main/java/org/calyxos/bellis/SetupActivity.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-08-24T08:58:27Z",
+      "side": 1,
+      "message": "The activity is not doing anything on the UI side. We can instead switch it to a BroadcastReciever to handle the things we are doing here.",
+      "parentUuid": "5b434cd0_49d2b6e6",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 47
+      },
+      "revId": "b533f3430030e35eecdf684323603ce7f29547d8",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
