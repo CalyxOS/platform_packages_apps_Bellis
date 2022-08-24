@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "074f26f8_aa3db447",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminReceiver.kt",
+        "patchSetId": 5
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2022-08-24T13:50:58Z",
+      "side": 1,
+      "message": "Please make sure all files end with newline",
+      "revId": "a14d04052f142ef04dfda18b3b213811a84e192a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
