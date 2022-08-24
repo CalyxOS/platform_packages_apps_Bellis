@@ -39,6 +39,30 @@
       },
       "revId": "101c3f36fdfb5a3b645c40ab74dc2d1ee57c7283",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "64c748df_6703a826",
+        "filename": "app/src/main/java/org/calyxos/bellis/SetupProfileFragment.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-08-24T09:06:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b41acaa7_3efe8223",
+      "range": {
+        "startLine": 35,
+        "startChar": 12,
+        "endLine": 35,
+        "endChar": 26
+      },
+      "revId": "101c3f36fdfb5a3b645c40ab74dc2d1ee57c7283",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
