@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cded4461_df988e70",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 7
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2022-08-24T13:53:46Z",
+      "side": 1,
+      "message": "Missing copyright header",
+      "revId": "fbbff95c74420cc93b1df088ad5abf382d0252c5",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bfeb48f0_b5ce41d2",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 7
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2022-08-24T13:53:46Z",
+      "side": 1,
+      "message": "Please make sure all new files end with newline",
+      "revId": "fbbff95c74420cc93b1df088ad5abf382d0252c5",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
