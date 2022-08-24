@@ -16,6 +16,23 @@
       "message": "Please make sure all files end with newline",
       "revId": "a14d04052f142ef04dfda18b3b213811a84e192a",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "350aab3e_af4d04ab",
+        "filename": "app/src/main/res/layout/main_activity.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2022-08-24T13:52:33Z",
+      "side": 1,
+      "message": "Comment should start on 2nd line",
+      "revId": "a14d04052f142ef04dfda18b3b213811a84e192a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
