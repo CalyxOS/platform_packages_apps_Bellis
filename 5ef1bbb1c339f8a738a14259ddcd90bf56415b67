@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eb85a1cb_fc8256e0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-08-25T23:43:37Z",
+      "side": 1,
+      "message": "NEVER EVER replace or remove copyright.\n\nUnless you rewrote it from scratch entirely cleanroom, the original copyright has to stay.\n\nThat means if you copied stuff from it, or used the Android Studio converter, or a mix - the original copyright still applies.",
+      "revId": "5ef1bbb1c339f8a738a14259ddcd90bf56415b67",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7624dbee_969b640c",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminReceiver.kt",
+        "patchSetId": 7
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-08-25T23:43:37Z",
+      "side": 1,
+      "message": "Given that this technically still has some code from AOSP, you can\u0027t just remove their copyright and replace it with ours.",
+      "revId": "5ef1bbb1c339f8a738a14259ddcd90bf56415b67",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "32504fda_481c441e",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicManagedProfileFragment.kt",
+        "patchSetId": 7
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-08-25T23:43:37Z",
+      "side": 1,
+      "message": "Same",
+      "revId": "5ef1bbb1c339f8a738a14259ddcd90bf56415b67",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
