@@ -35,6 +35,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8a60e70f_496db99e",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminReceiver.kt",
+        "patchSetId": 7
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-08-26T03:03:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7624dbee_969b640c",
+      "revId": "5ef1bbb1c339f8a738a14259ddcd90bf56415b67",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "32504fda_481c441e",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-08-25T23:43:37Z",
       "side": 1,
       "message": "Same",
+      "revId": "5ef1bbb1c339f8a738a14259ddcd90bf56415b67",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d9364a1_f3596d7e",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicManagedProfileFragment.kt",
+        "patchSetId": 7
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-08-26T03:03:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "32504fda_481c441e",
       "revId": "5ef1bbb1c339f8a738a14259ddcd90bf56415b67",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
