@@ -16,6 +16,24 @@
       "message": "update dependency*",
       "revId": "2d8b7f0e23af78af5925995f86e982ef4637e2f8",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0346e03e_6facb282",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-08-26T10:00:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "283798ac_03cf9e18",
+      "revId": "2d8b7f0e23af78af5925995f86e982ef4637e2f8",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
