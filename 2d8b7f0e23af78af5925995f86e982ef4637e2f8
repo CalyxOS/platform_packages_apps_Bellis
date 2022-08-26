@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "283798ac_03cf9e18",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-08-26T08:07:26Z",
+      "side": 1,
+      "message": "update dependency*",
+      "revId": "2d8b7f0e23af78af5925995f86e982ef4637e2f8",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
