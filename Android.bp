@@ -10,6 +10,8 @@ android_app {
         "androidx.navigation_navigation-fragment-ktx",
         "androidx.navigation_navigation-ui-ktx",
         "bellis-lib-com.google.android.material_material",
+        "kotlinx-coroutines-android",
+        "kotlinx-coroutines-core",
     ],
 
     sdk_version: "current",
