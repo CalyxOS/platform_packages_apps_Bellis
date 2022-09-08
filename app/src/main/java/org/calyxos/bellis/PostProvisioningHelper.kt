@@ -18,26 +18,31 @@ package org.calyxos.bellis
 
 import android.app.admin.DevicePolicyManager
 import android.content.Context
+import android.content.pm.PackageManager
 import android.os.UserManager
 
 object PostProvisioningHelper {
 
     private const val PREFS = "post-provisioning"
     private const val PREF_DONE = "done"
+
     private val userRestrictions = listOf(
         UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES,
         UserManager.DISALLOW_BLUETOOTH_SHARING
     )
+
     private val requiredPackages = listOf(
+        "com.stevesoltys.seedvault",
+        "org.fdroid.fdroid",
+        "org.chromium.chrome"
+    )
+    private val gmsPackages = listOf(
         "com.google.android.gms",
         "com.google.android.gsf",
         "com.android.vending",
         "org.fitchfamily.android.dejavu",
         "org.microg.nlp.backend.ichnaea",
-        "org.microg.nlp.backend.nominatim",
-        "com.stevesoltys.seedvault",
-        "org.fdroid.fdroid",
-        "org.chromium.chrome"
+        "org.microg.nlp.backend.nominatim"
     )
 
     fun completeProvisioning(context: Context) {
@@ -53,11 +58,38 @@ object PostProvisioningHelper {
                     devicePolicyManager.clearUserRestriction(componentName, it)
                 }
 
-                // Enable required packages and backup service
-                requiredPackages.forEach {
-                    devicePolicyManager.enableSystemApp(componentName, it)
-                }
                 setBackupServiceEnabled(componentName, true)
+            }
+        }
+    }
+
+    fun enableRequiredPackages(context: Context, enableGMS: Boolean = false) {
+        val devicePolicyManager = context.getSystemService(DevicePolicyManager::class.java)
+        val componentName = BasicDeviceAdminReceiver.getComponentName(context)
+
+        // Enable GMS packages separately to respect setup wizard
+        if (enableGMS) {
+            val packageManager = context.packageManager
+            gmsPackages.forEach { packageName ->
+                try {
+                    // Store the package status and reset it as setup wizard explicit disables it
+                    val packageStatus = packageManager.getApplicationEnabledSetting(packageName)
+                    packageManager.setApplicationEnabledSetting(
+                        packageName,
+                        PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
+                        0
+                    )
+                    if (packageStatus == PackageManager.COMPONENT_ENABLED_STATE_ENABLED) {
+                        devicePolicyManager.enableSystemApp(componentName, packageName)
+                    }
+                } catch (exception: Exception) {
+                }
+            }
+        } else {
+            requiredPackages.forEach { packageName ->
+                try {
+                    devicePolicyManager.enableSystemApp(componentName, packageName)
+                } catch (exception: Exception) {}
             }
         }
     }
