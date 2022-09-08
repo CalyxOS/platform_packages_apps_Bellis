@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5954328_40495ede",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-09-08T10:46:40Z",
+      "side": 1,
+      "message": "SuW or even better SetupWizard.",
+      "revId": "2644d7674a757139045617f66b2c3e9725ac211b",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "053a7f05_7dc3b227",
