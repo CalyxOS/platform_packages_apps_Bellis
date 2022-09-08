@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "053a7f05_7dc3b227",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-09-08T09:17:25Z",
+      "side": 1,
+      "message": "Doesn\u0027t works as for some reason FTSW always send wrong result code",
+      "revId": "2644d7674a757139045617f66b2c3e9725ac211b",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
