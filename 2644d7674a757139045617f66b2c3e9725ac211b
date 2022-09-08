@@ -16,6 +16,40 @@
       "message": "Doesn\u0027t works as for some reason FTSW always send wrong result code",
       "revId": "2644d7674a757139045617f66b2c3e9725ac211b",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92bb7c61_ae6b47de",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-09-08T10:28:42Z",
+      "side": 1,
+      "message": "These 3 seem to work fine.",
+      "revId": "2644d7674a757139045617f66b2c3e9725ac211b",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ef1d7a5d_3d973db4",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-09-08T10:28:42Z",
+      "side": 1,
+      "message": "Why do we even need this code here?\n\nNew profile setup -\u003e SuW should handle this\nApp \u0026 Content Access -\u003e We added code to Settings to handle this.\n\nWhat if we just got rid of GMS here.",
+      "revId": "2644d7674a757139045617f66b2c3e9725ac211b",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
