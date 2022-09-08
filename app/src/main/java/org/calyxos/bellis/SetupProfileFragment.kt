@@ -55,6 +55,7 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
         }
         try {
             startForResult.launch(intent)
+            activity?.finish()
         } catch (exception: ActivityNotFoundException) {
             Toast.makeText(
                 context,

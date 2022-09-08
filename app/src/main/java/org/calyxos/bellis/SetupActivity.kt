@@ -17,7 +17,6 @@
 package org.calyxos.bellis
 
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 
@@ -26,19 +25,29 @@ class SetupActivity : Activity() {
 
     private val setupWizard = "org.lineageos.setupwizard"
     private val setupWizardActivity = ".SetupWizardActivity"
+    private val requestCodeFTSW = 110
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         PostProvisioningHelper.completeProvisioning(this)
-        navigateBackToFTSW(this)
+        PostProvisioningHelper.enableRequiredPackages(this)
+        navigateBackToFTSW()
     }
 
-    private fun navigateBackToFTSW(context: Context) {
+    private fun navigateBackToFTSW() {
         val intent = Intent(Intent.ACTION_MAIN).apply {
             setClassName(setupWizard, setupWizard + setupWizardActivity)
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         }
-        context.startActivity(intent)
+        startActivityForResult(intent, requestCodeFTSW)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == requestCodeFTSW) {
+            PostProvisioningHelper.enableRequiredPackages(this, true)
+            finish()
+        }
     }
 }
