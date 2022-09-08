@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "73932f38_654bb205",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-09-08T20:18:33Z",
+      "side": 1,
+      "message": "Let\u0027s fix this after 13 ships. Not ideal, but also not a blocker.",
+      "revId": "b206637ea2bef3e2e3cf9ea37945ec3c8712bcb2",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
