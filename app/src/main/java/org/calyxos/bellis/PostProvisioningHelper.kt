@@ -53,11 +53,10 @@ object PostProvisioningHelper {
                     devicePolicyManager.clearUserRestriction(componentName, it)
                 }
 
-                // Enable required packages and backup service
+                // Enable required packages
                 requiredPackages.forEach {
                     devicePolicyManager.enableSystemApp(componentName, it)
                 }
-                setBackupServiceEnabled(componentName, true)
             }
         }
     }
