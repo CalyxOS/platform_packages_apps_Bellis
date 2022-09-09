@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "222f4d93_df56249f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-09-09T08:26:30Z",
+      "side": 1,
+      "message": "Context regarding this commit: https://review.calyxos.org/c/CalyxOS/platform_frameworks_base/+/11503/comments/764396ef_1f1ee585",
+      "revId": "65effad0f33306e2e9861fb16760b1a634e99f38",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
