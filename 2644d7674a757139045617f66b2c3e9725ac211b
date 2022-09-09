@@ -67,6 +67,24 @@
       "message": "Why do we even need this code here?\n\nNew profile setup -\u003e SuW should handle this\nApp \u0026 Content Access -\u003e We added code to Settings to handle this.\n\nWhat if we just got rid of GMS here.",
       "revId": "2644d7674a757139045617f66b2c3e9725ac211b",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fb9a03de_bceff965",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-09-09T17:06:13Z",
+      "side": 1,
+      "message": "Somehow this whole shtick is working on 3.9.0\n\nI still back this proposal of getting rid of GMS handling here",
+      "parentUuid": "ef1d7a5d_3d973db4",
+      "revId": "2644d7674a757139045617f66b2c3e9725ac211b",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
