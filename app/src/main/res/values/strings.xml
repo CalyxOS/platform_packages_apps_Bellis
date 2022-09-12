@@ -22,4 +22,9 @@
     <string name="remove_profile">Remove work profile</string>
     <string name="remove_profile_confirmation">Are you sure? This will permanently delete your work profile, including all apps inside that profile, their data, and any files.</string>
     <string name="managed_provisioning_not_enabled">Managed provisioning is not enabled</string>
+    <string name="profile_setup_disabled">Unable to setup new work profile</string>
+    <string name="no_work_profile">No work profile found</string>
+    <string name="no_work_profile_help">A work profile can be set up on this device, allowing you to securely and privately use the same device for work and personal purposes</string>
+    <string name="existing_work_profile">Existing work profile found</string>
+    <string name="existing_work_profile_help">To manage the existing work profile, navigate to the &lt;b&gt;WORK&lt;/b&gt; tab in the launcher</string>
 </resources>
