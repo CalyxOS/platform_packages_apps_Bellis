@@ -18,8 +18,9 @@
 <resources>
     <string name="app_name">Work Profile</string>
     <string name="app_and_content_access">App &amp; Content Access</string>
-    <string name="set_up_profile">Set up profile</string>
+    <string name="set_up_profile">Setup Profile</string>
     <string name="remove_profile">Remove managed profile</string>
     <string name="remove_profile_confirmation">Are you sure? This will permanently delete your work profile, including all apps inside that profile, their data, and any files.</string>
     <string name="managed_provisioning_not_enabled">Managed provisioning is not enabled</string>
+    <string name="profile_setup_disabled">Unable to setup new work profiles. Have you already created one \?</string>
 </resources>
