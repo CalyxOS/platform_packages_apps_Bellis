@@ -23,6 +23,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
@@ -35,11 +36,13 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val setupProfileButton = view.findViewById<Button>(R.id.set_up_profile)
+        val setupProfileHintText = view.findViewById<TextView>(R.id.set_up_profile_hint)
 
         if (provisioningAllowed(view.context)) {
             setupProfileButton.setOnClickListener { provisionManagedProfile(view.context) }
         } else {
             setupProfileButton.isEnabled = false
+            setupProfileHintText.visibility = View.VISIBLE
         }
     }
 
