@@ -15,7 +15,8 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,9 +24,33 @@
 
     <Button
         android:id="@+id/set_up_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="100dp"
+        android:text="@string/set_up_profile"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/set_up_profile_hint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/set_up_profile" />
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="20dp"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/profile_setup_disabled"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_up_profile" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
