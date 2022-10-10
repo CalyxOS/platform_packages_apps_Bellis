@@ -18,8 +18,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="org.calyxos.bellis"
-    android:versionCode="101"
-    android:versionName="1.0.1">
+    android:versionCode="103"
+    android:versionName="1.0.3">
+
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
 
     <application
         android:icon="@mipmap/ic_launcher"
