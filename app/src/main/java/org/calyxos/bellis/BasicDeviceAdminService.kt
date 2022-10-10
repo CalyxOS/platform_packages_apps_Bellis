@@ -17,6 +17,11 @@ package org.calyxos.bellis
 
 import android.app.admin.DeviceAdminService
 import android.app.admin.DevicePolicyManager
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
+import android.content.pm.PackageManager
 import android.os.UserManager.DISALLOW_BLUETOOTH_SHARING
 import android.os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES
 import androidx.core.content.edit
@@ -31,12 +36,51 @@ class BasicDeviceAdminService : DeviceAdminService() {
         val devicePolicyManager = getSystemService(DevicePolicyManager::class.java)
         val sharedPreferences = getSharedPreferences(packageName, MODE_PRIVATE)
         val componentName = BasicDeviceAdminReceiver.getComponentName(this)
-        val version = packageManager.getPackageInfo(packageName, 0).longVersionCode
+        val version = packageManager.getPackageInfo(
+            packageName,
+            PackageManager.PackageInfoFlags.of(0)
+        ).longVersionCode
+
+        val packageIntentFilter = IntentFilter().apply {
+            addAction(Intent.ACTION_PACKAGE_ADDED)
+            addAction(Intent.ACTION_PACKAGE_CHANGED)
+            addAction(Intent.ACTION_PACKAGE_REMOVED)
+            addAction(Intent.ACTION_PACKAGE_REPLACED)
+            addDataScheme("package")
+        }
+
+        registerReceiver(object : BroadcastReceiver() {
+            override fun onReceive(context: Context?, intent: Intent?) {
+                if (intent?.getBooleanExtra(Intent.EXTRA_REPLACING, false) == true) {
+                    return
+                }
+                devicePolicyManager?.apply {
+                    setCrossProfilePackages(
+                        componentName,
+                        packageManager.getPackagesHoldingPermissions(
+                            arrayOf(android.Manifest.permission.INTERACT_ACROSS_PROFILES),
+                            PackageManager.PackageInfoFlags.of(0)
+                        ).map { it.packageName }.toMutableSet()
+                    )
+                }
+            }
+        }, packageIntentFilter)
 
         if (sharedPreferences.getLong(prefVersion, 0) < 102) {
-            devicePolicyManager.apply {
+            devicePolicyManager?.apply {
                 clearUserRestriction(componentName, DISALLOW_INSTALL_UNKNOWN_SOURCES)
                 clearUserRestriction(componentName, DISALLOW_BLUETOOTH_SHARING)
+            }
+        }
+
+        if (sharedPreferences.getLong(prefVersion, 0) < 103) {
+            devicePolicyManager?.apply {
+                setCrossProfileCalendarPackages(componentName, null)
+                setCrossProfilePackages(componentName, packageManager.getPackagesHoldingPermissions(
+                    arrayOf(android.Manifest.permission.INTERACT_ACROSS_PROFILES),
+                    PackageManager.PackageInfoFlags.of(0)
+                ).map { it.packageName }
+                    .toMutableSet())
             }
         }
 
