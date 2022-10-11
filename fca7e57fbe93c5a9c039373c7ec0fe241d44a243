@@ -38,6 +38,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "93e8a6cc_2f79d260",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-10-11T18:44:13Z",
+      "side": 1,
+      "message": "Add that to the commit message.\n\nAlso, what is that actually used for and how can we test it?",
+      "parentUuid": "ec75b68f_ff9f59b4",
+      "revId": "fca7e57fbe93c5a9c039373c7ec0fe241d44a243",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ba82dce5_f6d64a53",
         "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
         "patchSetId": 1
