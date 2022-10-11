@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "74bb36c5_5cd6370d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-10-11T11:44:20Z",
+      "side": 1,
+      "message": "Why?",
+      "revId": "fca7e57fbe93c5a9c039373c7ec0fe241d44a243",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ba82dce5_f6d64a53",
         "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
         "patchSetId": 1
@@ -14,6 +31,30 @@
       "writtenOn": "2022-10-11T11:39:52Z",
       "side": 1,
       "message": "This intent is never received, debugging did not reveal a cause",
+      "range": {
+        "startLine": 45,
+        "startChar": 29,
+        "endLine": 45,
+        "endChar": 49
+      },
+      "revId": "fca7e57fbe93c5a9c039373c7ec0fe241d44a243",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "867031a7_465c4ad3",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-10-11T11:44:20Z",
+      "side": 1,
+      "message": "Perhaps it needs the QUERY_ALL_PACKAGES perm now?",
+      "parentUuid": "ba82dce5_f6d64a53",
       "range": {
         "startLine": 45,
         "startChar": 29,
