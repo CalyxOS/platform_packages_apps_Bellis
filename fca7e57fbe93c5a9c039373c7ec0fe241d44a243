@@ -18,6 +18,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec75b68f_ff9f59b4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-10-11T11:48:52Z",
+      "side": 1,
+      "message": "It restricts users from enabling \"Connected work and personal apps\" under Settings -\u003e Apps -\u003e Special app access",
+      "parentUuid": "74bb36c5_5cd6370d",
+      "revId": "fca7e57fbe93c5a9c039373c7ec0fe241d44a243",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ba82dce5_f6d64a53",
@@ -55,6 +73,30 @@
       "side": 1,
       "message": "Perhaps it needs the QUERY_ALL_PACKAGES perm now?",
       "parentUuid": "ba82dce5_f6d64a53",
+      "range": {
+        "startLine": 45,
+        "startChar": 29,
+        "endLine": 45,
+        "endChar": 49
+      },
+      "revId": "fca7e57fbe93c5a9c039373c7ec0fe241d44a243",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b98f9a0e_2d7d5f52",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-10-11T11:48:52Z",
+      "side": 1,
+      "message": "Thought about it. Might give it a shot at a later time",
+      "parentUuid": "867031a7_465c4ad3",
       "range": {
         "startLine": 45,
         "startChar": 29,
