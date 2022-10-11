@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ba82dce5_f6d64a53",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-10-11T11:39:52Z",
+      "side": 1,
+      "message": "This intent is never received, debugging did not reveal a cause",
+      "range": {
+        "startLine": 45,
+        "startChar": 29,
+        "endLine": 45,
+        "endChar": 49
+      },
+      "revId": "fca7e57fbe93c5a9c039373c7ec0fe241d44a243",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
