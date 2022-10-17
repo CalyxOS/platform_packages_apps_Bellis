@@ -19,7 +19,10 @@ import android.app.admin.DeviceAdminService
 import android.app.admin.DevicePolicyManager
 import android.os.UserManager.DISALLOW_BLUETOOTH_SHARING
 import android.os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES
+import android.util.Log
 import androidx.core.content.edit
+
+import lineageos.providers.LineageSettings
 
 class BasicDeviceAdminService : DeviceAdminService() {
 
@@ -41,5 +44,9 @@ class BasicDeviceAdminService : DeviceAdminService() {
         }
 
         sharedPreferences.edit { putLong(prefVersion, version) }
+
+        Log.d("BasicDeviceAdminService", "Cleartext network policy: " +
+            LineageSettings.Global.getInt(contentResolver,
+                LineageSettings.Global.CLEARTEXT_NETWORK_POLICY, 0))
     }
 }
