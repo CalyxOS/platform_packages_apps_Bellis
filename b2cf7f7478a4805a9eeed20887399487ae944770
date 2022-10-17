@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22c14c8b_5e99b270",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-10-17T15:21:24Z",
+      "side": 1,
+      "message": "Works with https://review.calyxos.org/c/CalyxOS/platform_calyx-sdk/+/13940",
+      "revId": "b2cf7f7478a4805a9eeed20887399487ae944770",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
