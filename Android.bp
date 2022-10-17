@@ -12,8 +12,11 @@ android_app {
         "bellis-lib-com.google.android.material_material",
         "kotlinx-coroutines-android",
         "kotlinx-coroutines-core",
+        "org.lineageos.platform.internal",
     ],
 
-    sdk_version: "current",
+    certificate: "platform",
+    privileged: true,
+    platform_apis: true,
     product_specific: true,
 }
