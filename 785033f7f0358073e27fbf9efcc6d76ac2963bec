@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "90a05894_eb7059aa",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-10-17T23:29:05Z",
+      "side": 1,
+      "message": "Do you just check the value here, or do you have to turn it on (and it\u0027s off by default)",
+      "revId": "785033f7f0358073e27fbf9efcc6d76ac2963bec",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cceb86b8_75532413",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-10-17T23:29:05Z",
+      "side": 1,
+      "message": "This just lets the user turn it on for a particular app, right?\n\nIt\u0027s still off by default",
+      "revId": "785033f7f0358073e27fbf9efcc6d76ac2963bec",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
