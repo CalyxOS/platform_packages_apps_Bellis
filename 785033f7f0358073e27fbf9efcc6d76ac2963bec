@@ -18,6 +18,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2aa17d2b_899deaa1",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-10-18T10:23:20Z",
+      "side": 1,
+      "message": "Only need to check the restriction is no longer present in the new version. This will not enable the feature for any app on its own.",
+      "parentUuid": "90a05894_eb7059aa",
+      "revId": "785033f7f0358073e27fbf9efcc6d76ac2963bec",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cceb86b8_75532413",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-10-17T23:29:05Z",
       "side": 1,
       "message": "This just lets the user turn it on for a particular app, right?\n\nIt\u0027s still off by default",
+      "revId": "785033f7f0358073e27fbf9efcc6d76ac2963bec",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3243fde5_fe8d96d3",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-10-18T10:23:20Z",
+      "side": 1,
+      "message": "Yes",
+      "parentUuid": "cceb86b8_75532413",
       "revId": "785033f7f0358073e27fbf9efcc6d76ac2963bec",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
