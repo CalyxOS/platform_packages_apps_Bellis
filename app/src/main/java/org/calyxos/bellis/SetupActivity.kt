@@ -17,28 +17,32 @@
 package org.calyxos.bellis
 
 import android.app.Activity
-import android.content.Context
-import android.content.Intent
+import android.app.admin.DevicePolicyManager
 import android.os.Bundle
+import android.os.PersistableBundle
 
-// TODO: Make this a broadcast receiver instead
 class SetupActivity : Activity() {
-
-    private val setupWizard = "org.lineageos.setupwizard"
-    private val setupWizardActivity = ".SetupWizardActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        PostProvisioningHelper.completeProvisioning(this)
-        navigateBackToFTSW(this)
-    }
-
-    private fun navigateBackToFTSW(context: Context) {
-        val intent = Intent(Intent.ACTION_MAIN).apply {
-            setClassName(setupWizard, setupWizard + setupWizardActivity)
-            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        when (intent.action) {
+            DevicePolicyManager.ACTION_GET_PROVISIONING_MODE -> {
+                val provisioningMode = if (intent.getParcelableExtra(
+                        DevicePolicyManager.EXTRA_PROVISIONING_ADMIN_EXTRAS_BUNDLE,
+                        PersistableBundle::class.java)?.getInt("garlic_level", 0) == 1)
+                    DevicePolicyManager.PROVISIONING_MODE_MANAGED_PROFILE
+                else DevicePolicyManager.PROVISIONING_MODE_FULLY_MANAGED_DEVICE
+                intent.putExtra(DevicePolicyManager.EXTRA_PROVISIONING_MODE, provisioningMode)
+                setResult(RESULT_OK, intent)
+                finish()
+            }
+            DevicePolicyManager.ACTION_ADMIN_POLICY_COMPLIANCE -> {
+                finish()
+            }
+            DevicePolicyManager.ACTION_PROVISIONING_SUCCESSFUL -> {
+                PostProvisioningHelper.completeProvisioning(this)
+            }
         }
-        context.startActivity(intent)
     }
 }
