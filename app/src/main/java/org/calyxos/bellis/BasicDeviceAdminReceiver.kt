@@ -11,7 +11,6 @@ import android.content.ComponentName
 import android.content.Context
 
 class BasicDeviceAdminReceiver : DeviceAdminReceiver() {
-
     companion object {
         fun getComponentName(context: Context): ComponentName {
             return ComponentName(context, BasicDeviceAdminReceiver::class.java.name)
