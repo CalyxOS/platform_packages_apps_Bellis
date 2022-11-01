@@ -18,12 +18,20 @@ package org.calyxos.bellis
 
 import android.app.admin.DevicePolicyManager
 import android.content.Context
+import android.content.pm.PackageManager
+import android.os.Bundle
 import android.os.UserManager
+import android.util.Log
+import androidx.core.os.bundleOf
 
 object PostProvisioningHelper {
 
     private const val PREFS = "post-provisioning"
     private const val PREF_DONE = "done"
+    private const val ORBOT_PKG = "org.torproject.android"
+    private const val CHROMIUM_PKG = "org.chromium.chrome"
+
+    private val TAG = PostProvisioningHelper::class.java.simpleName
     private val userRestrictions = listOf(
         UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES,
         UserManager.DISALLOW_BLUETOOTH_SHARING
@@ -37,25 +45,35 @@ object PostProvisioningHelper {
         "org.microg.nlp.backend.nominatim",
         "com.stevesoltys.seedvault",
         "org.fdroid.fdroid",
-        "org.chromium.chrome"
+        CHROMIUM_PKG
     )
+
 
     fun completeProvisioning(context: Context) {
         if (!provisioningComplete(context)) {
             val devicePolicyManager = context.getSystemService(DevicePolicyManager::class.java)
             val componentName = BasicDeviceAdminReceiver.getComponentName(context)
             devicePolicyManager.apply {
-                setProfileName(componentName, context.getString(R.string.app_name))
-                setProfileEnabled(componentName)
+                if (isProfileOwnerApp(componentName.packageName)) {
+                    setProfileName(componentName, context.getString(R.string.app_name))
+                    setProfileEnabled(componentName)
+                    userRestrictions.forEach { clearUserRestriction(componentName, it) }
+                    requiredPackages.forEach { enableSystemApp(componentName, it) }
+                } else if (isDeviceOwnerApp(componentName.packageName)) {
+                    try {
+                        setAlwaysOnVpnPackage(componentName, ORBOT_PKG, true)
+                        addUserRestriction(componentName, UserManager.DISALLOW_CONFIG_VPN)
+                    } catch (exception: PackageManager.NameNotFoundException) {
+                        Log.e(TAG, "Failed to set always-on VPN", exception)
+                    }
+                    addUserRestriction(componentName, UserManager.DISALLOW_DEBUGGING_FEATURES)
+                    addUserRestriction(
+                        componentName,
+                        UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY
+                    )
 
-                // Clear user restrictions
-                userRestrictions.forEach {
-                    devicePolicyManager.clearUserRestriction(componentName, it)
-                }
-
-                // Enable required packages
-                requiredPackages.forEach {
-                    devicePolicyManager.enableSystemApp(componentName, it)
+                    val bundle = bundleOf("DefaultJavaScriptJitSetting" to 2)
+                    setApplicationRestrictions(componentName, CHROMIUM_PKG, bundle)
                 }
             }
         }
