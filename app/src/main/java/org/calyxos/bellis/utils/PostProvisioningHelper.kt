@@ -6,9 +6,13 @@
 
 package org.calyxos.bellis.utils
 
+import android.app.Activity
 import android.app.admin.DevicePolicyManager
+import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
+import android.os.PersistableBundle
+import android.util.Log
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.OutOfQuotaPolicy
 import androidx.work.WorkManager
@@ -17,8 +21,17 @@ import org.calyxos.bellis.R
 
 object PostProvisioningHelper {
 
+    private val TAG = PostProvisioningHelper::class.java.simpleName
+
+    private const val GARLIC_LEVEL = "garlic_level"
     private const val PREFS = "post-provisioning"
     private const val PREF_DONE = "done"
+
+    private const val ORBOT_PKG = "org.torproject.android"
+
+    private enum class GarlicLevel {
+        STANDARD, SAFER, SAFEST
+    }
 
     fun completeProvisioning(context: Context) {
         if (!provisioningComplete(context)) {
@@ -32,6 +45,15 @@ object PostProvisioningHelper {
                         OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST
                     ).build()
                 )
+
+                // Do required setup for Garlic Level
+                if (context is Activity) {
+                    when (getGarlicLevel(context.intent)) {
+                        GarlicLevel.SAFER -> setupSafer(this, componentName)
+
+                        else -> Log.i(TAG, "Garlic Level: Standard, nothing to do!")
+                    }
+                }
             }
 
             val sharedPreferences = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
@@ -49,13 +71,36 @@ object PostProvisioningHelper {
     }
 
     private fun launchSUW(context: Context) {
-        val setupWizard = "org.lineageos.setupwizard"
-        val setupWizardActivity = ".SetupWizardActivity"
-
-        val intent = Intent(Intent.ACTION_MAIN).apply {
-            setClassName(setupWizard, setupWizard + setupWizardActivity)
-            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        try {
+            val intent = Intent(Intent.ACTION_MAIN).apply {
+                val setupWizard = "org.lineageos.setupwizard"
+                val setupWizardActivity = ".SetupWizardActivity"
+                setClassName(setupWizard, setupWizard + setupWizardActivity)
+                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                addFlags(Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
+            }
+            context.startActivity(intent)
+        } catch (exception: Exception) {
+            Log.e(TAG, "Failed to start setup wizard", exception)
         }
-        context.startActivity(intent)
+    }
+
+    private fun getGarlicLevel(intent: Intent): GarlicLevel {
+        val garlicLevelInt = intent.getParcelableExtra(
+            DevicePolicyManager.EXTRA_PROVISIONING_ADMIN_EXTRAS_BUNDLE,
+            PersistableBundle::class.java
+        )?.getInt(GARLIC_LEVEL, GarlicLevel.STANDARD.ordinal)
+            ?: GarlicLevel.STANDARD.ordinal
+
+        return GarlicLevel.values()[garlicLevelInt]
+    }
+
+    private fun setupSafer(dpm: DevicePolicyManager, componentName: ComponentName) {
+        try {
+            // Set Orbot as always-on-vpn
+            dpm.setAlwaysOnVpnPackage(componentName, ORBOT_PKG, true)
+        } catch (exception: Exception) {
+            Log.e(TAG, "Failed to set always-on VPN", exception)
+        }
     }
 }
