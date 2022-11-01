@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c203d70_81d3c11a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-11-01T18:17:45Z",
+      "side": 1,
+      "message": "Need to guard service creation somehow to stop it from crashing when provisioned as device owner. Also seems we cannot provision work profile but need to check that more.",
+      "revId": "d162ef118abfe342882a48802cb80bcfda2c5d7a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
