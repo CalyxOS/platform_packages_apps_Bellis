@@ -17,8 +17,8 @@
 package org.calyxos.bellis
 
 import android.app.admin.DevicePolicyManager
-import android.content.Intent
 import android.os.Bundle
+import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.NavHostFragment
@@ -27,23 +27,39 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_activity)
-
-        if (!appIsProfileOwner()) {
-            navigateToSetupFragment()
-        }
 
         when (intent.action) {
+            DevicePolicyManager.ACTION_GET_PROVISIONING_MODE -> {
+                val provisioningMode = intent.getParcelableExtra(
+                    DevicePolicyManager.EXTRA_PROVISIONING_ADMIN_EXTRAS_BUNDLE,
+                    PersistableBundle::class.java
+                )?.getInt(DevicePolicyManager.EXTRA_PROVISIONING_MODE, 0)
+
+                intent.putExtra(DevicePolicyManager.EXTRA_PROVISIONING_MODE, provisioningMode)
+                setResult(RESULT_OK, intent)
+                finish()
+                return
+            }
+            DevicePolicyManager.ACTION_ADMIN_POLICY_COMPLIANCE -> {
+                PostProvisioningHelper.completeProvisioning(this)
+                finish()
+                return
+            }
             DevicePolicyManager.ACTION_PROVISIONING_SUCCESSFUL -> {
                 PostProvisioningHelper.completeProvisioning(this)
-                launchSUW()
             }
+        }
+
+        setContentView(R.layout.main_activity)
+
+        if (!isProfileOwnerApp()) {
+            navigateToSetupFragment()
         }
     }
 
-    private fun appIsProfileOwner(): Boolean {
-        val devicePolicyManager = this.getSystemService(DevicePolicyManager::class.java)
-        return devicePolicyManager.isProfileOwnerApp(this.packageName)
+    private fun isProfileOwnerApp(): Boolean {
+        val devicePolicyManager = getSystemService(DevicePolicyManager::class.java)
+        return devicePolicyManager.isProfileOwnerApp(packageName)
     }
 
     private fun navigateToSetupFragment() {
@@ -57,16 +73,5 @@ class MainActivity : AppCompatActivity() {
         navOptions.shouldLaunchSingleTop()
 
         navController.navigate(R.id.setupProfileFragment, null, navOptions)
-    }
-
-    private fun launchSUW() {
-        val setupWizard = "org.lineageos.setupwizard"
-        val setupWizardActivity = ".SetupWizardActivity"
-
-        val intent = Intent(Intent.ACTION_MAIN).apply {
-            setClassName(setupWizard, setupWizard + setupWizardActivity)
-            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-        }
-        startActivity(intent)
     }
 }

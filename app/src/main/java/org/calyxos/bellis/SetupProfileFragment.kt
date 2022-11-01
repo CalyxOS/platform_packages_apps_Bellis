@@ -61,6 +61,7 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
             putExtra(DevicePolicyManager.EXTRA_PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME, component)
             putExtra(DevicePolicyManager.EXTRA_PROVISIONING_MODE,
                 DevicePolicyManager.PROVISIONING_MODE_MANAGED_PROFILE_ON_PERSONAL_DEVICE)
+            putExtra(DevicePolicyManager.EXTRA_PROVISIONING_SKIP_EDUCATION_SCREENS, true)
         }
         try {
             startForResult.launch(intent)
