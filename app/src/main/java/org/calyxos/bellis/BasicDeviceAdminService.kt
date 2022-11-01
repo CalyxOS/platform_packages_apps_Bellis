@@ -31,11 +31,10 @@ class BasicDeviceAdminService : DeviceAdminService() {
         devicePolicyManager = getSystemService(DevicePolicyManager::class.java)
         managedProfile = devicePolicyManager.isProfileOwnerApp(componentName.packageName)
 
-        // Register Broadcast Receiver for handling additional packages
-        // installed after service was created
+        // Register broadcast receivers for any changes to packages
         registerReceivers()
 
-        // Run required migrations on version upgrade for existing apps
+        // Run all necessary migrations on version upgrade for existing device/profile owners
         onUpgrade()
     }
 
