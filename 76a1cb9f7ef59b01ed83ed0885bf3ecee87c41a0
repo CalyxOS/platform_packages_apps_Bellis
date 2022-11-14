@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6275c363_c93b5f5d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-11-14T12:24:34Z",
+      "side": 1,
+      "message": "This is making me think we should test this service with multiple profiles as it may become a blocker for that feature depending how this service works in such scenarios",
+      "revId": "76a1cb9f7ef59b01ed83ed0885bf3ecee87c41a0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
