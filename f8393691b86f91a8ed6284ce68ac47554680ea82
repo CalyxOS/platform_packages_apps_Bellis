@@ -16,6 +16,23 @@
       "message": "Should add an explanation to avoid confusing users.",
       "revId": "f8393691b86f91a8ed6284ce68ac47554680ea82",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e1e360a_6ad5bcfb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-11-14T12:39:45Z",
+      "side": 1,
+      "message": "I\u0027d appreciate if you can add test steps to the commit message",
+      "revId": "f8393691b86f91a8ed6284ce68ac47554680ea82",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
