@@ -16,6 +16,23 @@
       "message": "This is making me think we should test this service with multiple profiles as it may become a blocker for that feature depending how this service works in such scenarios",
       "revId": "76a1cb9f7ef59b01ed83ed0885bf3ecee87c41a0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "09b8aa61_5f9c41ed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-11-14T12:27:11Z",
+      "side": 1,
+      "message": "I\u0027m guessing the need for this patch comes from the device owner usecase (service runs and code is profile owner specific atm)?",
+      "revId": "76a1cb9f7ef59b01ed83ed0885bf3ecee87c41a0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
