@@ -33,6 +33,98 @@
       "message": "I\u0027m guessing the need for this patch comes from the device owner usecase (service runs and code is profile owner specific atm)?",
       "revId": "76a1cb9f7ef59b01ed83ed0885bf3ecee87c41a0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e3ee22d6_227f5664",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-11-14T12:34:58Z",
+      "side": 1,
+      "message": "Nitpick but I think it may make more sense to make this an instance variable given it is used in various functions?",
+      "range": {
+        "startLine": 37,
+        "startChar": 12,
+        "endLine": 37,
+        "endChar": 32
+      },
+      "revId": "76a1cb9f7ef59b01ed83ed0885bf3ecee87c41a0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ed060156_4fd0d1f9",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-11-14T12:34:58Z",
+      "side": 1,
+      "message": "ditto?",
+      "range": {
+        "startLine": 38,
+        "startChar": 12,
+        "endLine": 38,
+        "endChar": 26
+      },
+      "revId": "76a1cb9f7ef59b01ed83ed0885bf3ecee87c41a0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6ea3798d_1b6c73a4",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-11-14T12:34:58Z",
+      "side": 1,
+      "message": "From my testing, this service runs per user. If so, this should be ok since it queries for the user from which this line is executed.",
+      "range": {
+        "startLine": 40,
+        "startChar": 32,
+        "endLine": 40,
+        "endChar": 49
+      },
+      "revId": "76a1cb9f7ef59b01ed83ed0885bf3ecee87c41a0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "153c213b_66db68f6",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-11-14T12:34:58Z",
+      "side": 1,
+      "message": "Maybe make it a local variable if it is always the same (and no need to make it instance since it is directly available from the service class as getPackageManager())?",
+      "range": {
+        "startLine": 98,
+        "startChar": 40,
+        "endLine": 98,
+        "endChar": 54
+      },
+      "revId": "76a1cb9f7ef59b01ed83ed0885bf3ecee87c41a0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
