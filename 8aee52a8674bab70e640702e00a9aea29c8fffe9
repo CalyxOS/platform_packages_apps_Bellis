@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "14002d10_123098b2",
+        "filename": "build.gradle",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-15T12:06:56Z",
+      "side": 1,
+      "message": "Why?\n\nDo it in a separate commit with an explanation.",
+      "revId": "8aee52a8674bab70e640702e00a9aea29c8fffe9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
