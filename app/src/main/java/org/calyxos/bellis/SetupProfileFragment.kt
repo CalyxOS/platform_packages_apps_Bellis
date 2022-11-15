@@ -52,6 +52,8 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
         val intent = Intent(DevicePolicyManager.ACTION_PROVISION_MANAGED_PROFILE).apply {
             val component = BasicDeviceAdminReceiver.getComponentName(context)
             putExtra(DevicePolicyManager.EXTRA_PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME, component)
+            putExtra(DevicePolicyManager.EXTRA_PROVISIONING_MODE,
+                DevicePolicyManager.PROVISIONING_MODE_MANAGED_PROFILE_ON_PERSONAL_DEVICE)
         }
         try {
             startForResult.launch(intent)
