@@ -16,6 +16,24 @@
       "message": "Why?\n\nDo it in a separate commit with an explanation.",
       "revId": "8aee52a8674bab70e640702e00a9aea29c8fffe9",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc394dd1_162e4c54",
+        "filename": "build.gradle",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-11-15T12:10:27Z",
+      "side": 1,
+      "message": "I wrongly committed; I did it because my Android Studio was incompatible.",
+      "parentUuid": "14002d10_123098b2",
+      "revId": "8aee52a8674bab70e640702e00a9aea29c8fffe9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
