@@ -35,6 +35,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0a5d465_2af4832d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-11-15T08:22:11Z",
+      "side": 1,
+      "message": "Yep",
+      "parentUuid": "09b8aa61_5f9c41ed",
+      "revId": "76a1cb9f7ef59b01ed83ed0885bf3ecee87c41a0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e3ee22d6_227f5664",
@@ -58,6 +76,30 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a4d8dd62_b26d255b",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-11-15T08:22:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e3ee22d6_227f5664",
+      "range": {
+        "startLine": 37,
+        "startChar": 12,
+        "endLine": 37,
+        "endChar": 32
+      },
+      "revId": "76a1cb9f7ef59b01ed83ed0885bf3ecee87c41a0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ed060156_4fd0d1f9",
@@ -71,6 +113,30 @@
       "writtenOn": "2022-11-14T12:34:58Z",
       "side": 1,
       "message": "ditto?",
+      "range": {
+        "startLine": 38,
+        "startChar": 12,
+        "endLine": 38,
+        "endChar": 26
+      },
+      "revId": "76a1cb9f7ef59b01ed83ed0885bf3ecee87c41a0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e1c9309_6d73c129",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-11-15T08:22:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ed060156_4fd0d1f9",
       "range": {
         "startLine": 38,
         "startChar": 12,
@@ -117,6 +183,30 @@
       "writtenOn": "2022-11-14T12:34:58Z",
       "side": 1,
       "message": "Maybe make it a local variable if it is always the same (and no need to make it instance since it is directly available from the service class as getPackageManager())?",
+      "range": {
+        "startLine": 98,
+        "startChar": 40,
+        "endLine": 98,
+        "endChar": 54
+      },
+      "revId": "76a1cb9f7ef59b01ed83ed0885bf3ecee87c41a0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e58839a6_90528e1b",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-11-15T08:22:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "153c213b_66db68f6",
       "range": {
         "startLine": 98,
         "startChar": 40,
