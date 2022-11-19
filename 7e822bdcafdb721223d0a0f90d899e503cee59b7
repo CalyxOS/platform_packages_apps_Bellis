@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a6f5008_1e4e91b1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-11-19T06:28:38Z",
+      "side": 1,
+      "message": "Restored comments, trimmed new lines, and switched to inline apply for shared preferences",
+      "revId": "7e822bdcafdb721223d0a0f90d899e503cee59b7",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
