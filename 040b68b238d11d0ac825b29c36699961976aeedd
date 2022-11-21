@@ -16,6 +16,41 @@
       "message": "This works but I also wonder that if we need the declared policies in the file",
       "revId": "040b68b238d11d0ac825b29c36699961976aeedd",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6a182e0_423c3b34",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-21T14:01:09Z",
+      "side": 1,
+      "message": "Not sure about hiding it entirely especially when it\u0027s device owner for Safest garlic level, but for now it should be fine.",
+      "revId": "040b68b238d11d0ac825b29c36699961976aeedd",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "59738446_98a7f07f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-21T14:01:09Z",
+      "side": 1,
+      "message": "I\u0027d remove them all, and then only add things as we start using them.\n\nI do forsee us using some of these eventually (but maybe not here), but stuff like `disable-camera` I don\u0027t ever see us using.",
+      "parentUuid": "17971764_5dedb80b",
+      "revId": "040b68b238d11d0ac825b29c36699961976aeedd",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
