@@ -14,7 +14,7 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-<device-admin>
+<device-admin xmlns:android="http://schemas.android.com/apk/res/android" android:visible="false">
     <uses-policies>
         <limit-password/>
         <watch-login/>
