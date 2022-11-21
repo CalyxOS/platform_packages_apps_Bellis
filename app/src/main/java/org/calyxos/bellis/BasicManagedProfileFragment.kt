@@ -62,6 +62,8 @@ class BasicManagedProfileFragment : Fragment(R.layout.basic_managed_profile_frag
         view.findViewById<View>(R.id.app_and_content_access)?.setOnClickListener {
             val intent = Intent(userSettings).apply {
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY)
                 putExtra(Intent.EXTRA_USER, Process.myUserHandle())
             }
             it.context.startActivity(intent)
