@@ -21,14 +21,16 @@ import android.app.admin.DevicePolicyManager
 import android.content.Intent
 import android.os.Bundle
 import android.os.Process
+import android.util.Log
 import android.view.View
-import android.widget.Button
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class BasicManagedProfileFragment : Fragment(R.layout.basic_managed_profile_fragment) {
 
+    private val TAG = BasicManagedProfileFragment::class.java.simpleName
     private val userSettings = "android.settings.USER_SETTINGS"
 
     class RemoveProfileDialogFragment : DialogFragment() {
@@ -44,6 +46,7 @@ class BasicManagedProfileFragment : Fragment(R.layout.basic_managed_profile_frag
 
         override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
             return MaterialAlertDialogBuilder(requireContext())
+                .setTitle(getString(R.string.remove_profile))
                 .setMessage(getString(R.string.remove_profile_confirmation))
                 .setPositiveButton(android.R.string.ok) { _, _ ->
                     context?.getSystemService(DevicePolicyManager::class.java)?.wipeData(0)
@@ -56,8 +59,12 @@ class BasicManagedProfileFragment : Fragment(R.layout.basic_managed_profile_frag
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.remove_profile)?.setOnClickListener {
-            RemoveProfileDialogFragment.show(this)
+        view.findViewById<Toolbar>(R.id.toolbar)?.setOnMenuItemClickListener {
+            when (it.itemId) {
+                R.id.removeProfile -> RemoveProfileDialogFragment.show(this)
+                else -> Log.d(TAG, "Unexpected itemId: ${it.itemId}")
+            }
+            true
         }
         view.findViewById<View>(R.id.app_and_content_access)?.setOnClickListener {
             val intent = Intent(userSettings).apply {
