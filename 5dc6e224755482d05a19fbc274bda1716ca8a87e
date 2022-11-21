@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b08de9d_229f8786",
+        "filename": "app/src/main/res/values/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-11-21T05:41:13Z",
+      "side": 1,
+      "message": "Keeping it generic as we have seen that provision new profiles is not allowed even when services are crashing. There can be more such issues which we might not be aware of atm.",
+      "revId": "5dc6e224755482d05a19fbc274bda1716ca8a87e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
