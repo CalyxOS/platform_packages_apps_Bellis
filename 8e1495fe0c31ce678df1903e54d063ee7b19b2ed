@@ -16,6 +16,24 @@
       "message": "Could you elaborate?",
       "revId": "8e1495fe0c31ce678df1903e54d063ee7b19b2ed",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "af2c1954_7b263237",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-11-21T22:16:54Z",
+      "side": 1,
+      "message": "I just saw the value and thought it makes sense to use this instead. So far all I can see is that it sets https://cs.android.com/android/platform/superproject/+/master:packages/apps/ManagedProvisioning/src/com/android/managedprovisioning/model/ProvisioningParams.java;l\u003d270;drc\u003df70772e61093063ee1fec3ad8e2bcffb7f00228e;bpv\u003d0;bpt\u003d1 to false.\nWill investigate further impact",
+      "parentUuid": "59dc9f1b_c0fdf16c",
+      "revId": "8e1495fe0c31ce678df1903e54d063ee7b19b2ed",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
