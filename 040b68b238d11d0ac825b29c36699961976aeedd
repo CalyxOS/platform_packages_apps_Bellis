@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "17971764_5dedb80b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-11-21T05:00:37Z",
+      "side": 1,
+      "message": "This works but I also wonder that if we need the declared policies in the file",
+      "revId": "040b68b238d11d0ac825b29c36699961976aeedd",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
