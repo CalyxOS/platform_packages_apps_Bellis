@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50213bd9_9f342cd9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-11-23T09:48:56Z",
+      "side": 1,
+      "message": "Is this so that we can add other fragments in the future?",
+      "revId": "481937ba33c0687893994bf38ab21ab584c9f843",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
