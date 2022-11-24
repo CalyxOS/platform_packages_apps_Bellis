@@ -16,6 +16,24 @@
       "message": "Is this so that we can add other fragments in the future?",
       "revId": "481937ba33c0687893994bf38ab21ab584c9f843",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "325c033b_94b9ada8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-11-24T17:00:59Z",
+      "side": 1,
+      "message": "My reasoning for doing this was to keep the same UI/UX everywhere",
+      "parentUuid": "50213bd9_9f342cd9",
+      "revId": "481937ba33c0687893994bf38ab21ab584c9f843",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
