@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8e3db5eb_d91e66fc",
+        "filename": "app/src/main/java/org/calyxos/bellis/SetupProfileFragment.kt",
+        "patchSetId": 5
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-11-24T16:59:19Z",
+      "side": 1,
+      "message": "That was one of the reasons I wanted to phrase it as a question instead, as there doesn\u0027t seem to be a way to query reason. So we can go with this and improve on the go for now. What does everyone think?",
+      "parentUuid": "f21fd17c_e1d045bd",
+      "range": {
+        "startLine": 48,
+        "startChar": 11,
+        "endLine": 54,
+        "endChar": 17
+      },
+      "revId": "f21abe30eac494c6c57baaba8b1a83187e26b6ed",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "7fc1be61_9e84b587",
         "filename": "app/src/main/res/values/strings.xml",
         "patchSetId": 5
