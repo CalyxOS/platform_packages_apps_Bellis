@@ -48,6 +48,30 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a4cf449d_ef9cadb6",
+        "filename": "app/src/main/java/org/calyxos/bellis/SetupProfileFragment.kt",
+        "patchSetId": 5
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-24T18:08:55Z",
+      "side": 1,
+      "message": "No, we shouldn\u0027t phrase it like a question.\n\n\"Unable to\" is fine.",
+      "parentUuid": "8e3db5eb_d91e66fc",
+      "range": {
+        "startLine": 48,
+        "startChar": 11,
+        "endLine": 54,
+        "endChar": 17
+      },
+      "revId": "f21abe30eac494c6c57baaba8b1a83187e26b6ed",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7fc1be61_9e84b587",
