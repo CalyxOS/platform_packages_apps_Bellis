@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ca5d9c5_f8a86fed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-25T23:40:44Z",
+      "side": 1,
+      "message": "We should do this in two parts\n\n1) Basic skeleton, and set some harmless setting (don\u0027t have any on my mind right now)\n2) Actual settings, so if needed we can easily take out and merge a subset as well.\n\nBut for testing it\u0027d help to even just have it be in a blank device owner state for a start, as we can fix other things (like how Oliver found out you have to explicitly say install system apps otherwise it\u0027d be blank), etc.",
+      "revId": "44089292bd0bc4db8fd88eeff78340a61aeae5d0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "531c8f3d_befaa5f9",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 6
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-25T23:40:44Z",
+      "side": 1,
+      "message": "This also needs some testing.",
+      "revId": "44089292bd0bc4db8fd88eeff78340a61aeae5d0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "61cd1015_2929965e",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 6
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-25T23:40:44Z",
+      "side": 1,
+      "message": "Need to uncomment before merge.",
+      "revId": "44089292bd0bc4db8fd88eeff78340a61aeae5d0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c99477a_5d0fd6e8",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 6
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-25T23:40:44Z",
+      "side": 1,
+      "message": "This would disallow Aurora Store apps. Need to see if that\u0027s what we want.",
+      "revId": "44089292bd0bc4db8fd88eeff78340a61aeae5d0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a50b2aac_4c78c35d",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 6
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-25T23:40:44Z",
+      "side": 1,
+      "message": "It\u0027s nice that this is so simple. Need to test further.",
+      "revId": "44089292bd0bc4db8fd88eeff78340a61aeae5d0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
