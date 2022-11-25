@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <install-in-user-type package="org.calyxos.bellis">
+        <install-in user-type="SYSTEM" />
+        <install-in user-type="android.os.usertype.full.SECONDARY" />
+    </install-in-user-type>
+</config>
