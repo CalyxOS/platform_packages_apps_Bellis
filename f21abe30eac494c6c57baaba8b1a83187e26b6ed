@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd9e12e9_ebf6c568",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-25T20:41:20Z",
+      "side": 1,
+      "message": "Actually one issue with this is\n\n1) Create new profile\n2) Take you through SetupWizard\n3) When you\u0027re done, you\u0027re dropped back in Bellis, which shows this hint, which is even more confusing.",
+      "revId": "f21abe30eac494c6c57baaba8b1a83187e26b6ed",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f21fd17c_e1d045bd",
@@ -97,6 +114,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "87bf72ef_3a3ccc32",
+        "filename": "app/src/main/res/values/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-25T20:41:20Z",
+      "side": 1,
+      "message": "I can\u0027t decide either way. For a start it might be ok.",
+      "parentUuid": "7fc1be61_9e84b587",
+      "range": {
+        "startLine": 27,
+        "startChar": 144,
+        "endLine": 27,
+        "endChar": 174
+      },
+      "revId": "f21abe30eac494c6c57baaba8b1a83187e26b6ed",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "fcc8fefa_f0cbe1c2",
         "filename": "app/src/main/res/values/strings.xml",
         "patchSetId": 5
@@ -108,6 +149,30 @@
       "writtenOn": "2022-11-23T09:47:03Z",
       "side": 1,
       "message": "This makes me realize that we can use some APIs (might be CrossProfile ones) to launch the personal instance from the work instance directly with some UI element",
+      "range": {
+        "startLine": 29,
+        "startChar": 46,
+        "endLine": 29,
+        "endChar": 142
+      },
+      "revId": "f21abe30eac494c6c57baaba8b1a83187e26b6ed",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "afce8ed4_015fa4e9",
+        "filename": "app/src/main/res/values/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-25T20:41:20Z",
+      "side": 1,
+      "message": "This might be the solution to our problem, if we can either exit Bellis after profile creation, or launch work profile Bellis or something like that.",
+      "parentUuid": "fcc8fefa_f0cbe1c2",
       "range": {
         "startLine": 29,
         "startChar": 46,
