@@ -16,4 +16,13 @@ android_app {
 
     sdk_version: "current",
     product_specific: true,
+
+    required: ["preinstalled-packages-org.calyxos.bellis.xml"],
+}
+
+prebuilt_etc {
+    name: "preinstalled-packages-org.calyxos.bellis.xml",
+    product_specific: true,
+    src: "preinstalled-packages-org.calyxos.bellis.xml",
+    sub_dir: "sysconfig",
 }
