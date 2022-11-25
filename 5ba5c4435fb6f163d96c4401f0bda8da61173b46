@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef20ac6b_8301c0ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-11-25T23:06:42Z",
+      "side": 1,
+      "message": "This\u0027ll need some reworking\n\n```\n11-26 04:34:23.715  4935  4935 D GmsCheckinTrigger: Ignoring Intent { act\u003dandroid.intent.action.BOOT_COMPLETED flg\u003d0x89000010 cmp\u003dcom.google.android.gms/org.microg.gms.checkin.TriggerReceiver (has extras) }: device not provisioned\n11-26 04:34:23.786  6076  6076 D GmsGcmTrigger: Ignoring Intent { act\u003dandroid.intent.action.BOOT_COMPLETED flg\u003d0x89000010 cmp\u003dcom.google.android.gms/org.microg.gms.gcm.TriggerReceiver (has extras) }: need to checkin first.\n11-26 04:34:23.791  4935  4935 D GmsCheckinTrigger: Ignoring Intent { act\u003dandroid.server.checkin.CHECKIN flg\u003d0x10 cmp\u003dcom.google.android.gms/org.microg.gms.checkin.TriggerReceiver }: device not provisioned\n11-26 04:35:23.025  6426  6426 D GmsProvision: Provisioning: gcm_enabled \u003d true, checkin_enabled \u003d true, safetynet_enabled \u003d false\n```",
+      "revId": "5ba5c4435fb6f163d96c4401f0bda8da61173b46",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
