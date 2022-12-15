@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2966e2e9_98e50667",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-12-15T11:49:47Z",
+      "side": 1,
+      "message": "Ideally we\n\n* Don\u0027t get too out of sync with AOSP\n* Keep all of our apps in sync.",
+      "revId": "70ce54f1a288d6b9e4d6217256249635a818e643",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
