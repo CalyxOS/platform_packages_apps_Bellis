@@ -120,6 +120,24 @@
       "message": "It\u0027s nice that this is so simple. Need to test further.",
       "revId": "44089292bd0bc4db8fd88eeff78340a61aeae5d0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "604d55e3_897bade8",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 6
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-12-19T12:15:44Z",
+      "side": 1,
+      "message": "One thing to note is we can always revert this on a upgrade through the existing mechanism.",
+      "parentUuid": "a50b2aac_4c78c35d",
+      "revId": "44089292bd0bc4db8fd88eeff78340a61aeae5d0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }

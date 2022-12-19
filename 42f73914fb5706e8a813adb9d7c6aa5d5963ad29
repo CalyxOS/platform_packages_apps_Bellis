@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2fe8a83d_bad1f9c8",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 14
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-12-19T12:15:44Z",
+      "side": 1,
+      "message": "We only want this for garlic level, not any profiles where this is owner.\n\nWe should explicitly check for garlic level here instead.",
+      "revId": "42f73914fb5706e8a813adb9d7c6aa5d5963ad29",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
