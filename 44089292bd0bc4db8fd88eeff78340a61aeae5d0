@@ -156,6 +156,24 @@
       "parentUuid": "a50b2aac_4c78c35d",
       "revId": "44089292bd0bc4db8fd88eeff78340a61aeae5d0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e98f3a97_e96b414a",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 6
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-12-24T12:18:55Z",
+      "side": 1,
+      "message": "Note that without device owner this will only apply to the profile owner",
+      "parentUuid": "604d55e3_897bade8",
+      "revId": "44089292bd0bc4db8fd88eeff78340a61aeae5d0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }

@@ -18,6 +18,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec7e9e8a_3ff9f2dc",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 14
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-12-24T12:18:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2fe8a83d_bad1f9c8",
+      "revId": "42f73914fb5706e8a813adb9d7c6aa5d5963ad29",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "22d12705_f06990a8",
@@ -35,6 +53,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8185a67_658b2c48",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 14
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-12-24T12:18:55Z",
+      "side": 1,
+      "message": "Looks like it is not user modifiable if set by DPM APIs",
+      "parentUuid": "22d12705_f06990a8",
+      "revId": "42f73914fb5706e8a813adb9d7c6aa5d5963ad29",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "44ccb541_c4812dc1",
@@ -48,6 +84,24 @@
       "writtenOn": "2022-12-19T12:51:35Z",
       "side": 1,
       "message": "I wonder if we should do this separately, i.e. maybe not do it now.",
+      "revId": "42f73914fb5706e8a813adb9d7c6aa5d5963ad29",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee49a350_da36be12",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 14
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-12-24T12:18:55Z",
+      "side": 1,
+      "message": "No longer present in current patch sets. Does not seem necessary either way given what I mentioned above",
+      "parentUuid": "44ccb541_c4812dc1",
       "revId": "42f73914fb5706e8a813adb9d7c6aa5d5963ad29",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
