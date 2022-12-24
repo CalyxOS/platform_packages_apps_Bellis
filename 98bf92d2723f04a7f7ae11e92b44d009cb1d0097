@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f2cbfe78_99210e06",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 17
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-12-24T12:24:41Z",
+      "side": 1,
+      "message": "Removing works tag since disallow unknown sources is still an issue",
+      "revId": "98bf92d2723f04a7f7ae11e92b44d009cb1d0097",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
