@@ -125,6 +125,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "2b300d5b_c0a9ff03",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 6
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-12-27T04:22:39Z",
+      "side": 1,
+      "message": "Seems this is the logic: https://cs.android.com/android/platform/superproject/+/master:frameworks/base/packages/PackageInstaller/src/com/android/packageinstaller/PackageInstallerActivity.java;l\u003d249?q\u003dPackageInstallerActivity",
+      "parentUuid": "c7d4b442_601214fa",
+      "revId": "44089292bd0bc4db8fd88eeff78340a61aeae5d0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a50b2aac_4c78c35d",
         "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
         "patchSetId": 6
