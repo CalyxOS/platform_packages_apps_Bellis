@@ -53,6 +53,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7b5b989b_b257d66f",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 17
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-12-27T18:57:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "357f09a2_693d8d1b",
+      "revId": "98bf92d2723f04a7f7ae11e92b44d009cb1d0097",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b77b6f8b_f8abf3c4",
@@ -66,6 +84,24 @@
       "writtenOn": "2022-12-24T15:09:45Z",
       "side": 1,
       "message": "Is this just for testing?",
+      "revId": "98bf92d2723f04a7f7ae11e92b44d009cb1d0097",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df3608b2_3d0a7efa",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 17
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2022-12-27T18:57:51Z",
+      "side": 1,
+      "message": "This list is a set of restrictions that are cleared every time a work profile is created. I added a comment that should clear it.",
+      "parentUuid": "b77b6f8b_f8abf3c4",
       "revId": "98bf92d2723f04a7f7ae11e92b44d009cb1d0097",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
