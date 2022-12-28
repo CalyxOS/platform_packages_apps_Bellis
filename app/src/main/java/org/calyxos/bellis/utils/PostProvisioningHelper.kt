@@ -191,6 +191,12 @@ object PostProvisioningHelper {
                 requiredPasswordComplexity = PASSWORD_COMPLEXITY_HIGH
             }
 
+            // Wipe device after 3 failed attempts
+            setMaximumFailedPasswordsForWipe(componentName, 3)
+
+            // Require entering strong auth after 1 hour has passed
+            setRequiredStrongAuthTimeout(componentName, TimeUnit.HOURS.toMillis(1))
+
             // Disable Javascript JIT in Chromium
             val bundle = bundleOf("DefaultJavaScriptJitSetting" to 2)
             setApplicationRestrictions(componentName, CHROMIUM_PKG, bundle)
