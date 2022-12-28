@@ -25,6 +25,7 @@ import android.content.pm.PackageManager
 import android.os.PersistableBundle
 import android.os.UserManager
 import android.util.Log
+import androidx.core.os.bundleOf
 
 object PostProvisioningHelper {
     private const val ORBOT_PKG = "org.torproject.android"
@@ -38,6 +39,14 @@ object PostProvisioningHelper {
     private val defaultProfileOwnerRestrictions = listOf(
         UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES,
         UserManager.DISALLOW_BLUETOOTH_SHARING,
+    )
+
+    // Default garlic level restrictions to set
+    private val safestProfileOwnerRestrictions = listOf(
+        UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY,
+    )
+    private val safestParentProfileOwnerRestrictions = listOf(
+        UserManager.DISALLOW_DEBUGGING_FEATURES,
     )
 
     // Default apps to enable on creation of new managed profile
@@ -83,6 +92,20 @@ object PostProvisioningHelper {
                             setAlwaysOnVpnPackage(componentName, ORBOT_PKG, true)
                         } catch (exception: PackageManager.NameNotFoundException) {
                             Log.e(TAG, "Failed to set always-on VPN", exception)
+                        }
+
+                        if (garlicLevel == GarlicLevel.SAFEST.ordinal) {
+                            // Set garlic level restrictions
+                            safestProfileOwnerRestrictions.forEach {
+                                addUserRestriction(componentName, it)
+                            }
+                            safestParentProfileOwnerRestrictions.forEach {
+                                getParentProfileInstance(componentName)
+                                    .addUserRestriction(componentName, it)
+                            }
+                            // Disable javascript support in chromium
+                            val bundle = bundleOf("DefaultJavaScriptJitSetting" to 2)
+                            setApplicationRestrictions(componentName, CHROMIUM_PKG, bundle)
                         }
                     }
                 }
