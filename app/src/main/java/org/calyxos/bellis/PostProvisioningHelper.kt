@@ -15,6 +15,8 @@ import android.content.pm.PackageManager
 import android.os.PersistableBundle
 import android.os.UserManager
 import android.util.Log
+import androidx.core.os.bundleOf
+import java.util.concurrent.TimeUnit
 
 object PostProvisioningHelper {
     private const val PREFS = "post-provisioning"
@@ -31,6 +33,14 @@ object PostProvisioningHelper {
     private val defaultProfileOwnerRestrictions = listOf(
         UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES,
         UserManager.DISALLOW_BLUETOOTH_SHARING,
+    )
+
+    // Default garlic level restrictions to set
+    private val safestProfileOwnerRestrictions = listOf(
+        UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY,
+    )
+    private val safestParentProfileOwnerRestrictions = listOf(
+        UserManager.DISALLOW_DEBUGGING_FEATURES,
     )
 
     // Default apps to enable on creation of new managed profile
@@ -83,6 +93,27 @@ object PostProvisioningHelper {
                             } catch (exception: PackageManager.NameNotFoundException) {
                                 Log.e(TAG, "Failed to set always-on VPN", exception)
                             }
+                            if (garlicLevel == GarlicLevel.SAFEST.ordinal) {
+                                // Set garlic level restrictions
+                                if (canUsbDataSignalingBeDisabled()) {
+                                    isUsbDataSignalingEnabled = false
+                                }
+                                safestProfileOwnerRestrictions.forEach {
+                                    addUserRestriction(componentName, it)
+                                }
+                                safestParentProfileOwnerRestrictions.forEach {
+                                    getParentProfileInstance(componentName)
+                                        .addUserRestriction(componentName, it)
+                                }
+                                setMaximumFailedPasswordsForWipe(componentName, 3)
+                                setRequiredStrongAuthTimeout(
+                                    componentName,
+                                    TimeUnit.HOURS.toMillis(1)
+                                )
+                                // Disable Javascript JIT in Chromium
+                                val bundle = bundleOf("DefaultJavaScriptJitSetting" to 2)
+                                setApplicationRestrictions(componentName, CHROMIUM_PKG, bundle)
+                            }
                         }
                     }
 
@@ -100,7 +131,6 @@ object PostProvisioningHelper {
                     }
                 }
             }
-
             val sharedPreferences = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
             sharedPreferences.edit().putBoolean(PREF_DONE, true).apply()
         }
