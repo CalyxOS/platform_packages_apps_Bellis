@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ca24d36d_afbc485b",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 20
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-12-29T12:29:22Z",
+      "side": 1,
+      "message": "This would only be set in the work profile, right?",
+      "revId": "94f52cd48dda4930b816e637eb5ed5f9a804d3f3",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
