@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "da0a87e6_c28b7272",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-12-29T12:28:10Z",
+      "side": 1,
+      "message": "We still need to figure this out wrt Aurora Store.",
+      "revId": "9f9200b022ad048bab4aeea789aee0aa22984fd9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "93274c35_973465f1",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-12-29T12:28:10Z",
+      "side": 1,
+      "message": "javascript JIT.\n\nJavascript is still allowed.",
+      "revId": "9f9200b022ad048bab4aeea789aee0aa22984fd9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
