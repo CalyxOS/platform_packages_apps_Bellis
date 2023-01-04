@@ -16,6 +16,24 @@
       "message": "This would only be set in the work profile, right?",
       "revId": "94f52cd48dda4930b816e637eb5ed5f9a804d3f3",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "181a18a5_e6a70ed4",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 20
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-01-04T16:05:55Z",
+      "side": 1,
+      "message": "Yeah, and as far as I can tell we can\u0027t set it for parent profile with profile owner usecase. https://developer.android.com/reference/android/app/admin/DevicePolicyManager#setAlwaysOnVpnPackage(android.content.ComponentName,%20java.lang.String,%20boolean) It applies only to the current user according to this and it is not part of the APIs that can be called through https://developer.android.com/reference/android/app/admin/DevicePolicyManager#getParentProfileInstance(android.content.ComponentName)",
+      "parentUuid": "ca24d36d_afbc485b",
+      "revId": "94f52cd48dda4930b816e637eb5ed5f9a804d3f3",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
