@@ -8,8 +8,10 @@ package org.calyxos.bellis
 
 import android.app.admin.DevicePolicyManager
 import android.content.ActivityNotFoundException
+import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.os.Bundle
 import android.text.Html
 import android.view.View
@@ -29,6 +31,22 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
         val dpm = view.context.getSystemService(DevicePolicyManager::class.java)
         val setupProfileButton = view.findViewById<Button>(R.id.set_up_profile)
         val setupProfileHintText = view.findViewById<TextView>(R.id.set_up_profile_hint)
+
+        activity?.registerReceiver(
+            object : BroadcastReceiver() {
+                override fun onReceive(context: Context?, intent: Intent?) {
+                    if (intent?.action == Intent.ACTION_MANAGED_PROFILE_REMOVED) {
+                        parentFragmentManager.beginTransaction()
+                            .detach(this@SetupProfileFragment)
+                            .commitNow()
+                        parentFragmentManager.beginTransaction()
+                            .attach(this@SetupProfileFragment)
+                            .commitNow()
+                    }
+                }
+            },
+            IntentFilter(Intent.ACTION_MANAGED_PROFILE_REMOVED)
+        )
 
         if (dpm.isProvisioningAllowed(DevicePolicyManager.ACTION_PROVISION_MANAGED_PROFILE)) {
             setupProfileButton.setOnClickListener { provisionManagedProfile(view.context) }
