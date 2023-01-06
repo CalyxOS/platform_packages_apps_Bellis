@@ -16,6 +16,24 @@
       "message": "This change depends on https://review.calyxos.org/c/CalyxOS/platform_frameworks_base/+/15205\nWe should revert after migration",
       "revId": "0fe9dd97fb8734fc4a735149ef9769d3a5fe3095",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f3a33df_d729bf70",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-01-06T18:33:39Z",
+      "side": 1,
+      "message": "I\u0027d rather keep it around till we have this.\n\nIt doesn\u0027t hurt, does it?\n\nAnd if we remove, keep the 104 here but remove the code too because otherwise it may lead to crashes.",
+      "parentUuid": "c793627d_57089a0e",
+      "revId": "0fe9dd97fb8734fc4a735149ef9769d3a5fe3095",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
