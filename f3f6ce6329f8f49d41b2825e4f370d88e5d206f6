@@ -16,6 +16,24 @@
       "message": "Where is this read / used?",
       "revId": "f3f6ce6329f8f49d41b2825e4f370d88e5d206f6",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "173545db_0f03c26a",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-01-06T18:27:54Z",
+      "side": 1,
+      "message": "This is https://developer.android.com/reference/android/app/admin/DevicePolicyManager#setUsbDataSignalingEnabled(boolean)\nSame as our USB restriction feature",
+      "parentUuid": "f9f5e5ea_643c99a7",
+      "revId": "f3f6ce6329f8f49d41b2825e4f370d88e5d206f6",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
