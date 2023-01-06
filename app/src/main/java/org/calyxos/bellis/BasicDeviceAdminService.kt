@@ -94,6 +94,13 @@ class BasicDeviceAdminService : DeviceAdminService() {
                     }
                 }
             }
+            prefVersion < 104 -> {
+                if (managedProfile) {
+                    devicePolicyManager.apply {
+                        setSecureSetting(componentName, "user_setup_complete", "1")
+                    }
+                }
+            }
         }
 
         sharedPreferences.edit{ putLong("version", currentVersion.longVersionCode) }
