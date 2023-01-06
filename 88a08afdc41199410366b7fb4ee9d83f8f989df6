@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "55b1eef3_b7bb930a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-01-06T18:28:33Z",
+      "side": 1,
+      "message": "Issue: calyxos#1391",
+      "revId": "88a08afdc41199410366b7fb4ee9d83f8f989df6",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
