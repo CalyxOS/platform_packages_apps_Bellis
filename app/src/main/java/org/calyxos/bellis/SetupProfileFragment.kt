@@ -34,8 +34,8 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
     private val startForResult =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {}
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    override fun onResume() {
+        super.onResume()
         val dpm = view.context.getSystemService(DevicePolicyManager::class.java)
         val setupProfileButton = view.findViewById<Button>(R.id.set_up_profile)
         val setupProfileHintText = view.findViewById<TextView>(R.id.set_up_profile_hint)
