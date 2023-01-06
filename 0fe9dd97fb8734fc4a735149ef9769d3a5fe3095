@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c793627d_57089a0e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-01-06T18:31:05Z",
+      "side": 1,
+      "message": "This change depends on https://review.calyxos.org/c/CalyxOS/platform_frameworks_base/+/15205\nWe should revert after migration",
+      "revId": "0fe9dd97fb8734fc4a735149ef9769d3a5fe3095",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
