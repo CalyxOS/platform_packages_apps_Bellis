@@ -20,9 +20,7 @@ import android.app.admin.DevicePolicyManager
 import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
-import android.os.Bundle
 import android.text.Html
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -34,24 +32,29 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
     private val startForResult =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {}
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        val dpm = view.context.getSystemService(DevicePolicyManager::class.java)
-        val setupProfileButton = view.findViewById<Button>(R.id.set_up_profile)
-        val setupProfileHintText = view.findViewById<TextView>(R.id.set_up_profile_hint)
+    override fun onResume() {
+        super.onResume()
+        val dpm = view?.context?.getSystemService(DevicePolicyManager::class.java)
+        val setupProfileButton = view?.findViewById<Button>(R.id.set_up_profile)
+        val setupProfileHintText = view?.findViewById<TextView>(R.id.set_up_profile_hint)
 
-        if (dpm.isProvisioningAllowed(DevicePolicyManager.ACTION_PROVISION_MANAGED_PROFILE)) {
-            setupProfileButton.setOnClickListener { provisionManagedProfile(view.context) }
+        if (dpm?.isProvisioningAllowed(DevicePolicyManager.ACTION_PROVISION_MANAGED_PROFILE) == true) {
+            setupProfileButton?.setOnClickListener {
+                view?.let { view ->
+                    provisionManagedProfile(
+                        view.context
+                    )
+                }
+            }
         } else {
-            setupProfileButton.isEnabled = false
-            setupProfileHintText.visibility = View.VISIBLE
-            view.findViewById<TextView>(R.id.workProfileStatus).text =
-                getString(R.string.existing_work_profile)
-            view.findViewById<TextView>(R.id.workProfileHelp).text =
-                Html.fromHtml(
-                    getString(R.string.existing_work_profile_help),
-                    Html.FROM_HTML_MODE_COMPACT
-                )
+            setupProfileButton?.isEnabled ?: false
+            setupProfileHintText?.visibility = view?.VISIBLE
+            view?.findViewById<TextView>(R.id.workProfileStatus)?.text
+                ?: getString(R.string.existing_work_profile)
+            view?.findViewById<TextView>(R.id.workProfileHelp)?.text ?: Html.fromHtml(
+                getString(R.string.existing_work_profile_help),
+                Html.FROM_HTML_MODE_COMPACT
+            )
         }
     }
 
@@ -59,8 +62,10 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
         val intent = Intent(DevicePolicyManager.ACTION_PROVISION_MANAGED_PROFILE).apply {
             val component = BasicDeviceAdminReceiver.getComponentName(context)
             putExtra(DevicePolicyManager.EXTRA_PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME, component)
-            putExtra(DevicePolicyManager.EXTRA_PROVISIONING_MODE,
-                DevicePolicyManager.PROVISIONING_MODE_MANAGED_PROFILE_ON_PERSONAL_DEVICE)
+            putExtra(
+                DevicePolicyManager.EXTRA_PROVISIONING_MODE,
+                DevicePolicyManager.PROVISIONING_MODE_MANAGED_PROFILE_ON_PERSONAL_DEVICE
+            )
         }
         try {
             startForResult.launch(intent)
