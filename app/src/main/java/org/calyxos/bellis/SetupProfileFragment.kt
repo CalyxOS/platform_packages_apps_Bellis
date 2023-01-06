@@ -8,8 +8,10 @@ package org.calyxos.bellis
 
 import android.app.admin.DevicePolicyManager
 import android.content.ActivityNotFoundException
+import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.os.Bundle
 import android.text.Html
 import android.view.View
@@ -30,9 +32,20 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
         val setupProfileButton = view.findViewById<Button>(R.id.set_up_profile)
         val setupProfileHintText = view.findViewById<TextView>(R.id.set_up_profile_hint)
 
-        if (dpm.isProvisioningAllowed(DevicePolicyManager.ACTION_PROVISION_MANAGED_PROFILE)) {
-            setupProfileButton.setOnClickListener { provisionManagedProfile(view.context) }
-        } else {
+        activity?.registerReceiver(
+            object : BroadcastReceiver() {
+                override fun onReceive(context: Context?, intent: Intent?) {
+                    if (intent?.action == Intent.ACTION_MANAGED_PROFILE_REMOVED) {
+                        setupProfileButton.isEnabled = true
+                    }
+                }
+            },
+            IntentFilter(Intent.ACTION_MANAGED_PROFILE_REMOVED)
+        )
+
+        setupProfileButton.setOnClickListener { provisionManagedProfile(view.context) }
+
+        if (!dpm.isProvisioningAllowed(DevicePolicyManager.ACTION_PROVISION_MANAGED_PROFILE)) {
             setupProfileButton.isEnabled = false
             setupProfileHintText.visibility = View.VISIBLE
             view.findViewById<TextView>(R.id.workProfileStatus).text =
