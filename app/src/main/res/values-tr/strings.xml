@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="set_up_profile">İş profilini ayarla</string>
+    <string name="managed_provisioning_not_enabled">İş kurulumu etkin değil</string>
+    <string name="profile_setup_disabled">Yeni iş profili ayarlanamıyor</string>
+    <string name="manage_work_profile_help">İş uygulamaları, kişisel uygulamalardan ayırt edebilmeniz için bir evrak çantası simgesiyle işaretlenir.</string>
+    <string name="app_name">İş Profili</string>
+    <string name="app_and_content_access">Uygulama ve içerik erişimini yönetin</string>
+    <string name="remove_profile">İş profilini kaldır</string>
+    <string name="remove_profile_confirmation">Emin misiniz\? Bu, iş profilinizi, bu profil içindeki tüm uygulamaları, verilerini ve tüm dosyaları kalıcı olarak silecektir.</string>
+    <string name="no_work_profile">İş profili bulunamadı</string>
+    <string name="no_work_profile_help">Bu aygıtta bir iş profili oluşturularak aynı aygıtı iş ve kişisel amaçlar için güvenli ve özel bir şekilde kullanmanız sağlanabilir</string>
+    <string name="existing_work_profile">Mevcut iş profili bulundu</string>
+    <string name="existing_work_profile_help">Mevcut iş profilini yönetmek için başlatıcıdaki <b>İş</b> sekmesine gidin</string>
+    <string name="manage_work_profile">İş profilini yönet</string>
+</resources>

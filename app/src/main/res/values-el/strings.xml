@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="set_up_profile">Ρύθμιση προφίλ εργασίας</string>
+    <string name="remove_profile">Κατάργηση προφίλ εργασίας</string>
+    <string name="remove_profile_confirmation">Είστε σίγουροι; Αυτό θα διαγράψει μόνιμα το προφίλ εργασίας σας, συμπεριλαμβανομένων όλων των εφαρμογών μέσα σε αυτό το προφίλ, τα δεδομένα τους και τυχόν αρχεία.</string>
+    <string name="profile_setup_disabled">Δεν είναι δυνατή η ρύθμιση νέου προφίλ εργασίας</string>
+    <string name="no_work_profile_help">Μπορείτε να δημιουργήσετε ένα προφίλ εργασίας σε αυτή τη συσκευή, επιτρέποντάς σας να χρησιμοποιείτε με ασφάλεια και ιδιωτικότητα την ίδια συσκευή για επαγγελματικούς και προσωπικούς σκοπούς</string>
+    <string name="existing_work_profile">Βρέθηκε υφιστάμενο προφίλ εργασίας</string>
+    <string name="no_work_profile">Δεν βρέθηκε προφίλ εργασίας</string>
+    <string name="app_name">Προφίλ εργασίας</string>
+    <string name="app_and_content_access">Διαχείριση πρόσβασης εφαρμογών και περιεχομένου</string>
+    <string name="manage_work_profile">Διαχείριση προφίλ εργασίας</string>
+    <string name="managed_provisioning_not_enabled">Η Ρύθμιση εργασίας δεν είναι ενεργοποιημένη</string>
+    <string name="existing_work_profile_help">Για να διαχειριστείτε το υπάρχον προφίλ εργασίας, μεταβείτε στην καρτέλα <b>Εργασίας</b> στο συρτάρι εφαρμογών</string>
+    <string name="manage_work_profile_help">Οι εφαρμογές εργασίας επισημαίνονται με ένα εικονίδιο χαρτοφύλακα, ώστε να μπορείτε να τις ξεχωρίζετε από τις προσωπικές εφαρμογές.</string>
+</resources>

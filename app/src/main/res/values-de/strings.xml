@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="remove_profile">Arbeitsprofil entfernen</string>
+    <string name="managed_provisioning_not_enabled">Arbeitsprofil ist nicht aktiviert</string>
+    <string name="profile_setup_disabled">Neues Arbeitsprofil kann nicht eingerichtet werden</string>
+    <string name="no_work_profile_help">Auf diesem Gerät kann ein Arbeitsprofil eingerichtet werden, so dass du dasselbe Gerät sicher und privat für berufliche und private Zwecke nutzen kannst</string>
+    <string name="existing_work_profile">Vorhandenes Arbeitsprofil gefunden</string>
+    <string name="manage_work_profile">Arbeitsprofil verwalten</string>
+    <string name="manage_work_profile_help">Geschäftliche Apps sind mit einem Aktenkoffersymbol gekennzeichnet, damit du sie von persönlichen Apps unterscheiden kannst.</string>
+    <string name="app_and_content_access">App- und Inhaltszugriff verwalten</string>
+    <string name="app_name">Arbeitsprofil</string>
+    <string name="remove_profile_confirmation">Bist du sicher\? Dadurch wird dein Arbeitsprofil dauerhaft gelöscht, einschließlich aller Apps in diesem Profil, deren Daten und aller Dateien.</string>
+    <string name="set_up_profile">Arbeitsprofil einrichten</string>
+    <string name="no_work_profile">Kein Arbeitsprofil gefunden</string>
+    <string name="existing_work_profile_help">Um ein bestehendes Arbeitsprofil zu verwalten, navigiere im Startbildschirm zur Registerkarte <b>Arbeit</b></string>
+</resources>
