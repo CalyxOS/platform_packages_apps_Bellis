@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Profil służbowy</string>
+    <string name="app_and_content_access">Zarządzanie dostępem do aplikacji i treści</string>
+    <string name="set_up_profile">Konfigurowanie profilu służbowego</string>
+    <string name="remove_profile">Usuń profil służbowy</string>
+    <string name="remove_profile_confirmation">Na pewno chcesz to zrobić\? Spowoduje to trwałe usunięcie Twojego profilu służbowego, w tym wszystkich aplikacji znajdujących się w tym profilu, ich danych oraz wszelkich plików.</string>
+    <string name="managed_provisioning_not_enabled">Profil służbowy nie jest włączony</string>
+    <string name="profile_setup_disabled">Nie można skonfigurować nowego profilu służbowego</string>
+    <string name="no_work_profile">Nie znaleziono profilu służbowego</string>
+    <string name="existing_work_profile">Znaleziono istniejący profil służbowy</string>
+    <string name="manage_work_profile">Zarządzaj profilem służbowym</string>
+    <string name="existing_work_profile_help">Aby zarządzać istniejącym profilem służbowym, przejdź do zakładki <b>Praca</b> w launcherze</string>
+    <string name="no_work_profile_help">Na tym urządzeniu można skonfigurować profil służbowy, co pozwala na bezpieczne i prywatne korzystanie z tego samego urządzenia do celów służbowych i osobistych</string>
+    <string name="manage_work_profile_help">Aplikacje służbowe są oznaczone ikoną aktówki, dzięki czemu można je odróżnić od aplikacji osobistych.</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Робочий профіль</string>
+    <string name="set_up_profile">Налаштувати робочий профіль</string>
+    <string name="remove_profile">Видалити робочий профіль</string>
+    <string name="remove_profile_confirmation">Ви впевнені\? Це назавжди видалить ваш робочий профіль, включно з усіма застосунками в цьому профілі, їхніми даними та файлами.</string>
+    <string name="no_work_profile">Робочий профіль не знайдено</string>
+    <string name="manage_work_profile">Керувати робочим профілем</string>
+    <string name="app_and_content_access">Керування доступом застосунків та вмісту</string>
+    <string name="managed_provisioning_not_enabled">Налаштування роботи не ввімкнено</string>
+    <string name="existing_work_profile">Знайдено існуючий робочий профіль</string>
+    <string name="existing_work_profile_help">Щоб керувати наявним робочим профілем, перейдіть на вкладку <b>Робота</b> на панелі запуску</string>
+    <string name="profile_setup_disabled">Не вдається налаштувати новий робочий профіль</string>
+    <string name="no_work_profile_help">На цьому пристрої можна налаштувати робочий профіль, що дозволить вам безпечно та приватно використовувати той самий пристрій для роботи та особистих цілей</string>
+    <string name="manage_work_profile_help">Робочі застосунки позначені значком портфеля, щоб ви могли відрізнити їх від особистих застосунків.</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">פרופיל עבודה</string>
+    <string name="set_up_profile">הגדרת פרופיל עבודה</string>
+    <string name="remove_profile">הסרת פרופיל עבודה</string>
+    <string name="remove_profile_confirmation">להמשיך\? פעולה זאת תמחק את פרופיל העבודה שלך לצמיתות, כולל את כל היישומונים בתוך הפרופיל הזה, הנתונים שלהם וקבצים כלשהם אם יש.</string>
+    <string name="managed_provisioning_not_enabled">התקנת עבודה לא פעילה</string>
+    <string name="profile_setup_disabled">לא ניתן להגדיר פרופיל עבודה חדש</string>
+    <string name="app_and_content_access">ניהול גישה ליישומונים ולתוכן</string>
+    <string name="no_work_profile">לא נמצא פרופיל עבודה</string>
+    <string name="existing_work_profile">נמצא פרופיל עבודה קיים</string>
+    <string name="manage_work_profile">ניהול פרופיל עבודה</string>
+    <string name="manage_work_profile_help">ליישומוני עבודה יש סימול של תיקייה כדי שניתן יהיה להבחין ביניהם לבין היישומונים האישיים.</string>
+    <string name="existing_work_profile_help">כדי לנהל את פרופיל העבודה הקיים, יש לנווט ללשונית <b>עבודה</b> בדף הבית</string>
+    <string name="no_work_profile_help">אפשר להגדיר פרופיל עבודה על המכשיר הזה, מה שמאפשר לך להשתמש באופן פרטי ומאובטח למטרות עבודה וצרכים אישיים</string>
+</resources>
