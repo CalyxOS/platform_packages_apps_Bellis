@@ -34,6 +34,23 @@
       "parentUuid": "ca24d36d_afbc485b",
       "revId": "94f52cd48dda4930b816e637eb5ed5f9a804d3f3",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37365e35_95e2b040",
+        "filename": "app/src/main/java/org/calyxos/bellis/SetupProfileFragment.kt",
+        "patchSetId": 20
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-01-18T22:47:25Z",
+      "side": 1,
+      "message": "Oh, is this why the education screens still don\u0027t appear even when reverting I45dd540b? Here or somewhere like it, anyway. I\u0027ll have to removing this to see if it gives enough time to fix the race.\n\nBtw, if I just let the device sit for a while on the very first Welcome screen after a reset/first start, I don\u0027t seem to encounter any problems later, even if I skip through the setup as quickly as I can. Might be a coincidence but I\u0027m not so sure, as it\u0027s been fairly repeatable.",
+      "revId": "94f52cd48dda4930b816e637eb5ed5f9a804d3f3",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
