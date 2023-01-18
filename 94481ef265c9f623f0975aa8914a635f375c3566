@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "773b4a34_927b9ae5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-01-18T18:04:38Z",
+      "side": 1,
+      "message": "Now it says \"No work profile found\" here when there already is one.",
+      "revId": "94481ef265c9f623f0975aa8914a635f375c3566",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1f03b059_e0f614a2",
+        "filename": "app/src/main/java/org/calyxos/bellis/SetupProfileFragment.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-01-18T18:04:38Z",
+      "side": 1,
+      "message": "warning: the expression is unused",
+      "revId": "94481ef265c9f623f0975aa8914a635f375c3566",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
