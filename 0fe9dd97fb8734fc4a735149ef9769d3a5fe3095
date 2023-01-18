@@ -52,6 +52,23 @@
       "parentUuid": "9f3a33df_d729bf70",
       "revId": "0fe9dd97fb8734fc4a735149ef9769d3a5fe3095",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eb58b319_77aa8417",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-01-18T17:03:01Z",
+      "side": 1,
+      "message": "Test: Just manually set this setting, then install a build with this commit.",
+      "revId": "0fe9dd97fb8734fc4a735149ef9769d3a5fe3095",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
