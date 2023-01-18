@@ -3,6 +3,40 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ec87f0f7_400e4206",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-01-18T22:43:25Z",
+      "side": 1,
+      "message": "I might not be adding any new information here, but this function apparently isn\u0027t getting called when encountering the race we\u0027ve been discussing. (Adding an informational log line here might be helpful too, though.)\n\nWhen the race happens, this from uid 1000 is *missing* from logs: `I DevicePolicyManager: Sending android.intent.action.MANAGED_PROFILE_ADDED broadcast to manifest receivers.`\n\nNo idea why at the moment. 😞 But [DevicePolicyManager#setProfileEnabled](https://cs.android.com/android/platform/superproject/+/android-13.0.0_r18:frameworks/base/services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java;l\u003d9185) is involved here.\n\nI\u0027ve been testing with SetupWizard ignoring `isUserSetupComplete` via I7128a696 and it hasn\u0027t resolved this.",
+      "revId": "f3f6ce6329f8f49d41b2825e4f370d88e5d206f6",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e99e119b_2339416a",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-01-18T22:43:25Z",
+      "side": 1,
+      "message": "nitpick: `Log.e(TAG,`",
+      "revId": "f3f6ce6329f8f49d41b2825e4f370d88e5d206f6",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "f9f5e5ea_643c99a7",
         "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
         "patchSetId": 3
