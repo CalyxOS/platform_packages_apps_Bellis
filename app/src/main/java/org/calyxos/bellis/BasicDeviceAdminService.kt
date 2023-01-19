@@ -59,16 +59,19 @@ class BasicDeviceAdminService : DeviceAdminService() {
                 addDataScheme("package")
             }
 
-            registerReceiver(object : BroadcastReceiver() {
-                override fun onReceive(context: Context?, intent: Intent?) {
-                    if (intent?.getBooleanExtra(Intent.EXTRA_REPLACING, false) == true) {
-                        return
+            registerReceiver(
+                object : BroadcastReceiver() {
+                    override fun onReceive(context: Context?, intent: Intent?) {
+                        if (intent?.getBooleanExtra(Intent.EXTRA_REPLACING, false) == true) {
+                            return
+                        }
+                        devicePolicyManager.apply {
+                            setCrossProfilePackages(componentName, getCrossProfilePackages())
+                        }
                     }
-                    devicePolicyManager.apply {
-                        setCrossProfilePackages(componentName, getCrossProfilePackages())
-                    }
-                }
-            }, packageIntentFilter)
+                },
+                packageIntentFilter
+            )
         }
     }
 
@@ -103,7 +106,7 @@ class BasicDeviceAdminService : DeviceAdminService() {
             }
         }
 
-        sharedPreferences.edit{ putLong("version", currentVersion.longVersionCode) }
+        sharedPreferences.edit { putLong("version", currentVersion.longVersionCode) }
     }
 
     private fun getCrossProfilePackages(): Set<String> {
@@ -116,5 +119,4 @@ class BasicDeviceAdminService : DeviceAdminService() {
             ) ?: false
         }.map { it.packageName }.toSet()
     }
-
 }
