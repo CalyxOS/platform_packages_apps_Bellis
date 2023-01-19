@@ -91,6 +91,24 @@
       "message": "`[CalyxOS](https://calyxos.org)`",
       "revId": "0303a39962df39e55f929bcdc82756bc33966274",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "95aa27a7_8cdf9e3d",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-01-19T18:26:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3ed2f5da_7a019070",
+      "revId": "0303a39962df39e55f929bcdc82756bc33966274",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
