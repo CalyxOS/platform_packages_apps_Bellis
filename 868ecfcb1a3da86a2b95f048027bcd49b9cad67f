@@ -16,6 +16,29 @@
       "message": "Thanks!",
       "revId": "868ecfcb1a3da86a2b95f048027bcd49b9cad67f",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "abb4353f_75d6e59a",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2023-01-19T23:24:15Z",
+      "side": 1,
+      "message": "Shouldn\u0027t these be linking to CalyxOS repo?",
+      "range": {
+        "startLine": 25,
+        "startChar": 30,
+        "endLine": 25,
+        "endChar": 41
+      },
+      "revId": "868ecfcb1a3da86a2b95f048027bcd49b9cad67f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ],
   "submitRequirementResults": [
