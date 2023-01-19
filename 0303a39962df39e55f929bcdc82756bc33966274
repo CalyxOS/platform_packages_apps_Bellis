@@ -16,6 +16,29 @@
       "message": "Good to have imo",
       "revId": "0303a39962df39e55f929bcdc82756bc33966274",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dac47c58_d1382f16",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-01-19T09:38:24Z",
+      "side": 1,
+      "message": "Reason for using specific shasum: https://github.com/android/enterprise-samples/issues/56",
+      "range": {
+        "startLine": 4,
+        "startChar": 52,
+        "endLine": 4,
+        "endChar": 163
+      },
+      "revId": "0303a39962df39e55f929bcdc82756bc33966274",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
