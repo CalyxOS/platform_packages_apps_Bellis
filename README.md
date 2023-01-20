@@ -22,9 +22,9 @@ Among the various features, the most notable ones are:
 
 ## Screenshots
 
-[<img src="https://gitlab.com/theimpulson/platform_packages_apps_Bellis/-/raw/tmp/assets/screenshot-01.png" width=250>](https://gitlab.com/theimpulson/platform_packages_apps_Bellis/-/raw/tmp/assets/screenshot-01.png)
-[<img src="https://gitlab.com/theimpulson/platform_packages_apps_Bellis/-/raw/tmp/assets/screenshot-02.png" width=250>](https://gitlab.com/theimpulson/platform_packages_apps_Bellis/-/raw/tmp/assets/screenshot-02.png)
-[<img src="https://gitlab.com/theimpulson/platform_packages_apps_Bellis/-/raw/tmp/assets/screenshot-03.png" width=250>](https://gitlab.com/theimpulson/platform_packages_apps_Bellis/-/raw/tmp/assets/screenshot-03.png)
+[<img src="https://gitlab.com/CalyxOS/platform_packages_apps_Bellis/-/raw/android13/assets/screenshot-01.png" width=250>](https://gitlab.com/CalyxOS/platform_packages_apps_Bellis/-/raw/android13/assets/screenshot-01.png)
+[<img src="https://gitlab.com/CalyxOS/platform_packages_apps_Bellis/-/raw/android13/assets/screenshot-02.png" width=250>](https://gitlab.com/CalyxOS/platform_packages_apps_Bellis/-/raw/android13/assets/screenshot-02.png)
+[<img src="https://gitlab.com/CalyxOS/platform_packages_apps_Bellis/-/raw/android13/assets/screenshot-03.png" width=250>](https://gitlab.com/CalyxOS/platform_packages_apps_Bellis/-/raw/android13/assets/screenshot-03.png)
 
 ## Development
 
