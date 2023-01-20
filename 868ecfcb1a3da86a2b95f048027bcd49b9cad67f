@@ -39,6 +39,30 @@
       },
       "revId": "868ecfcb1a3da86a2b95f048027bcd49b9cad67f",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d1dbd1a6_6634ef1f",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-01-20T03:58:28Z",
+      "side": 1,
+      "message": "Indeed, addressed in: I02a07e79d0e6143220f7bd8738484c9beddaf1fc",
+      "parentUuid": "abb4353f_75d6e59a",
+      "range": {
+        "startLine": 25,
+        "startChar": 30,
+        "endLine": 25,
+        "endChar": 41
+      },
+      "revId": "868ecfcb1a3da86a2b95f048027bcd49b9cad67f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ],
   "submitRequirementResults": [
