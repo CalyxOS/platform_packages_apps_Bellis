@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="set_up_profile">Inizializza profilo di lavoro</string>
+    <string name="no_work_profile_help">Un profilo di lavoro può essere impostato su questo dispositivo, consentendo di utilizzare in modo sicuro e privato lo stesso dispositivo per lavoro e scopi personali</string>
+    <string name="no_work_profile">Nessun profilo di lavoro trovato</string>
+    <string name="app_and_content_access">Gestisci app &amp; accesso ai contenuti</string>
+    <string name="remove_profile">Rimuovi profilo di lavoro</string>
+    <string name="remove_profile_confirmation">Sei sicuro\? Questo eliminerà definitivamente il tuo profilo di lavoro, incluse tutte le app all\'interno di tale profilo, i loro dati e qualsiasi file.</string>
+    <string name="manage_work_profile">Gestisci profilo di lavoro</string>
+    <string name="profile_setup_disabled">Impossibile inizializzare un nuovo profilo di lavoro</string>
+    <string name="manage_work_profile_help">Le app di lavoro sono contrassegnate con l\'icona di una valigetta in modo da poterle distinguere dalle app personali.</string>
+    <string name="app_name">Profilo di lavoro</string>
+    <string name="managed_provisioning_not_enabled">Inzializzazione lavoro non è abilitata</string>
+    <string name="existing_work_profile">Profilo di lavoro esistente trovato</string>
+    <string name="existing_work_profile_help">Per gestire il profilo di lavoro esistente, passa alla scheda <b>Lavoro</b> nel launcher</string>
+</resources>
