@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="no_work_profile_help">Neste dispositivo pódese configurar un perfil de traballo, que che permite usar o mesmo dispositivo de forma segura e privada para fins laborais e persoais</string>
+    <string name="existing_work_profile">Atopouse o perfil de traballo existente</string>
+    <string name="no_work_profile">Non se atopou ningún perfil de traballo</string>
+    <string name="remove_profile">Eliminalo perfil de traballo</string>
+    <string name="app_name">Perfil de traballo</string>
+    <string name="app_and_content_access">Xestionalo acceso á aplicación e ao contido</string>
+    <string name="set_up_profile">Configuralo perfil do traballo</string>
+    <string name="remove_profile_confirmation">Atopaste seguro\? Isto eliminará permanentemente o teu perfil de traballo, incluídas todalas aplicacións dese perfil, os seus datos e calquera ficheiro.</string>
+    <string name="profile_setup_disabled">Non se puido configuralo novo perfil de traballo</string>
+    <string name="managed_provisioning_not_enabled">A configuración do traballo non está activada</string>
+    <string name="manage_work_profile_help">As aplicacións de traballo están marcadas cunha icona de maletín para que poidas distinguilos das aplicacións persoais.</string>
+    <string name="manage_work_profile">Xestionalo perfil de traballo</string>
+    <string name="existing_work_profile_help">Para xestionalo perfil de traballo existente, vai ata a pestana <b>Work</b> no iniciador</string>
+</resources>
