@@ -70,6 +70,24 @@
       "parentUuid": "4c7d101d_0b2eeac0",
       "revId": "007c5f6953352663d096c69056b845c67aece3b8",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8b45a73e_c6e01ee0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-02-22T14:32:18Z",
+      "side": 1,
+      "message": "Basic formatting will display screenshots in their original size using quite a lot of space in README. Using HTML works on both as relative link formatting isn\u0027t identical on GitHub and GitLab and we host/mirror on both.",
+      "parentUuid": "d646cd8b_a29693ea",
+      "revId": "007c5f6953352663d096c69056b845c67aece3b8",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
