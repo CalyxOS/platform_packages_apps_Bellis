@@ -1,3 +1,8 @@
+//
+// SPDX-FileCopyrightText: 2022 The Calyx Institute
+// SPDX-License-Identifier: Apache-2.0
+//
+
 android_library_import {
     name: "bellis-lib-com.google.android.material_material-nodeps",
     aars: ["material-1.6.1.aar"],

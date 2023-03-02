@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: 2022 The Calyx Institute
+  SPDX-License-Identifier: Apache-2.0
+  -->
 <config>
     <install-in-user-type package="org.calyxos.bellis">
         <install-in user-type="SYSTEM" />
