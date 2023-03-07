@@ -22,6 +22,7 @@ class BasicDeviceAdminService : DeviceAdminService() {
 
     private lateinit var devicePolicyManager: DevicePolicyManager
     private lateinit var componentName: ComponentName
+    private lateinit var packageReceiver: BroadcastReceiver
     private var managedProfile: Boolean = false
 
     override fun onCreate() {
@@ -39,6 +40,11 @@ class BasicDeviceAdminService : DeviceAdminService() {
         onUpgrade()
     }
 
+    override fun onDestroy() {
+        unregisterReceivers()
+        super.onDestroy()
+    }
+
     private fun registerReceivers() {
         if (managedProfile) {
             val packageIntentFilter = IntentFilter().apply {
@@ -49,19 +55,23 @@ class BasicDeviceAdminService : DeviceAdminService() {
                 addDataScheme("package")
             }
 
-            registerReceiver(
-                object : BroadcastReceiver() {
-                    override fun onReceive(context: Context?, intent: Intent?) {
-                        if (intent?.getBooleanExtra(Intent.EXTRA_REPLACING, false) == true) {
-                            return
-                        }
-                        devicePolicyManager.apply {
-                            setCrossProfilePackages(componentName, getCrossProfilePackages())
-                        }
+            packageReceiver = object : BroadcastReceiver() {
+                override fun onReceive(context: Context?, intent: Intent?) {
+                    if (intent?.getBooleanExtra(Intent.EXTRA_REPLACING, false) == true) {
+                        return
                     }
-                },
-                packageIntentFilter
-            )
+                    devicePolicyManager.apply {
+                        setCrossProfilePackages(componentName, getCrossProfilePackages())
+                    }
+                }
+            }
+            registerReceiver(packageReceiver, packageIntentFilter)
+        }
+    }
+
+    private fun unregisterReceivers() {
+        if (managedProfile) {
+            unregisterReceiver(packageReceiver)
         }
     }
 
