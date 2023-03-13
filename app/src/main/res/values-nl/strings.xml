@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Werkprofiel</string>
+    <string name="app_and_content_access">Beheer app &amp; contenttoegang</string>
+    <string name="set_up_profile">Stel werkprofiel in</string>
+    <string name="remove_profile">Verwijder werkprofiel</string>
+    <string name="managed_provisioning_not_enabled">Werkinstellingen zijn niet ingeschakeld</string>
+    <string name="profile_setup_disabled">Het was niet mogelijk een nieuw werkprofiel in te stellen</string>
+    <string name="no_work_profile">Er is geen werkprofiel gevonden</string>
+    <string name="no_work_profile_help">Een werkprofiel kan op dit apparaat worden ingesteld zodat je veilig en afgescherm hetzelfde apparaat kan gebruiken voor werk- en privédoeleinden</string>
+    <string name="existing_work_profile">Bestaand werkprofiel is gevonden</string>
+    <string name="existing_work_profile_help">Om het bestaande werkprofiel te beheren, ga naar de <b>Werktab</b> in de launcher</string>
+    <string name="manage_work_profile">Beheer werkprofiel</string>
+    <string name="manage_work_profile_help">Werkapps zijn gemarkeerd met een koffericoon zodat je ze kan onderscheiden van persoonlijke apps.</string>
+    <string name="remove_profile_confirmation">Weet je het zeker\? Dit zal permanent je werkprofiel verwijderen, inclusief alle apps in dat profiel, de bijbehorende gegevens en bestanden.</string>
+</resources>
