@@ -24,6 +24,30 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "eeb5bd7e_f29757cc",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-03-14T17:44:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "443dff62_6933fdf0",
+      "range": {
+        "startLine": 36,
+        "startChar": 4,
+        "endLine": 36,
+        "endChar": 24
+      },
+      "revId": "feca1e0654e12369df89adcabfaa81989d12231b",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "67719c99_966e8e47",
@@ -37,6 +61,30 @@
       "writtenOn": "2023-03-13T23:17:57Z",
       "side": 1,
       "message": "not sure if it is preferable to keep initialization here or to move it to class level?",
+      "range": {
+        "startLine": 68,
+        "startChar": 12,
+        "endLine": 68,
+        "endChar": 28
+      },
+      "revId": "feca1e0654e12369df89adcabfaa81989d12231b",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c9817052_b71fcc96",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-03-14T17:44:50Z",
+      "side": 1,
+      "message": "I thought about moving it but this is the only place it is being used and all it does is use a method that is also used by the service. Maybe we can move later if we add more code to this?",
+      "parentUuid": "67719c99_966e8e47",
       "range": {
         "startLine": 68,
         "startChar": 12,
