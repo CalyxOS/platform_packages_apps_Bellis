@@ -6,8 +6,10 @@
 
 package org.calyxos.bellis
 
+import android.Manifest.permission.POST_NOTIFICATIONS
 import android.app.Activity
 import android.app.admin.DevicePolicyManager
+import android.app.admin.DevicePolicyManager.PERMISSION_GRANT_STATE_GRANTED
 import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
@@ -101,6 +103,10 @@ object PostProvisioningHelper {
                         } catch (exception: PackageManager.NameNotFoundException) {
                             Log.e(TAG, "Failed to set always-on VPN", exception)
                         }
+                        setPermissionGrantState(
+                            componentName, ORBOT_PKG,
+                            POST_NOTIFICATIONS, PERMISSION_GRANT_STATE_GRANTED
+                        )
                         context.sendBroadcast(Intent(ORBOT_ACTION_START).setPackage(ORBOT_PKG))
 
                         if (garlicLevel == GarlicLevel.SAFEST.ordinal) {
