@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e45ad67_bc96dfdb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-03-15T20:27:21Z",
+      "side": 1,
+      "message": "Working for me, and Orbot starts after reboot!\n\n(Needs our bundled F-Droid repo to be updated to include the newer Orbot.)",
+      "revId": "86da88f2f694db586abf4844b164b79a5a9dec5c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
