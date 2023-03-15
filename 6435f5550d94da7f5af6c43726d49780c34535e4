@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "63432b95_997e7c35",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-03-15T21:33:17Z",
+      "side": 1,
+      "message": "Side effect: \"The permission is granted to the app and the user cannot manage the permission through the UI.\"\n\nhttps://developer.android.com/reference/android/app/admin/DevicePolicyManager#PERMISSION_GRANT_STATE_GRANTED",
+      "revId": "6435f5550d94da7f5af6c43726d49780c34535e4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
