@@ -32,6 +32,7 @@ object PostProvisioningHelper {
     private const val PREF_DONE = "done"
 
     private const val ORBOT_PKG = "org.torproject.android"
+    private const val ORBOT_ACTION_START = "org.torproject.android.intent.action.START"
     private const val CHROMIUM_PKG = "org.chromium.chrome"
 
     private enum class GarlicLevel {
@@ -54,9 +55,9 @@ object PostProvisioningHelper {
                 // Do required setup for Garlic Level
                 if (context is Activity) {
                     when (getGarlicLevel(context.intent)) {
-                        GarlicLevel.SAFER -> setupSafer(this, componentName)
+                        GarlicLevel.SAFER -> setupSafer(this, componentName, context)
 
-                        GarlicLevel.SAFEST -> setupSafest(this, componentName)
+                        GarlicLevel.SAFEST -> setupSafest(this, componentName, context)
 
                         else -> Log.i(TAG, "Garlic Level: Standard, nothing to do!")
                     }
@@ -102,18 +103,19 @@ object PostProvisioningHelper {
         return GarlicLevel.values()[garlicLevelInt]
     }
 
-    private fun setupSafer(dpm: DevicePolicyManager, componentName: ComponentName) {
+    private fun setupSafer(dpm: DevicePolicyManager, componentName: ComponentName, ctx: Context) {
         try {
-            // Set Orbot as always-on-vpn
+            // Set Orbot as always-on-vpn and start it
             dpm.setAlwaysOnVpnPackage(componentName, ORBOT_PKG, true)
+            ctx.sendBroadcast(Intent(ORBOT_ACTION_START).setPackage(ORBOT_PKG))
         } catch (exception: Exception) {
             Log.e(TAG, "Failed to set always-on VPN", exception)
         }
     }
 
-    private fun setupSafest(dpm: DevicePolicyManager, componentName: ComponentName) {
+    private fun setupSafest(dpm: DevicePolicyManager, componentName: ComponentName, ctx: Context) {
         // Apply Safer settings
-        setupSafer(dpm, componentName)
+        setupSafer(dpm, componentName, ctx)
 
         dpm.apply {
             // Disable USB data signaling if possible
