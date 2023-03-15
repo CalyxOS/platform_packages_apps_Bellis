@@ -31,6 +31,7 @@ object PostProvisioningHelper {
     private const val PREF_DONE = "done"
 
     private const val ORBOT_PKG = "org.torproject.android"
+    private const val ORBOT_ACTION_START = "org.torproject.android.intent.action.START"
     private const val CHROMIUM_PKG = "org.chromium.chrome"
 
     private enum class GarlicLevel {
@@ -106,8 +107,9 @@ object PostProvisioningHelper {
             val devicePolicyManager = context.getSystemService(DevicePolicyManager::class.java)
             val componentName = BasicDeviceAdminReceiver.getComponentName(context)
 
-            // Set Orbot as always-on-vpn
+            // Set Orbot as always-on-vpn and start it
             devicePolicyManager.setAlwaysOnVpnPackage(componentName, ORBOT_PKG, true)
+            context.sendBroadcast(Intent(ORBOT_ACTION_START).setPackage(ORBOT_PKG))
         } catch (exception: Exception) {
             Log.e(TAG, "Failed to set always-on VPN", exception)
         }
