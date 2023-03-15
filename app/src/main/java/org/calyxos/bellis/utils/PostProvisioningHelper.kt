@@ -6,8 +6,10 @@
 
 package org.calyxos.bellis.utils
 
+import android.Manifest.permission.POST_NOTIFICATIONS
 import android.app.Activity
 import android.app.admin.DevicePolicyManager
+import android.app.admin.DevicePolicyManager.PERMISSION_GRANT_STATE_GRANTED
 import android.content.Context
 import android.content.Intent
 import android.os.PersistableBundle
@@ -104,11 +106,18 @@ object PostProvisioningHelper {
 
     private fun setupOrbot(context: Context) {
         try {
-            val devicePolicyManager = context.getSystemService(DevicePolicyManager::class.java)
             val componentName = BasicDeviceAdminReceiver.getComponentName(context)
 
             // Set Orbot as always-on-vpn and start it
-            devicePolicyManager.setAlwaysOnVpnPackage(componentName, ORBOT_PKG, true)
+            context.getSystemService(DevicePolicyManager::class.java).apply {
+                setAlwaysOnVpnPackage(componentName, ORBOT_PKG, true)
+                setPermissionGrantState(
+                    componentName,
+                    ORBOT_PKG,
+                    POST_NOTIFICATIONS,
+                    PERMISSION_GRANT_STATE_GRANTED
+                )
+            }
             context.sendBroadcast(Intent(ORBOT_ACTION_START).setPackage(ORBOT_PKG))
         } catch (exception: Exception) {
             Log.e(TAG, "Failed to set always-on VPN", exception)
