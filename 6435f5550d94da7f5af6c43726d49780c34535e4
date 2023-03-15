@@ -16,6 +16,24 @@
       "message": "Side effect: \"The permission is granted to the app and the user cannot manage the permission through the UI.\"\n\nhttps://developer.android.com/reference/android/app/admin/DevicePolicyManager#PERMISSION_GRANT_STATE_GRANTED",
       "revId": "6435f5550d94da7f5af6c43726d49780c34535e4",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "64587532_826b55c6",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-03-15T21:36:17Z",
+      "side": 1,
+      "message": "Good catch, but I can\u0027t confirm that behavior. I have no issue turning off the notifications. Maybe it doesn\u0027t apply to work profiles or it works differently for POST_NOTIFICATIONS specifically.",
+      "parentUuid": "63432b95_997e7c35",
+      "revId": "6435f5550d94da7f5af6c43726d49780c34535e4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
