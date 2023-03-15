@@ -18,6 +18,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6768418e_6e695431",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-03-15T20:25:48Z",
+      "side": 1,
+      "message": "Oliver fixed the race condition.",
+      "parentUuid": "ec87f0f7_400e4206",
+      "revId": "f3f6ce6329f8f49d41b2825e4f370d88e5d206f6",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e99e119b_2339416a",
@@ -31,6 +49,24 @@
       "writtenOn": "2023-01-18T22:43:25Z",
       "side": 1,
       "message": "nitpick: `Log.e(TAG,`",
+      "revId": "f3f6ce6329f8f49d41b2825e4f370d88e5d206f6",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "108fa219_a20f54dc",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-03-15T20:25:48Z",
+      "side": 1,
+      "message": "This was introduced in I3f0273af and is fixed now.",
+      "parentUuid": "e99e119b_2339416a",
       "revId": "f3f6ce6329f8f49d41b2825e4f370d88e5d206f6",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
