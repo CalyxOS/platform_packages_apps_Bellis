@@ -24,6 +24,7 @@ object PostProvisioningHelper {
     private const val PREF_DONE = "done"
 
     private const val ORBOT_PKG = "org.torproject.android"
+    private const val ORBOT_ACTION_START = "org.torproject.android.intent.action.START"
     private const val CHROMIUM_PKG = "org.chromium.chrome"
 
     private const val GARLIC_LEVEL = "garlic_level"
@@ -101,6 +102,7 @@ object PostProvisioningHelper {
                         } catch (exception: PackageManager.NameNotFoundException) {
                             Log.e(TAG, "Failed to set always-on VPN", exception)
                         }
+                        context.sendBroadcast(Intent(ORBOT_ACTION_START).setPackage(ORBOT_PKG))
 
                         if (garlicLevel == GarlicLevel.SAFEST.ordinal) {
                             // Set garlic level restrictions
