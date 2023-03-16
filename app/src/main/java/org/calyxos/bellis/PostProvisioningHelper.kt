@@ -11,10 +11,10 @@ import android.app.admin.DevicePolicyManager
 import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.os.PersistableBundle
 import android.os.UserManager
 import android.util.Log
+import androidx.core.content.edit
 import androidx.core.os.bundleOf
 import java.util.concurrent.TimeUnit
 
@@ -56,7 +56,7 @@ object PostProvisioningHelper {
         CHROMIUM_PKG
     )
 
-    private enum class GarlicLevel {
+    enum class GarlicLevel {
         STANDARD, SAFER, SAFEST
     }
 
@@ -74,6 +74,7 @@ object PostProvisioningHelper {
                             it
                         )
                     }
+
                     systemApps.forEach {
                         try {
                             enableSystemApp(componentName, it)
@@ -87,43 +88,48 @@ object PostProvisioningHelper {
                             DevicePolicyManager.EXTRA_PROVISIONING_ADMIN_EXTRAS_BUNDLE,
                             PersistableBundle::class.java
                         )?.getInt(GARLIC_LEVEL, GarlicLevel.STANDARD.ordinal)
-                        if (garlicLevel != GarlicLevel.STANDARD.ordinal) {
-                            try {
-                                setAlwaysOnVpnPackage(componentName, ORBOT_PKG, true)
-                            } catch (exception: PackageManager.NameNotFoundException) {
-                                Log.e(TAG, "Failed to set always-on VPN", exception)
+                        val sharedPreferences = context.getSharedPreferences(
+                            context.packageName,
+                            Context.MODE_PRIVATE
+                        )
+                        sharedPreferences.edit { putInt("garlicLevel", garlicLevel) }
+
+                        try {
+                            setAlwaysOnVpnPackage(componentName, ORBOT_PKG, true)
+                        } catch (exception: PackageManager.NameNotFoundException) {
+                            Log.e(TAG, "Failed to set always-on VPN", exception)
+                        }
+
+                        if (garlicLevel == GarlicLevel.SAFEST.ordinal) {
+                            // Set garlic level restrictions
+                            if (canUsbDataSignalingBeDisabled()) {
+                                isUsbDataSignalingEnabled = false
                             }
-                            if (garlicLevel == GarlicLevel.SAFEST.ordinal) {
-                                // Set garlic level restrictions
-                                if (canUsbDataSignalingBeDisabled()) {
-                                    isUsbDataSignalingEnabled = false
-                                }
-                                safestProfileOwnerRestrictions.forEach {
-                                    addUserRestriction(componentName, it)
-                                }
-                                safestParentProfileOwnerRestrictions.forEach {
-                                    getParentProfileInstance(componentName)
-                                        .addUserRestriction(componentName, it)
-                                }
-                                setMaximumFailedPasswordsForWipe(componentName, 3)
-                                setRequiredStrongAuthTimeout(
-                                    componentName,
-                                    TimeUnit.HOURS.toMillis(1)
-                                )
-                                // Disable Javascript JIT in Chromium
-                                val bundle = bundleOf("DefaultJavaScriptJitSetting" to 2)
-                                setApplicationRestrictions(componentName, CHROMIUM_PKG, bundle)
+                            safestProfileOwnerRestrictions.forEach {
+                                addUserRestriction(componentName, it)
                             }
+                            safestParentProfileOwnerRestrictions.forEach {
+                                getParentProfileInstance(componentName)
+                                    .addUserRestriction(componentName, it)
+                            }
+                            setMaximumFailedPasswordsForWipe(componentName, 3)
+                            setRequiredStrongAuthTimeout(
+                                componentName,
+                                TimeUnit.HOURS.toMillis(1)
+                            )
+                            // Disable Javascript JIT in Chromium
+                            val bundle = bundleOf("DefaultJavaScriptJitSetting" to 2)
+                            setApplicationRestrictions(componentName, CHROMIUM_PKG, bundle)
                         }
                     }
-
                     try {
                         val intent = Intent(Intent.ACTION_MAIN).apply {
                             val setupWizard = "org.lineageos.setupwizard"
                             val setupWizardActivity = ".SetupWizardActivity"
                             setClassName(setupWizard, setupWizard + setupWizardActivity)
-                            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                            addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                             addFlags(Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
+                            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                         }
                         context.startActivity(intent)
                     } catch (e: ActivityNotFoundException) {
