@@ -16,6 +16,7 @@ import android.os.PersistableBundle
 import android.os.UserManager.DISALLOW_DEBUGGING_FEATURES
 import android.os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY
 import android.util.Log
+import androidx.core.content.edit
 import androidx.core.os.bundleOf
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.OutOfQuotaPolicy
@@ -28,14 +29,16 @@ object PostProvisioningHelper {
 
     private val TAG = PostProvisioningHelper::class.java.simpleName
 
-    private const val GARLIC_LEVEL = "garlic_level"
     private const val PREFS = "post-provisioning"
+    private const val PREFS_GARLIC = "garlic_preferences"
+
+    private const val GARLIC_LEVEL = "garlic_level"
     private const val PREF_DONE = "done"
 
     private const val ORBOT_PKG = "org.torproject.android"
     private const val CHROMIUM_PKG = "org.chromium.chrome"
 
-    private enum class GarlicLevel {
+    enum class GarlicLevel {
         STANDARD, SAFER, SAFEST
     }
 
@@ -77,6 +80,16 @@ object PostProvisioningHelper {
         sharedPreferences.edit().putBoolean(PREF_DONE, true).apply()
     }
 
+    /**
+     * Gets garlic level stored in the application's sharedpref
+     * To read the value from intent, use the overloaded method that takes Intent as param
+     */
+    fun getGarlicLevel(context: Context): GarlicLevel {
+        val sharedPreferences = context.getSharedPreferences(PREFS_GARLIC, Context.MODE_PRIVATE)
+        val garlicLevelInt = sharedPreferences.getInt(GARLIC_LEVEL, GarlicLevel.STANDARD.ordinal)
+        return GarlicLevel.values()[garlicLevelInt]
+    }
+
     fun provisioningComplete(context: Context): Boolean {
         val sharedPreferences = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
         return sharedPreferences.getBoolean(PREF_DONE, false)
@@ -107,6 +120,11 @@ object PostProvisioningHelper {
         return GarlicLevel.values()[garlicLevelInt]
     }
 
+    private fun saveGarlicLevel(garlicLevel: GarlicLevel, context: Context) {
+        val sharedPreferences = context.getSharedPreferences(PREFS_GARLIC, Context.MODE_PRIVATE)
+        sharedPreferences.edit { putInt(GARLIC_LEVEL, garlicLevel.ordinal) }
+    }
+
     private fun setupOrbot(context: Context) {
         try {
             val componentName = BasicDeviceAdminReceiver.getComponentName(context)
@@ -129,6 +147,9 @@ object PostProvisioningHelper {
     private fun setupSafer(context: Context) {
         // Do required setup for orbot
         setupOrbot(context)
+
+        // Save garlic level
+        saveGarlicLevel(GarlicLevel.SAFER, context)
     }
 
     private fun setupSafest(context: Context) {
@@ -155,5 +176,8 @@ object PostProvisioningHelper {
             val bundle = bundleOf("DefaultJavaScriptJitSetting" to 2)
             setApplicationRestrictions(componentName, CHROMIUM_PKG, bundle)
         }
+
+        // Save garlic level
+        saveGarlicLevel(GarlicLevel.SAFEST, context)
     }
 }
