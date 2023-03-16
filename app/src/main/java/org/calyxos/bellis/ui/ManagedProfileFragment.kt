@@ -8,6 +8,7 @@ package org.calyxos.bellis.ui
 
 import android.app.Dialog
 import android.app.admin.DevicePolicyManager
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.Process
@@ -26,6 +27,13 @@ class ManagedProfileFragment : Fragment(R.layout.managed_profile_fragment) {
     private val TAG = ManagedProfileFragment::class.java.simpleName
     private val userSettings = "android.settings.USER_SETTINGS"
 
+    companion object {
+        fun shouldAllowRemoveProfile(context: Context): Boolean {
+            return PostProvisioningHelper.getGarlicLevel(context) !=
+                PostProvisioningHelper.GarlicLevel.SAFEST
+        }
+    }
+
     class RemoveProfileDialogFragment : DialogFragment() {
 
         companion object {
@@ -42,7 +50,9 @@ class ManagedProfileFragment : Fragment(R.layout.managed_profile_fragment) {
                 .setTitle(getString(R.string.remove_profile))
                 .setMessage(getString(R.string.remove_profile_confirmation))
                 .setPositiveButton(android.R.string.ok) { _, _ ->
-                    context?.getSystemService(DevicePolicyManager::class.java)?.wipeData(0)
+                    if (shouldAllowRemoveProfile(requireContext())) {
+                        context?.getSystemService(DevicePolicyManager::class.java)?.wipeData(0)
+                    }
                 }
                 .setNegativeButton(android.R.string.cancel, null)
                 .create()
@@ -51,6 +61,13 @@ class ManagedProfileFragment : Fragment(R.layout.managed_profile_fragment) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        view.findViewById<View>(R.id.removeProfile)?.visibility =
+            if (shouldAllowRemoveProfile(view.context)) {
+                View.VISIBLE
+            } else {
+                View.GONE
+            }
 
         view.findViewById<Toolbar>(R.id.toolbar)?.setOnMenuItemClickListener {
             when (it.itemId) {
