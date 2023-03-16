@@ -15,6 +15,7 @@ import android.content.pm.PackageManager
 import android.os.PersistableBundle
 import android.os.UserManager
 import android.util.Log
+import androidx.core.content.edit
 import androidx.core.os.bundleOf
 import java.util.concurrent.TimeUnit
 
@@ -56,7 +57,7 @@ object PostProvisioningHelper {
         CHROMIUM_PKG
     )
 
-    private enum class GarlicLevel {
+    enum class GarlicLevel {
         STANDARD, SAFER, SAFEST
     }
 
@@ -74,11 +75,32 @@ object PostProvisioningHelper {
                             it
                         )
                     }
-                    systemApps.forEach {
+                }
+
+                if (context is Activity) {
+                    val garlicLevel = context.intent.getParcelableExtra(
+                        DevicePolicyManager.EXTRA_PROVISIONING_ADMIN_EXTRAS_BUNDLE,
+                        PersistableBundle::class.java
+                    )?.getInt(GARLIC_LEVEL, GarlicLevel.STANDARD.ordinal)
+                        ?: GarlicLevel.STANDARD.ordinal
+                    if (garlicLevel != GarlicLevel.STANDARD.ordinal) {
+                        val sharedPreferences = context.getSharedPreferences(
+                            context.packageName,
+                            Context.MODE_PRIVATE
+                        )
+                        sharedPreferences.edit { putInt("garlicLevel", garlicLevel) }
+                        systemApps.forEach {
+                            try {
+                                enableSystemApp(componentName, it)
+                            } catch (e: IllegalArgumentException) {
+                                Log.e(TAG, "Failed to enable $it")
+                            }
+                        }
+
                         try {
-                            enableSystemApp(componentName, it)
-                        } catch (e: IllegalArgumentException) {
-                            Log.e(TAG, "Failed to enable $it")
+                            setAlwaysOnVpnPackage(componentName, ORBOT_PKG, true)
+                        } catch (exception: PackageManager.NameNotFoundException) {
+                            Log.e(TAG, "Failed to set always-on VPN", exception)
                         }
 
                         if (garlicLevel == GarlicLevel.SAFEST.ordinal) {
@@ -94,39 +116,29 @@ object PostProvisioningHelper {
                                     .addUserRestriction(componentName, it)
                             }
                             setMaximumFailedPasswordsForWipe(componentName, 3)
-                            setRequiredStrongAuthTimeout(componentName, TimeUnit.HOURS.toMillis(1))
+                            setRequiredStrongAuthTimeout(
+                                componentName,
+                                TimeUnit.HOURS.toMillis(1)
+                            )
                             // Disable Javascript JIT in Chromium
                             val bundle = bundleOf("DefaultJavaScriptJitSetting" to 2)
                             setApplicationRestrictions(componentName, CHROMIUM_PKG, bundle)
                         }
                     }
+                }
 
-                    if (context is Activity) {
-                        val garlicLevel = context.intent.getParcelableExtra(
-                            DevicePolicyManager.EXTRA_PROVISIONING_ADMIN_EXTRAS_BUNDLE,
-                            PersistableBundle::class.java
-                        )?.getInt(GARLIC_LEVEL, 0)
-                        if (garlicLevel != GarlicLevel.STANDARD.ordinal) {
-                            try {
-                                setAlwaysOnVpnPackage(componentName, ORBOT_PKG, true)
-                            } catch (exception: PackageManager.NameNotFoundException) {
-                                Log.e(TAG, "Failed to set always-on VPN", exception)
-                            }
-                        }
+                try {
+                    val intent = Intent(Intent.ACTION_MAIN).apply {
+                        val setupWizard = "org.lineageos.setupwizard"
+                        val setupWizardActivity = ".SetupWizardActivity"
+                        setClassName(setupWizard, setupWizard + setupWizardActivity)
+                        addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                        addFlags(Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
+                        addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                     }
-
-                    try {
-                        val intent = Intent(Intent.ACTION_MAIN).apply {
-                            val setupWizard = "org.lineageos.setupwizard"
-                            val setupWizardActivity = ".SetupWizardActivity"
-                            setClassName(setupWizard, setupWizard + setupWizardActivity)
-                            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                            addFlags(Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
-                        }
-                        context.startActivity(intent)
-                    } catch (e: ActivityNotFoundException) {
-                        Log.e(TAG, "Failed to start setup wizard")
-                    }
+                    context.startActivity(intent)
+                } catch (e: ActivityNotFoundException) {
+                    Log.e(TAG, "Failed to start setup wizard")
                 }
             }
 
