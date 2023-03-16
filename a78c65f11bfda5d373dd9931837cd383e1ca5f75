@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c640976b_86b355f0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-03-16T22:23:21Z",
+      "side": 1,
+      "message": "Safer can\u0027t be removed, possibly regular work profiles can\u0027t be removed either",
+      "revId": "a78c65f11bfda5d373dd9931837cd383e1ca5f75",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
