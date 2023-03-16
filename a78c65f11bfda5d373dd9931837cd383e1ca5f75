@@ -51,6 +51,24 @@
       "message": "Okay, annoying, but an inner class can\u0027t be used for this. Crash when trying to delete profile:\n`java.lang.IllegalStateException: Fragment org.calyxos.bellis.BasicManagedProfileFragment.RemoveProfileDialogFragment must be a public static class to be  properly recreated from instance state.`\n\nI wanted to be able to have sensibly-shared methods between this dialog and the outer class - that\u0027s why I removed the companion object, since you can\u0027t have an inner class with a companion object - but it\u0027s just not that easy.",
       "revId": "a78c65f11bfda5d373dd9931837cd383e1ca5f75",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6b675d60_9e13e70f",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicManagedProfileFragment.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-03-16T22:56:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "799317df_d84a4e33",
+      "revId": "a78c65f11bfda5d373dd9931837cd383e1ca5f75",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
