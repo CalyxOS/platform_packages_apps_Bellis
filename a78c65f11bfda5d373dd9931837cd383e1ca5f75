@@ -16,6 +16,41 @@
       "message": "Safer can\u0027t be removed, possibly regular work profiles can\u0027t be removed either",
       "revId": "a78c65f11bfda5d373dd9931837cd383e1ca5f75",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca973121_c2817434",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-03-16T22:29:32Z",
+      "side": 1,
+      "message": "Ack, I think I was looking in the wrong place...",
+      "parentUuid": "c640976b_86b355f0",
+      "revId": "a78c65f11bfda5d373dd9931837cd383e1ca5f75",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "799317df_d84a4e33",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicManagedProfileFragment.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-03-16T22:29:32Z",
+      "side": 1,
+      "message": "Okay, annoying, but an inner class can\u0027t be used for this. Crash when trying to delete profile:\n`java.lang.IllegalStateException: Fragment org.calyxos.bellis.BasicManagedProfileFragment.RemoveProfileDialogFragment must be a public static class to be  properly recreated from instance state.`\n\nI wanted to be able to have sensibly-shared methods between this dialog and the outer class - that\u0027s why I removed the companion object, since you can\u0027t have an inner class with a companion object - but it\u0027s just not that easy.",
+      "revId": "a78c65f11bfda5d373dd9931837cd383e1ca5f75",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
