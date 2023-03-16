@@ -15,6 +15,7 @@ import android.content.pm.PackageManager
 import android.os.PersistableBundle
 import android.os.UserManager
 import android.util.Log
+import androidx.core.content.edit
 import androidx.core.os.bundleOf
 import java.util.concurrent.TimeUnit
 
@@ -53,7 +54,7 @@ object PostProvisioningHelper {
         CHROMIUM_PKG
     )
 
-    private enum class GarlicLevel {
+    enum class GarlicLevel {
         STANDARD, SAFER, SAFEST
     }
 
@@ -77,8 +78,11 @@ object PostProvisioningHelper {
                     val garlicLevel = context.intent.getParcelableExtra(
                         DevicePolicyManager.EXTRA_PROVISIONING_ADMIN_EXTRAS_BUNDLE,
                         PersistableBundle::class.java
-                    )?.getInt(GARLIC_LEVEL, 0)
+                    )?.getInt(GARLIC_LEVEL, 0) ?: GarlicLevel.STANDARD.ordinal
                     if (garlicLevel != GarlicLevel.STANDARD.ordinal) {
+                        val sharedPreferences = context.getSharedPreferences(context.packageName,
+                            Context.MODE_PRIVATE)
+                        sharedPreferences.edit { putInt("garlicLevel", garlicLevel) }
                         try {
                             setAlwaysOnVpnPackage(componentName, ORBOT_PKG, true)
                         } catch (exception: PackageManager.NameNotFoundException) {
