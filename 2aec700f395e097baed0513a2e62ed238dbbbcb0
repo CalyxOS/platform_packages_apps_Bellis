@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "364b3603_0ee9df72",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 24
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-03-17T20:37:13Z",
+      "side": 1,
+      "message": "We need `setResult(RESULT_OK)` here to provision fully and support ever adding another profile again! See https://gitlab.com/CalyxOS/calyxos/-/issues/1540 for details",
+      "revId": "2aec700f395e097baed0513a2e62ed238dbbbcb0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
