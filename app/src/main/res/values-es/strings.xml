@@ -8,7 +8,7 @@
     <string name="manage_work_profile">Gestionar el perfil de trabajo</string>
     <string name="manage_work_profile_help">Las aplicaciones de trabajo están marcadas con el icono de un maletín para que puedas distinguirlas de las aplicaciones personales.</string>
     <string name="managed_provisioning_not_enabled">La configuración de trabajo no está activada</string>
-    <string name="app_name">Perfil laboral</string>
+    <string name="app_name">Perfil de trabajo</string>
     <string name="no_work_profile">No se ha encontrado ningún perfil de trabajo</string>
     <string name="remove_profile_confirmation">¿Estás seguro\? Esto eliminará permanentemente tu perfil de trabajo, incluyendo todas las aplicaciones dentro de ese perfil, sus datos y cualquier archivo.</string>
     <string name="no_work_profile_help">Se puede establecer un perfil de trabajo en este dispositivo, lo que le permite utilizar de forma segura y privada el mismo dispositivo para fines laborales y personales</string>

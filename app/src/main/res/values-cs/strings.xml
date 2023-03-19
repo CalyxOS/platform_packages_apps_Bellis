@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="existing_work_profile_help">Chcete-li spravovat existující pracovní profil, přejděte na kartu <b>Pracovní</b> v přehledu aplikací</string>
+    <string name="manage_work_profile_help">Pracovní aplikace jsou označeny ikonou aktovky, abyste je mohli odlišit od osobních aplikací.</string>
+    <string name="app_and_content_access">Spravovat přístup k aplikacím a obsahu</string>
+    <string name="app_name">Pracovní profil</string>
+    <string name="set_up_profile">Nastavit pracovní profil</string>
+    <string name="profile_setup_disabled">Nelze nastavit pracovní profil</string>
+    <string name="existing_work_profile">Byl nalezen pracovní profil</string>
+    <string name="no_work_profile_help">Na tomto zařízení lze nastavit pracovní profil, který vám umožní bezpečně a soukromě používat stejné zařízení pro pracovní i osobní účely</string>
+    <string name="no_work_profile">Nebyl nalezen žádný pracovní profil</string>
+    <string name="remove_profile">Odstranit pracovní profil</string>
+    <string name="manage_work_profile">Správa pracovního profilu</string>
+    <string name="remove_profile_confirmation">Jste si jisti\? Tímto se trvale odstraní váš pracovní profil, včetně všech aplikací v tomto profilu, jejich dat a souborů.</string>
+    <string name="managed_provisioning_not_enabled">Nastavení práce není povoleno</string>
+</resources>
