@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a5407335_2bd63315",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 6
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-03-23T15:08:44Z",
+      "side": 1,
+      "message": "Given this is not a value that\u0027s supposed to change after setup this should be fine. If that ever changes we need to be careful about something like this",
+      "range": {
+        "startLine": 84,
+        "startChar": 0,
+        "endLine": 84,
+        "endChar": 85
+      },
+      "revId": "18f4ed8cb2e315a0c16bf1901f6c938bf5ff9271",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
