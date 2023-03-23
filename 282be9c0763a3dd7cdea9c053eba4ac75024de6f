@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1c6021d3_ccb5ae64",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 7
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-03-23T15:10:25Z",
+      "side": 1,
+      "message": "Could we start an activity instead or it is not possible? If I recall correctly this is a mechanism orbot added by default to listen to this broadcast externally?",
+      "range": {
+        "startLine": 92,
+        "startChar": 32,
+        "endLine": 92,
+        "endChar": 45
+      },
+      "revId": "282be9c0763a3dd7cdea9c053eba4ac75024de6f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
