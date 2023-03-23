@@ -18,6 +18,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "48037640_021a4db1",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-03-23T15:13:10Z",
+      "side": 1,
+      "message": "Should be addressed by https://review.calyxos.org/c/CalyxOS/platform_frameworks_base/+/15201",
+      "parentUuid": "da0a87e6_c28b7272",
+      "revId": "9f9200b022ad048bab4aeea789aee0aa22984fd9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "93274c35_973465f1",
