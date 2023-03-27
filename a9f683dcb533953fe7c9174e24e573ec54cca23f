@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5ddc70d8_bee92827",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-03-27T12:47:54Z",
+      "side": 1,
+      "message": "Just enabling the button won\u0027t work as the UI will keep showing text saying no work profile found. Recreating fragment is a better way.",
+      "revId": "a9f683dcb533953fe7c9174e24e573ec54cca23f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
