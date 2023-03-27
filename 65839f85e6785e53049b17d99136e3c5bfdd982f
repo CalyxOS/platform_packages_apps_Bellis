@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e47d838_629cb7d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-03-27T07:09:43Z",
+      "side": 1,
+      "message": "Test:\n\n* Create a new work profile (existing one is fine as well)\n* Open both (personal and work) instances of the app\n* Ensure personal instance has button disabled, switch to work instance\n* Delete the work profile, switch to personal instance again\n* Ensure the button is now active and works as before",
+      "revId": "65839f85e6785e53049b17d99136e3c5bfdd982f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}

@@ -33,6 +33,24 @@
       "message": "warning: the expression is unused",
       "revId": "94481ef265c9f623f0975aa8914a635f375c3566",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70678270_2a9334be",
+        "filename": "app/src/main/java/org/calyxos/bellis/SetupProfileFragment.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-03-27T07:09:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "1f03b059_e0f614a2",
+      "revId": "94481ef265c9f623f0975aa8914a635f375c3566",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
