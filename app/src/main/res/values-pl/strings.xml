@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Profil służbowy</string>
+    <string name="app_name">Profil Służbowy</string>
     <string name="app_and_content_access">Zarządzanie dostępem do aplikacji i treści</string>
     <string name="set_up_profile">Konfigurowanie profilu służbowego</string>
     <string name="remove_profile">Usuń profil służbowy</string>
