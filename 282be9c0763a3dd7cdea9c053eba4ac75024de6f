@@ -46,6 +46,30 @@
       },
       "revId": "282be9c0763a3dd7cdea9c053eba4ac75024de6f",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f2851009_f30c3b8d",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 7
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-03-28T13:29:20Z",
+      "side": 1,
+      "message": "@Oliver Why would we want to start it as an activity anyway though? Want to make sure I understand",
+      "parentUuid": "39dfde42_d9a50cfe",
+      "range": {
+        "startLine": 92,
+        "startChar": 32,
+        "endLine": 92,
+        "endChar": 45
+      },
+      "revId": "282be9c0763a3dd7cdea9c053eba4ac75024de6f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
