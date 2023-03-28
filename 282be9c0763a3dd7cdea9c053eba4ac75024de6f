@@ -22,6 +22,30 @@
       },
       "revId": "282be9c0763a3dd7cdea9c053eba4ac75024de6f",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "39dfde42_d9a50cfe",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 7
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-03-28T11:44:32Z",
+      "side": 1,
+      "message": "Tommy opened a PR for starting it automatically in Activity that has had no replies for the past two weeks: https://github.com/guardianproject/orbot/pull/828. I would say let\u0027s do it this way and drop it later on when PR is merged.",
+      "parentUuid": "1c6021d3_ccb5ae64",
+      "range": {
+        "startLine": 92,
+        "startChar": 32,
+        "endLine": 92,
+        "endChar": 45
+      },
+      "revId": "282be9c0763a3dd7cdea9c053eba4ac75024de6f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
