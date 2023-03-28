@@ -70,6 +70,30 @@
       },
       "revId": "282be9c0763a3dd7cdea9c053eba4ac75024de6f",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86e9e7f1_99e6a0ec",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 7
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-03-28T13:49:03Z",
+      "side": 1,
+      "message": "Normally, broadcasts can be received by any app. In this case it should be safe since it is a targetted due to `setPackage`. Starting an activity explicitly we can know what will execute but it is more tightly coupled and \"hardcoded\" and therefore not the best solution here.",
+      "parentUuid": "f2851009_f30c3b8d",
+      "range": {
+        "startLine": 92,
+        "startChar": 32,
+        "endLine": 92,
+        "endChar": 45
+      },
+      "revId": "282be9c0763a3dd7cdea9c053eba4ac75024de6f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
