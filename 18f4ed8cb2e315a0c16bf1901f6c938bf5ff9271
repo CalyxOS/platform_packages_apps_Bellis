@@ -3,6 +3,52 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "61925b51_4c4fd121",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicManagedProfileFragment.kt",
+        "patchSetId": 6
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-03-28T10:51:48Z",
+      "side": 1,
+      "message": "is this needed if the option isn\u0027t visible to the user?",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 58,
+        "endChar": 21
+      },
+      "revId": "18f4ed8cb2e315a0c16bf1901f6c938bf5ff9271",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "50bc5be3_9fd448e3",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicManagedProfileFragment.kt",
+        "patchSetId": 6
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-03-28T10:51:48Z",
+      "side": 1,
+      "message": "GONE would be better",
+      "range": {
+        "startLine": 72,
+        "startChar": 21,
+        "endLine": 72,
+        "endChar": 30
+      },
+      "revId": "18f4ed8cb2e315a0c16bf1901f6c938bf5ff9271",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a5407335_2bd63315",
         "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
         "patchSetId": 6
