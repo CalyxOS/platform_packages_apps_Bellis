@@ -48,6 +48,30 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d12aa887_9f29cff5",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicManagedProfileFragment.kt",
+        "patchSetId": 6
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-03-28T13:15:59Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "8024914e_b7fd403d",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 58,
+        "endChar": 21
+      },
+      "revId": "18f4ed8cb2e315a0c16bf1901f6c938bf5ff9271",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "50bc5be3_9fd448e3",
