@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8024914e_b7fd403d",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicManagedProfileFragment.kt",
+        "patchSetId": 6
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-03-28T13:01:59Z",
+      "side": 1,
+      "message": "It\u0027s an extra assurance in case there is some way to activate the button when there shouldn\u0027t be. Removing Safest is a big deal, so double-checking seems good.",
+      "parentUuid": "61925b51_4c4fd121",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 58,
+        "endChar": 21
+      },
+      "revId": "18f4ed8cb2e315a0c16bf1901f6c938bf5ff9271",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "50bc5be3_9fd448e3",
         "filename": "app/src/main/java/org/calyxos/bellis/BasicManagedProfileFragment.kt",
         "patchSetId": 6
@@ -49,6 +73,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "4cb79966_d2d72a80",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicManagedProfileFragment.kt",
+        "patchSetId": 6
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-03-28T13:01:59Z",
+      "side": 1,
+      "message": "True, thanks, should get changed",
+      "parentUuid": "50bc5be3_9fd448e3",
+      "range": {
+        "startLine": 72,
+        "startChar": 21,
+        "endLine": 72,
+        "endChar": 30
+      },
+      "revId": "18f4ed8cb2e315a0c16bf1901f6c938bf5ff9271",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a5407335_2bd63315",
         "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
         "patchSetId": 6
@@ -60,6 +108,30 @@
       "writtenOn": "2023-03-23T15:08:44Z",
       "side": 1,
       "message": "Given this is not a value that\u0027s supposed to change after setup this should be fine. If that ever changes we need to be careful about something like this",
+      "range": {
+        "startLine": 84,
+        "startChar": 0,
+        "endLine": 84,
+        "endChar": 85
+      },
+      "revId": "18f4ed8cb2e315a0c16bf1901f6c938bf5ff9271",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1df9445a_d38d283b",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 6
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-03-28T13:01:59Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a5407335_2bd63315",
       "range": {
         "startLine": 84,
         "startChar": 0,
