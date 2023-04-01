@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Perfil de treball</string>
+    <string name="set_up_profile">Configura el perfil de treball</string>
+    <string name="remove_profile">Elimina el perfil de treball</string>
+    <string name="profile_setup_disabled">No s\'ha pogut configurar el nou perfil de treball</string>
+    <string name="no_work_profile">No s\'ha trobat cap perfil de treball</string>
+    <string name="no_work_profile_help">Es pot configurar un perfil de treball en aquest dispositiu, permetent-vos utilitzar el mateix dispositiu de manera segura i privada per a propòsits laborals i personals</string>
+    <string name="existing_work_profile">S\'ha trobat un perfil de treball existent</string>
+    <string name="manage_work_profile">Gestiona el perfil de treball</string>
+    <string name="manage_work_profile_help">Les aplicacions de treball estan marcades amb una icona de maletí perquè pugueu distingir-les de les aplicacions personals.</string>
+    <string name="app_and_content_access">Gestiona l\'aplicació i accés al contingut</string>
+    <string name="managed_provisioning_not_enabled">La Configuració de Treball no està habilitada</string>
+    <string name="remove_profile_confirmation">N\'estàs segur\? Això suprimirà permanentment el vostre perfil de treball, incloses totes les aplicacions dins d\'aquest perfil, les seves dades i qualsevol fitxer.</string>
+    <string name="existing_work_profile_help">Per gestionar el perfil de treball existent, navegueu a la pestanya <b>Treball</b> del llançador</string>
+</resources>
