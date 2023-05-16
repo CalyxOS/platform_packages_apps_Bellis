@@ -21,6 +21,7 @@ object PostProvisioningHelper {
     private val requiredPackages = listOf(
         "com.android.gallery3d",
         "com.android.vending",
+        "com.android.camera2",
         "com.google.android.gms",
         "com.google.android.gsf",
         "com.stevesoltys.seedvault",
