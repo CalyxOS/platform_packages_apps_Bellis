@@ -19,15 +19,15 @@ object PostProvisioningHelper {
         UserManager.DISALLOW_BLUETOOTH_SHARING
     )
     private val requiredPackages = listOf(
+        "com.android.vending",
         "com.google.android.gms",
         "com.google.android.gsf",
-        "com.android.vending",
+        "com.stevesoltys.seedvault",
+        "org.chromium.chrome",
+        "org.fdroid.fdroid",
         "org.fitchfamily.android.dejavu",
         "org.microg.nlp.backend.ichnaea",
-        "org.microg.nlp.backend.nominatim",
-        "com.stevesoltys.seedvault",
-        "org.fdroid.fdroid",
-        "org.chromium.chrome"
+        "org.microg.nlp.backend.nominatim"
     )
 
     fun completeProvisioning(context: Context) {
