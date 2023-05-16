@@ -19,6 +19,7 @@ object PostProvisioningHelper {
         UserManager.DISALLOW_BLUETOOTH_SHARING
     )
     private val requiredPackages = listOf(
+        "com.android.gallery3d",
         "com.android.vending",
         "com.google.android.gms",
         "com.google.android.gsf",
