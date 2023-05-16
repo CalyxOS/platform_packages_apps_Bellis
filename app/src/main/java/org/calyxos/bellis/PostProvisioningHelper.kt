@@ -25,6 +25,7 @@ object PostProvisioningHelper {
         "com.google.android.gms",
         "com.google.android.gsf",
         "com.stevesoltys.seedvault",
+        "org.calyxos.eleven",
         "org.chromium.chrome",
         "org.fdroid.fdroid",
         "org.fitchfamily.android.dejavu",
