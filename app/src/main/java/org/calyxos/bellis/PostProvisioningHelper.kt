@@ -47,6 +47,10 @@ object PostProvisioningHelper {
                 requiredPackages.forEach {
                     devicePolicyManager.enableSystemApp(componentName, it)
                 }
+
+                for (packageName in getCrossProfileWidgetProviders(componentName)) {
+                    addCrossProfileWidgetProvider(componentName, packageName)
+                }
             }
         }
     }

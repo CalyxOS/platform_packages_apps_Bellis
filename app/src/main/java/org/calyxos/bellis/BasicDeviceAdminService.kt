@@ -62,6 +62,9 @@ class BasicDeviceAdminService : DeviceAdminService() {
                     }
                     devicePolicyManager.apply {
                         setCrossProfilePackages(componentName, getCrossProfilePackages())
+                        for (packageName in getCrossProfileWidgetProviders(componentName)) {
+                            addCrossProfileWidgetProvider(componentName, packageName)
+                        }
                     }
                 }
             }
@@ -89,6 +92,7 @@ class BasicDeviceAdminService : DeviceAdminService() {
                     }
                 }
             }
+
             prefVersion < 103 -> {
                 if (managedProfile) {
                     devicePolicyManager.apply {
@@ -97,10 +101,21 @@ class BasicDeviceAdminService : DeviceAdminService() {
                     }
                 }
             }
+
             prefVersion < 104 -> {
                 if (managedProfile) {
                     devicePolicyManager.apply {
                         setSecureSetting(componentName, "user_setup_complete", "1")
+                    }
+                }
+            }
+
+            prefVersion < 105 -> {
+                if (managedProfile) {
+                    devicePolicyManager.apply {
+                        for (packageName in getCrossProfileWidgetProviders(componentName)) {
+                            addCrossProfileWidgetProvider(componentName, packageName)
+                        }
                     }
                 }
             }
