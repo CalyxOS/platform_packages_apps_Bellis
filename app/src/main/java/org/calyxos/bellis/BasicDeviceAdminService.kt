@@ -7,6 +7,7 @@ package org.calyxos.bellis
 
 import android.app.admin.DeviceAdminService
 import android.app.admin.DevicePolicyManager
+import android.appwidget.AppWidgetManager
 import android.content.BroadcastReceiver
 import android.content.ComponentName
 import android.content.Context
@@ -62,6 +63,9 @@ class BasicDeviceAdminService : DeviceAdminService() {
                     }
                     devicePolicyManager.apply {
                         setCrossProfilePackages(componentName, getCrossProfilePackages())
+                        for (packageName in getCrossProfileWidgetProviders()) {
+                            addCrossProfileWidgetProvider(componentName, packageName)
+                        }
                     }
                 }
             }
@@ -89,6 +93,7 @@ class BasicDeviceAdminService : DeviceAdminService() {
                     }
                 }
             }
+
             prefVersion < 103 -> {
                 if (managedProfile) {
                     devicePolicyManager.apply {
@@ -97,10 +102,21 @@ class BasicDeviceAdminService : DeviceAdminService() {
                     }
                 }
             }
+
             prefVersion < 104 -> {
                 if (managedProfile) {
                     devicePolicyManager.apply {
                         setSecureSetting(componentName, "user_setup_complete", "1")
+                    }
+                }
+            }
+
+            prefVersion < 105 -> {
+                if (managedProfile) {
+                    devicePolicyManager.apply {
+                        for (packageName in getCrossProfileWidgetProviders()) {
+                            addCrossProfileWidgetProvider(componentName, packageName)
+                        }
                     }
                 }
             }
@@ -118,5 +134,14 @@ class BasicDeviceAdminService : DeviceAdminService() {
                 android.Manifest.permission.INTERACT_ACROSS_PROFILES
             ) ?: false
         }.map { it.packageName }.toSet()
+    }
+
+    private fun getCrossProfileWidgetProviders(): Set<String> {
+        return packageManager.queryBroadcastReceivers(
+            Intent(AppWidgetManager.ACTION_APPWIDGET_UPDATE),
+            PackageManager.ResolveInfoFlags.of(0.toLong())
+        ).map {
+            it.activityInfo.packageName
+        }.toSet()
     }
 }
