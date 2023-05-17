@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "30943c3f_4e49d30a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-05-17T13:29:37Z",
+      "side": 1,
+      "message": "The microG packages were all together previously, this changes that, nbd.",
+      "revId": "7d4942503ce238bc01240fad30732aded7e88954",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
