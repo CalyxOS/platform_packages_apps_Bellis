@@ -8,6 +8,7 @@ package org.calyxos.bellis
 
 import android.app.admin.DevicePolicyManager
 import android.content.Context
+import android.content.pm.PackageManager
 import android.os.UserManager
 
 object PostProvisioningHelper {
