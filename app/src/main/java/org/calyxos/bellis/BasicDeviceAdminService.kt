@@ -8,6 +8,7 @@ package org.calyxos.bellis
 
 import android.app.admin.DeviceAdminService
 import android.app.admin.DevicePolicyManager
+import android.appwidget.AppWidgetManager
 import android.content.BroadcastReceiver
 import android.content.ComponentName
 import android.content.Context
@@ -28,7 +29,7 @@ class BasicDeviceAdminService : DeviceAdminService() {
     private lateinit var packageReceiver: BroadcastReceiver
     private var managedProfile: Boolean = false
     private val DEFAULT_VERSION: Int = 1 // DO NOT CHANGE
-    private val PREF_VERSION: Int = 5
+    private val PREF_VERSION: Int = 6
 
     override fun onCreate() {
         super.onCreate()
@@ -67,6 +68,9 @@ class BasicDeviceAdminService : DeviceAdminService() {
                     }
                     devicePolicyManager.apply {
                         setCrossProfilePackages(componentName, getCrossProfilePackages())
+                        getCrossProfileWidgetProviders().forEach {
+                            addCrossProfileWidgetProvider(componentName, it)
+                        }
                     }
                 }
             }
@@ -131,6 +135,16 @@ class BasicDeviceAdminService : DeviceAdminService() {
             // get everyone in sync
             currentVersion = 5
         }
+        if (currentVersion == 5) {
+            if (managedProfile) {
+                devicePolicyManager.apply {
+                    getCrossProfileWidgetProviders().forEach {
+                        addCrossProfileWidgetProvider(componentName, it)
+                    }
+                }
+            }
+            currentVersion = 6
+        }
 
         // Add new migrations / defaults above this point.
 
@@ -151,5 +165,11 @@ class BasicDeviceAdminService : DeviceAdminService() {
                 android.Manifest.permission.INTERACT_ACROSS_PROFILES
             ) ?: false
         }.map { it.packageName }.toSet()
+    }
+
+    private fun getCrossProfileWidgetProviders(): Set<String> {
+        return getSystemService(AppWidgetManager::class.java).installedProviders.map {
+            it.provider.packageName
+        }.toSet()
     }
 }
