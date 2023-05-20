@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">仕事用プロファイル</string>
+    <string name="managed_provisioning_not_enabled">仕事用プロファイルは有効になっていません</string>
+    <string name="profile_setup_disabled">仕事用プロファイルのセットアップが設定不能です</string>
+    <string name="no_work_profile">仕事用プロファイルが見つかりませんでした</string>
+    <string name="no_work_profile_help">仕事用プロファイルはこの端末で設定可能です。それにより、仕事とプライベートで同じ端末を安全に使用することができます</string>
+    <string name="existing_work_profile">既存の仕事用プロファイルが見つかりました</string>
+    <string name="existing_work_profile_help">既存の仕事用プロファイルを管理するためにはランチャーの<b>Work</b> のタブへ移動してください</string>
+    <string name="manage_work_profile">仕事用プロファイルを管理する</string>
+    <string name="set_up_profile">仕事用プロファイルを設定する</string>
+    <string name="app_and_content_access">アプリを管理またはコンテンツへのアクセス</string>
+    <string name="remove_profile">仕事用プロファイルを削除する</string>
+    <string name="remove_profile_confirmation">本当に削除してもよいでしょうか？仕事用プロファイルの中のアプリのデータやファイルなどはすべて永久的に削除されます。</string>
+    <string name="manage_work_profile_help">仕事用のアプリにはブリーフケースのアイコンが付いているので、個人用のアプリと区別がつきます。</string>
+</resources>
