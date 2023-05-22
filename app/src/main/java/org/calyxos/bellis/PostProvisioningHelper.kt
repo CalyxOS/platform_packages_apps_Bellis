@@ -6,8 +6,10 @@
 
 package org.calyxos.bellis
 
+import android.Manifest.permission.POST_NOTIFICATIONS
 import android.app.Activity
 import android.app.admin.DevicePolicyManager
+import android.app.admin.DevicePolicyManager.PERMISSION_GRANT_STATE_GRANTED
 import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
@@ -15,11 +17,13 @@ import android.content.pm.PackageManager
 import android.os.PersistableBundle
 import android.os.UserManager
 import android.util.Log
+import androidx.core.content.edit
 import androidx.core.os.bundleOf
 import java.util.concurrent.TimeUnit
 
 object PostProvisioningHelper {
     private const val ORBOT_PKG = "org.torproject.android"
+    private const val ORBOT_ACTION_START = "org.torproject.android.intent.action.START"
     private const val CHROMIUM_PKG = "org.chromium.chrome"
 
     private const val GARLIC_LEVEL = "garlic_level"
@@ -53,7 +57,7 @@ object PostProvisioningHelper {
         CHROMIUM_PKG
     )
 
-    private enum class GarlicLevel {
+    enum class GarlicLevel {
         STANDARD, SAFER, SAFEST
     }
 
@@ -77,13 +81,20 @@ object PostProvisioningHelper {
                     val garlicLevel = context.intent.getParcelableExtra(
                         DevicePolicyManager.EXTRA_PROVISIONING_ADMIN_EXTRAS_BUNDLE,
                         PersistableBundle::class.java
-                    )?.getInt(GARLIC_LEVEL, 0)
+                    )?.getInt(GARLIC_LEVEL, 0) ?: GarlicLevel.STANDARD.ordinal
                     if (garlicLevel != GarlicLevel.STANDARD.ordinal) {
+                        val sharedPreferences = context.getSharedPreferences(context.packageName,
+                            Context.MODE_PRIVATE)
+                        sharedPreferences.edit { putInt("garlicLevel", garlicLevel) }
                         try {
                             setAlwaysOnVpnPackage(componentName, ORBOT_PKG, true)
                         } catch (exception: PackageManager.NameNotFoundException) {
                             Log.e(TAG, "Failed to set always-on VPN", exception)
                         }
+
+                        setPermissionGrantState(componentName, ORBOT_PKG,
+                            POST_NOTIFICATIONS, PERMISSION_GRANT_STATE_GRANTED)
+                        context.sendBroadcast(Intent(ORBOT_ACTION_START).setPackage(ORBOT_PKG))
 
                         if (garlicLevel == GarlicLevel.SAFEST.ordinal) {
                             // Set garlic level restrictions
