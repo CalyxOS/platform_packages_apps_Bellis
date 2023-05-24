@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "422af761_1fde44d8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-05-24T22:45:57Z",
+      "side": 1,
+      "message": "This one is fine because there has been some time since release, and it\u0027s built inline for production anyways.",
+      "revId": "867ead35fe1c669b1017a29c3197c8e4a62ebfb1",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
