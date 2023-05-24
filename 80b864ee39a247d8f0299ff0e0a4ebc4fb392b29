@@ -16,6 +16,24 @@
       "message": "Not sure about this one",
       "revId": "80b864ee39a247d8f0299ff0e0a4ebc4fb392b29",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fe609448_65fb9adc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-05-24T22:48:19Z",
+      "side": 1,
+      "message": "Not against it, just not sure if it\u0027s needed.\n\nI guess maybe for apps which implement camera?",
+      "parentUuid": "3ab64572_481f07c5",
+      "revId": "80b864ee39a247d8f0299ff0e0a4ebc4fb392b29",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
