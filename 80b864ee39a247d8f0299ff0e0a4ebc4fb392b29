@@ -34,6 +34,24 @@
       "parentUuid": "3ab64572_481f07c5",
       "revId": "80b864ee39a247d8f0299ff0e0a4ebc4fb392b29",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6795ec83_a1dd2b1e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-05-26T17:44:27Z",
+      "side": 1,
+      "message": "Not sure. Sometimes there are apps that seem to depend on the camera app being present to launch a capture intent",
+      "parentUuid": "fe609448_65fb9adc",
+      "revId": "80b864ee39a247d8f0299ff0e0a4ebc4fb392b29",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
