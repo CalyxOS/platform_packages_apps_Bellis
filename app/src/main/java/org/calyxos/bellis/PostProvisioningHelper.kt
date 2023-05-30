@@ -9,9 +9,11 @@ package org.calyxos.bellis
 import android.app.admin.DevicePolicyManager
 import android.content.Context
 import android.os.UserManager
+import android.util.Log
 
 object PostProvisioningHelper {
 
+    private val TAG = PostProvisioningHelper::class.java.simpleName
     private const val PREFS = "post-provisioning"
     private const val PREF_DONE = "done"
     private val userRestrictions = listOf(
@@ -48,7 +50,11 @@ object PostProvisioningHelper {
 
                 // Enable required packages
                 requiredPackages.forEach {
-                    devicePolicyManager.enableSystemApp(componentName, it)
+                    try {
+                        devicePolicyManager.enableSystemApp(componentName, it)
+                    } catch (exception: Exception) {
+                        Log.i(TAG, "Failed to enable: $it", exception)
+                    }
                 }
             }
         }
