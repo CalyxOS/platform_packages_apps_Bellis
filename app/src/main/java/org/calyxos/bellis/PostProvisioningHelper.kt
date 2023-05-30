@@ -45,7 +45,11 @@ object PostProvisioningHelper {
 
                 // Enable required packages
                 requiredPackages.forEach {
-                    devicePolicyManager.enableSystemApp(componentName, it)
+                    try {
+                        devicePolicyManager.enableSystemApp(componentName, it)
+                    } catch (e: Exception) {
+                        // ignore
+                    }
                 }
             }
         }
