@@ -27,9 +27,6 @@ class SystemAppWorker(private val context: Context, workerParams: WorkerParamete
         "com.stevesoltys.seedvault",
         "org.calyxos.eleven",
         "org.chromium.chrome",
-        "org.fitchfamily.android.dejavu",
-        "org.microg.nlp.backend.ichnaea",
-        "org.microg.nlp.backend.nominatim"
     )
 
     override fun doWork(): Result {
