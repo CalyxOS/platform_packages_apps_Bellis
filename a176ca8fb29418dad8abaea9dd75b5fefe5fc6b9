@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ce56f6a6_72594fd4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-05-30T23:05:48Z",
+      "side": 1,
+      "message": "Actually, both of these look like cases where it\u0027d be good to fail so that we know something\u0027s wrong rather than missing it if silent.\n\nWhat do you think?",
+      "revId": "a176ca8fb29418dad8abaea9dd75b5fefe5fc6b9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
