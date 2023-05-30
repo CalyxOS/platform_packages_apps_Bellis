@@ -22,9 +22,6 @@ object PostProvisioningHelper {
         "com.google.android.gms",
         "com.google.android.gsf",
         "com.android.vending",
-        "org.fitchfamily.android.dejavu",
-        "org.microg.nlp.backend.ichnaea",
-        "org.microg.nlp.backend.nominatim",
         "com.stevesoltys.seedvault",
         "org.fdroid.fdroid",
         "org.chromium.chrome"
