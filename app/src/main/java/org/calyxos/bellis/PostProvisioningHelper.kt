@@ -29,7 +29,6 @@ object PostProvisioningHelper {
         "com.stevesoltys.seedvault",
         "org.calyxos.eleven",
         "org.chromium.chrome",
-        "org.fdroid.fdroid",
         "org.fitchfamily.android.dejavu",
         "org.microg.nlp.backend.ichnaea",
         "org.microg.nlp.backend.nominatim"
