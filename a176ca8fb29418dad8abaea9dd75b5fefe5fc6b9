@@ -34,6 +34,24 @@
       "parentUuid": "ce56f6a6_72594fd4",
       "revId": "a176ca8fb29418dad8abaea9dd75b5fefe5fc6b9",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0ba66934_4062ff38",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-05-30T23:53:46Z",
+      "side": 1,
+      "message": "How about a log message here in the catch so that we notice the log locally while still not leading to the half-baked state then.",
+      "parentUuid": "ff602973_691adf90",
+      "revId": "a176ca8fb29418dad8abaea9dd75b5fefe5fc6b9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
