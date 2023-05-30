@@ -32,9 +32,6 @@ object PostProvisioningHelper {
         "com.stevesoltys.seedvault",
         "org.calyxos.eleven",
         "org.chromium.chrome",
-        "org.fitchfamily.android.dejavu",
-        "org.microg.nlp.backend.ichnaea",
-        "org.microg.nlp.backend.nominatim"
     )
 
     class SystemAppWorker(private val context: Context, workerParams: WorkerParameters) :
