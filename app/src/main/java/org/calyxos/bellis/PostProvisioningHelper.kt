@@ -26,7 +26,6 @@ object PostProvisioningHelper {
         "org.microg.nlp.backend.ichnaea",
         "org.microg.nlp.backend.nominatim",
         "com.stevesoltys.seedvault",
-        "org.fdroid.fdroid",
         "org.chromium.chrome"
     )
 
