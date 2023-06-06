@@ -1,6 +1,6 @@
 /*
  * SPDX-FileCopyrightText: 2014 The Android Open Source Project
- * SPDX-FileCopyrightText: 2022 The Calyx Institute
+ * SPDX-FileCopyrightText: 2023 The Calyx Institute
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
 
         when (intent.action) {
             DevicePolicyManager.ACTION_PROVISIONING_SUCCESSFUL -> {
-                PostProvisioningHelper.completeProvisioning(this)
                 launchSUW()
+                PostProvisioningHelper.completeProvisioning(this)
             }
         }
     }
