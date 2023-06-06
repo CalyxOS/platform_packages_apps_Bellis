@@ -34,6 +34,29 @@
       "parentUuid": "ddb59fa1_e555b069",
       "revId": "c3e961ac824d37f74ae3c6d6d44daca4fb7a7ce2",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a3a157b1_1e772333",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-06T18:09:04Z",
+      "side": 1,
+      "message": "So the setup wizard is already installed by default in work profiles? If so I\u0027d consider removing it from the required packages list",
+      "range": {
+        "startLine": 28,
+        "startChar": 16,
+        "endLine": 28,
+        "endChar": 27
+      },
+      "revId": "c3e961ac824d37f74ae3c6d6d44daca4fb7a7ce2",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
