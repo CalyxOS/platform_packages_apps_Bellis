@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c997bcb0_0a978204",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-06T19:34:46Z",
+      "side": 1,
+      "message": "Should be `\u003c 102`, or it will never match the `-1` case for new users, but we want it to, according to the comment on line 83.",
+      "revId": "4f765cf83c54ab3ef0271f5c437a2e1ff420f6b4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b7172124_c7f68d1e",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-06T19:34:46Z",
+      "side": 1,
+      "message": "Should be `\u003c 103`, or it will stop after upgrading to 102 above.",
+      "revId": "4f765cf83c54ab3ef0271f5c437a2e1ff420f6b4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "706c49a3_654df460",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-06T19:34:46Z",
+      "side": 1,
+      "message": "Should be `\u003c 104`",
+      "revId": "4f765cf83c54ab3ef0271f5c437a2e1ff420f6b4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37f83c78_a7666d29",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-06T19:34:46Z",
+      "side": 1,
+      "message": "Should be `\u003c 105`",
+      "revId": "4f765cf83c54ab3ef0271f5c437a2e1ff420f6b4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
