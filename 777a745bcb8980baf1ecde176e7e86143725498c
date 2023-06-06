@@ -70,6 +70,30 @@
       },
       "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c2b8f61c_51251ea0",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-06T18:58:24Z",
+      "side": 1,
+      "message": "As far as I can tell, that\u0027s because the Intent that started the Activity originally hasn\u0027t changed (that\u0027s what is returned by `getIntent()` or, in Kotlin, `intent`). Returning to the existing Activity from SUW doesn\u0027t change that fact; we\u0027re just going back to it. (Also, to be clear, when SUW is called twice, the PID/TID of Bellis is the same each time, so it\u0027s the same instance.)\n\nI\u0027m no expert in these kinds of details of Android apps. I came across this when I was trying to look it up / understand it: https://stackoverflow.com/questions/34195828/how-to-come-back-to-first-activity-without-its-oncreate-called\n\n...and I did try some of the suggestions (singleTask launch mode in the manifest; using the particular flags mentioned), but it always ended up calling onCreate again anyway, so this was all I could think of.\n\nI added Aayush because I know he has experience on the app side of things in case we\u0027re missing something obvious.",
+      "parentUuid": "a9b6e8fb_8bbbafdb",
+      "range": {
+        "startLine": 26,
+        "startChar": 8,
+        "endLine": 28,
+        "endChar": 9
+      },
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
