@@ -16,6 +16,24 @@
       "message": "Just not sure if we\u0027ll have any unintended consequences due to this, otherwise it looks ok.\n\nI assume it runs start installing apps in the background as SuW is running.",
       "revId": "c3e961ac824d37f74ae3c6d6d44daca4fb7a7ce2",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ad8d5c4_2876ce09",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-06T17:44:28Z",
+      "side": 1,
+      "message": "The apps have been getting enabled every time I\u0027ve tested. And yes, it must keep running because with some debug lines added, the PID/TID for Bellis was the same each time when it was launching SUW twice.",
+      "parentUuid": "ddb59fa1_e555b069",
+      "revId": "c3e961ac824d37f74ae3c6d6d44daca4fb7a7ce2",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
