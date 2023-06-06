@@ -36,6 +36,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "970c22f2_7f6b2184",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-06T17:48:03Z",
+      "side": 1,
+      "message": "Ack, I was thinking more along the lines of, maybe there\u0027s some simpler way to have onCreate not get called again for the activity, or to see if it\u0027s the first launch, or something.",
+      "parentUuid": "1bb9eaad_49ffd23f",
+      "revId": "f304abf23ba1911434d5653b526f150c0a9fd66a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c95f46e9_72f35f40",
@@ -49,6 +67,24 @@
       "writtenOn": "2023-06-06T17:32:19Z",
       "side": 1,
       "message": "Could add the `Settings.Secure.USER_SETUP_COMPLETE` check here.",
+      "revId": "f304abf23ba1911434d5653b526f150c0a9fd66a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e25c160_669f2f5c",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-06T17:48:03Z",
+      "side": 1,
+      "message": "Can\u0027t, it\u0027s already 1 at this point. See https://review.calyxos.org/c/CalyxOS/platform_frameworks_base/+/12282",
+      "parentUuid": "c95f46e9_72f35f40",
       "revId": "f304abf23ba1911434d5653b526f150c0a9fd66a",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
