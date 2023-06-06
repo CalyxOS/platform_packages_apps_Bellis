@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
 
         when (intent.action) {
             DevicePolicyManager.ACTION_PROVISIONING_SUCCESSFUL -> {
-                PostProvisioningHelper.completeProvisioning(this)
                 launchSUW()
+                PostProvisioningHelper.completeProvisioning(this)
             }
         }
     }
