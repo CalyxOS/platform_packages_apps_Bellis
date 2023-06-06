@@ -1,4 +1,5 @@
 /*
+ * SPDX-FileCopyrightText: 2007 The Android Open Source Project
  * SPDX-FileCopyrightText: 2022 The Calyx Institute
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -16,14 +17,18 @@ import android.content.pm.PackageManager
 import android.content.pm.PackageManager.PackageInfoFlags
 import android.os.UserManager.DISALLOW_BLUETOOTH_SHARING
 import android.os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES
+import android.util.Log
 import androidx.core.content.edit
 
 class BasicDeviceAdminService : DeviceAdminService() {
 
+    private val TAG = BasicDeviceAdminService::class.java.simpleName
     private lateinit var devicePolicyManager: DevicePolicyManager
     private lateinit var componentName: ComponentName
     private lateinit var packageReceiver: BroadcastReceiver
     private var managedProfile: Boolean = false
+    private val DEFAULT_VERSION: Int = 1 // DO NOT CHANGE
+    private val PREF_VERSION: Int = 5
 
     override fun onCreate() {
         super.onCreate()
@@ -77,36 +82,64 @@ class BasicDeviceAdminService : DeviceAdminService() {
 
     private fun onUpgrade() {
         val sharedPreferences = getSharedPreferences(packageName, MODE_PRIVATE)
-        val prefVersion = sharedPreferences.getLong("version", 0)
-        val currentVersion = packageManager.getPackageInfo(packageName, PackageInfoFlags.of(0))
 
-        when {
-            prefVersion < 102 -> {
-                if (managedProfile) {
-                    devicePolicyManager.apply {
-                        clearUserRestriction(componentName, DISALLOW_INSTALL_UNKNOWN_SOURCES)
-                        clearUserRestriction(componentName, DISALLOW_BLUETOOTH_SHARING)
-                    }
-                }
-            }
-            prefVersion < 103 -> {
-                if (managedProfile) {
-                    devicePolicyManager.apply {
-                        setCrossProfileCalendarPackages(componentName, null)
-                        setCrossProfilePackages(componentName, getCrossProfilePackages())
-                    }
-                }
-            }
-            prefVersion < 104 -> {
-                if (managedProfile) {
-                    devicePolicyManager.apply {
-                        setSecureSetting(componentName, "user_setup_complete", "1")
-                    }
-                }
-            }
+        // Run through all steps for new users
+        val oldVersion = sharedPreferences.getInt("pref_version", DEFAULT_VERSION)
+        val newVersion = PREF_VERSION;
+
+        // If up do date - done.
+        if (oldVersion == newVersion) {
+            return;
         }
 
-        sharedPreferences.edit { putLong("version", currentVersion.longVersionCode) }
+        val curVersion = upgradeIfNeeded(oldVersion, newVersion)
+        sharedPreferences.edit { putInt("pref_version", curVersion) }
+    }
+
+    private fun upgradeIfNeeded(oldVersion: Int, newVersion: Int): Int {
+        Log.d("Bellis", "Upgrading from version ${oldVersion} to version ${newVersion}");
+        var currentVersion = oldVersion
+
+        if (currentVersion == DEFAULT_VERSION) {
+            if (managedProfile) {
+                devicePolicyManager.apply {
+                    clearUserRestriction(componentName, DISALLOW_INSTALL_UNKNOWN_SOURCES)
+                    clearUserRestriction(componentName, DISALLOW_BLUETOOTH_SHARING)
+                }
+            }
+            currentVersion = 2 // Previously 102
+        }
+        if (currentVersion == 2) {
+            if (managedProfile) {
+                devicePolicyManager.apply {
+                    setCrossProfileCalendarPackages(componentName, null)
+                    setCrossProfilePackages(componentName, getCrossProfilePackages())
+                }
+            }
+            currentVersion = 3 // Previously 103
+        }
+        if (currentVersion == 3) {
+            if (managedProfile) {
+                devicePolicyManager.apply {
+                    setSecureSetting(componentName, "user_setup_complete", "1")
+                }
+            }
+            currentVersion = 4 // Previously 104
+        }
+        if (currentVersion == 4) {
+            // Migration is not tied to version code any longer, one time bump to
+            // get everyone in sync
+            currentVersion = 5
+        }
+
+        // Add new migrations / defaults above this point.
+
+        if (currentVersion != newVersion) {
+            Log.wtf(TAG, "warning: upgrading to version ${newVersion} left it at " +
+                "${currentVersion} instead; this is probably a bug. Did you update PREF_VERSION?")
+        }
+
+        return currentVersion
     }
 
     private fun getCrossProfilePackages(): Set<String> {
