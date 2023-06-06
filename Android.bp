@@ -18,9 +18,8 @@ android_app {
         "androidx.appcompat_appcompat",
         "androidx.navigation_navigation-fragment-ktx",
         "androidx.navigation_navigation-ui-ktx",
+        "androidx.work_work-runtime-ktx",
         "bellis-lib-com.google.android.material_material",
-        "kotlinx-coroutines-android",
-        "kotlinx-coroutines-core",
     ],
 
     sdk_version: "current",
