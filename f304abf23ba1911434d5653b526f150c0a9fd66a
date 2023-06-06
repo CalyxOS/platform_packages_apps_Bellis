@@ -34,6 +34,23 @@
       "parentUuid": "0a309a33_0185f92f",
       "revId": "f304abf23ba1911434d5653b526f150c0a9fd66a",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c95f46e9_72f35f40",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-06T17:32:19Z",
+      "side": 1,
+      "message": "Could add the `Settings.Secure.USER_SETUP_COMPLETE` check here.",
+      "revId": "f304abf23ba1911434d5653b526f150c0a9fd66a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
