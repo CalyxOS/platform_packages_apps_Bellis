@@ -10,6 +10,11 @@ import android.app.admin.DevicePolicyManager
 import android.content.Context
 import android.os.UserManager
 import android.util.Log
+import androidx.work.OneTimeWorkRequestBuilder
+import androidx.work.OutOfQuotaPolicy
+import androidx.work.WorkManager
+import androidx.work.Worker
+import androidx.work.WorkerParameters
 
 object PostProvisioningHelper {
 
@@ -35,6 +40,24 @@ object PostProvisioningHelper {
         "org.microg.nlp.backend.nominatim"
     )
 
+    class SystemAppWorker(private val context: Context, workerParams: WorkerParameters) :
+        Worker(context, workerParams) {
+        override fun doWork(): Result {
+            val componentName = BasicDeviceAdminReceiver.getComponentName(context)
+            context.getSystemService(DevicePolicyManager::class.java)?.apply {
+                systemApps.forEach {
+                    try {
+                        Log.d(TAG, "Enabling $it")
+                        enableSystemApp(componentName, it)
+                    } catch (e: IllegalArgumentException) {
+                        Log.e(TAG, "Failed to enable $it")
+                    }
+                }
+            }
+            return Result.success()
+        }
+    }
+
     fun completeProvisioning(context: Context) {
         if (!provisioningComplete(context)) {
             val devicePolicyManager = context.getSystemService(DevicePolicyManager::class.java)
@@ -42,6 +65,12 @@ object PostProvisioningHelper {
             devicePolicyManager.apply {
                 setProfileName(componentName, context.getString(R.string.app_name))
                 setProfileEnabled(componentName)
+
+                WorkManager.getInstance(context).enqueue(
+                    OneTimeWorkRequestBuilder<SystemAppWorker>().setExpedited(
+                        OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST
+                    ).build()
+                )
 
                 // Clear user restrictions
                 userRestrictions.forEach {
