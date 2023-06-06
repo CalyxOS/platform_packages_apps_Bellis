@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8adc4408_5c1cb7ee",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-06T17:27:44Z",
+      "side": 1,
+      "message": "Existing copyrights shouldn\u0027t be changed. 2022 has to stay.",
+      "revId": "88d4d4a38f36c899808df79934342975183eaed0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
