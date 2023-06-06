@@ -16,6 +16,24 @@
       "message": "This is working, but it feels like there might be a better way to do this... Any ideas?",
       "revId": "f304abf23ba1911434d5653b526f150c0a9fd66a",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1bb9eaad_49ffd23f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-06T17:30:34Z",
+      "side": 1,
+      "message": "Could try to check for `Settings.Secure.USER_SETUP_COMPLETE`",
+      "parentUuid": "0a309a33_0185f92f",
+      "revId": "f304abf23ba1911434d5653b526f150c0a9fd66a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
