@@ -15,9 +15,17 @@ import androidx.navigation.fragment.NavHostFragment
 
 class MainActivity : AppCompatActivity() {
 
+    companion object {
+        private const val CREATED_ALREADY_KEY = "created_already"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
+
+        if (savedInstanceState?.getBoolean(CREATED_ALREADY_KEY, false) == true) {
+            return
+        }
 
         if (!appIsProfileOwner()) {
             navigateToSetupFragment()
@@ -29,6 +37,11 @@ class MainActivity : AppCompatActivity() {
                 PostProvisioningHelper.completeProvisioning(this)
             }
         }
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        outState.putBoolean(CREATED_ALREADY_KEY, true)
+        super.onSaveInstanceState(outState)
     }
 
     private fun appIsProfileOwner(): Boolean {
