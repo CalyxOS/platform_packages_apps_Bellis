@@ -87,6 +87,24 @@
       "parentUuid": "c95f46e9_72f35f40",
       "revId": "f304abf23ba1911434d5653b526f150c0a9fd66a",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86af0d40_362ec7e0",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-06T17:49:01Z",
+      "side": 1,
+      "message": "Wait, that\u0027s not a correct link to a reason for it.\n\nBut it is already set to 1; I tested. Not exactly sure why.",
+      "parentUuid": "4e25c160_669f2f5c",
+      "revId": "f304abf23ba1911434d5653b526f150c0a9fd66a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
