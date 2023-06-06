@@ -35,9 +35,6 @@ class BasicDeviceAdminService : DeviceAdminService() {
         // Register Broadcast Receiver for handling additional packages
         // installed after service was created
         registerReceivers()
-
-        // Run required migrations on version upgrade for existing apps
-        onUpgrade()
     }
 
     override fun onDestroy() {
@@ -73,40 +70,6 @@ class BasicDeviceAdminService : DeviceAdminService() {
         if (managedProfile) {
             unregisterReceiver(packageReceiver)
         }
-    }
-
-    private fun onUpgrade() {
-        val sharedPreferences = getSharedPreferences(packageName, MODE_PRIVATE)
-        val prefVersion = sharedPreferences.getLong("version", 0)
-        val currentVersion = packageManager.getPackageInfo(packageName, PackageInfoFlags.of(0))
-
-        when {
-            prefVersion < 102 -> {
-                if (managedProfile) {
-                    devicePolicyManager.apply {
-                        clearUserRestriction(componentName, DISALLOW_INSTALL_UNKNOWN_SOURCES)
-                        clearUserRestriction(componentName, DISALLOW_BLUETOOTH_SHARING)
-                    }
-                }
-            }
-            prefVersion < 103 -> {
-                if (managedProfile) {
-                    devicePolicyManager.apply {
-                        setCrossProfileCalendarPackages(componentName, null)
-                        setCrossProfilePackages(componentName, getCrossProfilePackages())
-                    }
-                }
-            }
-            prefVersion < 104 -> {
-                if (managedProfile) {
-                    devicePolicyManager.apply {
-                        setSecureSetting(componentName, "user_setup_complete", "1")
-                    }
-                }
-            }
-        }
-
-        sharedPreferences.edit { putLong("version", currentVersion.longVersionCode) }
     }
 
     private fun getCrossProfilePackages(): Set<String> {
