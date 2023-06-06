@@ -118,6 +118,30 @@
       },
       "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd00da69_4f1d88e4",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-06T19:16:50Z",
+      "side": 1,
+      "message": "If we call `finish()`, there\u0027s only one Setup Wizard, yes, but the user doesn\u0027t land in Bellis with the opportunity to manage apps \u0026 content; they land back at the launcher (or presumably wherever they were when they opened Work Profile to set up a new one). If we\u0027re okay with that, it\u0027s a one-liner change.",
+      "parentUuid": "55c89ee9_2aff4131",
+      "range": {
+        "startLine": 26,
+        "startChar": 8,
+        "endLine": 28,
+        "endChar": 9
+      },
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
