@@ -38,6 +38,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "47140b40_26660cb0",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-06T19:42:17Z",
+      "side": 1,
+      "message": "Knowing what AOSP starts with is key to seeing if they\u0027re using this just for migrating existing users, or also to run this whole thing to set defaults for new installs too.\n\nPer the discussion:\n* LineageDatabaseHelper, based on old AOSP code, just migrates and new installs start with latest version\n* SettingsProvider, which is what this tries to copy, may also be setting up defaults this way. \n\nI was going off https://cs.android.com/android/platform/superproject/+/android-13.0.0_r49:frameworks/base/packages/SettingsProvider/src/com/android/providers/settings/SettingsState.java - where the version defaults to -1",
+      "parentUuid": "55c2e4bf_7d4960e5",
+      "revId": "4f765cf83c54ab3ef0271f5c437a2e1ff420f6b4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b7172124_c7f68d1e",
         "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
         "patchSetId": 4
