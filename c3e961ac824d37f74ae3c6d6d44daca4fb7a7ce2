@@ -57,6 +57,30 @@
       },
       "revId": "c3e961ac824d37f74ae3c6d6d44daca4fb7a7ce2",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7dde2e27_91982565",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-06T22:28:05Z",
+      "side": 1,
+      "message": "https://gitlab.com/CalyxOS/platform_packages_apps_Bellis/-/blob/android13/app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt#L21 - it\u0027s not in this list.\n\nIn fact, I don\u0027t see the SuW package name mentioned anywhere else at all.",
+      "parentUuid": "a3a157b1_1e772333",
+      "range": {
+        "startLine": 28,
+        "startChar": 16,
+        "endLine": 28,
+        "endChar": 27
+      },
+      "revId": "c3e961ac824d37f74ae3c6d6d44daca4fb7a7ce2",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
