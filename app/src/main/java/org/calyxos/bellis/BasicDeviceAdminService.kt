@@ -29,6 +29,9 @@ class BasicDeviceAdminService : DeviceAdminService() {
     override fun onCreate() {
         super.onCreate()
 
+        // Do initial setup
+        PostProvisioningHelper.completeProvisioning(this)
+
         componentName = BasicDeviceAdminReceiver.getComponentName(this)
         devicePolicyManager = getSystemService(DevicePolicyManager::class.java)
         managedProfile = devicePolicyManager.isProfileOwnerApp(componentName.packageName)
