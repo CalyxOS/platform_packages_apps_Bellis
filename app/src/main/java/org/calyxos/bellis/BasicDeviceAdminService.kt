@@ -24,6 +24,7 @@ class BasicDeviceAdminService : DeviceAdminService() {
     private lateinit var componentName: ComponentName
     private lateinit var packageReceiver: BroadcastReceiver
     private var managedProfile: Boolean = false
+    private val CURRENT_VERSION = 105
 
     override fun onCreate() {
         super.onCreate()
@@ -78,35 +79,41 @@ class BasicDeviceAdminService : DeviceAdminService() {
     private fun onUpgrade() {
         val sharedPreferences = getSharedPreferences(packageName, MODE_PRIVATE)
         val prefVersion = sharedPreferences.getLong("version", 0)
-        val currentVersion = packageManager.getPackageInfo(packageName, PackageInfoFlags.of(0))
 
-        when {
-            prefVersion < 102 -> {
-                if (managedProfile) {
-                    devicePolicyManager.apply {
-                        clearUserRestriction(componentName, DISALLOW_INSTALL_UNKNOWN_SOURCES)
-                        clearUserRestriction(componentName, DISALLOW_BLUETOOTH_SHARING)
-                    }
+        if (prefVersion < 102) {
+            if (managedProfile) {
+                devicePolicyManager.apply {
+                    clearUserRestriction(componentName, DISALLOW_INSTALL_UNKNOWN_SOURCES)
+                    clearUserRestriction(componentName, DISALLOW_BLUETOOTH_SHARING)
                 }
             }
-            prefVersion < 103 -> {
-                if (managedProfile) {
-                    devicePolicyManager.apply {
-                        setCrossProfileCalendarPackages(componentName, null)
-                        setCrossProfilePackages(componentName, getCrossProfilePackages())
-                    }
+            prefVersion = 102
+        }
+        if (prefVersion < 103) {
+            if (managedProfile) {
+                devicePolicyManager.apply {
+                    setCrossProfileCalendarPackages(componentName, null)
+                    setCrossProfilePackages(componentName, getCrossProfilePackages())
                 }
             }
-            prefVersion < 104 -> {
-                if (managedProfile) {
-                    devicePolicyManager.apply {
-                        setSecureSetting(componentName, "user_setup_complete", "1")
-                    }
+            prefVersion = 103
+        }
+        if (prefVersion < 104) {
+            if (managedProfile) {
+                devicePolicyManager.apply {
+                    setSecureSetting(componentName, "user_setup_complete", "1")
                 }
             }
+            prefVersion = 104
+        }
+        if (prefVersion < 105) {
+            // Migration is not tied to version code any longer, one time bump to
+            // get everyone in sync
+            prefVersion = 105
         }
 
-        sharedPreferences.edit { putLong("version", currentVersion.longVersionCode) }
+        // Don't forget to bump CURRENT_VERSION above
+        sharedPreferences.edit { putLong("version", CURRENT_VERSION) }
     }
 
     private fun getCrossProfilePackages(): Set<String> {
