@@ -142,6 +142,30 @@
       },
       "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "95fa26ab_e44ae28f",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-06T19:24:39Z",
+      "side": 1,
+      "message": "Ok, so far there\u0027s 3 options? The current patch, `finish()` (with the limitation described above), and trying to see if the intent can be removed if it\u0027s returning from the setup wizard (aka no longer the initial callback from provisioning). I\u0027d rather 3 -\u003e 2 -\u003e 1 in order of preference. If there are other options that have not been considered yet I\u0027m also curious",
+      "parentUuid": "cd00da69_4f1d88e4",
+      "range": {
+        "startLine": 26,
+        "startChar": 8,
+        "endLine": 28,
+        "endChar": 9
+      },
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
