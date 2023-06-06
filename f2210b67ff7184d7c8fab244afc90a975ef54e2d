@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00d56a25_d74f330e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-06T21:03:27Z",
+      "side": 1,
+      "message": "New install:\n\nD Bellis  : Upgrading from version 1 to version 5\n\n\n# cat /data/user/10/org.calyxos.bellis/shared_prefs/org.calyxos.bellis.xml\n```\n\u003c?xml version\u003d\u00271.0\u0027 encoding\u003d\u0027utf-8\u0027 standalone\u003d\u0027yes\u0027 ?\u003e\n\u003cmap\u003e\n    \u003cint name\u003d\"pref_version\" value\u003d\"5\" /\u003e\n\u003c/map\u003e\n```",
+      "revId": "f2210b67ff7184d7c8fab244afc90a975ef54e2d",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
