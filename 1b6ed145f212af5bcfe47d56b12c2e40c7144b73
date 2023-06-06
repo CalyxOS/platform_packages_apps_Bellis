@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "875d6cdf_85b50171",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-06T19:39:55Z",
+      "side": 1,
+      "message": "Ref: https://cs.android.com/android/platform/superproject/+/android-13.0.0_r49:frameworks/base/packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java",
+      "revId": "1b6ed145f212af5bcfe47d56b12c2e40c7144b73",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}

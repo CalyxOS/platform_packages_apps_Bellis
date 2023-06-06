@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "55c2e4bf_7d4960e5",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-06T19:39:55Z",
+      "side": 1,
+      "message": "We do, but then we\u0027re missing something compared to SettingsProvider, this is a exact copy and AFAICT that inits db with a VERSION_UNSPECIFIED of `-1`",
+      "parentUuid": "c997bcb0_0a978204",
+      "revId": "4f765cf83c54ab3ef0271f5c437a2e1ff420f6b4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b7172124_c7f68d1e",
         "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
         "patchSetId": 4
@@ -31,6 +49,24 @@
       "writtenOn": "2023-06-06T19:34:46Z",
       "side": 1,
       "message": "Should be `\u003c 103`, or it will stop after upgrading to 102 above.",
+      "revId": "4f765cf83c54ab3ef0271f5c437a2e1ff420f6b4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3639e94_5577bbfb",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-06T19:39:55Z",
+      "side": 1,
+      "message": "Actually, the top most should\u0027ve been 101 instead.",
+      "parentUuid": "b7172124_c7f68d1e",
       "revId": "4f765cf83c54ab3ef0271f5c437a2e1ff420f6b4",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
@@ -52,6 +88,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "63ac06c1_e3c18fef",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-06T19:39:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "706c49a3_654df460",
+      "revId": "4f765cf83c54ab3ef0271f5c437a2e1ff420f6b4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "37f83c78_a7666d29",
@@ -65,6 +119,24 @@
       "writtenOn": "2023-06-06T19:34:46Z",
       "side": 1,
       "message": "Should be `\u003c 105`",
+      "revId": "4f765cf83c54ab3ef0271f5c437a2e1ff420f6b4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7f2488a2_aec3e8e5",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-06T19:39:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "37f83c78_a7666d29",
       "revId": "4f765cf83c54ab3ef0271f5c437a2e1ff420f6b4",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
