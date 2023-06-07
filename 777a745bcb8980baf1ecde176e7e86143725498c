@@ -368,6 +368,30 @@
       },
       "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d964fee7_a37c9147",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-07T14:53:03Z",
+      "side": 1,
+      "message": "Torsten, is there a proper way to modify the intent that started the activity? I can confirm that merely adding an extra to getIntent() changes the app\u0027s in-memory copy only, so if it\u0027s killed for some reason that change is lost, unlike savedInstanceState.",
+      "parentUuid": "3d4434b7_4e3f0dd9",
+      "range": {
+        "startLine": 26,
+        "startChar": 8,
+        "endLine": 28,
+        "endChar": 9
+      },
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
