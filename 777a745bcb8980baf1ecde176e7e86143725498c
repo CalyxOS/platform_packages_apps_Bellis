@@ -92,6 +92,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "3bfddd35_d518774e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-07T14:34:21Z",
+      "side": 1,
+      "message": "Another weird thing: sometimes Bellis has its onCreate called again while SetupWizard is still running, so you may be in the middle of it and see SetupWizard pop up again and interrupt you (prior to a fix). The intent is the same when this happens. I don\u0027t know why this happens -- maybe a bug in SetupWizard?\n\nStill, regardless of any bug in SetupWizard, we do need to be sure it\u0027s not launched multiple times.",
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b0005414_d0dad757",
         "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
         "patchSetId": 2
@@ -319,6 +336,30 @@
       "side": 1,
       "message": "Extra may work. Not sure given this is not started for result",
       "parentUuid": "ff2b248a_86c24715",
+      "range": {
+        "startLine": 26,
+        "startChar": 8,
+        "endLine": 28,
+        "endChar": 9
+      },
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3d4434b7_4e3f0dd9",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-07T14:34:21Z",
+      "side": 1,
+      "message": "Adding an extra to that intent from within onCreate does appear to work just as well. It may just be modifying the copy of the intent in memory, so it may not work if Bellis were actually closed or killed before we return to it. But either way it seems to work.",
+      "parentUuid": "b40d88ea_5b2dbdc6",
       "range": {
         "startLine": 26,
         "startChar": 8,
