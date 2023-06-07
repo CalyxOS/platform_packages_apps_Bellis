@@ -207,6 +207,30 @@
       },
       "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ff2b248a_86c24715",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2023-06-07T13:57:25Z",
+      "side": 1,
+      "message": "I\u0027ve seen apps change the intent, like removing/adding an extra to signal that it was handled.\n\nI am skeptical about ActivityResultContract helping here. Isn\u0027t this just a different API for the same thing?",
+      "parentUuid": "24f4d88d_b411b227",
+      "range": {
+        "startLine": 26,
+        "startChar": 8,
+        "endLine": 28,
+        "endChar": 9
+      },
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
