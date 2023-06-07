@@ -56,6 +56,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "297e7a68_a9ebc66c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-07T14:20:28Z",
+      "side": 1,
+      "message": "It probably doesn\u0027t finish properly given it disables a bunch of components (and that\u0027s how it \"finishes\"). Interesting if that\u0027s the cause of this behaviour. Also would be more reason to refactor SUW in 14",
+      "parentUuid": "b5389273_4c0c86b0",
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b0005414_d0dad757",
         "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
         "patchSetId": 2
