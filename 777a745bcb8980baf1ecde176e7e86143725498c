@@ -416,6 +416,30 @@
       },
       "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aedabd44_8d3e2283",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-07T15:04:28Z",
+      "side": 1,
+      "message": "Aayush, to test, I tried:\n\n```\nval startForResult \u003d registerForActivityResult(StartActivityForResult()) {\n    Log.i(TAG, \"launchSUW: activity completed\")\n}\nstartForResult.launch(intent)\n```\n\n...and the SUW activity was \"completed\" before the SUW even finished. It \"completes\" in a few seconds, just sitting idle on the first screen. And then we do end up having `onCreate` called again at the end.",
+      "parentUuid": "d964fee7_a37c9147",
+      "range": {
+        "startLine": 26,
+        "startChar": 8,
+        "endLine": 28,
+        "endChar": 9
+      },
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
