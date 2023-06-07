@@ -38,6 +38,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "b5389273_4c0c86b0",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-07T14:02:02Z",
+      "side": 1,
+      "message": "Another thing I read is that this can happen if the called activity (SetupWizard in this case) doesn\u0027t finish() properly.",
+      "parentUuid": "fc34da7e_238722da",
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b0005414_d0dad757",
         "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
         "patchSetId": 2
