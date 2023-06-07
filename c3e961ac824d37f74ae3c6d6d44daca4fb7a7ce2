@@ -90,6 +90,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "973fc7fa_42828db4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-07T14:56:31Z",
+      "side": 1,
+      "message": "I\u0027m not sure :/ Torsten or Aayush may have good suggestions on how to handle these 2 calls in the background.\nThese provisioning steps used to be in their own class (which may or may not have avoided this issue) but were refactored into this UI class.\nI also think it makes sense to `finish()` at the end of `ACTION_PROVISIONING_SUCCESSFUL` since onCreate in MainActivity is attempting to open the UI which is not needed in this case.",
+      "parentUuid": "d4bd1556_652dbf4b",
+      "revId": "c3e961ac824d37f74ae3c6d6d44daca4fb7a7ce2",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a3a157b1_1e772333",
         "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
         "patchSetId": 2
