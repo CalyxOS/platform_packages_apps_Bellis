@@ -71,6 +71,23 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d4bd1556_652dbf4b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-07T14:39:18Z",
+      "side": 1,
+      "message": "It\u0027s taken me a while to realize this, but I suppose the blank screen is just Bellis hanging in onCreate, since we do everything in there on the main thread.\n\nHow should we handle this then?",
+      "revId": "c3e961ac824d37f74ae3c6d6d44daca4fb7a7ce2",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a3a157b1_1e772333",
