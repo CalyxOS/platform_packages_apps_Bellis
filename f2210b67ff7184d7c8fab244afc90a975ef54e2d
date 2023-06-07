@@ -52,6 +52,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "61cce347_00ad45ac",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 9
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-07T13:25:57Z",
+      "side": 1,
+      "message": "Yesterday we learned we can\u0027t use a `when` block because, by design, it will only match once and then break. e.g. If we match on 1 and then set to 2, it will not match 2 in a `when` block. Even if we use a comparison that has multiple matches from the start, it will only pick one and leave the block. This led to a bug that inspired the rework. We need it to potentially match multiple times.",
+      "parentUuid": "b50ce6dc_2632088d",
+      "revId": "f2210b67ff7184d7c8fab244afc90a975ef54e2d",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c792e636_6c901087",
