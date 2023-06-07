@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "fc34da7e_238722da",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-07T14:00:40Z",
+      "side": 1,
+      "message": "Afaik it\u0027s not killed. The PID/TID are the same in the second call. Should that be definitive or is there a better way to know?\n\nFrom some of the things I was reading, it can be normal for it to be called a second time. I don\u0027t know if that\u0027s true.",
+      "parentUuid": "b52ad73a_d1bae846",
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b0005414_d0dad757",
         "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
         "patchSetId": 2
