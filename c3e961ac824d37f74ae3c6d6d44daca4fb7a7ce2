@@ -55,6 +55,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "53e3bf0d_d12de573",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-07T14:34:01Z",
+      "side": 1,
+      "message": "Actually yeah, SuW does depend on most of the apps there\n\n1. microG -\u003e PostProvisioningHelper enables it, then SuW disables it if users chooses so\n2. SeedVault -\u003e need to launch that for restore\n3. F-Droid -\u003e mostly a UX thing, refreshing the repos.",
+      "parentUuid": "a6dd7490_690bf276",
+      "revId": "c3e961ac824d37f74ae3c6d6d44daca4fb7a7ce2",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a3a157b1_1e772333",
         "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
         "patchSetId": 2
