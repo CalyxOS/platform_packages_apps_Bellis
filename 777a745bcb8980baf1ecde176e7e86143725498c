@@ -392,6 +392,30 @@
       },
       "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3fcfc341_58643fa1",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-07T15:01:34Z",
+      "side": 1,
+      "message": "I think the extra is meant to be added from suw when returning normally? At least that\u0027s the way I understand it (the way startActivityForResult does it). But it seems like it has its limitations too.\nNonetheless, sounds like Chirayu is seeing this behaviour fixed with the SUW change?",
+      "parentUuid": "d964fee7_a37c9147",
+      "range": {
+        "startLine": 26,
+        "startChar": 8,
+        "endLine": 28,
+        "endChar": 9
+      },
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
