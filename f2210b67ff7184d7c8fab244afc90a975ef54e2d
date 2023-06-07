@@ -35,6 +35,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d31f354_19e9cacf",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 9
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-07T13:41:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8cb066cb_4119c129",
+      "revId": "f2210b67ff7184d7c8fab244afc90a975ef54e2d",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b50ce6dc_2632088d",
@@ -83,6 +101,30 @@
       "writtenOn": "2023-06-07T03:44:07Z",
       "side": 1,
       "message": "Please use string interpolation",
+      "range": {
+        "startLine": 136,
+        "startChar": 0,
+        "endLine": 139,
+        "endChar": 9
+      },
+      "revId": "f2210b67ff7184d7c8fab244afc90a975ef54e2d",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f29b2084_4d7d1708",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 9
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-07T13:41:33Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c792e636_6c901087",
       "range": {
         "startLine": 136,
         "startChar": 0,
