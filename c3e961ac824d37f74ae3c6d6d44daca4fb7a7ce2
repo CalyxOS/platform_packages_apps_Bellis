@@ -38,6 +38,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a6dd7490_690bf276",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-07T14:27:02Z",
+      "side": 1,
+      "message": "Just a little concerned that this could lead to a race condition where suw would depend on steps being completed in the PostProvisioningHelper. But there may not be a way around it",
+      "revId": "c3e961ac824d37f74ae3c6d6d44daca4fb7a7ce2",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a3a157b1_1e772333",
         "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
         "patchSetId": 2
@@ -73,6 +90,30 @@
       "side": 1,
       "message": "https://gitlab.com/CalyxOS/platform_packages_apps_Bellis/-/blob/android13/app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt#L21 - it\u0027s not in this list.\n\nIn fact, I don\u0027t see the SuW package name mentioned anywhere else at all.",
       "parentUuid": "a3a157b1_1e772333",
+      "range": {
+        "startLine": 28,
+        "startChar": 16,
+        "endLine": 28,
+        "endChar": 27
+      },
+      "revId": "c3e961ac824d37f74ae3c6d6d44daca4fb7a7ce2",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef4b5e66_3749634b",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-07T14:27:02Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "7dde2e27_91982565",
       "range": {
         "startLine": 28,
         "startChar": 16,
