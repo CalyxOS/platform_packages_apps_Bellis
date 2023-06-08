@@ -123,6 +123,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e63868f3_a782c18f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-08T00:20:20Z",
+      "side": 1,
+      "message": "I\u0027ve seen that once with my \"Disable SetupWizard completely\" patch, but only when the system was in a bad configuration.",
+      "parentUuid": "07b0f98a_3d2e88ce",
+      "revId": "c3e961ac824d37f74ae3c6d6d44daca4fb7a7ce2",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a3a157b1_1e772333",
