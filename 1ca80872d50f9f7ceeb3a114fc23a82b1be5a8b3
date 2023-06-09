@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc07c442_bd602f05",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-06-09T16:42:38Z",
+      "side": 1,
+      "message": "Works on gradle, need to test on build system once to be sure",
+      "revId": "1ca80872d50f9f7ceeb3a114fc23a82b1be5a8b3",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
