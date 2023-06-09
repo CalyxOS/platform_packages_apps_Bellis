@@ -20,6 +20,10 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
+import kotlinx.coroutines.launch
 
 class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
 
@@ -35,13 +39,13 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
         activity?.registerReceiver(
             object : BroadcastReceiver() {
                 override fun onReceive(context: Context?, intent: Intent?) {
-                    if (intent?.action == Intent.ACTION_MANAGED_PROFILE_REMOVED) {
+                    if (intent?.action == Intent.ACTION_MANAGED_PROFILE_REMOVED && parentFragment != null) {
                         parentFragmentManager.beginTransaction()
                             .detach(this@SetupProfileFragment)
-                            .commitNow()
+                            .commitAllowingStateLoss()
                         parentFragmentManager.beginTransaction()
                             .attach(this@SetupProfileFragment)
-                            .commitNow()
+                            .commitAllowingStateLoss()
                     }
                 }
             },
