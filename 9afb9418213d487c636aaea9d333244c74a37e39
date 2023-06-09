@@ -16,6 +16,24 @@
       "message": "I think this is fine for now as there is literally nothing that should be backed up. Maybe when we release it publicly on third party appstores, we can revisit this.",
       "revId": "9afb9418213d487c636aaea9d333244c74a37e39",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b9a4749_15f53c03",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-09T16:05:53Z",
+      "side": 1,
+      "message": "I\u0027d rather not. This is a bad precedent.",
+      "parentUuid": "ef670501_27103402",
+      "revId": "9afb9418213d487c636aaea9d333244c74a37e39",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
