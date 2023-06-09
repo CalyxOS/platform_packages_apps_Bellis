@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef670501_27103402",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-06-09T15:19:55Z",
+      "side": 1,
+      "message": "I think this is fine for now as there is literally nothing that should be backed up. Maybe when we release it publicly on third party appstores, we can revisit this.",
+      "revId": "9afb9418213d487c636aaea9d333244c74a37e39",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
