@@ -87,6 +87,24 @@
       "parentUuid": "fe26dffa_5ae2eeb7",
       "revId": "9afb9418213d487c636aaea9d333244c74a37e39",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3155d025_09c87df5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-13T19:50:29Z",
+      "side": 1,
+      "message": "One second though, why would (fake-)d2d ignore this change? The device-transfer rules should prevent it, I thought.",
+      "parentUuid": "d076fe36_84f53e56",
+      "revId": "9afb9418213d487c636aaea9d333244c74a37e39",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
