@@ -69,6 +69,24 @@
       "parentUuid": "27e4212b_e5d6ac27",
       "revId": "9afb9418213d487c636aaea9d333244c74a37e39",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d076fe36_84f53e56",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-13T19:45:45Z",
+      "side": 1,
+      "message": "Agree; the reason for the pref is that it was an easy way to be sure that the particular profile is the Safer/Safest profile, instead of a profile added later (multiple profiles), without assuming Safer/Safest is the first profile found or something, which might not be guaranteed to be true forever. But it looks like we may want/need something more robust than that.",
+      "parentUuid": "fe26dffa_5ae2eeb7",
+      "revId": "9afb9418213d487c636aaea9d333244c74a37e39",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
