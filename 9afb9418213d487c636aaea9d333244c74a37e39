@@ -34,6 +34,23 @@
       "parentUuid": "ef670501_27103402",
       "revId": "9afb9418213d487c636aaea9d333244c74a37e39",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "27e4212b_e5d6ac27",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-13T19:26:16Z",
+      "side": 1,
+      "message": "Maybe the following is one reason why, as it stands, this change may be a good idea: https://review.calyxos.org/c/CalyxOS/platform_packages_apps_Bellis/+/16124/comments/586f0487_86a643f2\n\nBut I think the above-linked problem should be fixed.",
+      "revId": "9afb9418213d487c636aaea9d333244c74a37e39",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
