@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "586f0487_86a643f2",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 8
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-13T19:23:56Z",
+      "side": 1,
+      "message": "We should probably have a better way to safely determine the garlic level, as opposed to storing it in shared preferences.\n\nWhy? Here\u0027s a possible problem: User sets up device in Safest. User reaches the work profile setup wizard. User restores data. Data for Bellis is restored. garlicLevel is replaced with a past value. Safest profile would then be removable, since this is the only thing stopping it.\n\nRelated: https://review.calyxos.org/c/CalyxOS/platform_packages_apps_Bellis/+/17659",
+      "revId": "41771aba346f8f025947e1f2a756ea4c62215fa9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
