@@ -51,6 +51,24 @@
       "message": "Maybe the following is one reason why, as it stands, this change may be a good idea: https://review.calyxos.org/c/CalyxOS/platform_packages_apps_Bellis/+/16124/comments/586f0487_86a643f2\n\nBut I think the above-linked problem should be fixed.",
       "revId": "9afb9418213d487c636aaea9d333244c74a37e39",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fe26dffa_5ae2eeb7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-13T19:38:27Z",
+      "side": 1,
+      "message": "It\u0027d only be a bandaid fix.\n\n(fake-)d2d would ignore this.\n\nThe correct way would be to\n1) Not backup this pref\n2) Why is it only relying on the pref? It should also rely on the system setting which should also get restored. If pref doesn\u0027t match system setting, update it to match that.",
+      "parentUuid": "27e4212b_e5d6ac27",
+      "revId": "9afb9418213d487c636aaea9d333244c74a37e39",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
