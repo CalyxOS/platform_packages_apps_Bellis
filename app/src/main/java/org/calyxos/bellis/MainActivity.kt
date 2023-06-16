@@ -9,9 +9,12 @@ package org.calyxos.bellis
 import android.app.admin.DevicePolicyManager
 import android.content.Intent
 import android.os.Bundle
+import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.NavHostFragment
+import kotlinx.coroutines.MainScope
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,13 +23,16 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_activity)
 
         if (!appIsProfileOwner()) {
-            navigateToSetupFragment()
+            navigateToFragment(R.id.setupProfileFragment)
         }
 
         when (intent.action) {
             DevicePolicyManager.ACTION_PROVISIONING_SUCCESSFUL -> {
-                PostProvisioningHelper.completeProvisioning(this)
-                launchSUW()
+                navigateToFragment(R.id.pleaseWaitFragment)
+                MainScope().launch {
+                    PostProvisioningHelper.completeProvisioning(this@MainActivity)
+                    launchSUW()
+                }
             }
         }
     }
@@ -36,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         return devicePolicyManager.isProfileOwnerApp(this.packageName)
     }
 
-    private fun navigateToSetupFragment() {
+    private fun navigateToFragment(fragmentId: Int) {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         val navController = navHostFragment.navController
@@ -46,7 +52,12 @@ class MainActivity : AppCompatActivity() {
             .build()
         navOptions.shouldLaunchSingleTop()
 
-        navController.navigate(R.id.setupProfileFragment, null, navOptions)
+        navController.navigate(fragmentId, null, navOptions)
+    }
+
+    private val startSuwForResult = registerForActivityResult(StartActivityForResult()) {
+        // Regardless of the result, we want to navigate out of the Please Wait screen.
+        navigateToFragment(R.id.basicManagedProfileFragment)
     }
 
     private fun launchSUW() {
@@ -57,6 +68,6 @@ class MainActivity : AppCompatActivity() {
             setClassName(setupWizard, setupWizard + setupWizardActivity)
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         }
-        startActivity(intent)
+        startSuwForResult.launch(intent)
     }
 }
