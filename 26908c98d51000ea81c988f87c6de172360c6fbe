@@ -35,6 +35,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "184f7438_25bf2134",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-16T14:22:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "9810acff_a9003fa0",
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f1cf2705_e46927e2",
@@ -48,6 +66,24 @@
       "writtenOn": "2023-06-16T09:41:19Z",
       "side": 1,
       "message": "To switch to pure migration, we change this to PREF_VERSION instead.",
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "98bdd434_f8fc732b",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-16T14:22:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "f1cf2705_e46927e2",
       "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
@@ -89,6 +125,30 @@
       "side": 1,
       "message": "I asked this question in the channel, is it a pure migration (like Lineage Settings / old AOSP Settings), or migration + defaults (current AOSP settings).\n\nRight now, this patch is migration + defaults.\n\nWe need to pick one and stick with it. I\u0027m fine with this \"migration + defaults\" approach, but also ok with just migration. It\u0027s a one line change, anyways.",
       "parentUuid": "76892a8f_50b86675",
+      "range": {
+        "startLine": 105,
+        "startChar": 20,
+        "endLine": 106,
+        "endChar": 83
+      },
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f8947b1e_4fda5e5a",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-16T14:22:24Z",
+      "side": 1,
+      "message": "I\u0027m fine with migration + defaults, but let\u0027s get rid of PostProvisioningHelper (and move everything from there to this) then since all it\u0027s doing is setting up defaults",
+      "parentUuid": "1b610b00_d8c448f3",
       "range": {
         "startLine": 105,
         "startChar": 20,
@@ -159,6 +219,30 @@
       "side": 1,
       "message": "No, we shouldn\u0027t be removing anything needed for migration. It doesn\u0027t hurt at all having it here, and this when shipped should fix any devices where it\u0027s still an issue.\n\nFor example, fixed migration would help anyone who still has something like  https://www.reddit.com/r/CalyxOS/comments/126vr63/comment/jednd49/?utm_source\u003dshare\u0026utm_medium\u003dweb2x\u0026context\u003d3",
       "parentUuid": "cf50c5a5_71a8c4f6",
+      "range": {
+        "startLine": 123,
+        "startChar": 20,
+        "endLine": 123,
+        "endChar": 79
+      },
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f4529e8_7b896aac",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-16T14:22:24Z",
+      "side": 1,
+      "message": "That user must have had a problem with the when blocks would be my guess.\n\nWe shouldn\u0027t keep this anymore. It required a frameworks change to work which makes it impossible to ship this as a user app as long as this exists. It is not needed anymore since we\u0027ve gone back to AOSP behaviour where frameworks sets this and all users would now have run this migration. It\u0027s also not proper to execute this again if it has already been set elsewhere (callbacks may trigger and cause unwanted execution of other calls).",
+      "parentUuid": "34ace839_4c3509e4",
       "range": {
         "startLine": 123,
         "startChar": 20,
