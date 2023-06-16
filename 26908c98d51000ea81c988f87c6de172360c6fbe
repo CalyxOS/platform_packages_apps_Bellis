@@ -299,6 +299,30 @@
       },
       "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bbc6531f_b32b185f",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-16T14:45:18Z",
+      "side": 1,
+      "message": "\u003e all users would now have run this migration.\n\nThey may not have, due to the `when`. That was the exact problem the user faced in the linked post, they had to fix it manually. Who knows if there\u0027s others.\n\nWe can drop it in 14, or when we go to \"stable6\" - basically after we ensure this has ran for everyone.",
+      "parentUuid": "5f4529e8_7b896aac",
+      "range": {
+        "startLine": 123,
+        "startChar": 20,
+        "endLine": 123,
+        "endChar": 79
+      },
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
