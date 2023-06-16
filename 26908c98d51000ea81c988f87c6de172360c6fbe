@@ -53,6 +53,23 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7319e463_228b8106",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-16T20:25:34Z",
+      "side": 1,
+      "message": "I would love to see this merged soon, if we can come to an agreement, because it\u0027s hard to maintain any nearby code while it\u0027s still broken.",
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9810acff_a9003fa0",
@@ -356,6 +373,47 @@
         "endLine": 123,
         "endChar": 79
       },
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "27e90d7f_b063d1fd",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-16T20:25:34Z",
+      "side": 1,
+      "message": "I agree that we should just keep it in for now, and then later remove it and replace it with a comment that the migration is no longer needed or something.\n\nBut for now let\u0027s surround it with a `try` block so we can catch the exception that would occur without access to user_setup_complete, and then this will still be portable (not crash without framework change) until we do remove it.",
+      "parentUuid": "bbc6531f_b32b185f",
+      "range": {
+        "startLine": 123,
+        "startChar": 20,
+        "endLine": 123,
+        "endChar": 79
+      },
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9401a5d2_1c1d2295",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-16T20:25:34Z",
+      "side": 1,
+      "message": "nit: replace \"Bellis\" with a `private val TAG`",
       "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
