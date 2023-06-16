@@ -107,6 +107,23 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca03fd73_c01286ca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-16T01:55:31Z",
+      "side": 1,
+      "message": "I feel like the real solution is https://review.calyxos.org/c/CalyxOS/platform_packages_apps_SetupWizard/+/17585 if we can get that to work?",
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b0005414_d0dad757",
