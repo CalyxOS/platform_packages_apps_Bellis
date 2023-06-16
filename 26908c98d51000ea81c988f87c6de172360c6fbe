@@ -18,6 +18,23 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d3a451e_6e8aa4f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-16T14:54:37Z",
+      "side": 1,
+      "message": "While clearly this had bugs due to `when`, we haven\u0027t had that many complaints.\n\nLet\u0027s hold off for a bit and have everyone get on the same page before shipping.",
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9810acff_a9003fa0",
