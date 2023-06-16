@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   SPDX-FileCopyrightText: 2014 The Android Open Source Project
   SPDX-FileCopyrightText: 2022 The Calyx Institute
   SPDX-License-Identifier: Apache-2.0
@@ -18,4 +17,5 @@
     <string name="existing_work_profile_help">To manage the existing work profile, navigate to the &lt;b&gt;Work&lt;/b&gt; tab in the launcher</string>
     <string name="manage_work_profile">Manage work profile</string>
     <string name="manage_work_profile_help">Work apps are marked with a briefcase icon so you can distinguish them from personal apps.</string>
+    <string name="please_wait">Please wait for the Work Profile Setup Wizard...</string>
 </resources>
