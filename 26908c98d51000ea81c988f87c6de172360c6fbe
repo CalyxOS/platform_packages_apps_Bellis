@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "76892a8f_50b86675",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-16T01:54:05Z",
+      "side": 1,
+      "message": "This exists in PostProvisioningHelper. Not sure where we should keep it but let\u0027s remove a duplicate. If we keep it here we may be able to remove PostProvisioningHelper entirely and move everything here. Keep in mind that we add a fair bit to PostProvisioningHelper in garlic level though. So could keep this purely for migrations in which case we should consider keeping defaults in PostProvisioningHelper?",
+      "range": {
+        "startLine": 105,
+        "startChar": 20,
+        "endLine": 106,
+        "endChar": 83
+      },
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3f1312d0_c7d9729d",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-16T01:54:05Z",
+      "side": 1,
+      "message": "See above, no duplicate but should it stay here or move there?",
+      "range": {
+        "startLine": 114,
+        "startChar": 20,
+        "endLine": 115,
+        "endChar": 85
+      },
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cf50c5a5_71a8c4f6",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-16T01:54:05Z",
+      "side": 1,
+      "message": "Is this still necessary at this point? If not I\u0027d like to remove this and revert the corresponding frameworks patch",
+      "range": {
+        "startLine": 123,
+        "startChar": 20,
+        "endLine": 123,
+        "endChar": 79
+      },
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
