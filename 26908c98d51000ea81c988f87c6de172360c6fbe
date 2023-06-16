@@ -161,6 +161,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "cc146620_049286c4",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-16T14:28:50Z",
+      "side": 1,
+      "message": "+1 to doing initial setup in this service, and if that means doing it as part of establishment of defaults, that seems fine to me.\n\nThe main thing I have been wondering is if we should be doing all of this on another thread. Apparently in general, a [Service uses the same main thread as the frontend of an app itself](https://developer.android.com/guide/components/services), and the linked page features a big warning about it. I couldn\u0027t find info about whether DeviceAdminService works differently.",
+      "parentUuid": "f8947b1e_4fda5e5a",
+      "range": {
+        "startLine": 105,
+        "startChar": 20,
+        "endLine": 106,
+        "endChar": 83
+      },
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "3f1312d0_c7d9729d",
         "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
         "patchSetId": 10
