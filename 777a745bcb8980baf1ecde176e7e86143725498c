@@ -124,6 +124,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b9a9c749_948bba8f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-16T18:16:18Z",
+      "side": 1,
+      "message": "As I described earlier, the SetupWizard pops up on top of itself sometimes because of Bellis\u0027s activity being re-created in the background. Disabling the SetupWizard after it\u0027s been completed will not solve that problem.",
+      "parentUuid": "ca03fd73_c01286ca",
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b0005414_d0dad757",
