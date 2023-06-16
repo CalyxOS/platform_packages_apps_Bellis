@@ -185,6 +185,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "9ac496e3_cd49fd1a",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-16T14:29:53Z",
+      "side": 1,
+      "message": "Should have said main thread. Anyway, shouldn\u0027t be hard to use a separate thread",
+      "parentUuid": "cc146620_049286c4",
+      "range": {
+        "startLine": 105,
+        "startChar": 20,
+        "endLine": 106,
+        "endChar": 83
+      },
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "3f1312d0_c7d9729d",
         "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
         "patchSetId": 10
