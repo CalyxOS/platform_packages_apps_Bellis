@@ -1,6 +1,57 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "41b20779_fe2dbd57",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-16T09:41:19Z",
+      "side": 1,
+      "message": "Note: This commit is simply rewriting the existing migration code. There\u0027s no behaviour change, only bug fixes.\n\nAny change if needed should happen separately, in a follow up commit, to avoid confusion.\n\nAlso, given that this is doing migration properly now (with versioning), they shouldn\u0027t be removed unless for rare exceptions.",
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9810acff_a9003fa0",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-16T09:41:19Z",
+      "side": 1,
+      "message": "To switch to pure migration, we get rid of this.",
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f1cf2705_e46927e2",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-16T09:41:19Z",
+      "side": 1,
+      "message": "To switch to pure migration, we change this to PREF_VERSION instead.",
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "76892a8f_50b86675",
@@ -14,6 +65,30 @@
       "writtenOn": "2023-06-16T01:54:05Z",
       "side": 1,
       "message": "This exists in PostProvisioningHelper. Not sure where we should keep it but let\u0027s remove a duplicate. If we keep it here we may be able to remove PostProvisioningHelper entirely and move everything here. Keep in mind that we add a fair bit to PostProvisioningHelper in garlic level though. So could keep this purely for migrations in which case we should consider keeping defaults in PostProvisioningHelper?",
+      "range": {
+        "startLine": 105,
+        "startChar": 20,
+        "endLine": 106,
+        "endChar": 83
+      },
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1b610b00_d8c448f3",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-16T09:41:19Z",
+      "side": 1,
+      "message": "I asked this question in the channel, is it a pure migration (like Lineage Settings / old AOSP Settings), or migration + defaults (current AOSP settings).\n\nRight now, this patch is migration + defaults.\n\nWe need to pick one and stick with it. I\u0027m fine with this \"migration + defaults\" approach, but also ok with just migration. It\u0027s a one line change, anyways.",
+      "parentUuid": "76892a8f_50b86675",
       "range": {
         "startLine": 105,
         "startChar": 20,
@@ -60,6 +135,30 @@
       "writtenOn": "2023-06-16T01:54:05Z",
       "side": 1,
       "message": "Is this still necessary at this point? If not I\u0027d like to remove this and revert the corresponding frameworks patch",
+      "range": {
+        "startLine": 123,
+        "startChar": 20,
+        "endLine": 123,
+        "endChar": 79
+      },
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "34ace839_4c3509e4",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-16T09:41:19Z",
+      "side": 1,
+      "message": "No, we shouldn\u0027t be removing anything needed for migration. It doesn\u0027t hurt at all having it here, and this when shipped should fix any devices where it\u0027s still an issue.\n\nFor example, fixed migration would help anyone who still has something like  https://www.reddit.com/r/CalyxOS/comments/126vr63/comment/jednd49/?utm_source\u003dshare\u0026utm_medium\u003dweb2x\u0026context\u003d3",
+      "parentUuid": "cf50c5a5_71a8c4f6",
       "range": {
         "startLine": 123,
         "startChar": 20,
