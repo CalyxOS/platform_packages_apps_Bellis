@@ -52,6 +52,29 @@
       "parentUuid": "fe609448_65fb9adc",
       "revId": "80b864ee39a247d8f0299ff0e0a4ebc4fb392b29",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3892805b_21b9ae19",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-19T20:51:06Z",
+      "side": 1,
+      "message": "Is this the right package name for aperture?",
+      "range": {
+        "startLine": 24,
+        "startChar": 9,
+        "endLine": 24,
+        "endChar": 28
+      },
+      "revId": "80b864ee39a247d8f0299ff0e0a4ebc4fb392b29",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
