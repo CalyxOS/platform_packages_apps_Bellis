@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4a6609e3_9dfe7f5b",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 27
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-19T17:50:40Z",
+      "side": 1,
+      "message": "Does this actually help with the double launch of SUW, or are we relying on `provisioningComplete` for that? Is it still useful to have either way?",
+      "revId": "39f256e0ef223ee8e7f5a1b036f409895e17812a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
