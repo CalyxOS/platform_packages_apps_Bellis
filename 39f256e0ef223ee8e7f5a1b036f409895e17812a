@@ -16,6 +16,24 @@
       "message": "Does this actually help with the double launch of SUW, or are we relying on `provisioningComplete` for that? Is it still useful to have either way?",
       "revId": "39f256e0ef223ee8e7f5a1b036f409895e17812a",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c2c64e3_afd68ca1",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 27
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-19T19:58:39Z",
+      "side": 1,
+      "message": "We\u0027re relying on `provisioningComplete` but this seems to help with ensuring the provisioning state is set before setup wizard is launched along with the changes made to the sequence of the compliance intent in `MainActivity`",
+      "parentUuid": "4a6609e3_9dfe7f5b",
+      "revId": "39f256e0ef223ee8e7f5a1b036f409895e17812a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
