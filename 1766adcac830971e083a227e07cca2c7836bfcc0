@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "93fc7295_ab8ceef5",
+        "filename": "gradle/wrapper/gradle-wrapper.properties",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-19T20:52:03Z",
+      "side": 1,
+      "message": "I believe the default version that AGP uses is 8.0-all",
+      "range": {
+        "startLine": 4,
+        "startChar": 68,
+        "endLine": 4,
+        "endChar": 75
+      },
+      "revId": "1766adcac830971e083a227e07cca2c7836bfcc0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
