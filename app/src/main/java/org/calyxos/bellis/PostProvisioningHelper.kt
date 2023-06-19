@@ -78,6 +78,9 @@ object PostProvisioningHelper {
                     devicePolicyManager.clearUserRestriction(componentName, it)
                 }
             }
+
+            val sharedPreferences = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
+            sharedPreferences.edit().putBoolean(PREF_DONE, true).apply()
         }
     }
 
