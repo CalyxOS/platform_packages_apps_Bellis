@@ -144,6 +144,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "3b71ad61_6cdabb8b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-06-19T17:34:41Z",
+      "side": 1,
+      "message": "https://review.calyxos.org/c/CalyxOS/platform_packages_apps_Bellis/+/17983/1\nI\u0027d go with this",
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b0005414_d0dad757",
         "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
         "patchSetId": 2
