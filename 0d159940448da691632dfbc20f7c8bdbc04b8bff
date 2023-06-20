@@ -70,6 +70,30 @@
       },
       "revId": "0d159940448da691632dfbc20f7c8bdbc04b8bff",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "596b203d_09b63653",
+        "filename": ".idea/kotlinc.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-20T10:04:29Z",
+      "side": 1,
+      "message": "Should add it to `.gitignore` otherwise this\u0027ll keep happening every time.",
+      "parentUuid": "a6003809_eb8f4eea",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 10
+      },
+      "revId": "0d159940448da691632dfbc20f7c8bdbc04b8bff",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
