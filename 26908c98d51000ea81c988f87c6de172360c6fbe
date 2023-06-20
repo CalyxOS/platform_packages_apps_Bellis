@@ -440,6 +440,24 @@
       "message": "nit: replace \"Bellis\" with a `private val TAG`",
       "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7de017f0_da5fdfec",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-20T19:07:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9401a5d2_1c1d2295",
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
