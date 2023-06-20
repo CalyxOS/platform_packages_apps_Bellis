@@ -75,6 +75,30 @@
       },
       "revId": "80b864ee39a247d8f0299ff0e0a4ebc4fb392b29",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7dcfeb3e_4e0fb7d9",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-20T06:47:22Z",
+      "side": 1,
+      "message": "Yes, 15096: Use aapt to rename to com.android.camera2 | https://review.calyxos.org/c/CalyxOS/platform_packages_apps_Aperture/+/15096",
+      "parentUuid": "3892805b_21b9ae19",
+      "range": {
+        "startLine": 24,
+        "startChar": 9,
+        "endLine": 24,
+        "endChar": 28
+      },
+      "revId": "80b864ee39a247d8f0299ff0e0a4ebc4fb392b29",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
