@@ -34,6 +34,24 @@
       "parentUuid": "5c46cf5a_238f4d50",
       "revId": "ae210ebde63a1e05997e922091e598626bb2cc27",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a08e07ef_60d7ded5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-20T14:05:49Z",
+      "side": 1,
+      "message": "No work badge pre-QPR3 either. If possible it would be good to have one. I think I remember seeing code in Launcher3 for it, so maybe it\u0027s just broken. I can take a look.",
+      "parentUuid": "2148d777_01d58f58",
+      "revId": "ae210ebde63a1e05997e922091e598626bb2cc27",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
