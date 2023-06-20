@@ -46,6 +46,30 @@
       },
       "revId": "0d159940448da691632dfbc20f7c8bdbc04b8bff",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6003809_eb8f4eea",
+        "filename": ".idea/kotlinc.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-06-20T06:53:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eeac338e_6db3ffd5",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 10
+      },
+      "revId": "0d159940448da691632dfbc20f7c8bdbc04b8bff",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
