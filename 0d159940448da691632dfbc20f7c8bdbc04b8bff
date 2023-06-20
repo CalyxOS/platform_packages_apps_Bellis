@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5285188c_4d8c9ad7",
+        "filename": ".idea/kotlinc.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-06-20T06:33:26Z",
+      "side": 1,
+      "message": "Do we want to commit this file?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 10
+      },
+      "revId": "0d159940448da691632dfbc20f7c8bdbc04b8bff",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
