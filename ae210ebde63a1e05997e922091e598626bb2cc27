@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5c46cf5a_238f4d50",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-20T13:04:02Z",
+      "side": 1,
+      "message": "Is it normal for the work widgets *not* to have a work badge when the work profile is turned on (so, not differentiable from non-work widgets)? Maybe I am misremembering, but I thought it was there last time I tested this, but I\u0027m not seeing it after QPR3 with the changes queued up for the 4.10.x feature update.",
+      "revId": "ae210ebde63a1e05997e922091e598626bb2cc27",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
