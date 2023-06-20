@@ -52,6 +52,24 @@
       "parentUuid": "2148d777_01d58f58",
       "revId": "ae210ebde63a1e05997e922091e598626bb2cc27",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1bed6ca2_9b5ff9c8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-20T14:40:21Z",
+      "side": 1,
+      "message": "Can\u0027t find any such code. This might be a design decision on AOSP\u0027s part, so maybe we don\u0027t worry about it; this change uses AOSP\u0027s own support for cross-profile widgets, anyway. Other work profile apps could do the same. If we wanted to add a badge to work widgets, we could do a separate change to Launcher3.\n\nOne justification for not having the badge (keeping it as-is): App shortcuts/icons have badges so that you know what you\u0027ll be launching before you launch it. Widgets are already running. Yes, you can tap or interact with them, but presumably by placing a widget, the user has consented for them to be (to some extent) always active, so the badge is less necessary than an app launcher icon. If the work profile is *not* running, the widget shows a badge, and tapping offers to turn on work apps.",
+      "parentUuid": "a08e07ef_60d7ded5",
+      "revId": "ae210ebde63a1e05997e922091e598626bb2cc27",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
