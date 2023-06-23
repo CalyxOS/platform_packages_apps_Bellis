@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "b826fb48_d438f069",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 12
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-23T15:07:55Z",
+      "side": 1,
+      "message": "Minor again; we\u0027ve already been using packageName in the past as a name for a shared preferences file, but it is meaningless; since we are starting over here, it would be nice to take this opportunity to use something slightly more descriptive that happens to give us more control over if/how to handle it in backups.",
+      "revId": "b311a7c82fcf628d4b1a90ac480a00ad7703d5de",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "7e6640b1_b5dd9555",
