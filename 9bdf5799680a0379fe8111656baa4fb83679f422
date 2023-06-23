@@ -16,6 +16,24 @@
       "message": "Now that the PREFS (post-provisioning) shared preferences is back, it would probably be better to use it instead of packageName, and to do the same where this is queried.",
       "revId": "9bdf5799680a0379fe8111656baa4fb83679f422",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "426136d1_a4d0c964",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 9
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-23T18:33:41Z",
+      "side": 1,
+      "message": "I\u0027d rather use a dedicated file here.",
+      "parentUuid": "c15e64be_c2e9716a",
+      "revId": "9bdf5799680a0379fe8111656baa4fb83679f422",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
