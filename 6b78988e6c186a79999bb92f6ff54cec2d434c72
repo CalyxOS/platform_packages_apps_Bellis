@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00d395ae_5515b05b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-23T20:03:04Z",
+      "side": 1,
+      "message": "Work profile SetupWizard seems to take a bit longer to show up, but that might not be because of this.\n\nI noticed it now however while trying to test this (by creating the profile lots of times really quick to see if this holds up)",
+      "revId": "6b78988e6c186a79999bb92f6ff54cec2d434c72",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
