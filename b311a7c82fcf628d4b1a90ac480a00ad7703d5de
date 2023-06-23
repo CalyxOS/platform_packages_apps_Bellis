@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7e6640b1_b5dd9555",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 12
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-23T14:56:00Z",
+      "side": 1,
+      "message": "Extremely minor nit: Android Studio calls these types of curly braces unnecessary and recommends removing them",
+      "revId": "b311a7c82fcf628d4b1a90ac480a00ad7703d5de",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
