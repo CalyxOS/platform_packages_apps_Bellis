@@ -29,7 +29,6 @@ class BasicDeviceAdminService : DeviceAdminService() {
     private lateinit var componentName: ComponentName
     private lateinit var packageReceiver: BroadcastReceiver
     private var managedProfile: Boolean = false
-    private val DEFAULT_VERSION: Int = 1 // DO NOT CHANGE
     private val PREF_VERSION: Int = 6
 
     override fun onCreate() {
@@ -88,8 +87,8 @@ class BasicDeviceAdminService : DeviceAdminService() {
     private fun onUpgrade() {
         val sharedPreferences = getSharedPreferences(PREFS, MODE_PRIVATE)
 
-        // Run through all steps for new users
-        val oldVersion = sharedPreferences.getInt("pref_version", DEFAULT_VERSION)
+        // Don't run through all steps for new users
+        val oldVersion = sharedPreferences.getInt("pref_version", PREF_VERSION)
         val newVersion = PREF_VERSION;
 
         // If up do date - done.
