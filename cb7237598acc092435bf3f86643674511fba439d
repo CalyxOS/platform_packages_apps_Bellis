@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "45934ed9_3eb020d8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-23T18:31:06Z",
+      "side": 1,
+      "message": "Not ready yet, will need additional code removal.\n\nWe also don\u0027t have to do this, but given that this has been discussed, let\u0027s pick one type and stick with it, aka either we merge this or don\u0027t.",
+      "revId": "cb7237598acc092435bf3f86643674511fba439d",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
