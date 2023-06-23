@@ -20,6 +20,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "6f63ecea_b03b7df6",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 12
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-23T15:54:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b826fb48_d438f069",
+      "revId": "b311a7c82fcf628d4b1a90ac480a00ad7703d5de",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "7e6640b1_b5dd9555",
         "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
         "patchSetId": 12

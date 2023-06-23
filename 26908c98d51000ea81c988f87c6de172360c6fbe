@@ -306,6 +306,30 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "32a61741_198282ca",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-23T15:54:48Z",
+      "side": 1,
+      "message": "Ack, let\u0027s worry about consolidation, etc. after the migration bug is fixed.",
+      "parentUuid": "3f1312d0_c7d9729d",
+      "range": {
+        "startLine": 114,
+        "startChar": 20,
+        "endLine": 115,
+        "endChar": 85
+      },
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cf50c5a5_71a8c4f6",
@@ -439,6 +463,30 @@
       "side": 1,
       "message": "Good idea!",
       "parentUuid": "27e90d7f_b063d1fd",
+      "range": {
+        "startLine": 123,
+        "startChar": 20,
+        "endLine": 123,
+        "endChar": 79
+      },
+      "revId": "26908c98d51000ea81c988f87c6de172360c6fbe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc62e408_a5c8aacf",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 10
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-06-23T15:54:48Z",
+      "side": 1,
+      "message": "This works, tested with https://review.calyxos.org/c/CalyxOS/platform_frameworks_base/+/17912 and now it logs an error instead of crashing or something.",
+      "parentUuid": "0fb45ef6_a08b96cb",
       "range": {
         "startLine": 123,
         "startChar": 20,
