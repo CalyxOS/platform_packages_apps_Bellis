@@ -21,10 +21,6 @@ object PostProvisioningHelper {
     private val TAG = PostProvisioningHelper::class.java.simpleName
     private const val PREFS = "post-provisioning"
     private const val PREF_DONE = "done"
-    private val userRestrictions = listOf(
-        UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES,
-        UserManager.DISALLOW_BLUETOOTH_SHARING
-    )
 
     // Default apps to enable on creation of new managed profile
     private val systemApps = listOf(
@@ -72,11 +68,6 @@ object PostProvisioningHelper {
                         OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST
                     ).build()
                 )
-
-                // Clear user restrictions
-                userRestrictions.forEach {
-                    devicePolicyManager.clearUserRestriction(componentName, it)
-                }
             }
 
             val sharedPreferences = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
