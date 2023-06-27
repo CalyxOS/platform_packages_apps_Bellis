@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "399ffa13_b44c96e0",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-06-27T03:44:48Z",
+      "side": 1,
+      "message": "`sharedPreferences.edit { putBoolean(PREF_DONE, true) }` is the Kotlin way",
+      "revId": "cc6b15c5eb8beb62a7bc0347913ed35f996c5eec",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
