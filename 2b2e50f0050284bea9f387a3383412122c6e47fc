@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7943e1a9_ab4808fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-06T22:35:46Z",
+      "side": 1,
+      "message": "The user of course can use Manage content \u0026 apps to install F-Droid in a work profile that is created after this change.",
+      "revId": "2b2e50f0050284bea9f387a3383412122c6e47fc",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
