@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c240cdff_143d9823",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-12T14:13:51Z",
+      "side": 1,
+      "message": "The actual screen looks terrible, needs love.",
+      "revId": "136c10594b8b48897f1a7d61e4611f95da41ba01",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
