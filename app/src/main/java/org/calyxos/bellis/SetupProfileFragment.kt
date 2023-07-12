@@ -9,9 +9,11 @@ package org.calyxos.bellis
 import android.app.admin.DevicePolicyManager
 import android.content.ActivityNotFoundException
 import android.content.BroadcastReceiver
+import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
+import android.content.pm.CrossProfileApps
 import android.os.Bundle
 import android.text.Html
 import android.view.View
@@ -53,7 +55,21 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
         if (dpm.isProvisioningAllowed(DevicePolicyManager.ACTION_PROVISION_MANAGED_PROFILE)) {
             setupProfileButton.setOnClickListener { provisionManagedProfile(view.context) }
         } else {
-            setupProfileButton.isEnabled = false
+            setupProfileButton.apply {
+                val crossProfileApps = view.context.getSystemService(CrossProfileApps::class.java)
+                val targetUser = crossProfileApps.targetUserProfiles.first()
+
+                text = crossProfileApps.getProfileSwitchingLabel(targetUser)
+                setOnClickListener {
+                    crossProfileApps.startMainActivity(
+                        ComponentName(
+                            view.context.packageName,
+                            "${view.context.packageName}.MainActivity"
+                        ),
+                        targetUser
+                    )
+                }
+            }
             setupProfileHintText.visibility = View.VISIBLE
             view.findViewById<TextView>(R.id.workProfileStatus).text =
                 getString(R.string.existing_work_profile)
