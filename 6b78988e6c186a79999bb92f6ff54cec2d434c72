@@ -52,6 +52,24 @@
       "parentUuid": "61c44d1a_fa603002",
       "revId": "6b78988e6c186a79999bb92f6ff54cec2d434c72",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca1cbda9_49337931",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-12T14:27:34Z",
+      "side": 1,
+      "message": "I tried, but I ran into the problem of not knowing how to tell when the SUW activity has either shown up or completed: https://review.calyxos.org/c/CalyxOS/platform_packages_apps_Bellis/+/18322/comments/0bba0fe9_60cfaef6",
+      "parentUuid": "919f97bc_d1fd2fd6",
+      "revId": "6b78988e6c186a79999bb92f6ff54cec2d434c72",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
