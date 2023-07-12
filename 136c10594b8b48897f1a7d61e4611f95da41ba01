@@ -16,6 +16,23 @@
       "message": "The actual screen looks terrible, needs love.",
       "revId": "136c10594b8b48897f1a7d61e4611f95da41ba01",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0bba0fe9_60cfaef6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-12T14:14:34Z",
+      "side": 1,
+      "message": "We don\u0027t even know when the Work Profile Setup Wizard has actually appeared on the screen, let alone when it has finished.\n\nStarting it for result returns almost immediately, so the \"Please wait\" screen disappears quickly even before the SUW appears.",
+      "revId": "136c10594b8b48897f1a7d61e4611f95da41ba01",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
