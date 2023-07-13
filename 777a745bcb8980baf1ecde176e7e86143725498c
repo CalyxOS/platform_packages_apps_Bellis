@@ -161,6 +161,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "38fead54_00b4c69c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-13T19:17:22Z",
+      "side": 1,
+      "message": "That\u0027s fine on its own, but unless anyone has other ideas, I still like this change too, because provisioning isn\u0027t necessarily even complete at the time onCreate is reached again (setProfileEnabled causes it, as mentioned earlier); relying on that preference would mean another race.",
+      "parentUuid": "3b71ad61_6cdabb8b",
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b0005414_d0dad757",
         "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
         "patchSetId": 2
@@ -484,6 +502,30 @@
       "side": 1,
       "message": "Aayush, to test, I tried:\n\n```\nval startForResult \u003d registerForActivityResult(StartActivityForResult()) {\n    Log.i(TAG, \"launchSUW: activity completed\")\n}\nstartForResult.launch(intent)\n```\n\n...and the SUW activity was \"completed\" before the SUW even finished. It \"completes\" in a few seconds, just sitting idle on the first screen. And then we do end up having `onCreate` called again at the end.",
       "parentUuid": "d964fee7_a37c9147",
+      "range": {
+        "startLine": 26,
+        "startChar": 8,
+        "endLine": 28,
+        "endChar": 9
+      },
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fac1babd_e938d243",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-13T19:17:22Z",
+      "side": 1,
+      "message": "`setProfileEnabled` is the cause of this. `onCreate` is called once for the initial ACTION_PROVISIONING_SUCCESSFUL; then, after `setProfileEnabled(true)` is called, `onCreate` is reached two more times with the same intent. This is before the SUW is even launched and before we do anything else. Confirmed with log lines and some long sleeps before and after calling `setProfileEnabled`.\n\nBellis is initially running in a profile that\u0027s not even technically enabled. We enable the profile, and then this happens.",
+      "parentUuid": "aedabd44_8d3e2283",
       "range": {
         "startLine": 26,
         "startChar": 8,
