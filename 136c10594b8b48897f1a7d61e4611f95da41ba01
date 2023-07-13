@@ -37,6 +37,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "390f07de_5b0c472f",
+        "filename": "app/src/main/res/layout/please_wait_fragment.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2023-07-13T13:47:47Z",
+      "side": 1,
+      "message": "Newline",
+      "revId": "136c10594b8b48897f1a7d61e4611f95da41ba01",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "80048506_a7ac813d",
         "filename": "app/src/main/res/values/strings.xml",
         "patchSetId": 2
