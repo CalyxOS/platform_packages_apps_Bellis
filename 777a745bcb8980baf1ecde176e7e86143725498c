@@ -90,6 +90,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "35bc43a2_95b0b9f7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-13T19:23:53Z",
+      "side": 1,
+      "message": "Explained in this comment thread (still left unresolved right now, going to resolve this one so we don\u0027t have two about the same thing): https://review.calyxos.org/c/CalyxOS/platform_packages_apps_Bellis/+/17572/comments/b0005414_d0dad757\n\nIt\u0027s being reached multiple times after `setProfileEnabled`. I\u0027m not sure the underlying reason for it, but I\u0027m happy to leave it at: it\u0027s a quirk of AOSP\u0027s design, likely related to Bellis being started in a profile that\u0027s not enabled, having that profile enabled, and then having AOSP react kind of funny to this.",
+      "parentUuid": "11d2a9dc_c070bf06",
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3bfddd35_d518774e",
@@ -173,6 +191,24 @@
       "side": 1,
       "message": "That\u0027s fine on its own, but unless anyone has other ideas, I still like this change too, because provisioning isn\u0027t necessarily even complete at the time onCreate is reached again (setProfileEnabled causes it, as mentioned earlier); relying on that preference would mean another race.",
       "parentUuid": "3b71ad61_6cdabb8b",
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c5145a4_fff43e93",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-13T19:23:53Z",
+      "side": 1,
+      "message": "Ack, explained in other comments, nothing to do with SUW.",
+      "parentUuid": "3bfddd35_d518774e",
       "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
