@@ -16,6 +16,24 @@
       "message": "`sharedPreferences.edit { putBoolean(PREF_DONE, true) }` is the Kotlin way",
       "revId": "cc6b15c5eb8beb62a7bc0347913ed35f996c5eec",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "79321885_1d7383e8",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-13T18:11:18Z",
+      "side": 1,
+      "message": "I think it\u0027s okay as-is, since you can see the pattern [throughout AOSP and dev samples](https://cs.android.com/search?q\u003dpath:%22.kt%22%20%22edit%28%29.put%22\u0026sq\u003d).\n\nAlso, the suggested pattern doesn\u0027t work for me. :( It can\u0027t find putBoolean. But [Android Developers](https://developer.android.com/training/data-storage/shared-preferences#write-shared) does show this pattern:\n```\nwith (sharedPref.edit()) {\n    putInt(getString(R.string.saved_high_score_key), newHighScore)\n    apply()\n}\n```",
+      "parentUuid": "399ffa13_b44c96e0",
+      "revId": "cc6b15c5eb8beb62a7bc0347913ed35f996c5eec",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
