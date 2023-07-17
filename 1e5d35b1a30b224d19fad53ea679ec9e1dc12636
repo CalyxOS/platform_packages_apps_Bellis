@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b7b0ee3e_e9278151",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 9
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-17T17:01:48Z",
+      "side": 1,
+      "message": "Is it OK to do the entirety of the post-provisioning tasks in a worker, not just enabling system apps? I have a local variant of this change that does so, and waits to setProfileEnabled until everything else is done (in a finally block though so it\u0027s not missed); then, at the end, it sets PREF_DONE. It works for me, but I\u0027m asking if it\u0027s advisable code-wise or if there are possible objections to this.\n\nThis allows us to know for sure that provisioningComplete actually means everything is done, including enabling system apps. If we are going to have a Please Wait screen anyway, we might as well do this, imo.",
+      "revId": "1e5d35b1a30b224d19fad53ea679ec9e1dc12636",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
