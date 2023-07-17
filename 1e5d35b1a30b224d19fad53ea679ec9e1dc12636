@@ -52,6 +52,24 @@
       "parentUuid": "be30b5bf_4c29e03f",
       "revId": "1e5d35b1a30b224d19fad53ea679ec9e1dc12636",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "83e68eac_6e20983a",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 9
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-17T20:36:36Z",
+      "side": 1,
+      "message": "Also, we use this policy right now: OutOfQuotaPolicy.RUN_AS_NON_EXPEDITED_WORK_REQUEST\n\nSo would what you said still apply?",
+      "parentUuid": "c65d47ed_d0d0072d",
+      "revId": "1e5d35b1a30b224d19fad53ea679ec9e1dc12636",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
