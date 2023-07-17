@@ -34,6 +34,24 @@
       "parentUuid": "b7b0ee3e_e9278151",
       "revId": "1e5d35b1a30b224d19fad53ea679ec9e1dc12636",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c65d47ed_d0d0072d",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 9
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-17T20:34:43Z",
+      "side": 1,
+      "message": "Okay, understood... That doesn\u0027t seem ideal either, though. Even if enabling the system apps isn\u0027t essential compared to other things, surely there\u0027s some way we can make sure the code actually gets attempted instead of being possibly dropped. Any ideas?\n\nOtherwise I guess we could just use coroutines or something for the other stuff so we don\u0027t block the UI.",
+      "parentUuid": "be30b5bf_4c29e03f",
+      "revId": "1e5d35b1a30b224d19fad53ea679ec9e1dc12636",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
