@@ -56,6 +56,23 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "2a41850e_bdd67a74",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-07-17T17:09:54Z",
+      "side": 1,
+      "message": "Seems to work fine",
+      "revId": "64c1b9c3acbc18507a1f7285d99f5232b4b72e83",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "1e2d60fc_6fd9a3b2",
         "filename": "app/src/main/java/org/calyxos/bellis/SetupProfileFragment.kt",
         "patchSetId": 1
