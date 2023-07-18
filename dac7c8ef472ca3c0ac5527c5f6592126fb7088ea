@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f3d4d372_7fd4d767",
+        "filename": "app/src/main/res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-07-18T16:54:56Z",
+      "side": 1,
+      "message": "Could also do \"Setting up work profile\", or something else from ManagedProvisioning given this was on the education screens.",
+      "revId": "dac7c8ef472ca3c0ac5527c5f6592126fb7088ea",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
