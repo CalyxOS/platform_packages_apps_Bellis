@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e99182bb_910ff52b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-18T18:12:22Z",
+      "side": 1,
+      "message": "Tested by checking whether Aurora Store in Work Profile allows granting Installer permission. It does.",
+      "revId": "ac91388cdc3223a434c169648a3083bb53a8d69c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
