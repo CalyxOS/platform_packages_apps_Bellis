@@ -8,6 +8,7 @@ package org.calyxos.bellis
 
 import android.app.admin.DevicePolicyManager
 import android.content.Context
+import android.content.Intent
 import android.util.Log
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.OutOfQuotaPolicy
@@ -60,7 +61,6 @@ object PostProvisioningHelper {
             val componentName = BasicDeviceAdminReceiver.getComponentName(context)
             devicePolicyManager.apply {
                 setProfileName(componentName, context.getString(R.string.app_name))
-                setProfileEnabled(componentName)
 
                 WorkManager.getInstance(context).enqueue(
                     OneTimeWorkRequestBuilder<SystemAppWorker>().setExpedited(
@@ -71,11 +71,26 @@ object PostProvisioningHelper {
 
             val sharedPreferences = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
             sharedPreferences.edit().putBoolean(PREF_DONE, true).apply()
+
+            devicePolicyManager.setProfileEnabled(componentName)
+
+            launchSUW(context)
         }
     }
 
     private fun provisioningComplete(context: Context): Boolean {
         val sharedPreferences = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
         return sharedPreferences.getBoolean(PREF_DONE, false)
+    }
+
+    private fun launchSUW(context: Context) {
+        val setupWizard = "org.lineageos.setupwizard"
+        val setupWizardActivity = ".SetupWizardActivity"
+
+        val intent = Intent(Intent.ACTION_MAIN).apply {
+            setClassName(setupWizard, setupWizard + setupWizardActivity)
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        }
+        context.startActivity(intent)
     }
 }
