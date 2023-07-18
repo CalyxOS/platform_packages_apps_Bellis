@@ -213,6 +213,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d1b40fc_5d2e6a44",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-18T19:22:56Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "38fead54_00b4c69c",
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b0005414_d0dad757",
@@ -610,6 +628,30 @@
       "side": 1,
       "message": "It\u0027s not just onCreate being called, it\u0027s the full `onStop`, `onSaveInstanceState`, `onCreate` cycle, and when it comes back, the colors are updated to reflect the theme (Manage Apps button is green, not blue anymore). Maybe it\u0027s just related to the theme going into effect then, I don\u0027t know.",
       "parentUuid": "9689bc7b_581afcec",
+      "range": {
+        "startLine": 26,
+        "startChar": 8,
+        "endLine": 28,
+        "endChar": 9
+      },
+      "revId": "777a745bcb8980baf1ecde176e7e86143725498c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "373fbc3c_afb11631",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-18T19:22:56Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "06b01f5d_9043455c",
       "range": {
         "startLine": 26,
         "startChar": 8,

@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6adbc37_09e5e494",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-18T19:22:56Z",
+      "side": 1,
+      "message": "This didn\u0027t appear to be actually needed in practice (added nothing but more complexity).",
+      "revId": "f967e8093c4b99a2e3e9fbec59c56d44fed9c305",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
