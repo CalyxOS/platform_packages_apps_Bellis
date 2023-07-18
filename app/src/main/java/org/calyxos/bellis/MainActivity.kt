@@ -7,7 +7,6 @@
 package org.calyxos.bellis
 
 import android.app.admin.DevicePolicyManager
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavOptions
@@ -26,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         when (intent.action) {
             DevicePolicyManager.ACTION_PROVISIONING_SUCCESSFUL -> {
                 PostProvisioningHelper.completeProvisioning(this)
-                launchSUW()
             }
         }
     }
@@ -47,16 +45,5 @@ class MainActivity : AppCompatActivity() {
         navOptions.shouldLaunchSingleTop()
 
         navController.navigate(R.id.setupProfileFragment, null, navOptions)
-    }
-
-    private fun launchSUW() {
-        val setupWizard = "org.lineageos.setupwizard"
-        val setupWizardActivity = ".SetupWizardActivity"
-
-        val intent = Intent(Intent.ACTION_MAIN).apply {
-            setClassName(setupWizard, setupWizard + setupWizardActivity)
-            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-        }
-        startActivity(intent)
     }
 }
