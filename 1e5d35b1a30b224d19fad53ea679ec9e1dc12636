@@ -88,6 +88,24 @@
       "parentUuid": "83e68eac_6e20983a",
       "revId": "1e5d35b1a30b224d19fad53ea679ec9e1dc12636",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f8ee49d_b693ccd7",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 9
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-07-18T18:14:36Z",
+      "side": 1,
+      "message": "It wouldn\u0027t be dropped but will be run as non-expedited when possible. The link Chirayu shared highlights about in detail.",
+      "parentUuid": "8d1adee3_e762d8db",
+      "revId": "1e5d35b1a30b224d19fad53ea679ec9e1dc12636",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
