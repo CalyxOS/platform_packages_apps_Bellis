@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "723a228a_35554b29",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 5
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-19T13:41:12Z",
+      "side": 1,
+      "message": "Discussed off-Gerrit about whether we should call this before setting the preference. setProfileEnabled will typically trigger activity re-creation, which could cause a race between a new call to onCreate calling completeProvisioning again and possibly winning before we set the preference, which is what happens when testing with a delay is artificially added setProfileEnabled and setting the preference (when they are reversed from how they\u0027re shown here).\n\nPatchset 4 used an AtomicBoolean (re-creation happens in the same process, so we can do that) to ensure that completeProvisioning only runs once. If we did that, we could reverse these. But I think that if we can\u0027t even make it all the way to setProfileEnabled without something going wrong, we have bigger problems (like the phone crashed or something), and it\u0027s fair for the profile to be unsalvageable and for the user to need to delete it and try again. So I think it\u0027s fine as-is.",
+      "revId": "8a89c6ca7d04135727fe128fd79f0dbdfe052663",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
