@@ -34,6 +34,24 @@
       "parentUuid": "715f3f83_aa4c37e3",
       "revId": "de92013d5feb494536492d262b672e0f63eea3fe",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4333b8b2_e3ac87bd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-07-27T20:29:55Z",
+      "side": 1,
+      "message": "(marking unresolved)\n\nThat\u0027s because we can\u0027t test all scenarios, and with this we also rely on ManagedProvisioning and SetupWizard. Best to always allow deleting, there is a confirmation anyways.",
+      "parentUuid": "ecf275df_c325dbad",
+      "revId": "de92013d5feb494536492d262b672e0f63eea3fe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
