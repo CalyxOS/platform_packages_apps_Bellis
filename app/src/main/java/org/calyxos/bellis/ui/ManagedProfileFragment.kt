@@ -14,10 +14,12 @@ import android.os.Process
 import android.util.Log
 import android.view.View
 import androidx.appcompat.widget.Toolbar
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import org.calyxos.bellis.R
+import org.calyxos.bellis.utils.PostProvisioningHelper
 
 class ManagedProfileFragment : Fragment(R.layout.managed_profile_fragment) {
 
@@ -65,6 +67,18 @@ class ManagedProfileFragment : Fragment(R.layout.managed_profile_fragment) {
                 putExtra(Intent.EXTRA_USER, Process.myUserHandle())
             }
             it.context.startActivity(intent)
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        view?.apply {
+            // Show options for manging profile if provisioning is completed
+            if (PostProvisioningHelper.provisioningComplete(this.context)) {
+                findViewById<ConstraintLayout>(R.id.managedProfileLayout)?.visibility = View.VISIBLE
+                findViewById<ConstraintLayout>(R.id.pleaseWaitLayout)?.visibility = View.GONE
+            }
         }
     }
 }

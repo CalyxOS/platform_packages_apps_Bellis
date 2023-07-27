@@ -18,4 +18,5 @@
     <string name="existing_work_profile_help">To manage the existing work profile, navigate to the &lt;b&gt;Work&lt;/b&gt; tab in the launcher</string>
     <string name="manage_work_profile">Manage work profile</string>
     <string name="manage_work_profile_help">Work apps are marked with a briefcase icon so you can distinguish them from personal apps.</string>
+    <string name="please_wait">Please wait…</string>
 </resources>
