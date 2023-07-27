@@ -43,7 +43,7 @@ object PostProvisioningHelper {
         }
     }
 
-    private fun provisioningComplete(context: Context): Boolean {
+    fun provisioningComplete(context: Context): Boolean {
         val sharedPreferences = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
         return sharedPreferences.getBoolean(PREF_DONE, false)
     }
