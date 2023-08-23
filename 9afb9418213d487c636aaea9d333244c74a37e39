@@ -140,6 +140,24 @@
       "parentUuid": "edb53a79_7ab6e5b4",
       "revId": "9afb9418213d487c636aaea9d333244c74a37e39",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "53e57743_b68e4aa6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-08-23T18:32:13Z",
+      "side": 1,
+      "message": "Ack, the crash and related is tracked here: https://gitlab.com/CalyxOS/calyxos/-/issues/1721",
+      "parentUuid": "9068491a_620cbfa4",
+      "revId": "9afb9418213d487c636aaea9d333244c74a37e39",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
