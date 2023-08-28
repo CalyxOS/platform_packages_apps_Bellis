@@ -19,9 +19,9 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import org.calyxos.bellis.R
 
-class BasicManagedProfileFragment : Fragment(R.layout.basic_managed_profile_fragment) {
+class ManagedProfileFragment : Fragment(R.layout.managed_profile_fragment) {
 
-    private val TAG = BasicManagedProfileFragment::class.java.simpleName
+    private val TAG = ManagedProfileFragment::class.java.simpleName
     private val userSettings = "android.settings.USER_SETTINGS"
 
     class RemoveProfileDialogFragment : DialogFragment() {
