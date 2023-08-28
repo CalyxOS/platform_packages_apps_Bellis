@@ -10,6 +10,7 @@ import android.app.admin.DeviceAdminReceiver
 import android.content.ComponentName
 import android.content.Context
 
+// DO NOT RENAME OR RELOCATE: BREAKS EXISTING PROFILES
 class BasicDeviceAdminReceiver : DeviceAdminReceiver() {
 
     companion object {

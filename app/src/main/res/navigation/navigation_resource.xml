@@ -11,12 +11,12 @@
 
     <fragment
         android:id="@+id/setupProfileFragment"
-        android:name="org.calyxos.bellis.SetupProfileFragment"
+        android:name="org.calyxos.bellis.ui.SetupProfileFragment"
         android:label="SetupProfileFragment"
         tools:layout="@layout/setup_profile_fragment" />
     <fragment
         android:id="@+id/basicManagedProfileFragment"
-        android:name="org.calyxos.bellis.BasicManagedProfileFragment"
+        android:name="org.calyxos.bellis.ui.BasicManagedProfileFragment"
         android:label="BasicManagedProfileFragment"
         tools:layout="@layout/basic_managed_profile_fragment" />
 

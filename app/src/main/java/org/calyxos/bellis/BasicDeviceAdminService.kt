@@ -1,6 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2007 The Android Open Source Project
- * SPDX-FileCopyrightText: 2022 The Calyx Institute
+ * SPDX-FileCopyrightText: 2023 The Calyx Institute
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -21,6 +20,7 @@ import android.os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES
 import android.util.Log
 import androidx.core.content.edit
 
+// DO NOT RENAME OR RELOCATE: BREAKS EXISTING PROFILES
 class BasicDeviceAdminService : DeviceAdminService() {
 
     private val TAG = BasicDeviceAdminService::class.java.simpleName
@@ -90,11 +90,11 @@ class BasicDeviceAdminService : DeviceAdminService() {
 
         // Run through all steps for new users
         val oldVersion = sharedPreferences.getInt("pref_version", DEFAULT_VERSION)
-        val newVersion = PREF_VERSION;
+        val newVersion = PREF_VERSION
 
         // If up do date - done.
         if (oldVersion == newVersion) {
-            return;
+            return
         }
 
         val curVersion = upgradeIfNeeded(oldVersion, newVersion)
@@ -102,7 +102,7 @@ class BasicDeviceAdminService : DeviceAdminService() {
     }
 
     private fun upgradeIfNeeded(oldVersion: Int, newVersion: Int): Int {
-        Log.d(TAG, "Upgrading from version $oldVersion to version $newVersion");
+        Log.d(TAG, "Upgrading from version $oldVersion to version $newVersion")
         var currentVersion = oldVersion
 
         if (currentVersion == DEFAULT_VERSION) {
@@ -129,7 +129,7 @@ class BasicDeviceAdminService : DeviceAdminService() {
                     try {
                         setSecureSetting(componentName, "user_setup_complete", "1")
                     } catch (exception: SecurityException) {
-                        Log.e(TAG, "Failed to set user_setup_complete", exception);
+                        Log.e(TAG, "Failed to set user_setup_complete", exception)
                     }
                 }
             }
@@ -154,8 +154,11 @@ class BasicDeviceAdminService : DeviceAdminService() {
         // Add new migrations / defaults above this point.
 
         if (currentVersion != newVersion) {
-            Log.wtf(TAG, "warning: upgrading to version $newVersion left it at " +
-                "$currentVersion instead; this is probably a bug. Did you update PREF_VERSION?")
+            Log.wtf(
+                TAG,
+                "warning: upgrading to version $newVersion left it at " +
+                    "$currentVersion instead; this is probably a bug. Did you update PREF_VERSION?"
+            )
         }
 
         return currentVersion
