@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.calyxos.bellis
+package org.calyxos.bellis.ui
 
 import android.app.admin.DevicePolicyManager
 import android.content.ActivityNotFoundException
@@ -22,6 +22,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
+import org.calyxos.bellis.R
+import org.calyxos.bellis.utils.BasicDeviceAdminReceiver
 
 class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
 

@@ -30,7 +30,7 @@
         </activity>
 
         <receiver
-            android:name=".BasicDeviceAdminReceiver"
+            android:name=".utils.BasicDeviceAdminReceiver"
             android:permission="android.permission.BIND_DEVICE_ADMIN"
             android:exported="true">
             <meta-data
@@ -42,7 +42,7 @@
         </receiver>
 
         <service
-            android:name=".BasicDeviceAdminService"
+            android:name=".service.BasicDeviceAdminService"
             android:permission="android.permission.BIND_DEVICE_ADMIN"
             android:exported="true">
             <intent-filter>

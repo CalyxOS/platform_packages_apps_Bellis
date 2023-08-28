@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.calyxos.bellis
+package org.calyxos.bellis.ui
 
 import android.app.Dialog
 import android.app.admin.DevicePolicyManager
@@ -17,6 +17,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import org.calyxos.bellis.R
 
 class BasicManagedProfileFragment : Fragment(R.layout.basic_managed_profile_fragment) {
 

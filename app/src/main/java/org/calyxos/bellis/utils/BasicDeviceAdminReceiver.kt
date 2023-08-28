@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-package org.calyxos.bellis
+package org.calyxos.bellis.utils
 
 import android.app.admin.DeviceAdminReceiver
 import android.content.ComponentName
