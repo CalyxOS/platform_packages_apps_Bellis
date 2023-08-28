@@ -7,7 +7,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_resource"
-    app:startDestination="@id/basicManagedProfileFragment">
+    app:startDestination="@id/managedProfileFragment">
 
     <fragment
         android:id="@+id/setupProfileFragment"
@@ -15,9 +15,9 @@
         android:label="SetupProfileFragment"
         tools:layout="@layout/setup_profile_fragment" />
     <fragment
-        android:id="@+id/basicManagedProfileFragment"
-        android:name="org.calyxos.bellis.ui.BasicManagedProfileFragment"
+        android:id="@+id/managedProfileFragment"
+        android:name="org.calyxos.bellis.ui.ManagedProfileFragment"
         android:label="BasicManagedProfileFragment"
-        tools:layout="@layout/basic_managed_profile_fragment" />
+        tools:layout="@layout/managed_profile_fragment" />
 
 </navigation>
