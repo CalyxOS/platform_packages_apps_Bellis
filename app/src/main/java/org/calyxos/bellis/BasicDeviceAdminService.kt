@@ -21,6 +21,7 @@ import android.os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES
 import android.util.Log
 import androidx.core.content.edit
 
+// DO NOT RENAME OR RELOCATE: BREAKS EXISTING PROFILES
 class BasicDeviceAdminService : DeviceAdminService() {
 
     private val TAG = BasicDeviceAdminService::class.java.simpleName
