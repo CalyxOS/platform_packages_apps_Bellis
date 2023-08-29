@@ -22,8 +22,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
-import org.calyxos.bellis.R
 import org.calyxos.bellis.BasicDeviceAdminReceiver
+import org.calyxos.bellis.R
 
 class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
 
