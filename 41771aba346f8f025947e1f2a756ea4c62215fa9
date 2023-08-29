@@ -34,6 +34,24 @@
       "parentUuid": "586f0487_86a643f2",
       "revId": "41771aba346f8f025947e1f2a756ea4c62215fa9",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d88b230a_cf818458",
+        "filename": "app/src/main/java/org/calyxos/bellis/PostProvisioningHelper.kt",
+        "patchSetId": 8
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-08-29T13:14:49Z",
+      "side": 1,
+      "message": "Ack, the backup/restore situation is more complicated than previously understood, but we intend to exclude organization owners like Bellis from Seedvault restores anyway because it crashes the system.\n\nWith that out of the way, storing this here should be fine.",
+      "parentUuid": "299263c1_f6f75114",
+      "revId": "41771aba346f8f025947e1f2a756ea4c62215fa9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
