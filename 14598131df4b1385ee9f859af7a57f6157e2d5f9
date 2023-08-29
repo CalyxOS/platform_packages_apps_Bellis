@@ -16,6 +16,24 @@
       "message": "Why the semicolon here and below?",
       "revId": "14598131df4b1385ee9f859af7a57f6157e2d5f9",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "906afd9e_6a1d87fc",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-08-29T06:49:29Z",
+      "side": 1,
+      "message": "They were introduced in Iedf52b047020c3519496e639d6b7719a4507aba4",
+      "parentUuid": "0aa1c557_e2fb2ca1",
+      "revId": "14598131df4b1385ee9f859af7a57f6157e2d5f9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
