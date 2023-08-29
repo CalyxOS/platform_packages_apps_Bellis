@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "895dd622_4a589e48",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-08-29T12:35:07Z",
+      "side": 1,
+      "message": "We should update target and compile sdk to 34 once 14 is out. Otherwise, we should consider migrating kapt to ksp for our forked gradle apps. And update gradle dependencies if applicable.",
+      "revId": "746d7131fa4677fc67822797c744aec19465cf93",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
