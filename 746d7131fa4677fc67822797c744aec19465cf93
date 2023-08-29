@@ -16,6 +16,24 @@
       "message": "We should update target and compile sdk to 34 once 14 is out. Otherwise, we should consider migrating kapt to ksp for our forked gradle apps. And update gradle dependencies if applicable.",
       "revId": "746d7131fa4677fc67822797c744aec19465cf93",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a5aaebe0_01e550ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-08-29T12:49:05Z",
+      "side": 1,
+      "message": "target sdk updation should happen in a systematic manner, well tested, and will start with lowest risk apps first.\n\nFirst priority is porting to 14 (with same target sdk), and then it can get bumped.",
+      "parentUuid": "895dd622_4a589e48",
+      "revId": "746d7131fa4677fc67822797c744aec19465cf93",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
