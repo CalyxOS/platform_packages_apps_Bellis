@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a727a70a_2e835646",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 31
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-08-29T16:45:41Z",
+      "side": 1,
+      "message": "Dropped non-related white spacing changes, splitted logic into separate functions for getting garlic level logic and applying settings afterwards for better readability",
+      "revId": "643004ade88651b484912fd061c1d55b9693dff3",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
