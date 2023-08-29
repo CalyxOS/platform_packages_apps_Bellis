@@ -34,6 +34,24 @@
       "parentUuid": "0aa1c557_e2fb2ca1",
       "revId": "14598131df4b1385ee9f859af7a57f6157e2d5f9",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5be05408_9c3b5f16",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-08-29T06:59:57Z",
+      "side": 1,
+      "message": "Handled in Ib6fe9816c6b808f07cc8628ecd6b7dc20473c6cd",
+      "parentUuid": "906afd9e_6a1d87fc",
+      "revId": "14598131df4b1385ee9f859af7a57f6157e2d5f9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
