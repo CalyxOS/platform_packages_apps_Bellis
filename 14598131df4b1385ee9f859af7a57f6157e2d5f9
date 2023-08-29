@@ -52,6 +52,29 @@
       "parentUuid": "906afd9e_6a1d87fc",
       "revId": "14598131df4b1385ee9f859af7a57f6157e2d5f9",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1f74aa52_e1953d76",
+        "filename": "app/src/main/java/org/calyxos/bellis/MainActivity.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-08-29T12:31:53Z",
+      "side": 1,
+      "message": "Unused import?",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 54
+      },
+      "revId": "14598131df4b1385ee9f859af7a57f6157e2d5f9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
