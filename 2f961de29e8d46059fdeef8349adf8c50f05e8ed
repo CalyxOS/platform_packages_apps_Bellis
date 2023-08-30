@@ -16,6 +16,24 @@
       "message": "This should instead get saved to a dedicated \"garlic_level\" pref file, and then we can exclude that from backup.\n\nhttps://developer.android.com/guide/topics/data/autobackup#include-exclude-android-12",
       "revId": "2f961de29e8d46059fdeef8349adf8c50f05e8ed",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "178a6fc4_fcf8812a",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicManagedProfileFragment.kt",
+        "patchSetId": 13
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-08-30T15:24:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "80b03748_d3e2f82c",
+      "revId": "2f961de29e8d46059fdeef8349adf8c50f05e8ed",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }

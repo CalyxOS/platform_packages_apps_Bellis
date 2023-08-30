@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0fdb80c8_cd395210",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-08-30T15:24:26Z",
+      "side": 1,
+      "message": "Moved to a dedicated shared preference file even if we will address backup issue in seedvault",
+      "revId": "285729505c83c807bf46060ac8abdf1cd28ab280",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
