@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5c4549b2_58671990",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-08-31T23:22:38Z",
+      "side": 1,
+      "message": "I\u0027d consider squashing this into the previous commit given that it makes more sense to fix all weirdness with orbot for garlic level in one commit? In fact, for everything Orbot related we could even extract the always-on code and make that part of the same commit to keep it all in one place?",
+      "revId": "7f5f02dfcb2d8146ba8a8811610c20008a9e7401",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
