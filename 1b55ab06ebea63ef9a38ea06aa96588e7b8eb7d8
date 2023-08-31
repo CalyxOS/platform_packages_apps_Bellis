@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "caf45430_950faf57",
+        "filename": "app/src/main/java/org/calyxos/bellis/utils/PostProvisioningHelper.kt",
+        "patchSetId": 15
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-08-31T23:19:12Z",
+      "side": 1,
+      "message": "nit, can we pass just context and get the values as needed again?",
+      "range": {
+        "startLine": 106,
+        "startChar": 82,
+        "endLine": 106,
+        "endChar": 95
+      },
+      "revId": "1b55ab06ebea63ef9a38ea06aa96588e7b8eb7d8",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
