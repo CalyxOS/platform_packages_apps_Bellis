@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1d1fd738_7cbedaac",
+        "filename": "app/src/main/java/org/calyxos/bellis/utils/PostProvisioningHelper.kt",
+        "patchSetId": 13
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2023-08-31T23:16:46Z",
+      "side": 1,
+      "message": "I think a while ago I had a setupCommon function but was asked to remove it. Only nitpick with this is if we need to have things in common and then other things that are exclusive or different mode or setting in safer than in safest. If incremental then this should always work ok",
+      "range": {
+        "startLine": 116,
+        "startChar": 8,
+        "endLine": 116,
+        "endChar": 38
+      },
+      "revId": "e447ad86fb359897a87b6965a1f64351fa92ca2e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
