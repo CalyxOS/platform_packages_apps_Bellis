@@ -22,6 +22,30 @@
       },
       "revId": "e447ad86fb359897a87b6965a1f64351fa92ca2e",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e0420be_c1350104",
+        "filename": "app/src/main/java/org/calyxos/bellis/utils/PostProvisioningHelper.kt",
+        "patchSetId": 13
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-09-01T21:25:20Z",
+      "side": 1,
+      "message": "Exactly. Looks like all it\u0027s doing is setting up Orbot, so\n\n* setupOrbot -\u003e do that\n* setupSafer -\u003e call setupOrbot, nothing else right now.\n* setupSafest -\u003e call setupOrbot, then the rest.",
+      "parentUuid": "1d1fd738_7cbedaac",
+      "range": {
+        "startLine": 116,
+        "startChar": 8,
+        "endLine": 116,
+        "endChar": 38
+      },
+      "revId": "e447ad86fb359897a87b6965a1f64351fa92ca2e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
