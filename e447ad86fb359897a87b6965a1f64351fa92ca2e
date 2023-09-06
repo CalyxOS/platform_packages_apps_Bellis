@@ -46,6 +46,30 @@
       },
       "revId": "e447ad86fb359897a87b6965a1f64351fa92ca2e",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4fb42463_6a50f10a",
+        "filename": "app/src/main/java/org/calyxos/bellis/utils/PostProvisioningHelper.kt",
+        "patchSetId": 13
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-09-06T14:43:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3e0420be_c1350104",
+      "range": {
+        "startLine": 116,
+        "startChar": 8,
+        "endLine": 116,
+        "endChar": 38
+      },
+      "revId": "e447ad86fb359897a87b6965a1f64351fa92ca2e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
