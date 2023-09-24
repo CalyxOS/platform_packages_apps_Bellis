@@ -19,4 +19,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Bellis"
-include 'app'
+include(":app")
