@@ -16,6 +16,24 @@
       "message": "Issue: calyxos#1523",
       "revId": "638390383254a095cbcac7746804e9bea57e0e5a",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a91c1345_b5a32cc4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 34
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-09-25T07:03:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "64556dc2_4edf96bc",
+      "revId": "638390383254a095cbcac7746804e9bea57e0e5a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
