@@ -56,12 +56,28 @@ android {
 }
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.5.1")
-    implementation("androidx.work:work-runtime-ktx:2.8.1")
-    implementation("com.google.android.material:material:1.6.1")
+    // https://android.googlesource.com/platform/prebuilts/sdk/+/refs/tags/android-14.0.0_r1/current/androidx/Android.bp#272
+    implementation("androidx.appcompat:appcompat") {
+        version { strictly("1.7.0-alpha03") }
+    }
 
+    // https://android.googlesource.com/platform/prebuilts/sdk/+/refs/tags/android-14.0.0_r1/current/androidx/Android.bp#7029
+    implementation("androidx.work:work-runtime-ktx") {
+        version { strictly("2.9.0-alpha01") }
+    }
+
+    // https://android.googlesource.com/platform/prebuilts/sdk/+/refs/tags/android-14.0.0_r1/current/extras/material-design-x/Android.bp#15
+    implementation("com.google.android.material:material") {
+        version { strictly("1.7.0-alpha03") }
+    }
+
+    // https://android.googlesource.com/platform/prebuilts/sdk/+/refs/tags/android-14.0.0_r1/current/androidx/Android.bp#4640
     // Navigation Components
-    val navVersion = "2.5.2"
-    implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
-    implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
+    val navVersion = "2.6.0-alpha08"
+    implementation("androidx.navigation:navigation-fragment-ktx") {
+        version { strictly(navVersion) }
+    }
+    implementation("androidx.navigation:navigation-ui-ktx:") {
+        version { strictly(navVersion) }
+    }
 }
