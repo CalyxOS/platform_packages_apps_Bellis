@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "703940bc_377d3918",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-10-04T15:44:26Z",
+      "side": 1,
+      "message": "Maybe should pin things like seedvault sometime",
+      "revId": "1c69c0e90a836eaa727b565e1ebd62533e5eda9e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
