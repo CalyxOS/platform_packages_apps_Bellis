@@ -16,6 +16,24 @@
       "message": "Maybe should pin things like seedvault sometime",
       "revId": "1c69c0e90a836eaa727b565e1ebd62533e5eda9e",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7b5beea9_6415ae07",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-04T19:18:00Z",
+      "side": 1,
+      "message": "We should. Let\u0027s sit down after the 14 port and figure out how we want the setup to be for all apps.",
+      "parentUuid": "703940bc_377d3918",
+      "revId": "1c69c0e90a836eaa727b565e1ebd62533e5eda9e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
