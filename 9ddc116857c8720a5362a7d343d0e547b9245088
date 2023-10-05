@@ -16,6 +16,24 @@
       "message": "I\u0027m not in a rush for this, and would even prefer skipping it for the first build tbh.\n\nLet\u0027s get some testing in, and look through API changes before we ship it.\n\nIt\u0027d mostly likely be fine here, but I\u0027d like to keep the above as a general policy.",
       "revId": "9ddc116857c8720a5362a7d343d0e547b9245088",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8830eac3_cb64d433",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-05T18:34:18Z",
+      "side": 1,
+      "message": "It was pointed out that this doesn\u0027t matter since this builds in AOSP\n\nSO we either merge this, or set target to 33 in AndroidManifest.xml / Android.bp",
+      "parentUuid": "412e63b3_4bd153df",
+      "revId": "9ddc116857c8720a5362a7d343d0e547b9245088",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
