@@ -22,7 +22,7 @@ android_app {
         "com.google.android.material_material",
     ],
 
-    sdk_version: "33",
+    sdk_version: "34",
     product_specific: true,
 
     required: ["preinstalled-packages-org.calyxos.bellis.xml"],
