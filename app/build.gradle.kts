@@ -12,11 +12,11 @@ plugins {
 
 android {
     namespace = "org.calyxos.bellis"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         minSdk = 33
-        targetSdk = 33
+        targetSdk = 34
     }
 
     signingConfigs {
