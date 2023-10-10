@@ -34,6 +34,23 @@
       "parentUuid": "412e63b3_4bd153df",
       "revId": "9ddc116857c8720a5362a7d343d0e547b9245088",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "18ce8d12_55d85782",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-10T00:57:42Z",
+      "side": 1,
+      "message": "Can try sdk_version: 33",
+      "revId": "9ddc116857c8720a5362a7d343d0e547b9245088",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
