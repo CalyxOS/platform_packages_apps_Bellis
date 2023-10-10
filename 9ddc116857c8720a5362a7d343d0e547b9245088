@@ -51,6 +51,24 @@
       "message": "Can try sdk_version: 33",
       "revId": "9ddc116857c8720a5362a7d343d0e547b9245088",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91b23ed5_d6a02f33",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-10T23:35:32Z",
+      "side": 1,
+      "message": "https://review.calyxos.org/c/CalyxOS/platform_packages_apps_Bellis/+/22120 \n\nWe\u0027ll do the bump too, just not right away, that\u0027s all.",
+      "parentUuid": "18ce8d12_55d85782",
+      "revId": "9ddc116857c8720a5362a7d343d0e547b9245088",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
