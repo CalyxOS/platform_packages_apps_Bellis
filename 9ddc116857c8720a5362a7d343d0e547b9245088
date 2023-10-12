@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "0f810658_5dd6920a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-12T13:46:11Z",
+      "side": 1,
+      "message": "s/gradle://, and also bump to 34 in Android.bp",
+      "revId": "9ddc116857c8720a5362a7d343d0e547b9245088",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "412e63b3_4bd153df",
