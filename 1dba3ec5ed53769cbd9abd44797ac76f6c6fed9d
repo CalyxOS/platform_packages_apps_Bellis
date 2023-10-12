@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "123b2be6_252c4363",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-12T13:44:31Z",
+      "side": 1,
+      "message": "This was intentionally added as a feature in 13",
+      "revId": "1dba3ec5ed53769cbd9abd44797ac76f6c6fed9d",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
