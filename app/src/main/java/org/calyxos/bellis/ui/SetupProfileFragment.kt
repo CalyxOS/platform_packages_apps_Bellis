@@ -15,6 +15,8 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.content.pm.CrossProfileApps
 import android.os.Bundle
+import android.os.Process
+import android.os.UserManager
 import android.text.Html
 import android.view.View
 import android.widget.Button
@@ -56,7 +58,7 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
 
         if (dpm.isProvisioningAllowed(DevicePolicyManager.ACTION_PROVISION_MANAGED_PROFILE)) {
             setupProfileButton.setOnClickListener { provisionManagedProfile(view.context) }
-        } else {
+        } else if (isPrimaryUser(view.context)) {
             setupProfileButton.apply {
                 val crossProfileApps = view.context.getSystemService(CrossProfileApps::class.java)
                 val targetUser = crossProfileApps.targetUserProfiles.first()
@@ -78,6 +80,15 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
             view.findViewById<TextView>(R.id.workProfileHelp).text =
                 Html.fromHtml(
                     getString(R.string.existing_work_profile_help),
+                    Html.FROM_HTML_MODE_COMPACT
+                )
+        } else {
+            setupProfileButton.isEnabled = false
+            view.findViewById<TextView>(R.id.workProfileStatus).text =
+                getString(R.string.profile_setup_disabled)
+            view.findViewById<TextView>(R.id.workProfileHelp).text =
+                Html.fromHtml(
+                    getString(R.string.profile_setup_disabled_help),
                     Html.FROM_HTML_MODE_COMPACT
                 )
         }
@@ -103,5 +114,11 @@ class SetupProfileFragment : Fragment(R.layout.setup_profile_fragment) {
                 Toast.LENGTH_SHORT
             ).show()
         }
+    }
+
+    private fun isPrimaryUser(context: Context): Boolean {
+        val userHandle = Process.myUserHandle()
+        return context.getSystemService(UserManager::class.java)
+            .getSerialNumberForUser(userHandle) == 0L
     }
 }
