@@ -16,6 +16,24 @@
       "message": "Not sure how this works on fold. I have a hunch fold requires `sw` instead of `w`",
       "revId": "054f28c13a3f32b2f65a5f4e95a33d06bfe8c2d8",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "550b4c66_55cfa460",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-27T02:28:23Z",
+      "side": 1,
+      "message": "Fold could be tried in the emulator. I\u0027ve seen `sw` used for tablets in the past as well.\n\nAlso, got any screenshots of these?",
+      "parentUuid": "cd0d734e_6ff447d3",
+      "revId": "054f28c13a3f32b2f65a5f4e95a33d06bfe8c2d8",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
