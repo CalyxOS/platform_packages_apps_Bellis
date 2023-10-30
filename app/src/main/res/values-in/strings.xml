@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="profile_setup_disabled">Tidak dapat menyiapkan profil kerja baru</string>
+    <string name="set_up_profile">Siapkan profil kerja</string>
+    <string name="no_work_profile">Tidak ada profil kerja yang ditemukan</string>
+    <string name="no_work_profile_help">Profil kerja dapat disiapkan di perangkat ini, memungkinkan Anda untuk menggunakan satu perangkat secara aman dan privat untuk keperluan kerja dan pribadi</string>
+    <string name="manage_work_profile_help">Aplikasi-aplikasi kerja ditandai dengan ikon tas kerja sehingga Anda dapat membedakannya dengan aplikasi-aplikasi pribadi.</string>
+    <string name="remove_profile_confirmation">Apakah Anda yakin\? Tindakan ini akan menghapus profil kerja Anda secara permanen, termasuk semua aplikasi di profil tersebut, datanya, dan berkas apa pun.</string>
+    <string name="managed_provisioning_not_enabled">Penyiapan Kerja tidak diaktifkan</string>
+    <string name="remove_profile">Hapus profil kerja</string>
+    <string name="app_and_content_access">Kelola akses aplikasi &amp; konten</string>
+    <string name="app_name">Profil Kerja</string>
+    <string name="manage_work_profile">Kelola profil kerja</string>
+</resources>

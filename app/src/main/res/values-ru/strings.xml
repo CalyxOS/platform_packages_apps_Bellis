@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="existing_work_profile_help">Чтобы управлять существующим рабочим профилем, перейдите на вкладку <b>Работа</b> на панели запуска</string>
+    <string name="profile_setup_disabled">Невозможно настроить новый рабочий профиль</string>
+    <string name="set_up_profile">Настроить рабочий профиль</string>
+    <string name="no_work_profile">Рабочий профиль не найден</string>
+    <string name="no_work_profile_help">На этом устройстве может быть установлен рабочий профиль, позволяющий безопасно и приватно использовать одно и то же устройство как для работы, так и для личных целей</string>
+    <string name="manage_work_profile_help">Рабочие приложения отмечены значком портфеля, чтобы их можно было отличить от личных приложений.</string>
+    <string name="remove_profile_confirmation">Вы уверены\? Это навсегда удалит ваш рабочий профиль, включая все его приложения, данные и файлы.</string>
+    <string name="managed_provisioning_not_enabled">Настройки работы не включены</string>
+    <string name="remove_profile">Удалить рабочий профиль</string>
+    <string name="app_and_content_access">Управление доступом к приложениям и содержимому</string>
+    <string name="app_name">Рабочий профиль</string>
+    <string name="manage_work_profile">Управление рабочим профилем</string>
+    <string name="existing_work_profile">Найден имеющийся рабочий профиль</string>
+</resources>
