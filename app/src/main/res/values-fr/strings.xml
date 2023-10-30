@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="remove_profile">Supprimer profil</string>
+    <string name="app_and_content_access">Gestion app &amp; accès du contenu</string>
+    <string name="app_name">Profil de travail</string>
+</resources>
