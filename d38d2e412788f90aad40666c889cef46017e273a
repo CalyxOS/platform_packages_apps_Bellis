@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "874b4720_28518307",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-11-09T17:11:42Z",
+      "side": 1,
+      "message": "Tested by postDelaying the completeProvisioning call in MainActivity for 3 seconds:\n```\n                Handler(Looper.getMainLooper()).postDelayed({                    \n                    PostProvisioningHelper.completeProvisioning(this)\n                }, 3000)\n```\n\nYou can see the \"Please wait\" screen before the setup wizard, without needing garlic-level changes. Looks great!",
+      "revId": "d38d2e412788f90aad40666c889cef46017e273a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
