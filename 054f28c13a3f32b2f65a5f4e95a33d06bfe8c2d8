@@ -34,6 +34,24 @@
       "parentUuid": "cd0d734e_6ff447d3",
       "revId": "054f28c13a3f32b2f65a5f4e95a33d06bfe8c2d8",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "69609b54_f6e32a18",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2023-11-16T13:47:08Z",
+      "side": 1,
+      "message": "You should be using `sw` for tablet resources, it\u0027s the most commonly used in AOSP",
+      "parentUuid": "550b4c66_55cfa460",
+      "revId": "054f28c13a3f32b2f65a5f4e95a33d06bfe8c2d8",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
