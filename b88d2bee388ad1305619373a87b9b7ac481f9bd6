@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eec419a0_d6609255",
+        "filename": "app/src/main/AndroidManifest.xml",
+        "patchSetId": 36
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-11-16T16:45:52Z",
+      "side": 1,
+      "message": "Since these are exported, I think we should guard them behind a permission to prevent unauthorized callers from causing mischief, like [TestDPC](https://github.com/googlesamples/android-testdpc/blob/8b83e20f71da3e478444e47ba0b35946ec981520/src/main/AndroidManifest.xml#L102) does. Looks like the permission applies to the whole activity, though...? It uses a separate activity, and permission `BIND_DEVICE_ADMIN` to protect `ADMIN_POLICY_COMPLIANCE` and `GET_PROVISIONING_MODE`. (It doesn\u0027t for `PROVISIONING_SUCCESSFUL`, which is yet a different activity, but maybe we can/should for that, too?)",
+      "revId": "b88d2bee388ad1305619373a87b9b7ac481f9bd6",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
