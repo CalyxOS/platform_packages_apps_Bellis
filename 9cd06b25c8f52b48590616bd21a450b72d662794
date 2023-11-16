@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cbfb4156_a21eb2e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-11-16T12:54:57Z",
+      "side": 1,
+      "message": "I assume this is to be abandoned as this should be handled in Seedvault, right?",
+      "revId": "9cd06b25c8f52b48590616bd21a450b72d662794",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
