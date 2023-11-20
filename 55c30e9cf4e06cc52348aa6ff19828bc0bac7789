@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f915177_cd86d942",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2023-11-20T15:49:02Z",
+      "side": 1,
+      "message": "Looks ok on Fold",
+      "revId": "55c30e9cf4e06cc52348aa6ff19828bc0bac7789",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
