@@ -34,6 +34,24 @@
       "parentUuid": "eec419a0_d6609255",
       "revId": "b88d2bee388ad1305619373a87b9b7ac481f9bd6",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8ccadb3b_6d724bb8",
+        "filename": "app/src/main/AndroidManifest.xml",
+        "patchSetId": 36
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-11-22T16:08:50Z",
+      "side": 1,
+      "message": "Ack, that is true, and it looks like it\u0027s true even for non-garlic level, right?\n\nSo that leaves just a couple of edge cases, and none seem like an issue:\n- If someone somehow (and it should be impossible) races and sends the intents before provisioning is actually ready, well, that\u0027s harmless. Bellis may simply crash, but it should recover when reacting to the legitimate intents. \n- If someone puts Bellis in a non-Bellis work profile, it wouldn\u0027t be provisioned; then, if they tried to send these intents, it would just fail to do anything useful and probably crash. That\u0027s harmless too.",
+      "parentUuid": "ef97b48b_a48ca65d",
+      "revId": "b88d2bee388ad1305619373a87b9b7ac481f9bd6",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
