@@ -34,6 +34,24 @@
       "parentUuid": "cbfb4156_a21eb2e4",
       "revId": "9cd06b25c8f52b48590616bd21a450b72d662794",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "be589932_08bcbef4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-11-24T05:57:16Z",
+      "side": 1,
+      "message": "Seedvault issue: https://github.com/seedvault-app/seedvault/issues/560",
+      "parentUuid": "80777fbb_adcb022f",
+      "revId": "9cd06b25c8f52b48590616bd21a450b72d662794",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
