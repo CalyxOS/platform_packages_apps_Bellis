@@ -16,6 +16,23 @@
       "message": "Used root to remove post_provisioning.xml and test that this fixes the infinite \"Please wait\" for existing-install users in similar circumstances.\n\nTested that the \"Please wait\" screen still works when it should, by adding a delay before completeProvisioning (otherwise it\u0027s often not noticeable):\n\n```\n--- a/app/src/main/java/org/calyxos/bellis/MainActivity.kt\n+++ b/app/src/main/java/org/calyxos/bellis/MainActivity.kt\n@@ -8,6 +8,8 @@ package org.calyxos.bellis\n \n import android.app.admin.DevicePolicyManager\n import android.os.Bundle\n+import android.os.Handler\n+import android.os.Looper\n import androidx.appcompat.app.AppCompatActivity\n import androidx.navigation.NavOptions\n import androidx.navigation.fragment.NavHostFragment\n@@ -25,7 +27,9 @@ class MainActivity : AppCompatActivity() {\n \n         when (intent.action) {\n             DevicePolicyManager.ACTION_PROVISIONING_SUCCESSFUL -\u003e {\n-                PostProvisioningHelper.completeProvisioning(this)\n+                Handler(Looper.getMainLooper()).postDelayed({\n+                    PostProvisioningHelper.completeProvisioning(this)\n+                }, 3000)\n             }\n         }\n     }\n```",
       "revId": "c607ebb800595245603ad69ec78dbbc1379beb22",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8088b9e3_40a2ca91",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-12-04T17:50:24Z",
+      "side": 1,
+      "message": "With garlic-level based on top of this, and no one having a garlic-level work profile in the wild right now, this change shouldn\u0027t even impact garlic-level since it only affects existing installs upgrading to version 7. garlic-level will be new installs.\n\nSo if we were concerned about not wanting to markComplete for garlic-level here, we don\u0027t have to worry. This won\u0027t do that.",
+      "revId": "c607ebb800595245603ad69ec78dbbc1379beb22",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
