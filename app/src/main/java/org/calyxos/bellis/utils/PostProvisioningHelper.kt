@@ -34,13 +34,17 @@ object PostProvisioningHelper {
                 )
             }
 
-            val sharedPreferences = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
-            sharedPreferences.edit().putBoolean(PREF_DONE, true).apply()
+            markComplete(context)
 
             devicePolicyManager.setProfileEnabled(componentName)
 
             launchSUW(context)
         }
+    }
+
+    fun markComplete(context: Context) {
+        val sharedPreferences = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
+        sharedPreferences.edit().putBoolean(PREF_DONE, true).apply()
     }
 
     fun provisioningComplete(context: Context): Boolean {

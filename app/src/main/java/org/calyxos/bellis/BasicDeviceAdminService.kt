@@ -20,6 +20,7 @@ import android.os.UserManager.DISALLOW_BLUETOOTH_SHARING
 import android.os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES
 import android.util.Log
 import androidx.core.content.edit
+import org.calyxos.bellis.utils.PostProvisioningHelper
 
 // DO NOT RENAME OR RELOCATE: BREAKS EXISTING PROFILES
 class BasicDeviceAdminService : DeviceAdminService() {
@@ -31,7 +32,7 @@ class BasicDeviceAdminService : DeviceAdminService() {
     private lateinit var packageReceiver: BroadcastReceiver
     private var managedProfile: Boolean = false
     private val DEFAULT_VERSION: Int = 1 // DO NOT CHANGE
-    private val PREF_VERSION: Int = 6
+    private val PREF_VERSION: Int = 7
 
     override fun onCreate() {
         super.onCreate()
@@ -150,6 +151,21 @@ class BasicDeviceAdminService : DeviceAdminService() {
                 }
             }
             currentVersion = 6
+        }
+        if (currentVersion == 6) {
+            val isExistingInstall = oldVersion != DEFAULT_VERSION
+            if (isExistingInstall) {
+                // Mark provisioning complete for existing installs. Otherwise, if it is not already
+                // marked, it never will be, since there is no retry mechanism and older installs
+                // didn't mark it. On the other hand, don't mark it here for new installs,
+                // or it will *always* be marked.
+                if (!PostProvisioningHelper.provisioningComplete(this)) {
+                    PostProvisioningHelper.markComplete(this)
+                    Log.w(TAG, "warning: provisioning was not marked complete, but we are "
+                        + "upgrading, so we assume it must have been completed and mark it now.")
+                }
+            }
+            currentVersion = 7
         }
 
         // Add new migrations / defaults above this point.
