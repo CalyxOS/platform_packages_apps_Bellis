@@ -33,6 +33,23 @@
       "message": "With garlic-level based on top of this, and no one having a garlic-level work profile in the wild right now, this change shouldn\u0027t even impact garlic-level since it only affects existing installs upgrading to version 7. garlic-level will be new installs.\n\nSo if we were concerned about not wanting to markComplete for garlic-level here, we don\u0027t have to worry. This won\u0027t do that.",
       "revId": "c607ebb800595245603ad69ec78dbbc1379beb22",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1db3fe52_f5ff64e6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-12-04T19:00:15Z",
+      "side": 1,
+      "message": "shouldn\u0027t this be already marked?",
+      "revId": "c607ebb800595245603ad69ec78dbbc1379beb22",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
