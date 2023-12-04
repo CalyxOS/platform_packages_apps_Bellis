@@ -20,6 +20,7 @@ import android.os.UserManager.DISALLOW_BLUETOOTH_SHARING
 import android.os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES
 import android.util.Log
 import androidx.core.content.edit
+import org.calyxos.bellis.utils.PostProvisioningHelper
 
 // DO NOT RENAME OR RELOCATE: BREAKS EXISTING PROFILES
 class BasicDeviceAdminService : DeviceAdminService() {
@@ -160,6 +161,13 @@ class BasicDeviceAdminService : DeviceAdminService() {
                 "warning: upgrading to version $newVersion left it at " +
                     "$currentVersion instead; this is probably a bug. Did you update PREF_VERSION?"
             )
+        }
+
+        if (oldVersion != DEFAULT_VERSION) {
+            if (!PostProvisioningHelper.markComplete(this)) {
+                Log.w(TAG, "warning: provisioning was not marked complete, but we are upgrading, "
+                    + "so we assume it must have been completed.")
+            }
         }
 
         return currentVersion
