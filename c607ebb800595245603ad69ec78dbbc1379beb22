@@ -85,6 +85,24 @@
       "message": "Why the additional check?\n\nIs it for fresh installs?",
       "revId": "c607ebb800595245603ad69ec78dbbc1379beb22",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "49f6ee45_2cefd3c5",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-12-05T14:00:29Z",
+      "side": 1,
+      "message": "Yes, we do not want this to apply to fresh installs, or provisioning will be marked complete immediately and there would be no point in having a check. For existing installs, though, if it\u0027s not already marked complete at this stage, it never will be.",
+      "parentUuid": "bc3a2c8a_9c636c7d",
+      "revId": "c607ebb800595245603ad69ec78dbbc1379beb22",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
