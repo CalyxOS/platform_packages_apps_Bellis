@@ -68,6 +68,23 @@
       "parentUuid": "1db3fe52_f5ff64e6",
       "revId": "c607ebb800595245603ad69ec78dbbc1379beb22",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bc3a2c8a_9c636c7d",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 4
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-12-05T02:56:20Z",
+      "side": 1,
+      "message": "Why the additional check?\n\nIs it for fresh installs?",
+      "revId": "c607ebb800595245603ad69ec78dbbc1379beb22",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
