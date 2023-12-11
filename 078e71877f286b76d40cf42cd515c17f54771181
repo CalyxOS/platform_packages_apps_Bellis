@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6f4fa650_21395287",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 41
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-12-11T21:57:45Z",
+      "side": 1,
+      "message": "For garlic-level, we may want to enforce the existence of a PIN/passphrase/etc. The device can\u0027t be considered very safe without one, but right now it\u0027s super easy to skip, and there isn\u0027t a later prompt or urging to set one.",
+      "revId": "078e71877f286b76d40cf42cd515c17f54771181",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d9c9ae65_d22ec740",
         "filename": "app/src/main/java/org/calyxos/bellis/utils/PostProvisioningHelper.kt",
         "patchSetId": 41
