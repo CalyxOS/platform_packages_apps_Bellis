@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c9dfd09c_b3761724",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 38
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-12-11T17:28:55Z",
+      "side": 1,
+      "message": "This doesn\u0027t seem to accomplish the desired effect with `Orbot 17.0.0-RC-1-tor.0.4.7.11`. Orbot starts, yes, and the \"Connected to the Tor network\" notification shows, but it\u0027s not acting as a VPN. There is a \"Disconnected from always-on VPN\" notification, and trying to access the network fails; there is no usable connectivity.\n\nPerhaps we should separate out the Orbot-related stuff from this change.\n\nTested with https://review.calyxos.org/c/CalyxOS/platform_packages_apps_SetupWizard/+/14940/35 (chain) and https://review.calyxos.org/c/CalyxOS/platform_packages_apps_SetupWizard/+/14581/32",
+      "revId": "585abca4613d654cacc1691d19c5be9c715b6d17",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
