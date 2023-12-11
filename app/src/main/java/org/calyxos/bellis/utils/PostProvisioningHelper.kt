@@ -9,6 +9,10 @@ package org.calyxos.bellis.utils
 import android.Manifest.permission.POST_NOTIFICATIONS
 import android.app.Activity
 import android.app.admin.DevicePolicyManager
+import android.app.admin.DevicePolicyManager.ACTION_SET_NEW_PARENT_PROFILE_PASSWORD
+import android.app.admin.DevicePolicyManager.EXTRA_DEVICE_PASSWORD_REQUIREMENT_ONLY
+import android.app.admin.DevicePolicyManager.PASSWORD_COMPLEXITY_LOW
+import android.app.admin.DevicePolicyManager.PASSWORD_COMPLEXITY_MEDIUM
 import android.app.admin.DevicePolicyManager.PERMISSION_GRANT_STATE_GRANTED
 import android.content.Context
 import android.content.Intent
@@ -63,6 +67,14 @@ object PostProvisioningHelper {
                         GarlicLevel.SAFEST -> setupSafest(context)
 
                         else -> Log.i(TAG, "Garlic Level: Standard, nothing to do!")
+                    }
+                }
+
+                getParentProfileInstance(componentName).apply {
+                    if (!isActivePasswordSufficientForDeviceRequirement) {
+                        val newParentPasswordIntent = Intent(ACTION_SET_NEW_PARENT_PROFILE_PASSWORD)
+                            .putExtra(EXTRA_DEVICE_PASSWORD_REQUIREMENT_ONLY, true)
+                        context.startActivity(newParentPasswordIntent)
                     }
                 }
             }
@@ -149,6 +161,14 @@ object PostProvisioningHelper {
         // Do required setup for orbot
         setupOrbot(context)
 
+        context.getSystemService(DevicePolicyManager::class.java).apply {
+            val componentName = BasicDeviceAdminReceiver.getComponentName(context)
+            getParentProfileInstance(componentName).apply {
+                // Must match SetupWizard's GarlicLevelHelper value for Safer
+                requiredPasswordComplexity = PASSWORD_COMPLEXITY_LOW
+            }
+        }
+
         // Save garlic level
         saveGarlicLevel(GarlicLevel.SAFER, context)
     }
@@ -164,8 +184,12 @@ object PostProvisioningHelper {
 
             // Disable debugging features and app installation from unknown sources
             addUserRestriction(componentName, DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY)
-            getParentProfileInstance(componentName)
-                .addUserRestriction(componentName, DISALLOW_DEBUGGING_FEATURES)
+            getParentProfileInstance(componentName).apply {
+                addUserRestriction(componentName, DISALLOW_DEBUGGING_FEATURES)
+
+                // Must match SetupWizard's GarlicLevelHelper value for Safest
+                requiredPasswordComplexity = PASSWORD_COMPLEXITY_MEDIUM
+            }
 
             // Disable Javascript JIT in Chromium
             val bundle = bundleOf("DefaultJavaScriptJitSetting" to 2)
