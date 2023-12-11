@@ -34,6 +34,24 @@
       "parentUuid": "c9dfd09c_b3761724",
       "revId": "585abca4613d654cacc1691d19c5be9c715b6d17",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bc2897c8_33ddd948",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 38
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-12-11T20:08:41Z",
+      "side": 1,
+      "message": "`s/should just start/will just start/`. I have tested it.",
+      "parentUuid": "95e95b05_47a4808f",
+      "revId": "585abca4613d654cacc1691d19c5be9c715b6d17",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
