@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d9c9ae65_d22ec740",
+        "filename": "app/src/main/java/org/calyxos/bellis/utils/PostProvisioningHelper.kt",
+        "patchSetId": 41
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-12-11T20:38:21Z",
+      "side": 1,
+      "message": "This prevents Uninstall and Hide, showing a \"Blocked by work policy\" \"For more info, contact your IT admin\" dialog.\n\nHowever, the user can still use Manage app \u0026 content access to remove Orbot. Putting it back results in a broken always-on enforcement, where it\u0027s enforced to be *off*.",
+      "revId": "078e71877f286b76d40cf42cd515c17f54771181",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
