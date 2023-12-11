@@ -16,6 +16,24 @@
       "message": "This doesn\u0027t seem to accomplish the desired effect with `Orbot 17.0.0-RC-1-tor.0.4.7.11`. Orbot starts, yes, and the \"Connected to the Tor network\" notification shows, but it\u0027s not acting as a VPN. There is a \"Disconnected from always-on VPN\" notification, and trying to access the network fails; there is no usable connectivity.\n\nPerhaps we should separate out the Orbot-related stuff from this change.\n\nTested with https://review.calyxos.org/c/CalyxOS/platform_packages_apps_SetupWizard/+/14940/35 (chain) and https://review.calyxos.org/c/CalyxOS/platform_packages_apps_SetupWizard/+/14581/32",
       "revId": "585abca4613d654cacc1691d19c5be9c715b6d17",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "95e95b05_47a4808f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 38
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-12-11T20:07:50Z",
+      "side": 1,
+      "message": "I suggest we just remove the Orbot-starting code. It can\u0027t work anymore, because Orbot no longer starts the VPN unless `Prefs.putUseVpn(true)` or equivalent is called, and this doesn\u0027t happen without UI interaction, in ConnectFragment.\n\nI uploaded a possible fix here for starting Orbot with always-on VPN here: https://github.com/guardianproject/orbot/pull/1041\n\nWith that, we won\u0027t need to try to start Orbot. It should just start when we set it as the always-on VPN.\n\nThis problem is tracked at the following issues:\n- Orbot: https://github.com/guardianproject/orbot/issues/1007 \n- CalyxOS: https://gitlab.com/CalyxOS/calyxos/-/issues/1523",
+      "parentUuid": "c9dfd09c_b3761724",
+      "revId": "585abca4613d654cacc1691d19c5be9c715b6d17",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
