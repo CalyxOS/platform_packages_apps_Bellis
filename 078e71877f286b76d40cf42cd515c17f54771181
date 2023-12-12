@@ -18,6 +18,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "28593e7a_92806e5f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 41
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2023-12-12T14:33:25Z",
+      "side": 1,
+      "message": "Ack. See https://review.calyxos.org/c/CalyxOS/platform_packages_apps_Bellis/+/23695",
+      "parentUuid": "6f4fa650_21395287",
+      "revId": "078e71877f286b76d40cf42cd515c17f54771181",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d9c9ae65_d22ec740",
