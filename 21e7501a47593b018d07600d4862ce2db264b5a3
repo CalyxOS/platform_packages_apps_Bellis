@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "a9cc6180_641e07bf",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-12-12T08:13:21Z",
+      "side": 1,
+      "message": "Yes that needs some thought on how to best handle it. Garlic level specific check? Move selection earlier and just let it enforce DPM settings? etc.\n\n\nDefinitely good to have the enforcement here though via DPM.",
+      "revId": "21e7501a47593b018d07600d4862ce2db264b5a3",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "1cf95739_23d4216d",
@@ -14,6 +31,24 @@
       "writtenOn": "2023-12-12T07:43:55Z",
       "side": 1,
       "message": "Needs topic `garlic-level`",
+      "revId": "21e7501a47593b018d07600d4862ce2db264b5a3",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "593cb361_0d9e493f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-12-12T08:13:21Z",
+      "side": 1,
+      "message": "You can just set it. Click \"Show all\", top left.",
+      "parentUuid": "1cf95739_23d4216d",
       "revId": "21e7501a47593b018d07600d4862ce2db264b5a3",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
