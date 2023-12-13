@@ -16,6 +16,23 @@
       "message": "I suspect many people wouldn\u0027t want auto-wipe, especially if they spend much time around children, but they may want the rest. Just pointing it out. For a first release it may be better for such folks to go with Safer.",
       "revId": "12be8941c75f12a5494e7df34e738574aff78df7",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "75d14bd6_f4717f25",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 23
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-12-13T16:43:29Z",
+      "side": 1,
+      "message": "I\u0027d also remove this additionally, for now.",
+      "revId": "12be8941c75f12a5494e7df34e738574aff78df7",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
