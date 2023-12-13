@@ -18,6 +18,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e3ff0845_0ec41818",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 23
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-12-13T17:06:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "44ab967a_90fd95f8",
+      "revId": "12be8941c75f12a5494e7df34e738574aff78df7",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "75d14bd6_f4717f25",
@@ -31,6 +49,24 @@
       "writtenOn": "2023-12-13T16:43:29Z",
       "side": 1,
       "message": "I\u0027d also remove this additionally, for now.",
+      "revId": "12be8941c75f12a5494e7df34e738574aff78df7",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ecc0f149_7b6daafe",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 23
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-12-13T17:06:00Z",
+      "side": 1,
+      "message": "Done, both moved to https://review.calyxos.org/c/CalyxOS/platform_packages_apps_Bellis/+/23735",
+      "parentUuid": "75d14bd6_f4717f25",
       "revId": "12be8941c75f12a5494e7df34e738574aff78df7",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
