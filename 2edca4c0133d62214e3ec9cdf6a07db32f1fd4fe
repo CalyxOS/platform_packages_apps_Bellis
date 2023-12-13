@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "65d98732_ae4a69dc",
+        "filename": "app/src/main/java/org/calyxos/bellis/utils/PostProvisioningHelper.kt",
+        "patchSetId": 3
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-12-13T17:13:17Z",
+      "side": 1,
+      "message": "With SetupWizard providing its own initial enforcement, and Settings preventing choosing a lower-complexity password (...right?), we shouldn\u0027t need to pester the user about this. And if we did want to pester the user, we wouldn\u0027t do it here, since this only happens once.\n\nConfirm that Settings prevents removing / choosing a lower-complexity password, before resolving this comment.",
+      "revId": "2edca4c0133d62214e3ec9cdf6a07db32f1fd4fe",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
