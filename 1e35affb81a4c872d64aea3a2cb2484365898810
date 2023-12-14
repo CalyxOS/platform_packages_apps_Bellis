@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b848c51_321ea586",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-12-14T13:28:58Z",
+      "side": 1,
+      "message": "-2 for now so I can use a query to pick garlic-level without the -2 changes.",
+      "revId": "1e35affb81a4c872d64aea3a2cb2484365898810",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
