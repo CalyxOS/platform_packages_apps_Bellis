@@ -162,8 +162,8 @@ object PostProvisioningHelper {
 
             // Disable debugging features and app installation from unknown sources
             addUserRestriction(componentName, DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY)
-            getParentProfileInstance(componentName)
-                .addUserRestriction(componentName, DISALLOW_DEBUGGING_FEATURES)
+            //getParentProfileInstance(componentName)
+            //    .addUserRestriction(componentName, DISALLOW_DEBUGGING_FEATURES)
 
             // Disable Javascript JIT in Chromium
             val bundle = bundleOf("DefaultJavaScriptJitSetting" to 2)
