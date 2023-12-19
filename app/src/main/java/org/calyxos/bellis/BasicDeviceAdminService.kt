@@ -126,15 +126,8 @@ class BasicDeviceAdminService : DeviceAdminService() {
             currentVersion = 3 // Previously 103
         }
         if (currentVersion == 3) {
-            if (managedProfile) {
-                devicePolicyManager.apply {
-                    try {
-                        setSecureSetting(componentName, "user_setup_complete", "1")
-                    } catch (exception: SecurityException) {
-                        Log.e(TAG, "Failed to set user_setup_complete", exception)
-                    }
-                }
-            }
+            // This previously set user_setup_complete, but this required a framework change.
+            // It is no longer needed, so do nothing here.
             currentVersion = 4 // Previously 104
         }
         if (currentVersion == 4) {
