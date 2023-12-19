@@ -70,8 +70,6 @@ object PostProvisioningHelper {
             markComplete(context)
 
             devicePolicyManager.setProfileEnabled(componentName)
-
-            launchSUW(context)
         }
     }
 
@@ -95,7 +93,7 @@ object PostProvisioningHelper {
         return sharedPreferences.getBoolean(PREF_DONE, false)
     }
 
-    private fun launchSUW(context: Context) {
+    fun launchSUW(context: Context) {
         try {
             val intent = Intent(Intent.ACTION_MAIN).apply {
                 val setupWizard = "org.lineageos.setupwizard"
