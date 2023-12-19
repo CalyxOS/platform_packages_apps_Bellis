@@ -71,8 +71,6 @@ object PostProvisioningHelper {
             markComplete(context)
 
             devicePolicyManager.setProfileEnabled(componentName)
-
-            launchSUW(context)
         }
     }
 
@@ -96,7 +94,7 @@ object PostProvisioningHelper {
         return sharedPreferences.getBoolean(PREF_DONE, false)
     }
 
-    private fun launchSUW(context: Context) {
+    fun launchSUW(context: Context) {
         val setupWizardActivity = ".SetupWizardActivity"
 
         for (setupWizard in listOf("org.lineageos.setupwizard", "org.calyxos.setupwizard")) {
