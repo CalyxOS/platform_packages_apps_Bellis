@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e667fc60_af5510cb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-12-20T01:47:39Z",
+      "side": 1,
+      "message": "This does not accomplish the goal laid out in the commit message. The provisioning state is still not properly set until after the work profile setup wizard successfully completes.",
+      "revId": "424e19e2bd1870f4c2b7c5e8b2fe70caa38dcbd3",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
