@@ -13,4 +13,5 @@
     <string name="existing_work_profile">Mevcut iş profili bulundu</string>
     <string name="existing_work_profile_help">Mevcut iş profilini yönetmek için başlatıcıdaki <b>İş</b> sekmesine gidin</string>
     <string name="manage_work_profile">İş profilini yönet</string>
+    <string name="please_wait">Lütfen bekleyin…</string>
 </resources>
