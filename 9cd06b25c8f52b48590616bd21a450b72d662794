@@ -52,6 +52,23 @@
       "parentUuid": "80777fbb_adcb022f",
       "revId": "9cd06b25c8f52b48590616bd21a450b72d662794",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6fce8b04_5c90e0b1",
+        "filename": "app/src/main/AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2024-02-12T14:12:52Z",
+      "side": 1,
+      "message": "dataExtractionRules may not be needed if d2d respects allowBackup\u003dfalse still.",
+      "revId": "9cd06b25c8f52b48590616bd21a450b72d662794",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
