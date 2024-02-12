@@ -69,6 +69,24 @@
       "message": "dataExtractionRules may not be needed if d2d respects allowBackup\u003dfalse still.",
       "revId": "9cd06b25c8f52b48590616bd21a450b72d662794",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e93fcf18_01e61b7a",
+        "filename": "app/src/main/AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-02-12T14:16:40Z",
+      "side": 1,
+      "message": "Ack, yes, that\u0027s true for Bellis as a system app (our case), although if it is installed as a user app (a use case we do want to support), it would still be relevant, so might as well leave it.",
+      "parentUuid": "6fce8b04_5c90e0b1",
+      "revId": "9cd06b25c8f52b48590616bd21a450b72d662794",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
