@@ -13,4 +13,5 @@
     <string name="existing_work_profile_help">要管理现有的工作资料，转到启动器中的<b>工作</b>标签</string>
     <string name="remove_profile_confirmation">你确定吗？这会永久性删除你的工作资料，包括其中的所有应用，这些应用的数据和所有文件。</string>
     <string name="no_work_profile_help">可以在这台设备上设置工作资料，允许您出于工作和个人目的安全私密地使用同一设备</string>
+    <string name="please_wait">请等待…</string>
 </resources>

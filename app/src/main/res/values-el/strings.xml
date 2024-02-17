@@ -13,4 +13,5 @@
     <string name="managed_provisioning_not_enabled">Η Ρύθμιση εργασίας δεν είναι ενεργοποιημένη</string>
     <string name="existing_work_profile_help">Για να διαχειριστείτε το υπάρχον προφίλ εργασίας, μεταβείτε στην καρτέλα <b>Εργασίας</b> στο συρτάρι εφαρμογών</string>
     <string name="manage_work_profile_help">Οι εφαρμογές εργασίας επισημαίνονται με ένα εικονίδιο χαρτοφύλακα, ώστε να μπορείτε να τις ξεχωρίζετε από τις προσωπικές εφαρμογές.</string>
+    <string name="please_wait">Παρακαλώ περιμένετε…</string>
 </resources>
