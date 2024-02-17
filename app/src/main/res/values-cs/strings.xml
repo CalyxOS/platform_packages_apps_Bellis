@@ -13,4 +13,5 @@
     <string name="manage_work_profile">Správa pracovního profilu</string>
     <string name="remove_profile_confirmation">Jste si jisti\? Tímto se trvale odstraní váš pracovní profil, včetně všech aplikací v tomto profilu, jejich dat a souborů.</string>
     <string name="managed_provisioning_not_enabled">Nastavení práce není povoleno</string>
+    <string name="please_wait">Čekejte prosím…</string>
 </resources>
