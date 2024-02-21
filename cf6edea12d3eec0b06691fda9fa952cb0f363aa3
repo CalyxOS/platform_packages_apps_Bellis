@@ -86,6 +86,24 @@
       "message": "What if we try to start `org.calyxos.setupwizard` here - and catch an exception from that too?\n\nCould be in a follow-up change too.",
       "revId": "cf6edea12d3eec0b06691fda9fa952cb0f363aa3",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0770392e_905e6ae7",
+        "filename": "app/src/main/java/org/calyxos/bellis/utils/PostProvisioningHelper.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-02-21T19:09:56Z",
+      "side": 1,
+      "message": "That sounds fine, I can make a quick change here.",
+      "parentUuid": "b26a5357_6c1bda18",
+      "revId": "cf6edea12d3eec0b06691fda9fa952cb0f363aa3",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
