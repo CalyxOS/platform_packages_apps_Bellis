@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b6d489f_f80d7036",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2024-02-21T17:10:17Z",
+      "side": 1,
+      "message": "This is part of Garlic level patch in Bellis",
+      "revId": "cf6edea12d3eec0b06691fda9fa952cb0f363aa3",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
