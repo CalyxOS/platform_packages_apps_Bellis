@@ -7,8 +7,10 @@
 package org.calyxos.bellis.utils
 
 import android.app.admin.DevicePolicyManager
+import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.OutOfQuotaPolicy
 import androidx.work.WorkManager
@@ -17,6 +19,7 @@ import org.calyxos.bellis.R
 
 object PostProvisioningHelper {
 
+    private const val TAG = "PostProvisioningHelper"
     private const val PREFS = "post-provisioning"
     private const val PREF_DONE = "done"
 
@@ -53,13 +56,22 @@ object PostProvisioningHelper {
     }
 
     private fun launchSUW(context: Context) {
-        val setupWizard = "org.lineageos.setupwizard"
         val setupWizardActivity = ".SetupWizardActivity"
 
-        val intent = Intent(Intent.ACTION_MAIN).apply {
-            setClassName(setupWizard, setupWizard + setupWizardActivity)
-            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+        for (setupWizard in listOf("org.lineageos.setupwizard", "org.calyxos.setupwizard")) {
+            val intent = Intent(Intent.ACTION_MAIN).apply {
+                setClassName(setupWizard, setupWizard + setupWizardActivity)
+                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            }
+            try {
+                context.startActivity(intent)
+                break
+            } catch (e: ActivityNotFoundException) {
+                // If the activity is not found, it was probably already completed or something.
+                // Either way, given that the work SUW can be dismissed by the user anyway as of this
+                // writing, this shouldn't be a breaking error.
+                Log.w(TAG, "Setup wizard activity not found for $setupWizard, skipping", e)
+            }
         }
-        context.startActivity(intent)
     }
 }
