@@ -51,6 +51,24 @@
       "message": "But why is SetupWizard missing?\n\nIt did get renamed (a package name change from org.calyxos.setupwizard previously), so that could be a reason.\n\nNot against merging this, but let\u0027s try to see why / and see if we can fix it.",
       "revId": "cf6edea12d3eec0b06691fda9fa952cb0f363aa3",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac98301d_1cc8cc92",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-02-21T17:15:03Z",
+      "side": 1,
+      "message": "The rename: 7383: Set original-package | https://review.calyxos.org/c/CalyxOS/platform_packages_apps_SetupWizard/+/7383",
+      "parentUuid": "3f8123e6_adddd3a6",
+      "revId": "cf6edea12d3eec0b06691fda9fa952cb0f363aa3",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
