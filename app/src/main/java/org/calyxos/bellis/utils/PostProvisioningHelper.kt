@@ -7,8 +7,10 @@
 package org.calyxos.bellis.utils
 
 import android.app.admin.DevicePolicyManager
+import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
+import android.util.Log
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.OutOfQuotaPolicy
 import androidx.work.WorkManager
@@ -17,6 +19,7 @@ import org.calyxos.bellis.R
 
 object PostProvisioningHelper {
 
+    private const val TAG = "PostProvisioningHelper"
     private const val PREFS = "post-provisioning"
     private const val PREF_DONE = "done"
 
@@ -60,6 +63,13 @@ object PostProvisioningHelper {
             setClassName(setupWizard, setupWizard + setupWizardActivity)
             addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         }
-        context.startActivity(intent)
+        try {
+            context.startActivity(intent)
+        } catch (e: ActivityNotFoundException) {
+            // If the activity is not found, it was probably already completed or something.
+            // Either way, given that the work SUW can be dismissed by the user anyway as of this
+            // writing, this shouldn't be a breaking error.
+            Log.w(TAG, "SetupWizard activity not found, skipping", e)
+        }
     }
 }
