@@ -34,6 +34,23 @@
       "parentUuid": "8b6d489f_f80d7036",
       "revId": "cf6edea12d3eec0b06691fda9fa952cb0f363aa3",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f8123e6_adddd3a6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-02-21T17:11:25Z",
+      "side": 1,
+      "message": "But why is SetupWizard missing?\n\nIt did get renamed (a package name change from org.calyxos.setupwizard previously), so that could be a reason.\n\nNot against merging this, but let\u0027s try to see why / and see if we can fix it.",
+      "revId": "cf6edea12d3eec0b06691fda9fa952cb0f363aa3",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
