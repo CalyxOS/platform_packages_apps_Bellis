@@ -56,24 +56,24 @@ android {
 }
 
 dependencies {
-    // https://android.googlesource.com/platform/prebuilts/sdk/+/refs/tags/android-14.0.0_r1/current/androidx/Android.bp#272
+    // https://android.googlesource.com/platform/prebuilts/sdk/+/android-14.0.0_r29/current/androidx/m2repository/androidx/appcompat/appcompat/1.7.0-alpha04/Android.bp
     implementation("androidx.appcompat:appcompat") {
-        version { strictly("1.7.0-alpha03") }
+        version { strictly("1.7.0-alpha03") } // 1.7.0-alpha04 in AOSP but isn't released
     }
 
-    // https://android.googlesource.com/platform/prebuilts/sdk/+/refs/tags/android-14.0.0_r1/current/androidx/Android.bp#7029
+    // https://android.googlesource.com/platform/prebuilts/sdk/+/android-14.0.0_r29/current/androidx/m2repository/androidx/work/work-runtime-ktx/2.10.0-alpha01/Android.bp
     implementation("androidx.work:work-runtime-ktx") {
-        version { strictly("2.9.0-alpha01") }
+        version { strictly("2.10.0-alpha01") }
     }
 
-    // https://android.googlesource.com/platform/prebuilts/sdk/+/refs/tags/android-14.0.0_r1/current/extras/material-design-x/Android.bp#15
+    // https://android.googlesource.com/platform/prebuilts/sdk/+/refs/tags/android-14.0.0_r29/current/extras/material-design-x/Android.bp#15
     implementation("com.google.android.material:material") {
         version { strictly("1.7.0-alpha03") }
     }
 
-    // https://android.googlesource.com/platform/prebuilts/sdk/+/refs/tags/android-14.0.0_r1/current/androidx/Android.bp#4640
+    // https://android.googlesource.com/platform/prebuilts/sdk/+/android-14.0.0_r29/current/androidx/m2repository/androidx/navigation/
     // Navigation Components
-    val navVersion = "2.6.0-alpha08"
+    val navVersion = "2.8.0-alpha01"
     implementation("androidx.navigation:navigation-fragment-ktx") {
         version { strictly(navVersion) }
     }
