@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1ed5f39c_eaa9f069",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000109
+      },
+      "writtenOn": "2024-03-28T21:47:59Z",
+      "side": 1,
+      "message": "I noticed looking at the commits here that a translation I modified was wrong, at risk of a confusing string being pushed on a release, is it possible to fix this?",
+      "revId": "07dcc7301ff142a28fc46bfdb97ce26de20c6546",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
