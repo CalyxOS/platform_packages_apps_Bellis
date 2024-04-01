@@ -16,6 +16,24 @@
       "message": "I noticed looking at the commits here that a translation I modified was wrong, at risk of a confusing string being pushed on a release, is it possible to fix this?",
       "revId": "07dcc7301ff142a28fc46bfdb97ce26de20c6546",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7d1edfca_08ffa9d6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-04-01T18:54:54Z",
+      "side": 1,
+      "message": "Yes, just fix it on weblate, and it should update this commit automatically. I already see a new commit after this comment, for the \"remove_profile_confirmation\" string, was that the issue?",
+      "parentUuid": "1ed5f39c_eaa9f069",
+      "revId": "07dcc7301ff142a28fc46bfdb97ce26de20c6546",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
