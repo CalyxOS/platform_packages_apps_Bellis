@@ -13,4 +13,5 @@
     <string name="set_up_profile">Arbeitsprofil einrichten</string>
     <string name="no_work_profile">Kein Arbeitsprofil gefunden</string>
     <string name="existing_work_profile_help">Um ein bestehendes Arbeitsprofil zu verwalten, navigiere im Startbildschirm zur Registerkarte <b>Arbeit</b></string>
+    <string name="please_wait">Bitte warten…</string>
 </resources>

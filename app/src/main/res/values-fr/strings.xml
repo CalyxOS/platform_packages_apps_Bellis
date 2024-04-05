@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="remove_profile">Supprimer profil</string>
+    <string name="remove_profile">Supprimer le profil professionnel</string>
     <string name="app_and_content_access">Gestion app &amp; accès du contenu</string>
-    <string name="app_name">Profil de travail</string>
+    <string name="app_name">Profil Professionnel</string>
+    <string name="set_up_profile">Paramétrage du profil professionnel</string>
+    <string name="no_work_profile_help">Un profil professionnel peut être paramétré sur cet appareil, ce qui vous permet d\'utiliser de manière sécurisée et privée le même appareil pour des usages professionnels et personnels</string>
+    <string name="existing_work_profile">Profil professionnel existant trouvé</string>
+    <string name="manage_work_profile">Gérer le profil professionnel</string>
+    <string name="manage_work_profile_help">Les applications professionnelles sont marquées d\'une icône de porte-documents pour que vous puissiez les distinguer des applications personnelles.</string>
+    <string name="no_work_profile">Aucun profil professionnel trouvé</string>
+    <string name="remove_profile_confirmation">Êtes-vous sûr ? Cela supprimera définitivement votre profil professionnel, ce qui inclue toutes les applications comprises dans ce profil, leurs données, et leurs fichiers.</string>
+    <string name="profile_setup_disabled">Impossible de paramétrer un nouveau profil professionnel</string>
+    <string name="existing_work_profile_help">Pour gérer le profil professionnel existant, naviguer jusqu\'à l\'onglet <b>Professionnel</b> dans le launcher</string>
+    <string name="please_wait">Veuillez patienter…</string>
 </resources>
