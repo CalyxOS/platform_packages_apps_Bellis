@@ -2,7 +2,7 @@
 <resources>
     <string name="manage_work_profile_help">Aplicativos de trabalho são marcados com um ícone de maleta para que você possa distinguir eles de aplicativos pessoais.</string>
     <string name="remove_profile_confirmation">Você tem certeza? Isso excluirá permanentemente seu perfil de trabalho, e qualquer conteúdo que esteja nele como: arquivos, aplicativos e dados deles.</string>
-    <string name="app_and_content_access">Gerenciar o acesso à conteúdo e aplicativos</string>
+    <string name="app_and_content_access">Gerenciar o acesso ao conteúdo e aplicativos</string>
     <string name="app_name">Perfil de Trabalho</string>
     <string name="set_up_profile">Configurar perfil de trabalho</string>
     <string name="remove_profile">Remover perfil de trabalho</string>
