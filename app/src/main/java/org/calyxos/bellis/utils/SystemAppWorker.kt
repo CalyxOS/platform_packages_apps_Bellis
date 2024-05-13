@@ -20,6 +20,7 @@ class SystemAppWorker(private val context: Context, workerParams: WorkerParamete
     // Default apps to enable on creation of new managed profile
     private val systemApps = listOf(
         "com.android.gallery3d",
+        "org.calyxos.glimpse",
         "com.android.vending",
         "com.android.camera2",
         "com.google.android.gms",
