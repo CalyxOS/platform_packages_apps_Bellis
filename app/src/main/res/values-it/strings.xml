@@ -13,4 +13,5 @@
     <string name="managed_provisioning_not_enabled">Inzializzazione lavoro non è abilitata</string>
     <string name="existing_work_profile">Profilo di lavoro esistente trovato</string>
     <string name="existing_work_profile_help">Per gestire il profilo di lavoro esistente, passa alla scheda <b>Lavoro</b> nel launcher</string>
+    <string name="please_wait">Attendere prego…</string>
 </resources>

@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Profil de serviciu</string>
+    <string name="set_up_profile">Configurează profilul de serviciu</string>
+    <string name="remove_profile">Elimină profilul de serviciu</string>
+    <string name="remove_profile_confirmation">Ești sigur? Acest lucru va șterge definitiv profilul de serviciu, inclusiv toate aplicațiile din acel profil, datele acestora și orice fișiere.</string>
+    <string name="no_work_profile">Nu a fost găsit niciun profil de serviciu</string>
+    <string name="managed_provisioning_not_enabled">Configurarea de lucru nu este activată</string>
+    <string name="profile_setup_disabled">Nu se poate configura noul profil de serviciu</string>
+    <string name="no_work_profile_help">Un profil de serviciu poate fi configurat pe acest dispozitiv, permițând să utilizezi în mod sigur și privat același dispozitiv în scopuri personale și de serviciu</string>
+    <string name="existing_work_profile">S-a găsit un profil de serviciu existent</string>
+    <string name="existing_work_profile_help">Pentru a gestiona profilul de serviciu existent, navighează la fila <b>Serviciu</b> din lansator</string>
+    <string name="manage_work_profile">Gestionează profilul de serviciu</string>
+    <string name="manage_work_profile_help">Aplicațiile de serviciu sunt marcate cu o pictogramă servietă, astfel încât să le poți distinge de aplicațiile personale.</string>
+    <string name="app_and_content_access">Controlează accesul la aplicații și conținut</string>
+    <string name="please_wait">Așteaptă…</string>
+</resources>
