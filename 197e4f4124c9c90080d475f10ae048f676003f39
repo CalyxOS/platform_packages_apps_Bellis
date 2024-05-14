@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5885ae2a_ef09c79d",
+        "filename": "app/src/main/java/org/calyxos/bellis/utils/SystemAppWorker.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2024-05-14T13:48:00Z",
+      "side": 1,
+      "message": "Remove?\n\n```suggestion\n```",
+      "revId": "197e4f4124c9c90080d475f10ae048f676003f39",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
