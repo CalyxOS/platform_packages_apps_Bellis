@@ -16,6 +16,24 @@
       "message": "Remove?\n\n```suggestion\n```",
       "revId": "197e4f4124c9c90080d475f10ae048f676003f39",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "852d76a3_728f3070",
+        "filename": "app/src/main/java/org/calyxos/bellis/utils/SystemAppWorker.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-05-14T14:36:22Z",
+      "side": 1,
+      "message": "I think we need to keep it in order for editing to work in work profiles, right? (The package name hasn\u0027t changed for what is now Gallery2Editor.)",
+      "parentUuid": "5885ae2a_ef09c79d",
+      "revId": "197e4f4124c9c90080d475f10ae048f676003f39",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
