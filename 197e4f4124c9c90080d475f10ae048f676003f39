@@ -34,6 +34,24 @@
       "parentUuid": "5885ae2a_ef09c79d",
       "revId": "197e4f4124c9c90080d475f10ae048f676003f39",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c4555456_89046079",
+        "filename": "app/src/main/java/org/calyxos/bellis/utils/SystemAppWorker.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2024-05-14T14:37:40Z",
+      "side": 1,
+      "message": "Oh True",
+      "parentUuid": "852d76a3_728f3070",
+      "revId": "197e4f4124c9c90080d475f10ae048f676003f39",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
