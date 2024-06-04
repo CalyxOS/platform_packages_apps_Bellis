@@ -26,6 +26,7 @@ class SystemAppWorker(private val context: Context, workerParams: WorkerParamete
         "com.google.android.gsf",
         "com.stevesoltys.seedvault",
         "org.calyxos.eleven",
+        "org.calyxos.etar",
         "org.calyxos.glimpse",
         "org.chromium.chrome"
     )
