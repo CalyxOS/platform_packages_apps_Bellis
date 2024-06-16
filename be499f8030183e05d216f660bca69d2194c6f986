@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "976724d4_80ac6acd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000109
+      },
+      "writtenOn": "2024-06-16T04:36:26Z",
+      "side": 1,
+      "message": "Weblate doesn\u0027t seem to use the same format for the \u003cb\u003e tags, so I got how it shows up in the English file and just pasted it there as an experiment. Seems to have stayed in the format, so should be safe.",
+      "revId": "be499f8030183e05d216f660bca69d2194c6f986",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
