@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "af6798a8_5cf141af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2024-06-20T06:57:38Z",
+      "side": 1,
+      "message": "It should be fine to merge as it will simply skip it if app isn\u0027t installed which would be the case till glimpse is shipped.",
+      "revId": "ce4671eb76b028400a8b1c36941cf4b0e4171f64",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
