@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Pracovný profil</string>
+    <string name="set_up_profile">Nastaviť pracovný profil</string>
+    <string name="remove_profile">Odstrániť pracovný profil</string>
+    <string name="no_work_profile">Nenašiel sa žiadny pracovný profil</string>
+    <string name="profile_setup_disabled">Nie je možné nastaviť nový pracovný profil</string>
+    <string name="remove_profile_confirmation">Ste si istí? Týmto sa trvalo odstráni váš pracovný profil, vrátane všetkých aplikácií v tomto profile, ich dát a súborov.</string>
+    <string name="managed_provisioning_not_enabled">Nastavenie práce nieje povolené</string>
+    <string name="no_work_profile_help">Na tomto zariadení je možné nastaviť pracovný profil, ktorý vám umožní bezpečne a súkromne používať rovnaké zariadenie na pracovné aj osobné účely</string>
+    <string name="existing_work_profile">Našiel sa existujúci pracovný profil</string>
+    <string name="manage_work_profile">Správa pracovného profilu</string>
+    <string name="manage_work_profile_help">Pracovné aplikácie sú označené ikonou aktovky, aby ste ich rozlíšili od osobných aplikácií.</string>
+    <string name="app_and_content_access">Spravovať prístup k aplikáciám a obsahu</string>
+    <string name="existing_work_profile_help">Ak chcete spravovať existujúci pracovný profil, prejdite na kartu <b>Pracovné</b> v prehľade aplikácií</string>
+    <string name="please_wait">Čakajte prosím…</string>
+</resources>
