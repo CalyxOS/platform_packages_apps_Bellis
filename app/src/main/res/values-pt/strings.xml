@@ -5,7 +5,7 @@
     <string name="managed_provisioning_not_enabled">Configuração de Trabalho não está ativada</string>
     <string name="no_work_profile">Nenhum perfil de trabalho encontrado</string>
     <string name="remove_profile_confirmation">Você tem certeza? Isso excluirá permanentemente seu perfil de trabalho, e qualquer conteúdo que esteja nele como: arquivos, aplicativos e dados deles.</string>
-    <string name="existing_work_profile_help">Para gerenciar seu perfil de trabalho existente, navegue até a aba <b>Trabalho</b> na gaveta de aplicativos</string>
+    <string name="existing_work_profile_help">Para gerenciar seu perfil de trabalho existente, navegue até a aba &lt;b&gt;Trabalho&lt;/b&gt; na gaveta de aplicativos</string>
     <string name="app_name">Perfil de Trabalho</string>
     <string name="app_and_content_access">Gerenciar o acesso ao conteúdo e aplicativos</string>
     <string name="profile_setup_disabled">Não foi possível configurar um novo perfil de trabalho</string>

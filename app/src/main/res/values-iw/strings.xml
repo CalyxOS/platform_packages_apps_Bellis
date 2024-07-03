@@ -11,7 +11,7 @@
     <string name="existing_work_profile">נמצא פרופיל עבודה קיים</string>
     <string name="manage_work_profile">ניהול פרופיל עבודה</string>
     <string name="manage_work_profile_help">ליישומוני עבודה יש סימול של תיקייה כדי שניתן יהיה להבחין ביניהם לבין היישומונים האישיים.</string>
-    <string name="existing_work_profile_help">כדי לנהל את פרופיל העבודה הקיים, יש לנווט ללשונית <b>עבודה</b> בדף הבית</string>
+    <string name="existing_work_profile_help">כדי לנהל את פרופיל העבודה הקיים, יש לנווט ללשונית &lt;/b&gt;עבודה&lt;b&gt; בדף הבית</string>
     <string name="no_work_profile_help">אפשר להגדיר פרופיל עבודה על המכשיר הזה, מה שמאפשר לך להשתמש באופן פרטי ומאובטח למטרות עבודה וצרכים אישיים</string>
     <string name="please_wait">נא להמתין…</string>
 </resources>

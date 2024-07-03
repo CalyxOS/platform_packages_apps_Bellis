@@ -9,7 +9,7 @@
     <string name="profile_setup_disabled">Nu se poate configura noul profil de serviciu</string>
     <string name="no_work_profile_help">Un profil de serviciu poate fi configurat pe acest dispozitiv, permițând să utilizezi în mod sigur și privat același dispozitiv în scopuri personale și de serviciu</string>
     <string name="existing_work_profile">S-a găsit un profil de serviciu existent</string>
-    <string name="existing_work_profile_help">Pentru a gestiona profilul de serviciu existent, navighează la fila <b>Serviciu</b> din lansator</string>
+    <string name="existing_work_profile_help">Pentru a gestiona profilul de serviciu existent, navighează la fila &lt;b&gt;Serviciu&lt;/b&gt; din lansator</string>
     <string name="manage_work_profile">Gestionează profilul de serviciu</string>
     <string name="manage_work_profile_help">Aplicațiile de serviciu sunt marcate cu o pictogramă servietă, astfel încât să le poți distinge de aplicațiile personale.</string>
     <string name="app_and_content_access">Controlează accesul la aplicații și conținut</string>

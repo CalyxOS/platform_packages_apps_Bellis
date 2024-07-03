@@ -9,7 +9,7 @@
     <string name="no_work_profile">Er is geen werkprofiel gevonden</string>
     <string name="no_work_profile_help">Een werkprofiel kan op dit apparaat worden ingesteld zodat je veilig en afgescherm hetzelfde apparaat kan gebruiken voor werk- en privédoeleinden</string>
     <string name="existing_work_profile">Bestaand werkprofiel is gevonden</string>
-    <string name="existing_work_profile_help">Om het bestaande werkprofiel te beheren, ga naar de <b>Werktab</b> in de launcher</string>
+    <string name="existing_work_profile_help">Om het bestaande werkprofiel te beheren, ga naar de &lt;b&gt;Werktab&lt;/b&gt; in de launcher</string>
     <string name="manage_work_profile">Beheer werkprofiel</string>
     <string name="manage_work_profile_help">Werkapps zijn gemarkeerd met een koffericoon zodat je ze kan onderscheiden van persoonlijke apps.</string>
     <string name="remove_profile_confirmation">Weet je het zeker\? Dit zal permanent je werkprofiel verwijderen, inclusief alle apps in dat profiel, de bijbehorende gegevens en bestanden.</string>
