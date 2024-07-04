@@ -11,6 +11,6 @@
     <string name="no_work_profile">Aucun profil professionnel trouvé</string>
     <string name="remove_profile_confirmation">Êtes-vous sûr ? Cela supprimera définitivement votre profil professionnel, ce qui inclue toutes les applications comprises dans ce profil, leurs données, et leurs fichiers.</string>
     <string name="profile_setup_disabled">Impossible de paramétrer un nouveau profil professionnel</string>
-    <string name="existing_work_profile_help">Pour gérer le profil professionnel existant, naviguer jusqu\'à l\'onglet <b>Professionnel</b> dans le launcher</string>
+    <string name="existing_work_profile_help">Pour gérer le profil professionnel existant, naviguer jusqu\'à l\'onglet &lt;b&gt;Professionnel&lt;/b&gt; dans le launcher</string>
     <string name="please_wait">Veuillez patienter…</string>
 </resources>

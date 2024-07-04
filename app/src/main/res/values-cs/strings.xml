@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="existing_work_profile_help">Chcete-li spravovat existující pracovní profil, přejděte na kartu <b>Pracovní</b> v přehledu aplikací</string>
+    <string name="existing_work_profile_help">Chcete-li spravovat existující pracovní profil, přejděte na kartu &lt;b&gt;Pracovní&lt;/b&gt; v přehledu aplikací</string>
     <string name="manage_work_profile_help">Pracovní aplikace jsou označeny ikonou aktovky, abyste je mohli odlišit od osobních aplikací.</string>
     <string name="app_and_content_access">Spravovat přístup k aplikacím a obsahu</string>
     <string name="app_name">Pracovní profil</string>

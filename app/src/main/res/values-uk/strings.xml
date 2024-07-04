@@ -9,7 +9,7 @@
     <string name="app_and_content_access">Керування доступом застосунків та вмісту</string>
     <string name="managed_provisioning_not_enabled">Налаштування роботи не ввімкнено</string>
     <string name="existing_work_profile">Знайдено існуючий робочий профіль</string>
-    <string name="existing_work_profile_help">Щоб керувати наявним робочим профілем, перейдіть на вкладку <b>Робота</b> на панелі запуску</string>
+    <string name="existing_work_profile_help">Щоб керувати наявним робочим профілем, перейдіть на вкладку &lt;b&gt;Робота&lt;/b&gt; на панелі запуску</string>
     <string name="profile_setup_disabled">Не вдається налаштувати новий робочий профіль</string>
     <string name="no_work_profile_help">На цьому пристрої можна налаштувати робочий профіль, що дозволить вам безпечно та приватно використовувати той самий пристрій для роботи та особистих цілей</string>
     <string name="manage_work_profile_help">Робочі застосунки позначені значком портфеля, щоб ви могли відрізнити їх від особистих застосунків.</string>
