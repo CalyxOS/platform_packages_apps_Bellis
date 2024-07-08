@@ -16,6 +16,24 @@
       "message": "Do we really want these changes? They\u0027re pretty aggressive and can\u0027t be changed, right? The \"wipe after 3 failed attempts\" makes Safest virtually unusable for many parents, for example, and the requirement of strong auth after 1 hour could be problematic for people in public / in view of cameras.\n\nSorry if I\u0027ve said this before, I feel like I made these exact comments somewhere else a long time ago.",
       "revId": "f0cc3a3eaf7dc6af70a1a008a5f9357736bb4479",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "503cccd0_43731437",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-07-08T15:00:01Z",
+      "side": 1,
+      "message": "\u003e They\u0027re pretty aggressive and can\u0027t be changed, right? \n\nYes.\n\nWe should certainly discuss and tweak before shipping the actual methods being called, and the arguments.\n\nSo, should be wipe at all, and if so, after how many attempts? 3? 5? more? So on.",
+      "parentUuid": "0f66bf0c_d6e326e4",
+      "revId": "f0cc3a3eaf7dc6af70a1a008a5f9357736bb4479",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
