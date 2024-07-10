@@ -181,8 +181,6 @@ object PostProvisioningHelper {
             // Disable debugging features and app installation from unknown sources
             addUserRestriction(componentName, DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY)
             getParentProfileInstance(componentName).apply {
-                addUserRestriction(componentName, DISALLOW_DEBUGGING_FEATURES)
-
                 // Must match SetupWizard's GarlicLevelHelper value for Safest
                 requiredPasswordComplexity = PASSWORD_COMPLEXITY_MEDIUM
             }
