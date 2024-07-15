@@ -6,7 +6,7 @@
     <string name="no_work_profile">仕事用プロファイルが見つかりませんでした</string>
     <string name="no_work_profile_help">仕事用プロファイルはこの端末で設定可能です。それにより、仕事とプライベートで同じ端末を安全に使用することができます</string>
     <string name="existing_work_profile">既存の仕事用プロファイルが見つかりました</string>
-    <string name="existing_work_profile_help">既存の仕事用プロファイルを管理するためにはランチャーの<b>Work</b> のタブへ移動してください</string>
+    <string name="existing_work_profile_help">既存の仕事用プロファイルを管理するためにはランチャーの&lt;b&gt;Work&lt;/b&gt; のタブへ移動してください</string>
     <string name="manage_work_profile">仕事用プロファイルを管理する</string>
     <string name="set_up_profile">仕事用プロファイルを設定する</string>
     <string name="app_and_content_access">アプリを管理またはコンテンツへのアクセス</string>

@@ -2,12 +2,12 @@
 <resources>
     <string name="manage_work_profile_help">Apps de trabalho são marcados com um ícone de maleta para que você possa distinguir eles de apps pessoais.</string>
     <string name="remove_profile_confirmation">Você tem certeza? Isso excluirá permanentemente seu perfil de trabalho, e qualquer conteúdo que esteja nele como: arquivos, apps e dados deles.</string>
-    <string name="app_and_content_access">Gerenciar o acesso ao conteúdo e apps</string>
+    <string name="app_and_content_access">Gerenciar acesso de apps e conteúdo</string>
     <string name="app_name">Perfil de Trabalho</string>
     <string name="set_up_profile">Configurar perfil de trabalho</string>
     <string name="remove_profile">Remover perfil de trabalho</string>
     <string name="managed_provisioning_not_enabled">Configuração de Trabalho não está ativada</string>
-    <string name="profile_setup_disabled">Não foi possível configurar um novo perfil de trabalho</string>
+    <string name="profile_setup_disabled">Não é possível configurar um novo perfil de trabalho</string>
     <string name="no_work_profile">Nenhum perfil de trabalho encontrado</string>
     <string name="no_work_profile_help">Um perfil de trabalho pode ser configurado nesse dispositivo, permitindo que você use o mesmo dispositivo para motivos pessoais e de trabalho com privacidade e segurança</string>
     <string name="existing_work_profile">Perfil de trabalho existente encontrado</string>

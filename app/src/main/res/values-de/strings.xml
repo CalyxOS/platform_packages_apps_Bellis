@@ -12,6 +12,6 @@
     <string name="remove_profile_confirmation">Bist du sicher\? Dadurch wird dein Arbeitsprofil dauerhaft gelöscht, einschließlich aller Apps in diesem Profil, deren Daten und aller Dateien.</string>
     <string name="set_up_profile">Arbeitsprofil einrichten</string>
     <string name="no_work_profile">Kein Arbeitsprofil gefunden</string>
-    <string name="existing_work_profile_help">Um ein bestehendes Arbeitsprofil zu verwalten, navigiere im Startbildschirm zur Registerkarte <b>Arbeit</b></string>
+    <string name="existing_work_profile_help">Um ein bestehendes Arbeitsprofil zu verwalten, navigiere im Startbildschirm zur Registerkarte &lt;b&gt;Arbeit&lt;/b&gt;</string>
     <string name="please_wait">Bitte warten…</string>
 </resources>
