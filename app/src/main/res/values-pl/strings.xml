@@ -10,7 +10,7 @@
     <string name="no_work_profile">Nie znaleziono profilu służbowego</string>
     <string name="existing_work_profile">Znaleziono istniejący profil służbowy</string>
     <string name="manage_work_profile">Zarządzaj profilem służbowym</string>
-    <string name="existing_work_profile_help">Aby zarządzać istniejącym profilem służbowym, przejdź do zakładki <b>Praca</b> w launcherze</string>
+    <string name="existing_work_profile_help">Aby zarządzać istniejącym profilem służbowym, przejdź do zakładki &lt;b&gt;Praca&lt;/b&gt; w launcherze</string>
     <string name="no_work_profile_help">Na tym urządzeniu można skonfigurować profil służbowy, co pozwala na bezpieczne i prywatne korzystanie z tego samego urządzenia do celów służbowych i osobistych</string>
     <string name="manage_work_profile_help">Aplikacje służbowe są oznaczone ikoną aktówki, dzięki czemu można je odróżnić od aplikacji osobistych.</string>
     <string name="please_wait">Czekaj…</string>

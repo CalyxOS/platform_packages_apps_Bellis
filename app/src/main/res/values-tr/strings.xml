@@ -11,7 +11,7 @@
     <string name="no_work_profile">İş profili bulunamadı</string>
     <string name="no_work_profile_help">Bu aygıtta bir iş profili oluşturularak aynı aygıtı iş ve kişisel amaçlar için güvenli ve özel bir şekilde kullanmanız sağlanabilir</string>
     <string name="existing_work_profile">Mevcut iş profili bulundu</string>
-    <string name="existing_work_profile_help">Mevcut iş profilini yönetmek için başlatıcıdaki <b>İş</b> sekmesine gidin</string>
+    <string name="existing_work_profile_help">Mevcut iş profilini yönetmek için başlatıcıdaki &lt;b&gt;İş&lt;/b&gt; sekmesine gidin</string>
     <string name="manage_work_profile">İş profilini yönet</string>
     <string name="please_wait">Lütfen bekleyin…</string>
 </resources>
