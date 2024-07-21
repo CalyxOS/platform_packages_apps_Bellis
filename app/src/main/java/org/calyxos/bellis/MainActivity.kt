@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
             }
             DevicePolicyManager.ACTION_PROVISIONING_SUCCESSFUL -> {
                 PostProvisioningHelper.completeProvisioning(this)
+                PostProvisioningHelper.launchSUW(this)
             }
         }
 
