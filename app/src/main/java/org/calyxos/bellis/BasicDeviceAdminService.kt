@@ -119,7 +119,6 @@ class BasicDeviceAdminService : DeviceAdminService() {
         if (currentVersion == 2) {
             if (managedProfile) {
                 devicePolicyManager.apply {
-                    setCrossProfileCalendarPackages(componentName, null)
                     setCrossProfilePackages(componentName, getCrossProfilePackages())
                 }
             }
