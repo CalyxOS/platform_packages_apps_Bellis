@@ -34,6 +34,24 @@
       "parentUuid": "1d7b6b20_8aab461b",
       "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ea899ce5_29e8ced2",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-07-22T18:09:42Z",
+      "side": 1,
+      "message": "Also, there\u0027s still a separate \"cross-profile calendar\" toggle in setting.",
+      "parentUuid": "8627723d_d4b32b98",
+      "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
