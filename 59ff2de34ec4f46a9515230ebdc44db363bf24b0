@@ -16,6 +16,24 @@
       "message": "I don\u0027t see this perm in Etar.",
       "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8627723d_d4b32b98",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2024-07-22T14:59:32Z",
+      "side": 1,
+      "message": "@aayushgupta219@gmail.com does Etar make use of cross-profile functionality?",
+      "parentUuid": "1d7b6b20_8aab461b",
+      "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
