@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1d7b6b20_8aab461b",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-07-22T14:57:33Z",
+      "side": 1,
+      "message": "I don\u0027t see this perm in Etar.",
+      "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
