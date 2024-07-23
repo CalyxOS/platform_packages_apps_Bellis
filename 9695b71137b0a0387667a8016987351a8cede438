@@ -16,6 +16,24 @@
       "message": "The problem remains as described in the commit message. If the user doesn\u0027t complete that first work profile setup wizard, they can\u0027t ever create another work profile, and I don\u0027t know how they would recover from it. And this change doesn\u0027t fix it.\n\n@olivercscott@gmail.com I wonder if you\u0027d have any ideas. I\u0027m not looking forward to digging into this problem again, but I can if needed.",
       "revId": "9695b71137b0a0387667a8016987351a8cede438",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "67a5134b_14daeb11",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-07-23T15:01:04Z",
+      "side": 1,
+      "message": "Ack, your new patches are here:\n- [27697: fixup! Create flow to setup device or profile owner](https://review.calyxos.org/c/CalyxOS/platform_packages_apps_SetupWizard/+/27697) (has unresolved comment as of writing)\n- [27698: fixup! Support admin-integrated provisioning flow](https://review.calyxos.org/c/CalyxOS/platform_packages_apps_Bellis/+/27698)",
+      "parentUuid": "8f6266df_b3dbe65d",
+      "revId": "9695b71137b0a0387667a8016987351a8cede438",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ],
   "submitRequirementResults": [
