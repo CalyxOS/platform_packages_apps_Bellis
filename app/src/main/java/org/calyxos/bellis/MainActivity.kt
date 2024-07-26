@@ -12,12 +12,14 @@ import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.NavHostFragment
+import com.google.android.material.color.DynamicColors
 import org.calyxos.bellis.utils.PostProvisioningHelper
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        DynamicColors.applyToActivityIfAvailable(this)
 
         when (intent.action) {
             DevicePolicyManager.ACTION_GET_PROVISIONING_MODE -> {
