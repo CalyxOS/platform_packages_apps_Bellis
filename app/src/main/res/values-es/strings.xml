@@ -12,6 +12,6 @@
     <string name="no_work_profile">No se ha encontrado ningún perfil de trabajo</string>
     <string name="remove_profile_confirmation">¿Estás seguro\? Esto eliminará permanentemente tu perfil de trabajo, incluyendo todas las aplicaciones dentro de ese perfil, sus datos y cualquier archivo.</string>
     <string name="no_work_profile_help">Se puede establecer un perfil de trabajo en este dispositivo, lo que le permite utilizar de forma segura y privada el mismo dispositivo para fines laborales y personales</string>
-    <string name="existing_work_profile_help">Para gestionar el perfil de trabajo existente, vaya a la pestaña <b>Trabajo</b> del lanzador</string>
+    <string name="existing_work_profile_help">Para gestionar el perfil de trabajo existente, vaya a la pestaña <b>Trabajo</b>; del lanzador</string>
     <string name="please_wait">Por favor, espere…</string>
 </resources>

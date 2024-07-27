@@ -12,6 +12,6 @@
     <string name="manage_work_profile">Správa pracovného profilu</string>
     <string name="manage_work_profile_help">Pracovné aplikácie sú označené ikonou aktovky, aby ste ich rozlíšili od osobných aplikácií.</string>
     <string name="app_and_content_access">Spravovať prístup k aplikáciám a obsahu</string>
-    <string name="existing_work_profile_help">Ak chcete spravovať existujúci pracovný profil, prejdite na kartu <b>Pracovné</b> v prehľade aplikácií</string>
+    <string name="existing_work_profile_help">Ak chcete spravovať existujúci pracovný profil, prejdite na kartu &lt;b&gt;Pracovné&lt;/b&gt; v prehľade aplikácií</string>
     <string name="please_wait">Čakajte prosím…</string>
 </resources>
