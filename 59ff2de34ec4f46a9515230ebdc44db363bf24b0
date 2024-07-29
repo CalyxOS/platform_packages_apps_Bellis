@@ -52,6 +52,24 @@
       "parentUuid": "8627723d_d4b32b98",
       "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a72e68ec_8a3b7a7d",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2024-07-29T17:57:15Z",
+      "side": 1,
+      "message": "https://cs.android.com/android/platform/superproject/main/+/main:packages/apps/Settings/src/com/android/settings/accounts/CrossProfileCalendarPreferenceController.java;l\u003d69;drc\u003d2a445bb89eb30e890e0e715ec3df90405b130817\nIt toggles whether the feature is enabled for the user. The API call allows the package to make use of the feature (which should now be handled by `setCrossProfilePackages` if the package makes use of `INTERACT_ACROSS_PROFILES`)",
+      "parentUuid": "ea899ce5_29e8ced2",
+      "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
