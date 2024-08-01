@@ -70,6 +70,24 @@
       "parentUuid": "ea899ce5_29e8ced2",
       "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "df242ae5_7eccf6b1",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2024-08-01T03:16:53Z",
+      "side": 1,
+      "message": "I don\u0027t think it does. I don\u0027t remember seeing it in the options when the feature was shipped/tested. I had to install Google Calendar instead.",
+      "parentUuid": "a72e68ec_8a3b7a7d",
+      "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
