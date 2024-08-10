@@ -11,4 +11,7 @@
     <string name="app_and_content_access">Kelola akses aplikasi &amp; konten</string>
     <string name="app_name">Profil Kerja</string>
     <string name="manage_work_profile">Kelola profil kerja</string>
+    <string name="existing_work_profile">Sudah ada profil kerja</string>
+    <string name="existing_work_profile_help">Untuk mengelola profil kerja yang sudah ada, buka tab <b>Kerja</b> yang ada di peluncur</string>
+    <string name="please_wait">Mohon tunggu…</string>
 </resources>

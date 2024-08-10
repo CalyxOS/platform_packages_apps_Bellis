@@ -12,5 +12,5 @@
     <string name="managed_provisioning_not_enabled">A configuración do traballo non está activada</string>
     <string name="manage_work_profile_help">As aplicacións de traballo están marcadas cunha icona de maletín para que poidas distinguilos das aplicacións persoais.</string>
     <string name="manage_work_profile">Xestionalo perfil de traballo</string>
-    <string name="existing_work_profile_help">Para xestionalo perfil de traballo existente, vai ata a pestana <b>Work</b> no iniciador</string>
+    <string name="existing_work_profile_help">Para xestionalo perfil de traballo existente, vai ata a pestana &lt;b&gt;Work&lt;/b&gt; no iniciador</string>
 </resources>
