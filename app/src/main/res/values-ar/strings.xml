@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">ملف تعريف العمل</string>
+    <string name="set_up_profile">اعداد ملف تعريف العمل</string>
+    <string name="remove_profile">إزالة ملف تعريف العمل</string>
+    <string name="app_and_content_access">إدارة وصول التطبيق &amp; المحتوى</string>
+    <string name="remove_profile_confirmation">هل أنت متأكد؟ هذا سيحذف ملف تعريف العمل الخاص بك نهائيا، بما في ذلك جميع التطبيقات داخل الملف، بياناتها، و أي ملفات.</string>
+    <string name="profile_setup_disabled">غير قادر على إعداد ملف تعريف عمل جديد</string>
+    <string name="no_work_profile">لم يتم العثور على أي ملف تعريف عمل</string>
+    <string name="existing_work_profile">تم العثور على ملف تعريف عمل موجود</string>
+    <string name="manage_work_profile">إدارة ملف تعريف العمل</string>
+    <string name="no_work_profile_help">يمكن إضافة ملف تعريف عمل لهذا الجهاز، مما يسمح لك باستخدام نفس الجهاز لأغراض العمل و الأغراض الشخصية بأمان و خصوصية</string>
+    <string name="existing_work_profile_help">لإدارة ملف تعريف عمل موجود، اذهب إلى نافذة <b>العمل</b> في اللانشر</string>
+    <string name="please_wait">انتظر من فضلك…</string>
+</resources>
