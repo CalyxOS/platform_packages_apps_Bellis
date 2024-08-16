@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="existing_work_profile_help">Чтобы управлять существующим рабочим профилем, перейдите на вкладку <b>Работа</b> на панели запуска</string>
+    <string name="existing_work_profile_help">Чтобы управлять существующим рабочим профилем, перейдите на вкладку &lt;b&gt;Работа&lt;/b&gt; на панели запуска</string>
     <string name="profile_setup_disabled">Невозможно настроить новый рабочий профиль</string>
     <string name="set_up_profile">Настроить рабочий профиль</string>
     <string name="no_work_profile">Рабочий профиль не найден</string>

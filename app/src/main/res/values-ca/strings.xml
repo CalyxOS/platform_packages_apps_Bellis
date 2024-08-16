@@ -12,5 +12,5 @@
     <string name="app_and_content_access">Gestiona l\'aplicació i accés al contingut</string>
     <string name="managed_provisioning_not_enabled">La Configuració de Treball no està habilitada</string>
     <string name="remove_profile_confirmation">N\'estàs segur\? Això suprimirà permanentment el vostre perfil de treball, incloses totes les aplicacions dins d\'aquest perfil, les seves dades i qualsevol fitxer.</string>
-    <string name="existing_work_profile_help">Per gestionar el perfil de treball existent, navegueu a la pestanya <b>Treball</b> del llançador</string>
+    <string name="existing_work_profile_help">Per gestionar el perfil de treball existent, navegueu a la pestanya &lt;b&gt;Treball&lt;/b&gt; del llançador</string>
 </resources>
