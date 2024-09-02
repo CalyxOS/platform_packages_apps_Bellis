@@ -15,6 +15,7 @@ android_app {
     srcs: ["app/src/main/java/**/*.kt"],
 
     static_libs: [
+        "androidx.activity_activity",
         "androidx.appcompat_appcompat",
         "androidx.navigation_navigation-fragment-ktx",
         "androidx.navigation_navigation-ui-ktx",

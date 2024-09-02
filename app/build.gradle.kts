@@ -56,6 +56,11 @@ android {
 }
 
 dependencies {
+    // AndroidX
+    // https://android.googlesource.com/platform/prebuilts/sdk/+/android-14.0.0_r53/current/androidx/m2repository/androidx/activity/activity/1.9.0-alpha03/Android.bp
+    implementation("androidx.activity:activity") {
+        version { strictly("1.9.0-alpha03") }
+    }
     // https://android.googlesource.com/platform/prebuilts/sdk/+/android-14.0.0_r50/current/androidx/m2repository/androidx/appcompat/appcompat/1.7.0-alpha04/Android.bp
     implementation("androidx.appcompat:appcompat") {
         version { strictly("1.7.0-alpha03") } // 1.7.0-alpha04 in AOSP but isn't released
