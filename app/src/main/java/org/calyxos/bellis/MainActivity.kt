@@ -9,6 +9,7 @@ package org.calyxos.bellis
 import android.app.admin.DevicePolicyManager
 import android.os.Bundle
 import android.os.PersistableBundle
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.NavHostFragment
@@ -18,6 +19,7 @@ import org.calyxos.bellis.utils.PostProvisioningHelper
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         DynamicColors.applyToActivityIfAvailable(this)
 
