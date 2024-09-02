@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50d4ccbc_df04b3e7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2024-09-02T12:07:49Z",
+      "side": 1,
+      "message": "Submit when A15 is out",
+      "revId": "ab37a2158e0196674aa18b7490f3ee1c24cada19",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
