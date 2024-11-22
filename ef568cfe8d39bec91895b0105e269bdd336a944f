@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cf514062_56947e75",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2024-11-22T23:15:13Z",
+      "side": 1,
+      "message": "Would have to be handled by lupin (or some other mechanism) to be included in the work profile by default",
+      "revId": "ef568cfe8d39bec91895b0105e269bdd336a944f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
