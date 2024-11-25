@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="set_up_profile">பணி சுயவிவரத்தை அமைக்கவும்</string>
+    <string name="existing_work_profile">தற்போதுள்ள பணி சுயவிவரம் காணப்படுகிறது</string>
+    <string name="manage_work_profile">பணி சுயவிவரத்தை நிர்வகிக்கவும்</string>
+    <string name="managed_provisioning_not_enabled">பணி அமைப்பு இயக்கப்படவில்லை</string>
+    <string name="app_name">பணி சுயவிவரம்</string>
+    <string name="app_and_content_access">பயன்பாடு மற்றும் உள்ளடக்க அணுகலை நிர்வகிக்கவும்</string>
+    <string name="remove_profile">பணி சுயவிவரத்தை அகற்று</string>
+    <string name="remove_profile_confirmation">நீங்கள் உறுதியாக இருக்கிறீர்களா? இது உங்கள் பணி சுயவிவரத்தை நிரந்தரமாக நீக்கும், அந்த சுயவிவரத்தில் உள்ள அனைத்து பயன்பாடுகளும், அவற்றின் தரவு மற்றும் எந்த கோப்புகளும் அடங்கும்.</string>
+    <string name="profile_setup_disabled">புதிய பணி சுயவிவரத்தை அமைக்க முடியவில்லை</string>
+    <string name="no_work_profile">வேலை சுயவிவரம் எதுவும் கிடைக்கவில்லை</string>
+    <string name="no_work_profile_help">இந்த சாதனத்தில் ஒரு பணி சுயவிவரத்தை அமைக்கலாம், அதே சாதனத்தை வேலை மற்றும் தனிப்பட்ட நோக்கங்களுக்காக பாதுகாப்பாகவும் தனிப்பட்ட முறையில் பயன்படுத்தவும் உங்களை அனுமதிக்கிறது</string>
+    <string name="existing_work_profile_help">தற்போதுள்ள பணி சுயவிவரத்தை நிர்வகிக்க, துவக்கத்தில் <b> வேலை </b> தாவலுக்கு செல்லவும்</string>
+    <string name="manage_work_profile_help">பணி பயன்பாடுகள் ஒரு பிரீஃப்கேச் ஐகானுடன் குறிக்கப்பட்டுள்ளன, எனவே அவற்றை தனிப்பட்ட பயன்பாடுகளிலிருந்து வேறுபடுத்தலாம்.</string>
+    <string name="please_wait">தயவுசெய்து காத்திருங்கள்…</string>
+</resources>

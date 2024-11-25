@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">工作簡介</string>
+    <string name="remove_profile_confirmation">是否確定？這將永久刪除您的工作資料夾，包括該資料中的所有應用程式、其數據和任何檔案。</string>
+    <string name="remove_profile">刪除工作資料夾</string>
+    <string name="set_up_profile">設置工作資料夾</string>
+    <string name="managed_provisioning_not_enabled">未啟用工作設置</string>
+    <string name="profile_setup_disabled">無法設置新的工作資料夾</string>
+    <string name="no_work_profile">未找到工作資料夾</string>
+    <string name="no_work_profile_help">您可以在此設備上設置工作資料夾，以便您安全、私密地使用同一裝置進行工作和個人目的</string>
+    <string name="existing_work_profile">找到已有工作資料夾</string>
+    <string name="app_and_content_access">管理應用程式和內容訪問許可權</string>
+    <string name="existing_work_profile_help">要管理現有工作資料夾，請到啟動器中的 <b>工作</b> 選項卡</string>
+    <string name="please_wait">請稍候…</string>
+    <string name="manage_work_profile_help">工作應用程式標有公事包圖示，以便您可以將其與個人應用程式區分開來。</string>
+    <string name="manage_work_profile">管理工作資料夾</string>
+</resources>

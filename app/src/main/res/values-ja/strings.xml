@@ -13,4 +13,5 @@
     <string name="remove_profile">仕事用プロファイルを削除する</string>
     <string name="remove_profile_confirmation">本当に削除してもよいでしょうか？仕事用プロファイルの中のアプリのデータやファイルなどはすべて永久的に削除されます。</string>
     <string name="manage_work_profile_help">仕事用のアプリにはブリーフケースのアイコンが付いているので、個人用のアプリと区別がつきます。</string>
+    <string name="please_wait">しばらくお待ちください…</string>
 </resources>
