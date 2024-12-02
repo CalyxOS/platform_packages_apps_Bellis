@@ -88,6 +88,24 @@
       "parentUuid": "a72e68ec_8a3b7a7d",
       "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f34e49d9_1b7a77fd",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2024-12-02T23:05:33Z",
+      "side": 1,
+      "message": "Is the above the technical blockage? If so, it sounds like we\u0027re in the clear for Etar since it doesn\u0027t make use of the functionality?",
+      "parentUuid": "df242ae5_7eccf6b1",
+      "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
