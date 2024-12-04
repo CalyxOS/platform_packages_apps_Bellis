@@ -124,6 +124,24 @@
       "parentUuid": "f34e49d9_1b7a77fd",
       "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bedafb6b_b0582c32",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2024-12-04T16:16:26Z",
+      "side": 1,
+      "message": "I\u0027m not sure what this commit does at this point then.",
+      "parentUuid": "a5add7f4_1b11b834",
+      "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
