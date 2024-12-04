@@ -106,6 +106,24 @@
       "parentUuid": "df242ae5_7eccf6b1",
       "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a5add7f4_1b11b834",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2024-12-04T03:26:41Z",
+      "side": 1,
+      "message": "I don\u0027t think this is a blocker for anything. Feel free to mark as resolved.",
+      "parentUuid": "f34e49d9_1b7a77fd",
+      "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
