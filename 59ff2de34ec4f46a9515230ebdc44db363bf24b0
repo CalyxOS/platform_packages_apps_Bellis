@@ -142,6 +142,24 @@
       "parentUuid": "a5add7f4_1b11b834",
       "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "43002c3b_e49a34db",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 2
+      },
+      "lineNbr": 182,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2024-12-06T20:04:32Z",
+      "side": 1,
+      "message": "Removes a deprecated call. It is now handled by the function that\u0027s in the commit message",
+      "parentUuid": "bedafb6b_b0582c32",
+      "revId": "59ff2de34ec4f46a9515230ebdc44db363bf24b0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
