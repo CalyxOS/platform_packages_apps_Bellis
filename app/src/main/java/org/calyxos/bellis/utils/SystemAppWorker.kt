@@ -24,6 +24,7 @@ class SystemAppWorker(private val context: Context, workerParams: WorkerParamete
         "com.android.camera2",
         "com.google.android.gms",
         "com.google.android.gsf",
+        "com.google.android.projection.gearhead",
         "com.stevesoltys.seedvault",
         "org.calyxos.twelve",
         "org.calyxos.etar",
