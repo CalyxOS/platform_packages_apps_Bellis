@@ -16,6 +16,24 @@
       "message": "Is this change intended to make Android Auto work properly in work profiles?\n\nWould you mind adding an issue link? And maybe somebody with an Android Auto \"receiver\" device / car / whatever can test this.",
       "revId": "06d59359de318a1c6c870c8a335dcf64c1c24019",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bc7b51c3_ede0dd04",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2025-04-02T02:19:33Z",
+      "side": 1,
+      "message": "It\u0027s intended to install it in work profiles. Without this change, by default, it is not",
+      "parentUuid": "3a9bc23f_a962e157",
+      "revId": "06d59359de318a1c6c870c8a335dcf64c1c24019",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
