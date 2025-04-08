@@ -34,6 +34,24 @@
       "parentUuid": "3a9bc23f_a962e157",
       "revId": "06d59359de318a1c6c870c8a335dcf64c1c24019",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a06f539_dbe0446a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2025-04-08T20:50:09Z",
+      "side": 1,
+      "message": "Whole topic should be tested on a head unit",
+      "parentUuid": "bc7b51c3_ede0dd04",
+      "revId": "06d59359de318a1c6c870c8a335dcf64c1c24019",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
