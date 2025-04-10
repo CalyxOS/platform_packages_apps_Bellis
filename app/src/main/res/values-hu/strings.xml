@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="remove_profile_confirmation">Biztos ebben? Ez véglegesen törli a munka profilját, beleértve a benne levő applikációkat, azok adatait, és bármilyen fájlt.</string>
+    <string name="managed_provisioning_not_enabled">Munka profil nincs bekapcsolva</string>
+    <string name="profile_setup_disabled">Nem állítható be új munka profil</string>
+    <string name="manage_work_profile">Munka profil kezelése</string>
+    <string name="app_and_content_access">App &amp; tartalom hozzáférésének igazgatása</string>
+    <string name="existing_work_profile_help">A már létező munka profil kezeléséhez navigáljon a <b>Munka</b> fülre az indítópulton belül</string>
+    <string name="existing_work_profile">Már létező munka profil található</string>
+    <string name="remove_profile">Munka profil eltávolítása</string>
+    <string name="app_name">Munka Profil</string>
+    <string name="set_up_profile">Munka profil beállítása</string>
+    <string name="no_work_profile_help">Beállíthat munka profilt a készüléken, ezzel biztonságosan és bizalmasan el tudja választani az eszközén a munka és személyi tevékenységét</string>
+    <string name="manage_work_profile_help">A munka applikációk aktatáskával vannak jelölve, hogy könnyen meg tudja különböztetni őket a személyi applikációktól.</string>
+    <string name="please_wait">Kérem várjon…</string>
+    <string name="no_work_profile">Nem található munka profil</string>
+</resources>

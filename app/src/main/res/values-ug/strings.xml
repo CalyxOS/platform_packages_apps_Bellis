@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_and_content_access">ئەپ ۋە مەزمۇن زىيارىتىنى باشقۇرىدۇ</string>
+    <string name="existing_work_profile">مەۋجۇت خىزمەت تەرجىمىھالى بايقالدى</string>
+    <string name="existing_work_profile_help">مەۋجۇت خىزمەت تەرجىمىھالىنى باشقۇرۇشتا قوزغاتقۇچتىكى <b>خىزمەت</b> بەتكۈچ يۆتكىلىڭ</string>
+    <string name="manage_work_profile">خىزمەت تەرجىمىھالىنى باشقۇرۇش</string>
+    <string name="manage_work_profile_help">خىزمەت ئەپلىرىگە سومكا سىنبەلگىسى بىلەن بەلگە قويۇلغان شۇڭا ئۇلارنى شەخسىي ئەپتىن پەرقلەندۈرەلەيسىز.</string>
+    <string name="please_wait">سەل كۈتۈڭ…</string>
+    <string name="no_work_profile_help">بۇ ئۈسكۈنىدە خىزمەت تەرجىمىھالىنى تەڭشىگىلى بولىدۇ، خىزمەت ۋە شەخسىي مەقسەتتە ئوخشاش بىر ئۈسكۈنىنى بىخەتەر ۋە ئايرىم ئىشلىتىشىڭىزگە يول قويىدۇ</string>
+    <string name="app_name">خىزمەت تەرجىمىھال</string>
+    <string name="set_up_profile">خىزمەت تەرجىمىھالىنى تەڭشەيدۇ</string>
+    <string name="remove_profile">خىزمەت تەرجىمىھالىنى چىقىرىۋېتىدۇ</string>
+    <string name="remove_profile_confirmation">راستمۇ؟ بۇ مەشغۇلات خىزمەت تەرجىمىھالىڭىزنى مەڭگۈلۈك ئۆچۈرىدۇ، شۇ تەرجىمىھالدىكى بارلىق ئەپ، سانلىق مەلۇمات ۋە خالىغان ھۆججەتنى ئۆز ئىچىگە ئالىدۇ.</string>
+    <string name="managed_provisioning_not_enabled">خىزمەت تەرجىمىھالىنى ئورنىتىش قوزغىتىلمىغان</string>
+    <string name="profile_setup_disabled">يېڭى خىزمەت تەرجىمىھالىنى تەڭشىيەلمەيدۇ</string>
+    <string name="no_work_profile">ھېچقانداق خىزمەت تەرجىمىھالى تېپىلمىدى</string>
+</resources>
