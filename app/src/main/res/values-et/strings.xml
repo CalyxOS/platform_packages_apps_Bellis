@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Tööprofiil</string>
+    <string name="set_up_profile">Seadista tööprofiil</string>
+    <string name="remove_profile_confirmation">Kas oled kindel? See kustutab jäädavalt su tööprofiili, sealhulgas kõik sellel profiilil olevad rakendused, nende andmed ja failid.</string>
+    <string name="managed_provisioning_not_enabled">Tööseaded pole lubatud</string>
+    <string name="profile_setup_disabled">Uut tööprofiili ei saa seadistada</string>
+    <string name="existing_work_profile">Leiti olemasolev tööprofiil</string>
+    <string name="existing_work_profile_help">Olemasoleva tööprofiili haldamiseks liigu käivitusprogrammis vahekaardile <b>Töö</b></string>
+    <string name="manage_work_profile">Halda tööprofiili</string>
+    <string name="manage_work_profile_help">Töörakendused on tähistatud kohvri ikooniga, et neid isiklikest rakendustest eristada.</string>
+    <string name="app_and_content_access">Halda juurdepääsu rakendustele ja sisule</string>
+    <string name="please_wait">Palun oota…</string>
+    <string name="no_work_profile_help">Selles seadmes saab seadistada tööprofiili, mis võimaldab turvaliselt ja privaatselt kasutada sama seadet tööl ja isiklikel eesmärkidel</string>
+    <string name="no_work_profile">Tööprofiili ei leitud</string>
+    <string name="remove_profile">Eemalda tööprofiil</string>
+</resources>
