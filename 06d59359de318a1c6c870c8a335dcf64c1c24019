@@ -52,6 +52,24 @@
       "parentUuid": "bc7b51c3_ede0dd04",
       "revId": "06d59359de318a1c6c870c8a335dcf64c1c24019",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92156c00_716c769b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2025-04-15T21:23:51Z",
+      "side": 1,
+      "message": "It is intended to install our app which hides Android Auto in work profile.\n\nAndroid Auto itself was present in the work profile before this, and there\u0027s some work functionality mentioned in Android Auto, but I couldn\u0027t get that working.",
+      "parentUuid": "6a06f539_dbe0446a",
+      "revId": "06d59359de318a1c6c870c8a335dcf64c1c24019",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
