@@ -5,7 +5,7 @@
     <string name="profile_setup_disabled">Nem állítható be új munka profil</string>
     <string name="manage_work_profile">Munka profil kezelése</string>
     <string name="app_and_content_access">App &amp; tartalom hozzáférésének igazgatása</string>
-    <string name="existing_work_profile_help">A már létező munka profil kezeléséhez navigáljon a <b>Munka</b> fülre az indítópulton belül</string>
+    <string name="existing_work_profile_help">A már létező munka profil kezeléséhez navigáljon a &lt;b&gt;Munka&lt;/b&gt; fülre az indítópulton belül</string>
     <string name="existing_work_profile">Már létező munka profil található</string>
     <string name="remove_profile">Munka profil eltávolítása</string>
     <string name="app_name">Munka Profil</string>

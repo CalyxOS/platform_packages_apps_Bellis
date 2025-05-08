@@ -12,6 +12,6 @@
     <string name="manage_work_profile_help">Work apps are marked with a briefcase icon so you can distinguish them from personal apps.</string>
     <string name="app_and_content_access">Manage app &amp; content access</string>
     <string name="managed_provisioning_not_enabled">Work Setup is not enabled</string>
-    <string name="existing_work_profile_help">To manage the existing work profile, navigate to the <b>Work</b> tab in the launcher</string>
+    <string name="existing_work_profile_help">To manage the existing work profile, navigate to the &lt;b&gt;Work&lt;/b&gt; tab in the launcher</string>
     <string name="please_wait">Please wait…</string>
 </resources>
