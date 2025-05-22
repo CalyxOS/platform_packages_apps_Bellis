@@ -2,7 +2,7 @@
 <resources>
     <string name="app_and_content_access">ئەپ ۋە مەزمۇن زىيارىتىنى باشقۇرىدۇ</string>
     <string name="existing_work_profile">مەۋجۇت خىزمەت تەرجىمىھالى بايقالدى</string>
-    <string name="existing_work_profile_help">مەۋجۇت خىزمەت تەرجىمىھالىنى باشقۇرۇشتا قوزغاتقۇچتىكى <b>خىزمەت</b> بەتكۈچ يۆتكىلىڭ</string>
+    <string name="existing_work_profile_help">مەۋجۇت خىزمەت تەرجىمىھالىنى باشقۇرۇشتا قوزغاتقۇچتىكى &lt;b&gt;خىزمەت&lt;/b&gt; بەتكۈچ يۆتكىلىڭ</string>
     <string name="manage_work_profile">خىزمەت تەرجىمىھالىنى باشقۇرۇش</string>
     <string name="manage_work_profile_help">خىزمەت ئەپلىرىگە سومكا سىنبەلگىسى بىلەن بەلگە قويۇلغان شۇڭا ئۇلارنى شەخسىي ئەپتىن پەرقلەندۈرەلەيسىز.</string>
     <string name="please_wait">سەل كۈتۈڭ…</string>

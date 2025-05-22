@@ -6,7 +6,7 @@
     <string name="managed_provisioning_not_enabled">Tööseaded pole lubatud</string>
     <string name="profile_setup_disabled">Uut tööprofiili ei saa seadistada</string>
     <string name="existing_work_profile">Leiti olemasolev tööprofiil</string>
-    <string name="existing_work_profile_help">Olemasoleva tööprofiili haldamiseks liigu käivitusprogrammis vahekaardile <b>Töö</b></string>
+    <string name="existing_work_profile_help">Olemasoleva tööprofiili haldamiseks liigu käivitusprogrammis vahekaardile &lt;b&gt;Töö&lt;/b&gt;</string>
     <string name="manage_work_profile">Halda tööprofiili</string>
     <string name="manage_work_profile_help">Töörakendused on tähistatud kohvri ikooniga, et neid isiklikest rakendustest eristada.</string>
     <string name="app_and_content_access">Halda juurdepääsu rakendustele ja sisule</string>

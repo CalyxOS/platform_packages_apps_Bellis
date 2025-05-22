@@ -10,6 +10,6 @@
     <string name="existing_work_profile">تم العثور على ملف تعريف عمل موجود</string>
     <string name="manage_work_profile">إدارة ملف تعريف العمل</string>
     <string name="no_work_profile_help">يمكن إضافة ملف تعريف عمل لهذا الجهاز، مما يسمح لك باستخدام نفس الجهاز لأغراض العمل و الأغراض الشخصية بأمان و خصوصية</string>
-    <string name="existing_work_profile_help">لإدارة ملف تعريف عمل موجود، اذهب إلى نافذة <b>العمل</b> في اللانشر</string>
+    <string name="existing_work_profile_help">لإدارة ملف تعريف عمل موجود، اذهب إلى نافذة &lt;b&gt;العمل&lt;/b&gt; في اللانشر</string>
     <string name="please_wait">انتظر من فضلك…</string>
 </resources>
