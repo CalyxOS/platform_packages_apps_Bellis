@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Poslovni profil</string>
+    <string name="app_and_content_access">Upravljaj pristupom aplikacijama i sadržaju</string>
+    <string name="set_up_profile">Postavi radni profil</string>
+    <string name="remove_profile">Ukloni radni profil</string>
+    <string name="remove_profile_confirmation">Sigurno? Ovo će trajno izbrisati tvoj radni profil, uključujući sve aplikacije unutar tog profila, njihove podatke i sve datoteke.</string>
+    <string name="managed_provisioning_not_enabled">Postavljanje radnog profila nije aktivirano</string>
+    <string name="profile_setup_disabled">Nije moguće postaviti novi radni profil</string>
+    <string name="no_work_profile">Nije pronađen nijedan radni profil</string>
+    <string name="no_work_profile_help">Na ovom uređaju se može postaviti radni profil, što omogućuje sigurno i privatno korištenje istog uređaja za poslovne i privatne svrhe</string>
+    <string name="existing_work_profile">Pronađen je postojeći radni profil</string>
+    <string name="existing_work_profile_help">Za upravljanje postojećim radnim profilom, idi na karticu <b>Posao</b> u pokretaču</string>
+    <string name="manage_work_profile">Upravljaj radnim profilom</string>
+    <string name="manage_work_profile_help">Poslovne aplikacije su označene s ikonom aktovke kako bi se razlikovale od osobnih aplikacija.</string>
+    <string name="please_wait">Pričekaj …</string>
 </resources>
