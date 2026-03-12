@@ -24,7 +24,6 @@ import androidx.work.OutOfQuotaPolicy
 import androidx.work.WorkManager
 import org.calyxos.bellis.BasicDeviceAdminReceiver
 import org.calyxos.bellis.R
-import java.util.concurrent.TimeUnit
 
 object PostProvisioningHelper {
 
@@ -40,7 +39,9 @@ object PostProvisioningHelper {
     private const val CHROMIUM_PKG = "org.chromium.chrome"
 
     enum class GarlicLevel {
-        STANDARD, SAFER, SAFEST
+        STANDARD,
+        SAFER,
+        SAFEST
     }
 
     fun completeProvisioning(context: Context) {
