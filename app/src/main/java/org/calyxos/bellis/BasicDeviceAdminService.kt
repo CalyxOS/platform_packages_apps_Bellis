@@ -153,8 +153,11 @@ class BasicDeviceAdminService : DeviceAdminService() {
                 // or it will *always* be marked.
                 if (!PostProvisioningHelper.provisioningComplete(this)) {
                     PostProvisioningHelper.markComplete(this)
-                    Log.w(TAG, "warning: provisioning was not marked complete, but we are "
-                        + "upgrading, so we assume it must have been completed and mark it now.")
+                    Log.w(
+                        TAG,
+                        "warning: provisioning was not marked complete, but we are " +
+                            "upgrading, so we assume it must have been completed and mark it now."
+                    )
                 }
             }
             currentVersion = 7
