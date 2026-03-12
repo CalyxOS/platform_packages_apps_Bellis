@@ -8,5 +8,5 @@ plugins {
     id("com.android.application") version "8.13.2" apply false
     // https://android.googlesource.com/platform/external/kotlinc/+/refs/tags/android-16.0.0_r4/build.txt
     id("org.jetbrains.kotlin.android") version "2.2.0" apply false
-    id("org.jlleitschuh.gradle.ktlint") version "11.6.1" apply false
+    id("org.jlleitschuh.gradle.ktlint") version "14.1.0" apply false
 }
