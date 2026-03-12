@@ -4,19 +4,25 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import com.android.build.api.dsl.ApplicationExtension
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("org.jlleitschuh.gradle.ktlint")
 }
 
-android {
+kotlin {
+    jvmToolchain(21)
+}
+
+configure<ApplicationExtension> {
     namespace = "org.calyxos.bellis"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 33
-        targetSdk = 35
+        targetSdk = 36
     }
 
     signingConfigs {
@@ -42,38 +48,30 @@ android {
             )
         }
     }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
-    }
     lint {
         lintConfig = file("lint.xml")
     }
 }
 
 dependencies {
-    // https://android.googlesource.com/platform/prebuilts/sdk/+/android-15.0.0_r6/current/androidx/m2repository/androidx/appcompat/appcompat
+    // https://android.googlesource.com/platform/prebuilts/sdk/+/android-16.0.0_r4/current/androidx/m2repository/androidx/appcompat/appcompat
     implementation("androidx.appcompat:appcompat") {
         version { strictly("1.7.0") } // 1.8.0-alpha01 in AOSP but isn't released
     }
 
-    // https://android.googlesource.com/platform/prebuilts/sdk/+/android-15.0.0_r6/current/androidx/m2repository/androidx/work/work-runtime-ktx/
+    // https://android.googlesource.com/platform/prebuilts/sdk/+/android-16.0.0_r4/current/androidx/m2repository/androidx/work/work-runtime-ktx/
     implementation("androidx.work:work-runtime-ktx") {
-        version { strictly("2.10.0-beta01") }
+        version { strictly("2.11.0-beta01") }
     }
 
-    // https://android.googlesource.com/platform/prebuilts/sdk/+/refs/tags/android-15.0.0_r6/current/extras/material-design-x/Android.bp#7
+    // https://android.googlesource.com/platform/prebuilts/sdk/+/refs/tags/android-16.0.0_r4/current/extras/material-design-x/Android.bp#7
     implementation("com.google.android.material:material") {
-        version { strictly("1.11.0") }
+        version { strictly("1.14.0-alpha02") }
     }
 
-    // https://android.googlesource.com/platform/prebuilts/sdk/+/android-15.0.0_r6/current/androidx/m2repository/androidx/navigation/
+    // https://android.googlesource.com/platform/prebuilts/sdk/+/android-16.0.0_r4/current/androidx/m2repository/androidx/navigation/
     // Navigation Components
-    val navVersion = "2.9.0-alpha01"
+    val navVersion = "2.10.0-alpha01"
     implementation("androidx.navigation:navigation-fragment-ktx") {
         version { strictly(navVersion) }
     }
