@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9730ee65_06a0d8fb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2026-03-12T06:09:53Z",
+      "side": 1,
+      "message": "Android.bp\u0027s sdk_version should also be bumped up",
+      "revId": "45e384361db0158e6222cffc06903f37e7429dc4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
