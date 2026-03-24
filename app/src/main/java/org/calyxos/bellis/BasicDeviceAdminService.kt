@@ -8,6 +8,8 @@ package org.calyxos.bellis
 
 import android.app.admin.DeviceAdminService
 import android.app.admin.DevicePolicyManager
+import android.app.admin.DevicePolicyManager.FLAG_MANAGED_CAN_ACCESS_PARENT
+import android.app.admin.DevicePolicyManager.FLAG_PARENT_CAN_ACCESS_MANAGED
 import android.appwidget.AppWidgetManager
 import android.content.BroadcastReceiver
 import android.content.ComponentName
@@ -18,6 +20,7 @@ import android.content.pm.PackageManager
 import android.content.pm.PackageManager.PackageInfoFlags
 import android.os.UserManager.DISALLOW_BLUETOOTH_SHARING
 import android.os.UserManager.DISALLOW_INSTALL_UNKNOWN_SOURCES
+import android.provider.MediaStore
 import android.util.Log
 import androidx.core.content.edit
 import org.calyxos.bellis.utils.PostProvisioningHelper
@@ -44,6 +47,9 @@ class BasicDeviceAdminService : DeviceAdminService() {
         // Register Broadcast Receiver for handling additional packages
         // installed after service was created
         registerReceivers()
+
+        // Allow certain intents to be performed cross profile
+        addCrossProfileIntentFilter()
 
         // Run required migrations on version upgrade for existing apps
         onUpgrade()
@@ -84,6 +90,18 @@ class BasicDeviceAdminService : DeviceAdminService() {
     private fun unregisterReceivers() {
         if (managedProfile) {
             unregisterReceiver(packageReceiver)
+        }
+    }
+
+    private fun addCrossProfileIntentFilter() {
+        listOf(
+            IntentFilter(MediaStore.ACTION_PICK_IMAGES),
+        ).forEach { filter ->
+            devicePolicyManager.addCrossProfileIntentFilter(
+                componentName,
+                filter,
+                FLAG_MANAGED_CAN_ACCESS_PARENT and FLAG_PARENT_CAN_ACCESS_MANAGED
+            )
         }
     }
 
