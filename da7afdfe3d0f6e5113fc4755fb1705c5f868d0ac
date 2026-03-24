@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6327f2f7_f4c7251b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2026-03-24T12:50:52Z",
+      "side": 1,
+      "message": "Note: We do something similar already in https://review.calyxos.org/c/CalyxOS/platform_packages_apps_Settings/+/44967/3/src/com/android/settings/accounts/CrossProfileSharingPreferenceController.java which is for share actions, and doesn\u0027t get auto-updated for existing profiles without re-toggling.",
+      "revId": "da7afdfe3d0f6e5113fc4755fb1705c5f868d0ac",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
