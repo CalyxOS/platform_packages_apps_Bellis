@@ -16,6 +16,24 @@
       "message": "Android.bp\u0027s sdk_version should also be bumped up",
       "revId": "45e384361db0158e6222cffc06903f37e7429dc4",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f9990c0_766cd893",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2026-03-30T09:47:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9730ee65_06a0d8fb",
+      "revId": "45e384361db0158e6222cffc06903f37e7429dc4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
