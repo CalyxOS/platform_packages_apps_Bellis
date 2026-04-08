@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: 2026 The Calyx Institute
+  SPDX-License-Identifier: Apache-2.0
+  -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group>
+        <clip-path android:pathData="M0,0h108v108h-108z" />
+        <group>
+            <clip-path android:pathData="M108,0H0V108H108V0Z" />
+            <path
+                android:pathData="M67.95,59.75H68.87V61.78H67.95V63.79C67.95,64.91 67.03,65.83 65.91,65.83H62.79C61.67,65.83 60.75,64.91 60.75,63.79V61.78H59.8V59.75H60.75V57.3H47.25V59.75H48.2V61.78H47.25V63.79C47.25,64.91 46.33,65.83 45.21,65.83H42.09C40.96,65.83 40.05,64.91 40.05,63.79V61.78H39.13V59.75H40.05V57.3H31.43V69.07C31.43,71.5 33.4,73.47 35.83,73.47H72.17C74.6,73.47 76.57,71.5 76.57,69.07V57.3H67.95V59.75Z"
+                android:fillColor="#2D1E2F" />
+            <path
+                android:pathData="M31.43,56.3H27.91V57.3H31.43V56.3Z"
+                android:fillColor="#2D1E2F" />
+            <path
+                android:pathData="M80.09,56.3H76.57V57.3H80.09V56.3Z"
+                android:fillColor="#2D1E2F" />
+            <path
+                android:pathData="M41.05,63.79C41.05,64.36 41.52,64.83 42.09,64.83H45.21C45.78,64.83 46.25,64.36 46.25,63.79V61.78H41.05V63.79Z"
+                android:fillColor="#2D1E2F" />
+            <path
+                android:pathData="M40.05,52.84H41.05V59.75H46.25V52.84H47.25V56.3H60.75V52.84H61.75V59.75H66.95V52.84H67.95V56.3H76.57V47.59C76.57,45.16 74.6,43.19 72.17,43.19H65.81V42.27C65.81,38 62.34,34.53 58.07,34.53H49.92C45.65,34.53 42.18,38 42.18,42.27V43.19H35.82C33.39,43.19 31.42,45.16 31.42,47.59V56.3H40.04V52.84H40.05ZM46.19,42.27C46.19,40.21 47.87,38.53 49.93,38.53H58.08C60.14,38.53 61.82,40.21 61.82,42.27V43.19H46.19V42.27Z"
+                android:fillColor="#2D1E2F" />
+            <path
+                android:pathData="M62.79,64.84H65.91C66.48,64.84 66.95,64.37 66.95,63.8V61.79H61.75V63.8C61.75,64.37 62.22,64.84 62.79,64.84Z"
+                android:fillColor="#2D1E2F" />
+        </group>
+    </group>
+</vector>
