@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6bbc7ec7_55b59268",
+        "filename": ".gitignore",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2026-04-08T16:13:21Z",
+      "side": 1,
+      "message": "This was kept on purpose so that the copyright header style and code style remains the same",
+      "range": {
+        "startLine": 36,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 5
+      },
+      "revId": "bdc6aeb1303ab35b07e4dbb0a8de4a83bd078c04",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
