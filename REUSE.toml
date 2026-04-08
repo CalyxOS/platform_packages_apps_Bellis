@@ -13,7 +13,7 @@ SPDX-FileCopyrightText = "2022 The Calyx Institute"
 SPDX-License-Identifier = "Apache-2.0"
 
 [[annotations]]
-path = ["app/src/main/res/drawable-xxhdpi/badge.png", "app/src/main/res/mipmap-**/**.png"]
+path = ["app/src/main/res/drawable-xxhdpi/badge.png"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2019 Google LLC"
 SPDX-License-Identifier = "Apache-2.0"

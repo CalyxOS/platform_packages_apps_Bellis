@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: 2026 The Calyx Institute
+  SPDX-License-Identifier: Apache-2.0
+  -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group>
+        <clip-path android:pathData="M0,0h108v108h-108z" />
+        <group>
+            <clip-path android:pathData="M108,0H0V108H108V0Z" />
+        </group>
+        <group>
+            <clip-path android:pathData="M28,35h52.19v38.94h-52.19z" />
+            <path
+                android:pathData="M68.05,53.31H67.05V60.22H61.85V53.31H60.85V56.77H47.35V53.31H46.35V60.22H41.15V53.31H40.15V56.77H31.52V57.77H40.14V60.22H39.22V62.25H40.14V64.26C40.14,65.38 41.06,66.3 42.18,66.3H45.3C46.43,66.3 47.34,65.38 47.34,64.26V62.25H48.29V60.22H47.34V57.77H60.84V60.22H59.89V62.25H60.84V64.26C60.84,65.38 61.76,66.3 62.88,66.3H66C67.12,66.3 68.04,65.38 68.04,64.26V62.25H68.96V60.22H68.04V57.77H76.66V56.77H68.04V53.31H68.05ZM46.35,64.26C46.35,64.83 45.88,65.3 45.31,65.3H42.19C41.62,65.3 41.15,64.83 41.15,64.26V62.25H46.35V64.26ZM67.05,64.26C67.05,64.83 66.58,65.3 66.01,65.3H62.89C62.32,65.3 61.85,64.83 61.85,64.26V62.25H67.05V64.26Z">
+                <aapt:attr name="android:fillColor">
+                    <gradient
+                        android:startX="76.66"
+                        android:startY="59.8"
+                        android:endX="31.52"
+                        android:endY="59.8"
+                        android:type="linear">
+                        <item android:offset="0" android:color="#FF99CC00" />
+                        <item android:offset="1" android:color="#FFFFC914" />
+                    </gradient>
+                </aapt:attr>
+            </path>
+            <path
+                android:pathData="M68.05,57.77V60.22H68.97V62.25H68.05V64.26C68.05,65.38 67.13,66.3 66.01,66.3H62.89C61.77,66.3 60.85,65.38 60.85,64.26V62.25H59.9V60.22H60.85V57.77H47.35V60.22H48.3V62.25H47.35V64.26C47.35,65.38 46.43,66.3 45.31,66.3H42.19C41.06,66.3 40.15,65.38 40.15,64.26V62.25H39.23V60.22H40.15V57.77H31.52V69.54C31.52,71.97 33.49,73.94 35.92,73.94H72.26C74.69,73.94 76.66,71.97 76.66,69.54V57.77H68.04H68.05Z"
+                android:fillColor="#2D1E2F" />
+            <path
+                android:pathData="M31.52,56.77H28V57.77H31.52V56.77Z"
+                android:fillColor="#FFC914" />
+            <path
+                android:pathData="M80.19,56.77H76.67V57.77H80.19V56.77Z"
+                android:fillColor="#99CC00" />
+            <path
+                android:pathData="M41.14,64.26C41.14,64.83 41.61,65.3 42.18,65.3H45.3C45.87,65.3 46.34,64.83 46.34,64.26V62.25H41.14V64.26Z"
+                android:fillColor="#2D1E2F" />
+            <path
+                android:pathData="M72.26,43.66H65.9V42.74C65.9,38.47 62.43,35 58.16,35H50.01C45.74,35 42.27,38.47 42.27,42.74V43.66H35.91C33.48,43.66 31.51,45.63 31.51,48.06V56.77H40.13V53.31H41.13V60.22H46.33V53.31H47.33V56.77H60.83V53.31H61.83V60.22H67.03V53.31H68.03V56.77H76.65V48.06C76.65,45.63 74.68,43.66 72.25,43.66H72.26ZM46.28,42.74C46.28,40.68 47.96,39 50.02,39H58.17C60.23,39 61.91,40.68 61.91,42.74V43.66H46.28V42.74Z"
+                android:fillColor="#2D1E2F" />
+            <path
+                android:pathData="M61.84,64.26C61.84,64.83 62.31,65.3 62.88,65.3H66C66.57,65.3 67.04,64.83 67.04,64.26V62.25H61.84V64.26Z"
+                android:fillColor="#2D1E2F" />
+        </group>
+    </group>
+</vector>
