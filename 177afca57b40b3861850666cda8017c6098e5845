@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "82ab61ba_ff6c0080",
+        "filename": ".editorconfig",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2026-04-08T16:14:01Z",
+      "side": 1,
+      "message": "This project is Apache-2.0",
+      "range": {
+        "startLine": 3,
+        "startChar": 27,
+        "endLine": 3,
+        "endChar": 43
+      },
+      "revId": "177afca57b40b3861850666cda8017c6098e5845",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
