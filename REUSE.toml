@@ -1,0 +1,25 @@
+# SPDX-FileCopyrightText: 2026 The Calyx Institute
+# SPDX-License-Identifier: Apache-2.0
+
+version = 1
+SPDX-PackageName = "Bellis"
+SPDX-PackageSupplier = "The Calyx Institute"
+SPDX-PackageDownloadLocation = "https://gitlab.com/CalyxOS/platform_packages_apps_Bellis"
+
+[[annotations]]
+path = [".gitignore", ".gitreview", ".idea/**", "app/src/main/res/values-**/strings.xml", "app/testkey.jks", "assets/**.png", "README.md"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 The Calyx Institute"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = ["app/src/main/res/drawable-xxhdpi/badge.png", "app/src/main/res/mipmap-**/**.png"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Google LLC"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = "gradle/wrapper/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007-2023 Gradle, Inc."
+SPDX-License-Identifier = "Apache-2.0"
