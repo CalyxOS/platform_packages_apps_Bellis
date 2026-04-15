@@ -18,6 +18,24 @@
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d62a4b64_1f3ec46b",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2026-04-15T15:41:59Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "fa58c6ad_4570e3f2",
+      "revId": "39df424e777768723ef83ca40eeed2c42c8e18c3",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "07f0bdf7_b96be5b3",
@@ -31,6 +49,24 @@
       "writtenOn": "2026-03-24T12:28:35Z",
       "side": 1,
       "message": "We may want to add other intent filters here in the future. I had noticed some actions I would have liked to perform cross profile, but wasn\u0027t allowed to.\n\nMaybe we\u0027ll need to check the cross profile sharing setting for some of them. But I guess for PhotoPicker this isn\u0027t needed.",
+      "revId": "39df424e777768723ef83ca40eeed2c42c8e18c3",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f436240_a434c2d4",
+        "filename": "app/src/main/java/org/calyxos/bellis/BasicDeviceAdminService.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2026-04-15T15:41:59Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "07f0bdf7_b96be5b3",
       "revId": "39df424e777768723ef83ca40eeed2c42c8e18c3",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
