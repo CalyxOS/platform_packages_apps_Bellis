@@ -14,4 +14,5 @@
     <string name="existing_work_profile_help">Para gerenciar seu perfil de trabalho existente, navegue até a aba &lt;b&gt;Trabalho&lt;/b&gt; na gaveta de apps</string>
     <string name="manage_work_profile">Gerenciar o perfil de trabalho</string>
     <string name="please_wait">Um momento…</string>
+    <string name="profile_setup_disabled_help">A configuração do perfil de trabalho é restrita apenas para o usuário principal. Mude pro usuário principal para criar um perfil de trabalho novo.</string>
 </resources>
