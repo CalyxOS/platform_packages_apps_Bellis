@@ -14,4 +14,5 @@
     <string name="manage_work_profile_help">Aplicațiile de serviciu sunt marcate cu o pictogramă servietă, astfel încât să le poți distinge de aplicațiile personale.</string>
     <string name="app_and_content_access">Controlează accesul la aplicații și conținut</string>
     <string name="please_wait">Așteaptă…</string>
+    <string name="profile_setup_disabled_help">Configurarea profilului de serviciu este limitată numai la utilizatorul principal. Treci la utilizatorul principal pentru a crea un nou profil de serviciu.</string>
 </resources>
