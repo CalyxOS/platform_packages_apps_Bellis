@@ -14,4 +14,5 @@
     <string name="no_work_profile_help">Um perfil de trabalho pode ser configurado, permitindo que use o mesmo aparelho para motivos pessoais e de trabalho com privacidade e segurança</string>
     <string name="remove_profile_confirmation">Tem certeza? Isto apagará permanentemente o seu perfil de trabalho e qualquer conteúdo que esteja nele como ficheiros, apps e dados deles.</string>
     <string name="existing_work_profile_help">Para gerir o seu perfil de trabalho existente, navegue à guia &lt;b&gt;Trabalho&lt;/b&gt; na gaveta de apps</string>
+    <string name="profile_setup_disabled_help">Configuração de perfil de trabalho é restrito apenas ao utilizador primário. Mude para o utilizador primário para criar um novo perfil de trabalho.</string>
 </resources>
