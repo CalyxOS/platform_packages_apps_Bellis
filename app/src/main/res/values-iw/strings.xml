@@ -14,4 +14,5 @@
     <string name="existing_work_profile_help">כדי לנהל את פרופיל העבודה הקיים, יש לנווט ללשונית &lt;/b&gt;עבודה&lt;b&gt; בדף הבית</string>
     <string name="no_work_profile_help">אפשר להגדיר פרופיל עבודה על המכשיר הזה, מה שמאפשר לך להשתמש באופן פרטי ומאובטח למטרות עבודה וצרכים אישיים</string>
     <string name="please_wait">נא להמתין…</string>
+    <string name="profile_setup_disabled_help">הגדרת פרופיל עבודה מוגבל למשתמש הראשי בלבד. החלף למשתמש הראשי על מנת ליצור פרופיל עבודה חדש.</string>
 </resources>
