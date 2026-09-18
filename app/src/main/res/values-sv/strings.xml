@@ -1,2 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Arbetsprofil</string>
+    <string name="app_and_content_access">Hantera åtkomst till appar och innehåll</string>
+    <string name="set_up_profile">Konfigurera arbetsprofil</string>
+    <string name="remove_profile">Ta bort arbetsprofil</string>
+    <string name="remove_profile_confirmation">Är du säker? Arbetsprofilen tas bort permanent, inklusive alla appar i profilen, deras data och alla filer.</string>
+    <string name="managed_provisioning_not_enabled">Arbetsprofil är inte aktiverad</string>
+    <string name="profile_setup_disabled">Det går inte att konfigurera en ny arbetsprofil</string>
+    <string name="no_work_profile">Ingen arbetsprofil hittades</string>
+    <string name="no_work_profile_help">En arbetsprofil kan konfigureras på den här enheten så att du kan använda samma enhet säkert och privat för arbete och privata ändamål.</string>
+    <string name="existing_work_profile">Befintlig arbetsprofil hittades</string>
+    <string name="existing_work_profile_help">Hantera den befintliga arbetsprofilen på fliken &lt;b&gt;Arbete&lt;/b&gt; i startprogrammet.</string>
+    <string name="manage_work_profile">Hantera arbetsprofil</string>
+    <string name="manage_work_profile_help">Arbetsappar markeras med en portföljikon så att du kan skilja dem från privata appar.</string>
+    <string name="please_wait">Vänta …</string>
+    <string name="profile_setup_disabled_help">Endast huvudanvändaren får konfigurera arbetsprofilen. Byt till huvudanvändaren för att skapa en ny arbetsprofil.</string>
+</resources>
