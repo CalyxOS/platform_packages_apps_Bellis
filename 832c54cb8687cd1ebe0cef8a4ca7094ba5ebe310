@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0eb5acfd_04e488b8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2026-10-01T20:17:53Z",
+      "side": 1,
+      "message": "The toolchain uses gradle to download a java distribution that will be used. This change allows just using the java you have already installed anyway.",
+      "revId": "832c54cb8687cd1ebe0cef8a4ca7094ba5ebe310",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
